@@ -12,13 +12,12 @@ A MindMap about PowerShell Classes
 I'm learning PowerShell and tought it could be helpful to create a MindMap about Classes. 
 It should help to get a better overview over the topic. 
 
-<a href="/images/PowerShellClasses.png">
+<!-- <a href="/images/PowerShellClasses.png">
  <img alt="PowerShellClasses.png" src="/images/PowerShellClasses.png">
-</a>
+</a> -->
 
-second
 
-![Powershell Classes](/images/PowerShellClasses.png)
+![Powershell Classes](/images/PowerShellClasses.png "Preview")
 
 ## Further Links
 To learn more about classes follow those links:
