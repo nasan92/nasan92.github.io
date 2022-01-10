@@ -1,0 +1,170 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>Run a gpresult on a remote computer - Nasan</title><meta name=Description content><meta property="og:title" content="Run a gpresult on a remote computer">
+<meta property="og:description" content="How to run a gpresult on a remote computer
+Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
+ Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command  here comes the new highlight:
+199 200  Invoke-Command -ComputerName 'ComputerName' -ScriptBlock{ gpresult /r /USER 'username'   Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://nasan.ch/posts/2021-05-07-gpresult-remote/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-05-06T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-05-06T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Run a gpresult on a remote computer">
+<meta name=twitter:description content="How to run a gpresult on a remote computer
+Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
+ Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command  here comes the new highlight:
+199 200  Invoke-Command -ComputerName 'ComputerName' -ScriptBlock{ gpresult /r /USER 'username'   Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.">
+<meta name=application-name content="Nasan">
+<meta name=apple-mobile-web-app-title content="Nasan"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://nasan.ch/posts/2021-05-07-gpresult-remote/><link rel=next href=http://nasan.ch/posts/2021-05-07-search-gpo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Run a gpresult on a remote computer","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/nasan.ch\/posts\/2021-05-07-gpresult-remote\/"},"genre":"posts","keywords":"Powershell, GPO","wordcount":184,"url":"http:\/\/nasan.ch\/posts\/2021-05-07-gpresult-remote\/","datePublished":"2021-05-06T00:00:00+00:00","dateModified":"2021-05-06T00:00:00+00:00","publisher":{"@type":"Organization","name":"Author"},"author":{"@type":"Person","name":"Author"},"description":""}</script></head>
+<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=Nasan>Nasan</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> Posts </a><a class=menu-item href=/tags/> Tags </a><a class=menu-item href=/categories/> Categories </a><a class=menu-item href=https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw rel="noopener noreffer" target=_blank> Youtube </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=Nasan>Nasan</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/categories/ title>Categories</a><a class=menu-item href=https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw title rel="noopener noreffer" target=_blank>Youtube</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">Run a gpresult on a remote computer</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Author</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-05-06>2021-05-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;184 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#run-gpresult-for-a-specific-user-in-a-rds-environment>Run gpresult for a specific User in a RDS environment</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content>
+<p>How to run a gpresult on a remote computer</p>
+<h1 id=use-the-invoke-command>Use the Invoke-Command</h1>
+<p>You can simply use the Invoke Command to run the gpresult command on a remote computer:</p>
+<ul>
+<li>Define the ComputerName after the Invoke-Command</li>
+<li>In the ScriptBlock you can simply run your command</li>
+</ul>
+<p>here comes the new highlight:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>199
+</span><span class=lnt>200
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-Powershell data-lang=Powershell><span class=nb>Invoke-Command</span> <span class=n>-ComputerName</span> <span class=s1>&#39;ComputerName&#39;</span> <span class=n>-ScriptBlock</span><span class=p>{</span>
+    <span class=n>gpresult</span> <span class=p>/</span><span class=nb>r </span><span class=p>/</span><span class=n>USER</span> <span class=s1>&#39;username&#39;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id=run-gpresult-for-a-specific-user-in-a-rds-environment>Run gpresult for a specific User in a RDS environment</h2>
+<p>In the following script you just have to define the username + the RDS ConnectionBroker.
+It will automatically find the Remote Desktop Server where the user is logged in an run the gpresult there:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>199
+</span><span class=lnt>200
+</span><span class=lnt>201
+</span><span class=lnt>202
+</span><span class=lnt>203
+</span><span class=lnt>204
+</span><span class=lnt>205
+</span><span class=hl><span class=lnt>206
+</span></span><span class=lnt>207
+</span><span class=lnt>208
+</span><span class=lnt>209
+</span><span class=lnt>210
+</span><span class=lnt>211
+</span><span class=lnt>212
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-Powershell data-lang=Powershell><span class=c># Define User Identity</span>
+<span class=nv>$User</span> <span class=p>=</span> <span class=s1>&#39;username&#39;</span>
+<span class=nv>$ConnectionBroker</span> <span class=p>=</span> <span class=s1>&#39;rdsgw.test.com&#39;</span>
+
+<span class=c># Get SamAccount Name</span>
+<span class=nv>$userSam</span> <span class=p>=</span> <span class=p>(</span><span class=nb>get-aduser</span> <span class=n>-Identity</span> <span class=nv>$User</span><span class=p>).</span><span class=n>SamAccountName</span>
+<span class=c># Get RDS Server where user is logged in</span>
+<span class=hl><span class=nv>$userSession</span> <span class=p>=</span> <span class=nb>Get-RDUserSession</span> <span class=n>-ConnectionBroker</span> <span class=nv>$ConnectionBroker</span> <span class=p>|</span> <span class=nb>Select-Object</span> <span class=n>UserName</span><span class=p>,</span> <span class=n>HostServer</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=n>UserName</span> <span class=o>-like</span> <span class=nv>$userSam</span> 
+</span><span class=nv>$server</span> <span class=p>=</span> <span class=nv>$userSession</span><span class=p>.</span><span class=n>HostServer</span>
+
+<span class=c># do a gpresult for the specific user on the correct RDS Server</span>
+<span class=nb>Invoke-Command</span> <span class=n>-ComputerName</span> <span class=nv>$server</span> <span class=n>-ScriptBlock</span><span class=p>{</span>
+    <span class=n>gpresult</span> <span class=p>/</span><span class=nb>r </span><span class=p>/</span><span class=n>USER</span> <span class=nv>$args</span><span class=p>[</span><span class=n>0</span><span class=p>]</span>
+<span class=p>}</span><span class=n>-ArgumentList</span> <span class=nv>$userSam</span></code></pre></td></tr></table>
+</div>
+</div>
+</div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2021-05-06</span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md></div>
+<div class=post-info-share>
+<span></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/powershell/>Powershell</a>,&nbsp;<a href=/tags/gpo/>GPO</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav>
+<a href=/posts/2021-05-07-search-gpo/ class=next rel=next title="Search a specific entry over all GPO">Search a specific entry over all GPO<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank></a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

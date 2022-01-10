@@ -1,0 +1,234 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>Windows Sandbox Customization with DSC - Nasan</title><meta name=Description content><meta property="og:title" content="Windows Sandbox Customization with DSC ">
+<meta property="og:description" content="Demo Windows Sandbox Customization with Powershell DSC
+In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.
+Enable Windows Sandbox First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:
+Enable-WindowsOptionalFeature -FeatureName &#34;Containers-DisposableClientVM&#34; -Online Customization Files You can create a XML Config file like the following example and save it anywhere as .">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://nasan.ch/posts/2021-08-23-windows-sandbox-customization-dsc/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-08-23T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-08-23T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Windows Sandbox Customization with DSC ">
+<meta name=twitter:description content="Demo Windows Sandbox Customization with Powershell DSC
+In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.
+Enable Windows Sandbox First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:
+Enable-WindowsOptionalFeature -FeatureName &#34;Containers-DisposableClientVM&#34; -Online Customization Files You can create a XML Config file like the following example and save it anywhere as .">
+<meta name=application-name content="Nasan">
+<meta name=apple-mobile-web-app-title content="Nasan"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://nasan.ch/posts/2021-08-23-windows-sandbox-customization-dsc/><link rel=prev href=http://nasan.ch/posts/2021-08-17-useful-chocolatey-commands/><link rel=next href=http://nasan.ch/posts/2021-12-06-powershellclasses/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Windows Sandbox Customization with DSC ","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/nasan.ch\/posts\/2021-08-23-windows-sandbox-customization-dsc\/"},"genre":"posts","keywords":"WindowsSandbox, DSC, Powershell","wordcount":660,"url":"http:\/\/nasan.ch\/posts\/2021-08-23-windows-sandbox-customization-dsc\/","datePublished":"2021-08-23T00:00:00+00:00","dateModified":"2021-08-23T00:00:00+00:00","publisher":{"@type":"Organization","name":"Author"},"author":{"@type":"Person","name":"Author"},"description":""}</script></head>
+<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=Nasan>Nasan</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> Posts </a><a class=menu-item href=/tags/> Tags </a><a class=menu-item href=/categories/> Categories </a><a class=menu-item href=https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw rel="noopener noreffer" target=_blank> Youtube </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=Nasan>Nasan</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/categories/ title>Categories</a><a class=menu-item href=https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw title rel="noopener noreffer" target=_blank>Youtube</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">Windows Sandbox Customization with DSC </h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Author</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-08-23>2021-08-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;660 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#enable-windows-sandbox>Enable Windows Sandbox</a></li>
+<li><a href=#customization-files>Customization Files</a></li>
+<li><a href=#setup-command>Setup Command</a></li>
+<li><a href=#config-script>config script</a></li>
+<li><a href=#predscinstall-script>PreDSCInstall script</a></li>
+<li><a href=#dsc-configuration>DSC Configuration</a></li>
+<li><a href=#sandbox-toast-script>sandbox-toast Script</a></li>
+<li><a href=#starting-the-sandbox>Starting the Sandbox</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p>Demo Windows Sandbox Customization with Powershell DSC</p>
+<p>In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.</p>
+<h2 id=enable-windows-sandbox>Enable Windows Sandbox</h2>
+<p>First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=nb>Enable-WindowsOptionalFeature</span> <span class=n>-FeatureName</span> <span class=s2>&#34;Containers-DisposableClientVM&#34;</span> <span class=n>-Online</span>
+</code></pre></div><h2 id=customization-files>Customization Files</h2>
+<p>You can create a XML Config file like the following example and save it anywhere as <strong>.wsb -</strong>> which will link automatically to Windows Sandbox :</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-xml data-lang=xml><span class=nt>&lt;Configuration&gt;</span>
+    <span class=nt>&lt;MappedFolders&gt;</span>
+        <span class=nt>&lt;MappedFolder&gt;</span>
+        <span class=c>&lt;!-- Create a drive mapping that mirrors my Scripts folder --&gt;</span>
+            <span class=nt>&lt;HostFolder&gt;</span>C:\Git\powershell<span class=nt>&lt;/HostFolder&gt;</span>
+            <span class=nt>&lt;SandboxFolder&gt;</span>C:\Git\powershell<span class=nt>&lt;/SandboxFolder&gt;</span>
+            <span class=nt>&lt;ReadOnly&gt;</span>false<span class=nt>&lt;/ReadOnly&gt;</span>
+        <span class=nt>&lt;/MappedFolder&gt;</span>
+    <span class=nt>&lt;/MappedFolders&gt;</span>
+    <span class=nt>&lt;ClipboardRedirection&gt;</span>true<span class=nt>&lt;/ClipboardRedirection&gt;</span>
+    <span class=nt>&lt;MemoryInMB&gt;</span>8192<span class=nt>&lt;/MemoryInMB&gt;</span>
+    <span class=nt>&lt;LogonCommand&gt;</span>
+     <span class=nt>&lt;Command&gt;</span>C:\Git\powershell\WindowsSandbox\Demo\setup.cmd<span class=nt>&lt;/Command&gt;</span>
+    <span class=nt>&lt;/LogonCommand&gt;</span>
+<span class=nt>&lt;/Configuration&gt;</span>
+</code></pre></div><p>In the XML file above I configure which folder I would like to get mapped into the Sandbox + enable ClipboardRedirection, set the Memory in the Sandbox to 8GB RAM and define the first setup command which will start further PowershellScripts.</p>
+<h2 id=setup-command>Setup Command</h2>
+<p>It seems to be the easiest to work with a batch cmd file.
+Set the Powershell Execution Policy to RemoteSigned and run your main Powershell Config Script (Includes the actual configuration)</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>REM setup.cmd
+REM This code runs in the context of the Windows Sandbox
+REM <span class=nb>set</span> execution policy first so that a setup script can be run
+powershell.exe -command <span class=s2>&#34;&amp;{Set-ExecutionPolicy RemoteSigned -force}&#34;</span>
+
+
+REM Now run the <span class=nb>true</span> configuration script
+powershell.exe -file C:<span class=se>\G</span>it<span class=se>\p</span>owershell<span class=se>\W</span>indowsSandbox<span class=se>\D</span>emo<span class=se>\c</span>onfig.ps1
+</code></pre></div><h2 id=config-script>config script</h2>
+<p>In the config script we first start logging everything with Start-Transcript.
+Then we run the PreDSCInstall script and after that we run start-DSCConfiguration which will apply our DSC configuration.
+As a second last step we send a notification that the script finished and in the end stop-transcript (stopp logging)</p>
+<p>So before you can run that you need to prepare the other scripts.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=nb>Start-Transcript</span> <span class=n>-Path</span> <span class=p>$(</span><span class=nb>Join-Path</span> <span class=nv>$env:TEMP</span> <span class=s2>&#34;SandboxSetup.log&#34;</span><span class=p>)</span>  
+
+<span class=p>&amp;</span> <span class=n>powershell</span> <span class=o>-File</span> <span class=s2>&#34;C:\Git\powershell\WindowsSandbox\Demo\PreDSCInstall.ps1&#34;</span> 
+
+<span class=nb>Start-DscConfiguration</span> <span class=n>-Path</span> <span class=s1>&#39;C:\Git\powershell\WindowsSandbox\Demo\packageDemoChoco&#39;</span> <span class=n>-Wait</span> <span class=n>-Verbose</span> <span class=n>-Force</span>
+
+<span class=p>&amp;</span> <span class=n>powershell</span> <span class=o>-File</span> <span class=s2>&#34;C:\Git\powershell\WindowsSandbox\Demo\sandbox-toast.ps1&#34;</span>
+
+<span class=nb>Stop-Transcript</span>
+</code></pre></div><h2 id=predscinstall-script>PreDSCInstall script</h2>
+<p>Here we install the Modules and set the properties which are necessary to run DSC successfully in the Sandbox.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=c># Set Network Profile to Private (With set to Public DSC won&#39;t run)</span>
+<span class=nv>$NetworkProfile</span> <span class=p>=</span> <span class=nb>Get-NetConnectionProfile</span>
+<span class=nb>Set-NetConnectionProfile</span> <span class=n>-Name</span> <span class=nv>$NetworkProfile</span><span class=p>.</span><span class=n>Name</span> <span class=n>-NetworkCategory</span> <span class=n>Private</span> 
+
+<span class=c># Allow Powershell Remote Commands (necessary for DSC)</span>
+<span class=nb>Set-WSManQuickConfig</span> <span class=n>-Force</span>
+
+<span class=c># necessary that we can Install cChoco Module</span>
+<span class=nb>Install-PackageProvider</span> <span class=n>-Name</span> <span class=n>NuGet</span> <span class=n>-MinimumVersion</span> <span class=n>2</span><span class=p>.</span><span class=n>8</span><span class=p>.</span><span class=n>5</span><span class=p>.</span><span class=n>201</span> <span class=n>-Force</span> 
+
+<span class=c># now install the cChoco Module</span>
+<span class=nb>Install-Module</span> <span class=n>cChoco</span> <span class=n>-force</span>
+
+<span class=c># Used for a notification at the end of the script</span>
+<span class=nb>Install-Module</span> <span class=n>-Name</span> <span class=n>BurntToast</span> <span class=n>-force</span>
+</code></pre></div><h2 id=dsc-configuration>DSC Configuration</h2>
+<p>Prepare your actual DSC Configuration in a .ps1 file. As soon you finished the config you need to compile it. You can simply run the script just make sure that you call the configuration with the configuration name at the end. In this example packageDemoChoco.
+This will create a .mof file at the location where you run the script</p>
+<p>In this configuration I&rsquo;m using chocolatey to install Vscode + Azcopy and make as well sure that a Demo.txt file is created on C:\temp</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=n>Configuration</span> <span class=n>packageDemoChoco</span> <span class=p>{</span>
+
+ <span class=nb>Import-DscResource</span> <span class=n>-ModuleName</span> <span class=n>cChoco</span>
+
+ <span class=n>Node</span> <span class=s1>&#39;localhost&#39;</span> <span class=p>{</span>
+     <span class=n>cChocoinstaller</span> <span class=n>Install</span> <span class=p>{</span>
+         <span class=n>InstallDir</span> <span class=p>=</span> <span class=s2>&#34;C:\Choco&#34;</span>
+         <span class=p>}</span>
+
+     <span class=n>cChocoPackageInstaller</span> <span class=n>InstallVscode</span> <span class=p>{</span>
+         <span class=n>Name</span> <span class=p>=</span> <span class=s1>&#39;vscode&#39;</span>
+         <span class=n>DependsOn</span> <span class=p>=</span> <span class=s1>&#39;[cChocoInstaller]Install&#39;</span>
+         <span class=p>}</span>
+
+     <span class=n>cChocoPackageInstaller</span> <span class=n>InstallAzCopy</span> <span class=p>{</span>
+         <span class=n>Name</span> <span class=p>=</span> <span class=s1>&#39;azcopy&#39;</span>
+         <span class=n>DependsOn</span> <span class=p>=</span> <span class=s1>&#39;[cChocoInstaller]Install&#39;</span>
+         <span class=p>}</span>
+
+     <span class=n>File</span> <span class=n>Demo</span> <span class=p>{</span>
+         <span class=n>DestinationPath</span> <span class=p>=</span> <span class=s2>&#34;C:\Temp\Demo.txt&#34;</span>
+         <span class=n>Ensure</span> <span class=p>=</span> <span class=s2>&#34;Present&#34;</span>
+         <span class=n>Contents</span>   <span class=p>=</span> <span class=s2>&#34;This is a Demo Text File&#34;</span>
+     <span class=p>}</span>
+
+ <span class=p>}</span>
+
+ <span class=p>}</span>
+
+<span class=n>PackageDemoChoco</span>
+</code></pre></div><h2 id=sandbox-toast-script>sandbox-toast Script</h2>
+<p>This script will simply send a notification as soon the Sandbox Configuration is complete. It is using the Burnttoast Module which was installed earlier in the PreDSCInstall Script.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=nv>$params</span> <span class=p>=</span> <span class=p>@{</span>
+ <span class=n>Text</span> <span class=p>=</span> <span class=s2>&#34;Windows Sandbox configuration is complete.&#34;</span>
+ <span class=n>Header</span> <span class=p>=</span> <span class=p>$(</span><span class=nb>New-BTHeader</span> <span class=n>-Id</span> <span class=n>1</span> <span class=n>-Title</span> <span class=s2>&#34;Nasa&#39;s Sandbox&#34;</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=nb>New-BurntToastNotification</span> <span class=nv>@params</span>
+</code></pre></div><h2 id=starting-the-sandbox>Starting the Sandbox</h2>
+<p>All what you now need to do is double click your .wsb file.
+![demo wsb](/images/Pasted image 20210823190926.png)</p>
+<p>This will start the sandbox, after a few minutes you will receive the notification that everything is complete.
+To verify the logs you can go in the %temp% location where you can find the log file which was defined earlier.</p>
+<p>![demo wsb](/images/Pasted image 20210823190936.png)</p>
+</div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2021-08-23</span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md></div>
+<div class=post-info-share>
+<span></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/windowssandbox/>WindowsSandbox</a>,&nbsp;<a href=/tags/dsc/>DSC</a>,&nbsp;<a href=/tags/powershell/>Powershell</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/2021-08-17-useful-chocolatey-commands/ class=prev rel=prev title="useful chocolatey commands "><i class="fas fa-angle-left fa-fw"></i>useful chocolatey commands </a>
+<a href=/posts/2021-12-06-powershellclasses/ class=next rel=next title="PowerShell Classes Mindmap ">PowerShell Classes Mindmap <i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank></a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

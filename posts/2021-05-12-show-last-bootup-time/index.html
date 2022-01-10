@@ -1,0 +1,212 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>How to show last bootuptime of Computers with Powershell - Nasan</title><meta name=Description content><meta property="og:title" content="How to show last bootuptime of Computers with Powershell">
+<meta property="og:description" content="Use Get-CimInstance with the ClassName win32_operatingsystem You can query the ClassName win32_operatingsystem and select from there the computername csname and the last bootup time lastbootuptime
+Get-CimInstance -ComputerName 'DC01' -ClassName win32_operatingsystem | select csname, lastbootuptime Show last bootuptime for multiple computers If you want to do that for multiple computers you can for example do it wit a foreach loop:
+# First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://nasan.ch/posts/2021-05-12-show-last-bootup-time/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-05-12T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-05-12T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="How to show last bootuptime of Computers with Powershell">
+<meta name=twitter:description content="Use Get-CimInstance with the ClassName win32_operatingsystem You can query the ClassName win32_operatingsystem and select from there the computername csname and the last bootup time lastbootuptime
+Get-CimInstance -ComputerName 'DC01' -ClassName win32_operatingsystem | select csname, lastbootuptime Show last bootuptime for multiple computers If you want to do that for multiple computers you can for example do it wit a foreach loop:
+# First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c.">
+<meta name=application-name content="Nasan">
+<meta name=apple-mobile-web-app-title content="Nasan"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://nasan.ch/posts/2021-05-12-show-last-bootup-time/><link rel=prev href=http://nasan.ch/posts/2021-05-07-search-gpo/><link rel=next href=http://nasan.ch/posts/2021-05-25-exchangeonline-mailadressen/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"How to show last bootuptime of Computers with Powershell","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/nasan.ch\/posts\/2021-05-12-show-last-bootup-time\/"},"genre":"posts","keywords":"Powershell","wordcount":542,"url":"http:\/\/nasan.ch\/posts\/2021-05-12-show-last-bootup-time\/","datePublished":"2021-05-12T00:00:00+00:00","dateModified":"2021-05-12T00:00:00+00:00","publisher":{"@type":"Organization","name":"Author"},"author":{"@type":"Person","name":"Author"},"description":""}</script></head>
+<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=Nasan>Nasan</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> Posts </a><a class=menu-item href=/tags/> Tags </a><a class=menu-item href=/categories/> Categories </a><a class=menu-item href=https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw rel="noopener noreffer" target=_blank> Youtube </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=Nasan>Nasan</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/categories/ title>Categories</a><a class=menu-item href=https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw title rel="noopener noreffer" target=_blank>Youtube</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">How to show last bootuptime of Computers with Powershell</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Author</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-05-12>2021-05-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;542 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#use-get-ciminstance-with-the-classname-win32_operatingsystem>Use Get-CimInstance with the ClassName win32_operatingsystem</a></li>
+<li><a href=#show-last-bootuptime-for-multiple-computers>Show last bootuptime for multiple computers</a></li>
+<li><a href=#which-other-information-can-you-get-from-this-class>Which other information can you get from this class?</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><h2 id=use-get-ciminstance-with-the-classname-win32_operatingsystem>Use Get-CimInstance with the ClassName win32_operatingsystem</h2>
+<p>You can query the ClassName win32_operatingsystem and select from there the computername <strong>csname</strong> and the last bootup time <strong>lastbootuptime</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=nb>Get-CimInstance</span> <span class=n>-ComputerName</span> <span class=s1>&#39;DC01&#39;</span> <span class=n>-ClassName</span> <span class=n>win32_operatingsystem</span> <span class=p>|</span> <span class=nb>select </span><span class=n>csname</span><span class=p>,</span> <span class=n>lastbootuptime</span>
+</code></pre></div><h2 id=show-last-bootuptime-for-multiple-computers>Show last bootuptime for multiple computers</h2>
+<p>If you want to do that for multiple computers you can for example do it wit a foreach loop:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=c># First query the computer from which you want to have this information:</span>
+<span class=nv>$computer</span> <span class=p>=</span> <span class=nb>Get-ADComputer</span> <span class=n>-Filter</span> <span class=p>*</span> <span class=p>|</span> <span class=nb>where </span><span class=n>Name</span> <span class=o>-Match</span> <span class=n>dc</span>
+<span class=c># Now get the lastbootuptime for every computer in the computer array:</span>
+<span class=k>foreach</span><span class=p>(</span><span class=nv>$c</span> <span class=k>in</span> <span class=nv>$computer</span><span class=p>){</span>
+    <span class=nv>$computername</span> <span class=p>=</span> <span class=nv>$c</span><span class=p>.</span><span class=n>DNSHostname</span>
+    <span class=nb>Get-CimInstance</span> <span class=n>-ComputerName</span> <span class=nv>$computername</span> <span class=n>-ClassName</span> <span class=n>win32_operatingsystem</span> <span class=p>|</span> <span class=nb>select </span><span class=n>csname</span><span class=p>,</span> <span class=n>lastbootuptime</span>
+<span class=p>}</span>
+</code></pre></div><h2 id=which-other-information-can-you-get-from-this-class>Which other information can you get from this class?</h2>
+<p>If you&rsquo;re curious what other information you can get from this class you can simply run a Get-Member which will list you all properties and methods:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=nb>Get-CimInstance</span> <span class=n>-ComputerName</span> <span class=nv>$computername</span> <span class=n>-ClassName</span> <span class=n>win32_operatingsystem</span> <span class=p>|</span> <span class=nb>Get-Member</span>
+
+
+   <span class=n>TypeName</span><span class=err>:</span> <span class=n>Microsoft</span><span class=p>.</span><span class=n>Management</span><span class=p>.</span><span class=n>Infrastructure</span><span class=p>.</span><span class=n>CimInstance</span><span class=c>#root/cimv2/Win32_OperatingSystem</span>
+
+<span class=n>Name</span>                                      <span class=n>MemberType</span>   <span class=n>Definition</span>                                                                                                        
+<span class=p>----</span>                                      <span class=p>----------</span>   <span class=p>----------</span>                                                                                                        
+<span class=n>Clone</span>                                     <span class=n>Method</span>       <span class=n>System</span><span class=p>.</span><span class=n>Object</span> <span class=n>ICloneable</span><span class=p>.</span><span class=n>Clone</span><span class=p>()</span>                                                                                  
+<span class=n>Dispose</span>                                   <span class=n>Method</span>       <span class=n>void</span> <span class=n>Dispose</span><span class=p>(),</span> <span class=n>void</span> <span class=n>IDisposable</span><span class=p>.</span><span class=n>Dispose</span><span class=p>()</span>                                                                        
+<span class=n>Equals</span>                                    <span class=n>Method</span>       <span class=n>bool</span> <span class=n>Equals</span><span class=p>(</span><span class=n>System</span><span class=p>.</span><span class=n>Object</span> <span class=n>obj</span><span class=p>)</span>                                                                                    
+<span class=n>GetCimSessionComputerName</span>                 <span class=n>Method</span>       <span class=n>string</span> <span class=n>GetCimSessionComputerName</span><span class=p>()</span>                                                                                
+<span class=n>GetCimSessionInstanceId</span>                   <span class=n>Method</span>       <span class=n>guid</span> <span class=n>GetCimSessionInstanceId</span><span class=p>()</span>                                                                                    
+<span class=n>GetHashCode</span>                               <span class=n>Method</span>       <span class=n>int</span> <span class=n>GetHashCode</span><span class=p>()</span>                                                                                                 
+<span class=n>GetObjectData</span>                             <span class=n>Method</span>       <span class=n>void</span> <span class=n>GetObjectData</span><span class=p>(</span><span class=n>System</span><span class=p>.</span><span class=n>Runtime</span><span class=p>.</span><span class=n>Serialization</span><span class=p>.</span><span class=n>SerializationInfo</span> <span class=n>info</span><span class=p>,</span> <span class=n>System</span><span class=p>.</span><span class=n>Runtime</span><span class=p>.</span><span class=n>Serialization</span><span class=p>.</span><span class=n>StreamingC</span><span class=p>...</span>
+<span class=n>GetType</span>                                   <span class=n>Method</span>       <span class=nb>type </span><span class=n>GetType</span><span class=p>()</span>                                                                                                    
+<span class=n>ToString</span>                                  <span class=n>Method</span>       <span class=n>string</span> <span class=n>ToString</span><span class=p>()</span>                                                                                                 
+<span class=n>PSShowComputerName</span>                        <span class=n>NoteProperty</span> <span class=n>bool</span> <span class=n>PSShowComputerName</span><span class=p>=</span><span class=n>True</span>                                                                                      
+<span class=n>BootDevice</span>                                <span class=n>Property</span>     <span class=n>string</span> <span class=n>BootDevice</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                          
+<span class=n>BuildNumber</span>                               <span class=n>Property</span>     <span class=n>string</span> <span class=n>BuildNumber</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                         
+<span class=n>BuildType</span>                                 <span class=n>Property</span>     <span class=n>string</span> <span class=n>BuildType</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                           
+<span class=n>Caption</span>                                   <span class=n>Property</span>     <span class=n>string</span> <span class=n>Caption</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                             
+<span class=n>CodeSet</span>                                   <span class=n>Property</span>     <span class=n>string</span> <span class=n>CodeSet</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                             
+<span class=n>CountryCode</span>                               <span class=n>Property</span>     <span class=n>string</span> <span class=n>CountryCode</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                         
+<span class=n>CreationClassName</span>                         <span class=n>Property</span>     <span class=n>string</span> <span class=n>CreationClassName</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                   
+<span class=n>CSCreationClassName</span>                       <span class=n>Property</span>     <span class=n>string</span> <span class=n>CSCreationClassName</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                 
+<span class=n>CSDVersion</span>                                <span class=n>Property</span>     <span class=n>string</span> <span class=n>CSDVersion</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                          
+<span class=n>CSName</span>                                    <span class=n>Property</span>     <span class=n>string</span> <span class=n>CSName</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                              
+<span class=n>CurrentTimeZone</span>                           <span class=n>Property</span>     <span class=n>int16</span> <span class=n>CurrentTimeZone</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                      
+<span class=n>DataExecutionPrevention_32BitApplications</span> <span class=n>Property</span>     <span class=n>bool</span> <span class=n>DataExecutionPrevention_32BitApplications</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                             
+<span class=n>DataExecutionPrevention_Available</span>         <span class=n>Property</span>     <span class=n>bool</span> <span class=n>DataExecutionPrevention_Available</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                     
+<span class=n>DataExecutionPrevention_Drivers</span>           <span class=n>Property</span>     <span class=n>bool</span> <span class=n>DataExecutionPrevention_Drivers</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                       
+<span class=n>DataExecutionPrevention_SupportPolicy</span>     <span class=n>Property</span>     <span class=n>byte</span> <span class=n>DataExecutionPrevention_SupportPolicy</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                 
+<span class=n>Debug</span>                                     <span class=n>Property</span>     <span class=n>bool</span> <span class=n>Debug</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                                 
+<span class=n>Description</span>                               <span class=n>Property</span>     <span class=n>string</span> <span class=n>Description</span> <span class=p>{</span><span class=n>get</span><span class=p>;</span><span class=n>set</span><span class=p>;}</span>                                                                                     
+<span class=n>Distributed</span>                               <span class=n>Property</span>     <span class=n>bool</span> <span class=n>Distributed</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                           
+<span class=n>EncryptionLevel</span>                           <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>EncryptionLevel</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                     
+<span class=n>ForegroundApplicationBoost</span>                <span class=n>Property</span>     <span class=n>byte</span> <span class=n>ForegroundApplicationBoost</span> <span class=p>{</span><span class=n>get</span><span class=p>;</span><span class=n>set</span><span class=p>;}</span>                                                                        
+<span class=n>FreePhysicalMemory</span>                        <span class=n>Property</span>     <span class=n>uint64</span> <span class=n>FreePhysicalMemory</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                  
+<span class=n>FreeSpaceInPagingFiles</span>                    <span class=n>Property</span>     <span class=n>uint64</span> <span class=n>FreeSpaceInPagingFiles</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                              
+<span class=n>FreeVirtualMemory</span>                         <span class=n>Property</span>     <span class=n>uint64</span> <span class=n>FreeVirtualMemory</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                   
+<span class=n>InstallDate</span>                               <span class=n>Property</span>     <span class=n>CimInstance</span><span class=c>#DateTime InstallDate {get;}                                                                           </span>
+<span class=n>LargeSystemCache</span>                          <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>LargeSystemCache</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                    
+<span class=n>LastBootUpTime</span>                            <span class=n>Property</span>     <span class=n>CimInstance</span><span class=c>#DateTime LastBootUpTime {get;}                                                                        </span>
+<span class=n>LocalDateTime</span>                             <span class=n>Property</span>     <span class=n>CimInstance</span><span class=c>#DateTime LocalDateTime {get;}                                                                         </span>
+<span class=n>Locale</span>                                    <span class=n>Property</span>     <span class=n>string</span> <span class=n>Locale</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                              
+<span class=n>Manufacturer</span>                              <span class=n>Property</span>     <span class=n>string</span> <span class=n>Manufacturer</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                        
+<span class=n>MaxNumberOfProcesses</span>                      <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>MaxNumberOfProcesses</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                
+<span class=n>MaxProcessMemorySize</span>                      <span class=n>Property</span>     <span class=n>uint64</span> <span class=n>MaxProcessMemorySize</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                
+<span class=n>MUILanguages</span>                              <span class=n>Property</span>     <span class=n>string</span><span class=p>[]</span> <span class=n>MUILanguages</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                      
+<span class=n>Name</span>                                      <span class=n>Property</span>     <span class=n>string</span> <span class=n>Name</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                                
+<span class=n>NumberOfLicensedUsers</span>                     <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>NumberOfLicensedUsers</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                               
+<span class=n>NumberOfProcesses</span>                         <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>NumberOfProcesses</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                   
+<span class=n>NumberOfUsers</span>                             <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>NumberOfUsers</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                       
+<span class=n>OperatingSystemSKU</span>                        <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>OperatingSystemSKU</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                  
+<span class=n>Organization</span>                              <span class=n>Property</span>     <span class=n>string</span> <span class=n>Organization</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                        
+<span class=n>OSArchitecture</span>                            <span class=n>Property</span>     <span class=n>string</span> <span class=n>OSArchitecture</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                      
+<span class=n>OSLanguage</span>                                <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>OSLanguage</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                          
+<span class=n>OSProductSuite</span>                            <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>OSProductSuite</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                      
+<span class=n>OSType</span>                                    <span class=n>Property</span>     <span class=n>uint16</span> <span class=n>OSType</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                              
+<span class=n>OtherTypeDescription</span>                      <span class=n>Property</span>     <span class=n>string</span> <span class=n>OtherTypeDescription</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                
+<span class=n>PAEEnabled</span>                                <span class=n>Property</span>     <span class=n>bool</span> <span class=n>PAEEnabled</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                            
+<span class=n>PlusProductID</span>                             <span class=n>Property</span>     <span class=n>string</span> <span class=n>PlusProductID</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                       
+<span class=n>PlusVersionNumber</span>                         <span class=n>Property</span>     <span class=n>string</span> <span class=n>PlusVersionNumber</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                   
+<span class=n>PortableOperatingSystem</span>                   <span class=n>Property</span>     <span class=n>bool</span> <span class=n>PortableOperatingSystem</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                               
+<span class=n>Primary</span>                                   <span class=n>Property</span>     <span class=n>bool</span> <span class=n>Primary</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                               
+<span class=n>ProductType</span>                               <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>ProductType</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                         
+<span class=n>PSComputerName</span>                            <span class=n>Property</span>     <span class=n>string</span> <span class=n>PSComputerName</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                      
+<span class=n>RegisteredUser</span>                            <span class=n>Property</span>     <span class=n>string</span> <span class=n>RegisteredUser</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                      
+<span class=n>SerialNumber</span>                              <span class=n>Property</span>     <span class=n>string</span> <span class=n>SerialNumber</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                        
+<span class=n>ServicePackMajorVersion</span>                   <span class=n>Property</span>     <span class=n>uint16</span> <span class=n>ServicePackMajorVersion</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                             
+<span class=n>ServicePackMinorVersion</span>                   <span class=n>Property</span>     <span class=n>uint16</span> <span class=n>ServicePackMinorVersion</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                             
+<span class=n>SizeStoredInPagingFiles</span>                   <span class=n>Property</span>     <span class=n>uint64</span> <span class=n>SizeStoredInPagingFiles</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                             
+<span class=n>Status</span>                                    <span class=n>Property</span>     <span class=n>string</span> <span class=n>Status</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                              
+<span class=n>SuiteMask</span>                                 <span class=n>Property</span>     <span class=n>uint32</span> <span class=n>SuiteMask</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                           
+<span class=n>SystemDevice</span>                              <span class=n>Property</span>     <span class=n>string</span> <span class=n>SystemDevice</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                        
+<span class=n>SystemDirectory</span>                           <span class=n>Property</span>     <span class=n>string</span> <span class=n>SystemDirectory</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                     
+<span class=n>SystemDrive</span>                               <span class=n>Property</span>     <span class=n>string</span> <span class=n>SystemDrive</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                         
+<span class=n>TotalSwapSpaceSize</span>                        <span class=n>Property</span>     <span class=n>uint64</span> <span class=n>TotalSwapSpaceSize</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                  
+<span class=n>TotalVirtualMemorySize</span>                    <span class=n>Property</span>     <span class=n>uint64</span> <span class=n>TotalVirtualMemorySize</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                              
+<span class=n>TotalVisibleMemorySize</span>                    <span class=n>Property</span>     <span class=n>uint64</span> <span class=n>TotalVisibleMemorySize</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                              
+<span class=n>Version</span>                                   <span class=n>Property</span>     <span class=n>string</span> <span class=n>Version</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                             
+<span class=n>WindowsDirectory</span>                          <span class=n>Property</span>     <span class=n>string</span> <span class=n>WindowsDirectory</span> <span class=p>{</span><span class=n>get</span><span class=p>;}</span>                                                                                    
+<span class=n>FREE</span>                                      <span class=n>PropertySet</span>  <span class=n>FREE</span> <span class=p>{</span><span class=n>FreePhysicalMemory</span><span class=p>,</span> <span class=n>FreeSpaceInPagingFiles</span><span class=p>,</span> <span class=n>FreeVirtualMemory</span><span class=p>,</span> <span class=n>Name</span><span class=p>}</span>                                        
+<span class=n>PSStatus</span>                                  <span class=n>PropertySet</span>  <span class=n>PSStatus</span> <span class=p>{</span><span class=n>Status</span><span class=p>,</span> <span class=n>Name</span><span class=p>}</span>                                                                                           
+</code></pre></div></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2021-05-12</span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md></div>
+<div class=post-info-share>
+<span></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/powershell/>Powershell</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/2021-05-07-search-gpo/ class=prev rel=prev title="Search a specific entry over all GPO"><i class="fas fa-angle-left fa-fw"></i>Search a specific entry over all GPO</a>
+<a href=/posts/2021-05-25-exchangeonline-mailadressen/ class=next rel=next title="ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen">ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank></a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

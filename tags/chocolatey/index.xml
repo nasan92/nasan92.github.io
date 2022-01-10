@@ -1,0 +1,7 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Chocolatey - Tag - Nasan</title><link>http://nasan.ch/tags/chocolatey/</link><description>Chocolatey - Tag - Nasan</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://nasan.ch/tags/chocolatey/" rel="self" type="application/rss+xml"/><item><title>useful chocolatey commands</title><link>http://nasan.ch/posts/2021-08-17-useful-chocolatey-commands/</link><pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate><author>Author</author><guid>http://nasan.ch/posts/2021-08-17-useful-chocolatey-commands/</guid><description>Useful Chocolatey commands
+Useful Chocolatey commands search a package: choco search appname
+Install a package choco install appname
+list all installed packages choco list -localonly
+list specific package choco list appname
+upgrade specific package: choco upgrade appname
+upgrade all packages choco upgrade all</description></item></channel></rss>
