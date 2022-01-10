@@ -148,13 +148,12 @@ New-BurntToastNotification @params
 
 ## Starting the Sandbox
 All what you now need to do is double click your .wsb file.
-![demo wsb](/images/Pasted image 20210823190926.png)
+![demo wsb](/images/Pastedimage20210823190926.png)
 
 This will start the sandbox, after a few minutes you will receive the notification that everything is complete. 
 To verify the logs you can go in the %temp% location where you can find the log file which was defined earlier.
  
-![demo wsb](/images/Pasted image 20210823190936.png)
-
+![demo wsb](/images/Pastedimage20210823190936.png)
 
 
 

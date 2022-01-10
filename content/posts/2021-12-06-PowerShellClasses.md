@@ -12,14 +12,17 @@ A MindMap about PowerShell Classes
 I'm learning PowerShell and tought it could be helpful to create a MindMap about Classes. 
 It should help to get a better overview over the topic. 
 
-<a href="https://nasan.ch/images/PowerShellClasses.png">
-         <img alt="PowerShellClasses.png" src="/images/PowerShellClasses.png">
-      </a>
+<a href="/images/PowerShellClasses.png">
+ <img alt="PowerShellClasses.png" src="/images/PowerShellClasses.png">
+</a>
 
+second
 
+![Powershell Classes](/images/PowerShellClasses.png)
 
 ## Further Links
 To learn more about classes follow those links:
 
 [About_Classes](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_classes?view=powershell-7.2#inheritance-in-powershell-classes) <br />
 [PowerShell Classes - Getting Started](https://adamtheautomator.com/powershell-classes/)
+
