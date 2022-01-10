@@ -1,6 +1,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Powershell - Tag - Nasan</title><link>https://nasan92.github.io/tags/powershell/</link><description>Powershell - Tag - Nasan</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nasan92.github.io/tags/powershell/" rel="self" type="application/rss+xml"/><item><title>PowerShell Classes Mindmap</title><link>https://nasan92.github.io/posts/2021-12-06-powershellclasses/</link><pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate><author>Author</author><guid>https://nasan92.github.io/posts/2021-12-06-powershellclasses/</guid><description>A MindMap about PowerShell Classes
 PowerShell Classes MindMap I&amp;rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes. It should help to get a better overview over the topic.
-second
+PreviewPowershell Classes
+" Preview
 Further Links To learn more about classes follow those links:
 About_Classes PowerShell Classes - Getting Started</description></item><item><title>Windows Sandbox Customization with DSC</title><link>https://nasan92.github.io/posts/2021-08-23-windows-sandbox-customization-dsc/</link><pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate><author>Author</author><guid>https://nasan92.github.io/posts/2021-08-23-windows-sandbox-customization-dsc/</guid><description>Demo Windows Sandbox Customization with Powershell DSC
 In this Demo I&amp;rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.
