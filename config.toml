@@ -3,7 +3,7 @@ baseURL = "https://nasan92.github.io"
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
-title = "Nasan"
+title = "NASAN"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -64,11 +64,11 @@ theme = "LoveIt"
     # Gravatar Email for preferred avatar in home page
     gravatarEmail = ""
     # URL of avatar shown in home page
-    avatarURL = "/images/nasansmall.jpg"
+    avatarURL = "/images/nasan-avatar.jpeg"
     # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
     title = ""
     # subtitle shown in home page
-    subtitle = "This is My New Hugo Site"
+    subtitle = "Welcome to my Blog, maybe you will find something helpful"
     # whether to use typeit animation for subtitle
     typeit = true
     # whether to show social links
