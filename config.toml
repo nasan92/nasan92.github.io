@@ -188,14 +188,14 @@ theme = "LoveIt"
     url = "https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw"
     title = ""
     weight = 4
-#  [[menu.main]]
-#     identifier = "MindMaps"
-#     pre = ""
-#     post = ""
-#     name = "MindMaps"
-#     url = "/MindMaps/"
-#     title = ""
-#     weight = 5
+ [[menu.main]]
+    identifier = "MindMaps"
+    pre = ""
+    post = ""
+    name = "MindMaps"
+    url = "/MindMaps/mindmaps"
+    title = ""
+    weight = 5
 #  [[menu.main]]
 #     identifier = "MindMaps2"
 #     pre = ""
