@@ -1,7 +1,8 @@
 ---
 title: "Atomic Habits"
+author: Nathanael Santschi
 date: 2022-02-17T21:19:23+01:00
-draft: true
+draft: false
 tags:
   - MindMap
   - Books
