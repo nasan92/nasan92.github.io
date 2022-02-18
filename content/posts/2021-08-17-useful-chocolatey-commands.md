@@ -1,5 +1,6 @@
 ---
 title: 'useful chocolatey commands '
+author: Nathanael Santschi
 date: 2021-08-17
 permalink: /posts/2021-08-17/08/useful-chocolatey-commands/
 tags:

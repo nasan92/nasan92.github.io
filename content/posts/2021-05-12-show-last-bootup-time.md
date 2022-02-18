@@ -1,5 +1,6 @@
 ---
 title: 'How to show last bootuptime of Computers with Powershell'
+author: Nathanael Santschi
 date: 2021-05-12
 tags:
   - Powershell

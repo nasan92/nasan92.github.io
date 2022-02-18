@@ -1,5 +1,6 @@
 ---
 title: 'Run a gpresult on a remote computer'
+author: Nathanael Santschi
 date: 2021-05-06
 tags:
   - Powershell

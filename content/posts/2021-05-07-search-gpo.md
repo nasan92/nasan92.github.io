@@ -1,5 +1,6 @@
 ---
 title: 'Search a specific entry over all GPO'
+author: Nathanael Santschi
 date: 2021-05-07
 tags:
   - Powershell

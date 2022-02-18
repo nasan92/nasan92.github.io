@@ -1,5 +1,6 @@
 ---
 title: 'Windows Sandbox Customization with DSC '
+author: Nathanael Santschi
 date: 2021-08-23
 permalink: /posts/2021-08-23/08/Windows-Sandbox-Customization-DSC/
 tags:
