@@ -1,5 +1,5 @@
 ---
-title: "Atomic Habits"
+title: "MindMap Atomic Habits - James Clear"
 author: Nathanael Santschi
 date: 2022-02-17T21:19:23+01:00
 draft: false
