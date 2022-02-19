@@ -6,7 +6,7 @@ draft: false
 tags:
   - MindMap
   - Books
-category:
+categories:
   - Books
 ---
 ## Eden Culture von Johannes Hartl
