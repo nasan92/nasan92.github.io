@@ -1,11 +1,12 @@
 ---
-title: 'PowerShell Classes Mindmap '
+title: 'MindMap PowerShell Classes'
 author: Nathanael Santschi
 date: 2021-12-06
 permalink: /posts/2021-12-06/12/PowerShell-Classes-MindMap/
 tags:
   - Classes
   - Powershell
+  - MindMap
 ---
 A MindMap about PowerShell Classes
 
