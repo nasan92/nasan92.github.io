@@ -1,5 +1,5 @@
 ---
-title: "Eden Culture"
+title: "MindMap Eden Culture - Johannes Hartl"
 author: Nathanael Santschi
 date: 2022-02-18T06:19:23+01:00
 draft: false
