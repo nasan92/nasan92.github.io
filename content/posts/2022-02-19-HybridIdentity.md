@@ -13,6 +13,7 @@ tags:
 
 You can find the official documentation from Microsoft to that topic here: [Microsoft Docs - Hybrid Identity](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/) 
 
+In this MindMap you can see the different Authentication and Single Sign On Methods which are available. 
 ![hybrididentity-AzureAD-Mindmap](/images/hybrididentity-AzureAD-Mindmap.png "Preview")
 
 
