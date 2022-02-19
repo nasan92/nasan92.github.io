@@ -5,6 +5,8 @@ date: 2022-02-17T21:19:23+01:00
 draft: false
 tags:
   - MindMap
+  - Book
+categories:
   - Books
 ---
 ## Atomic Habits - Die 1% Methode
