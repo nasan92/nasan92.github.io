@@ -81,6 +81,13 @@ Cancel
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=Posts><img class=lazyload src=/svg/loading.min.svg data-src=/images/nasan-avatar.jpeg data-srcset="/images/nasan-avatar.jpeg, /images/nasan-avatar.jpeg 1.5x, /images/nasan-avatar.jpeg 2x" data-sizes=auto alt=/images/nasan-avatar.jpeg title=/images/nasan-avatar.jpeg></a></div><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/nasan92 title=GitHub target=_blank rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://twitter.com/@nasantschi title=Twitter target=_blank rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/2022-02-17-atomic-habits/>MindMap Atomic Habits - James Clear</a>
+</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-02-17>2022-02-17</time></span></div><div class=content>Atomic Habits - Die 1% Methode In diesem MindMap habe ich versucht die wichtigsten Ansätze des Buches Atomic Habits - oder auf deutsch &ldquo;Die 1% Methode&rdquo; zusammenzufassen. Ich kann das Buch sehr empfehlen: Atomic Habits - Die 1% Methode:
+Previewatomichabits
+" Preview</div><div class=post-footer>
+<a href=/posts/2022-02-17-atomic-habits/>Read More</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/mindmap/>MindMap</a>,&nbsp;<a href=/tags/books/>Books</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/2021-12-06-powershellclasses/>MindMap PowerShell Classes</a>
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class=post-publish>published on <time datetime=2021-12-06>2021-12-06</time></span></div><div class=content>A MindMap about PowerShell Classes
 PowerShell Classes MindMap I&rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes. It should help to get a better overview over the topic.
@@ -126,15 +133,6 @@ Get-CimInstance -ComputerName 'DC01' -ClassName win32_operatingsystem | select c
 # First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c.</div><div class=post-footer>
 <a href=/posts/2021-05-12-show-last-bootup-time/>Read More</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/powershell/>Powershell</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/2021-05-07-search-gpo/>Search a specific entry over all GPO</a>
-</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class=post-publish>published on <time datetime=2021-05-07>2021-05-07</time></span></div><div class=content>A way to search a specific setting over all GPOs
-Generate a GPO Report over your Domain You can generate a GPO Report over your Domain either in a XML or HTML file and then search through that file.
-To generate a XML use this command:
-Get-GPOReport -All -Domain "domain.com" -Server "DC01" -ReportType XML -Path "C:\GPOReports\GPOReportsAll.xml" To generate a HTML file you can use this command:
-Get-GPOReport -All -Domain "domain.com" -Server "DC01" -ReportType HTML -Path "C:\GPOReports\GPOReportsAll.</div><div class=post-footer>
-<a href=/posts/2021-05-07-search-gpo/>Read More</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/powershell/>Powershell</a>,&nbsp;<a href=/tags/gpo/>GPO</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
