@@ -1,5 +1,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>NASAN</title><link>https://nasan92.github.io/</link><description>NASAN</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 21 Feb 2022 13:39:21 +0100</lastBuildDate><atom:link href="https://nasan92.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Monitor MindMap</title><link>https://nasan92.github.io/posts/2022-02-21-azuremonitor/</link><pubDate>Mon, 21 Feb 2022 13:39:21 +0100</pubDate><author>Author</author><guid>https://nasan92.github.io/posts/2022-02-21-azuremonitor/</guid><description>I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I&amp;rsquo;ve created it based on the Azure Monitor Documentation. Somethings may be outdated today -&amp;gt; you can find the Microsoft Docs to that topic here: Azure Monitor
 PreviewAzur Monitor MindMap
+" Preview</description></item><item><title>MLOps explained - MindMap</title><link>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</link><pubDate>Mon, 21 Feb 2022 13:39:21 +0100</pubDate><author>Author</author><guid>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</guid><description>This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
+PreviewMLOps Explained MindMap
 " Preview</description></item><item><title>Microsoft Lizenzierung MindMap und Linksammlung</title><link>https://nasan92.github.io/posts/2022-02-19-microsoftlizenzierung/</link><pubDate>Sat, 19 Feb 2022 15:35:13 +0100</pubDate><author>Author</author><guid>https://nasan92.github.io/posts/2022-02-19-microsoftlizenzierung/</guid><description>Um eine gewisse Übersicht über die ganze Microsoft Lizenzierung zu erhalten, habe ich folgendes MindMap erstellt: PreviewMicrosoft Lizenzierung
 " Preview
 Das MindMap wurde anhand des Microsoft Webinars &amp;ldquo;Grundlagen der Microsoft Lizenzierung&amp;rdquo; erstellt: https://www.youtube.com/watch?v=pM7g56pIgJI
@@ -14,9 +16,4 @@ In this MindMap you can see the different Authentication and Single Sign On Meth
 Previewgpomindmap
 " Preview</description></item><item><title>MindMap Atomic Habits - James Clear</title><link>https://nasan92.github.io/posts/2022-02-17-atomic-habits/</link><pubDate>Thu, 17 Feb 2022 21:19:23 +0100</pubDate><author>Author</author><guid>https://nasan92.github.io/posts/2022-02-17-atomic-habits/</guid><description>Atomic Habits - Die 1% Methode In diesem MindMap habe ich versucht die wichtigsten Ansätze des Buches Atomic Habits - oder auf deutsch &amp;ldquo;Die 1% Methode&amp;rdquo; zusammenzufassen. Ich kann das Buch sehr empfehlen: Atomic Habits - Die 1% Methode:
 Previewatomichabits
-" Preview</description></item><item><title>MindMap PowerShell Classes</title><link>https://nasan92.github.io/posts/2021-12-06-powershellclasses/</link><pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate><author>Author</author><guid>https://nasan92.github.io/posts/2021-12-06-powershellclasses/</guid><description>A MindMap about PowerShell Classes
-PowerShell Classes MindMap I&amp;rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes. It should help to get a better overview over the topic.
-PreviewPowershell Classes
-" Preview
-Further Links To learn more about classes follow those links:
-About_Classes PowerShell Classes - Getting Started</description></item></channel></rss>
+" Preview</description></item></channel></rss>
