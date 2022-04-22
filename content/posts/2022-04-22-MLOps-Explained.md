@@ -1,7 +1,7 @@
 ---
 title: "MLOps explained - MindMap"
 author: Nathanael Santschi
-date: 2022-02-21T13:39:21+01:00
+date: 2022-04-22T06:45:45+01:00
 draft: false
 tags:
   - MindMap
