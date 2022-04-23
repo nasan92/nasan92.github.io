@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Machine Learning- MindMap"
 author: Nathanael Santschi
-date: 2022-04-23T13:39:21+01:00
+date: 2022-04-22T13:39:21+01:00
 draft: false
 tags:
   - MindMap
