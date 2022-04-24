@@ -5,9 +5,9 @@ date: 2022-04-22T13:39:21+01:00
 draft: false
 tags:
   - MindMap
-  - MachineLearning
+  - Docker
 categories:
-  - MachineLearning
+  - Docker
 ---
 
 Docker Architecture Overview:   
