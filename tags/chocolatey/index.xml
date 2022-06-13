@@ -2,6 +2,5 @@
 Useful Chocolatey commands search a package: choco search appname
 Install a package choco install appname
 list all installed packages choco list -localonly
-list specific package choco list appname
-upgrade specific package: choco upgrade appname
+list specific package choco list appname upgrade specific package: choco upgrade appname
 upgrade all packages choco upgrade all</description></item></channel></rss>
