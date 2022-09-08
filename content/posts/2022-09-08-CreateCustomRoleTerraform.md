@@ -1,5 +1,5 @@
 ---
-title: "Azure - Create a Custome RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform"
+title: "Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform"
 author: Nathanael Santschi
 date: 2022-09-08T10:51:21+01:00
 draft: false
