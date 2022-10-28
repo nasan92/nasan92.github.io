@@ -1,5 +1,5 @@
 ---
-title: "Stop Backup for multiple SQL on Azure VM Databases with Powershell"
+title: "Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell"
 author: Nathanael Santschi
 date: 2022-10-27T10:51:21+01:00
 draft: false
@@ -15,10 +15,10 @@ categories:
 
 link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
 
-It had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the "old SQL Server" offline and I got a lot of Backup Alerts.
+It had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the "old SQL Server" offline and I got a lot of Azure Backup Alerts.
 Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job. 
 
-
+## Parameters
 First we define parameters
 - resource group of **Recovery Service Vault**
 - **Recovery Service Vault Name**
@@ -32,7 +32,7 @@ $vaultname = "RecoveryServicesVaultName"
 # Stop Backup on all DBs except those:
 $dbsToKeep = "db1tokeep","dp2tokeep","master","model","msdb","tempdb"
 ```
-
+## Retrieve Recovery Service Vault and all backuped SQL Databases
 Then we Get the Recoveryservice vault to be able to query all backuped SQL Items from the vault:
 
 ```powershell
@@ -40,7 +40,7 @@ $vault = Get-AzRecoveryServicesVault -ResourceGroupName $rsg -Name
 
 $allsql = Get-AzRecoveryServicesBackupItem -BackupManagementType AzureWorkload -WorkloadType MSSQL -VaultId $vault.ID `
 ```
-
+## Get just the Databases for which we want to stop the backup
 Now we have all SQL Databases which are backuped in the Array **$allsql**
 To get all Databases into an Array which names are not in the **$dbsToKeep** Array I do the following:
 1. Create a new empty Array $dbsToStopBackup in which I will later store all DB items which do not match the names from the $dbsToKeep Array
@@ -66,6 +66,7 @@ foreach($db in $allsql){
 
 It makes sense to verify if all the correct Dbs are now in the **$dbsToStopBackup** Array. 
 
+## Stop / Disable the backup for those databases
 And last but not least we run a loop which disables the backup for all of those databases: 
 
 ```powershell
@@ -76,8 +77,7 @@ foreach($db in $dbsToStopBackup){
     Disable-AzRecoveryServicesBackupProtection -Item $bkpItem -VaultId $vault.ID -Force
 }
 ```
-
-the full "script": 
+## the full "script": 
 
 ````powershell
 # PARAMETER
