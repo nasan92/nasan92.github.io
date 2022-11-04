@@ -15,14 +15,14 @@ categories:
 
 link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
 
-It had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the "old SQL Server" offline and I got a lot of Azure Backup Alerts.
+I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the "old SQL Server" offline and I got a lot of Azure Backup Alerts.
 Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job. 
 
 ## Parameters
 First we define parameters
 - resource group of **Recovery Service Vault**
 - **Recovery Service Vault Name**
-- because I had a lot more DBs to stop the Backup I created a variable with Database Names to keep (not stop backup on those)
+- because I had a lot more DBs to stop the Backup than to keep it, I created a variable with Database Names to keep (not stop backup on those)
 
 ```powershell
 # PARAMETER
