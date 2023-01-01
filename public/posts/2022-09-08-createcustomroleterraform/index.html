@@ -12,7 +12,6 @@ So what I want to do in this case is creating a custom role which only allows to
 <meta property="og:url" content="https://nasan92.github.io/posts/2022-09-08-createcustomroleterraform/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-08T10:51:21+01:00" />
 <meta property="article:modified_time" content="2022-09-08T10:51:21+01:00" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform"/>
 <meta name="twitter:description" content="Yes&hellip; its annoying there is no built in role to only allow restarting of Azure Virtual Machines&hellip; The Virtual Machine Contributor Role allows to much. With this role you are able to destory and create VMs..
@@ -123,34 +122,34 @@ So what I want to do in this case is creating a custom role which only allows to
 </nav></div>
             </div><div class="content" id="content"><p>Yes&hellip; its annoying there is <strong>no built in role</strong> to only allow restarting of Azure Virtual Machines&hellip;
 The <strong>Virtual Machine Contributor Role</strong> allows to much. With this role you are able to destory and create VMs..</p>
-<p>So what I want to do in this case is creating a <strong>custom role which only allows to start / stop / restart Virtual Machines.</strong> 
+<p>So what I want to do in this case is creating a <strong>custom role which only allows to start / stop / restart Virtual Machines.</strong>
 And I want to do that with <strong>terraform</strong> because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>You need to have your basic terraform config ready (provider setup etc.)</li>
 </ul>
 <h2 id="creating-the-role-definition">Creating the Role Definition</h2>
-<p>First we need to create the <strong>Role Definition</strong>. Because I want to create the role on subscription level, I first need to get id from the subscription. 
+<p>First we need to create the <strong>Role Definition</strong>. Because I want to create the role on subscription level, I first need to get id from the subscription.
 So what I do is creating a terraform <strong>data source</strong> with the subscription id.
 After that I can create the <strong>role definitions</strong> with the permissions which I need and assign that role to the scope of the subscription:</p>
-<pre tabindex="0"><code>data &quot;azurerm_subscription&quot; &quot;primary&quot; {
+<pre tabindex="0"><code>data &#34;azurerm_subscription&#34; &#34;primary&#34; {
     provider     = azurerm.platform
-    subscription_id  = &quot;346b5d52-b6b0-478c-87d4-b0c6f75adae2&quot;
+    subscription_id  = &#34;346b5d52-b6b0-478c-87d4-b0c6f75adae2&#34;
 
 }
 
-resource &quot;azurerm_role_definition&quot; &quot;VM_Operator&quot; {
+resource &#34;azurerm_role_definition&#34; &#34;VM_Operator&#34; {
   provider     = azurerm.platform
-  name        = &quot;Virtual Machine Operator&quot;
+  name        = &#34;Virtual Machine Operator&#34;
   scope       = data.azurerm_subscription.primary.id
-  description = &quot;Start / Stop virtual machines&quot;
+  description = &#34;Start / Stop virtual machines&#34;
 
   permissions {
     actions     = [
-        &quot;Microsoft.Compute/*/read&quot;,
-        &quot;Microsoft.Compute/virtualMachines/start/action&quot;,
-        &quot;Microsoft.Compute/virtualMachines/restart/action&quot;,
-        &quot;Microsoft.Compute/virtualMachines/deallocate/action&quot;
+        &#34;Microsoft.Compute/*/read&#34;,
+        &#34;Microsoft.Compute/virtualMachines/start/action&#34;,
+        &#34;Microsoft.Compute/virtualMachines/restart/action&#34;,
+        &#34;Microsoft.Compute/virtualMachines/deallocate/action&#34;
     ]
     not_actions = []
   }
@@ -160,16 +159,16 @@ resource &quot;azurerm_role_definition&quot; &quot;VM_Operator&quot; {
   ]
 }
 </code></pre><h2 id="creating-the-role-assignment">Creating the Role Assignment</h2>
-<p>To assign our newly created role, we need a <strong>Azure AD Group</strong> to which we can assign it. 
+<p>To assign our newly created role, we need a <strong>Azure AD Group</strong> to which we can assign it.
 You can either create a Azure AD Group with terraform using the Azure AD provider or you can retrieve the data of an existing azure AD Group with the terraform data source.</p>
 <p>In this example I create first a <strong>group</strong>:</p>
-<pre tabindex="0"><code>resource &quot;azuread_group&quot; &quot;sub_vm_operator&quot; {
+<pre tabindex="0"><code>resource &#34;azuread_group&#34; &#34;sub_vm_operator&#34; {
   provider         = azuread.ad
   security_enabled = true
-  display_name     = &quot;my-amazing-vm-operator-group&quot;
+  display_name     = &#34;my-amazing-vm-operator-group&#34;
 }
 </code></pre><p>and in a second step I create the <strong>role assignment</strong>:</p>
-<pre tabindex="0"><code>resource &quot;azurerm_role_assignment&quot; &quot;sub_vm_operator&quot; {
+<pre tabindex="0"><code>resource &#34;azurerm_role_assignment&#34; &#34;sub_vm_operator&#34; {
   provider           = azurerm.platform
   scope              = data.azurerm_subscription.primary.id
   role_definition_id = azurerm_role_definition.vm_operator.role_definition_resource_id
@@ -208,7 +207,7 @@ You can either create a Azure AD Group with terraform using the Azure AD provide
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

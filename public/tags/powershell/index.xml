@@ -17,8 +17,7 @@ I had a case where I did need to migrate a lot of databases from one SQL Server 
     <pubDate>Sat, 19 Feb 2022 08:05:41 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://nasan92.github.io/posts/2022-02-19-powershellmodules/</guid>
-    <description><![CDATA[This MindMap tries to give an Overview over the book Building Powershell Modules - Brandon Olin PreviewPowerShellModules
-"Preview]]></description>
+    <description><![CDATA[This MindMap tries to give an Overview over the book Building Powershell Modules - Brandon Olin Preview]]></description>
 </item><item>
     <title>MindMap PowerShell Classes</title>
     <link>https://nasan92.github.io/posts/2021-12-06-powershellclasses/</link>
@@ -27,9 +26,7 @@ I had a case where I did need to migrate a lot of databases from one SQL Server 
     <guid>https://nasan92.github.io/posts/2021-12-06-powershellclasses/</guid>
     <description><![CDATA[A MindMap about PowerShell Classes
 PowerShell Classes MindMap I&rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes. It should help to get a better overview over the topic.
-PreviewPowershell Classes
-"Preview
-Further Links To learn more about classes follow those links:
+PreviewFurther Links To learn more about classes follow those links:
 About_Classes PowerShell Classes - Getting Started]]></description>
 </item><item>
     <title>Windows Sandbox Customization with DSC </title>
@@ -69,7 +66,7 @@ Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportTy
     <guid>https://nasan92.github.io/posts/2021-05-07-gpresult-remote/</guid>
     <description><![CDATA[How to run a gpresult on a remote computer
 Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
- Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command  here comes the new highlight:
-199 200  Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39;   Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.]]></description>
+Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command here comes the new highlight:
+199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.]]></description>
 </item></channel>
 </rss>

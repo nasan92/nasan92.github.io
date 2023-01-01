@@ -10,8 +10,7 @@
     <author>Author</author>
     <guid>https://nasan92.github.io/posts/2022-02-17-gpo/</guid>
     <description><![CDATA[Group Policy Object (GPO) in Active Directory environment I can you recommend this blog GPO From zero to hero In the following MindMap I&rsquo;ve tried to create a little Overview of GPO in Active Directory Environments
-Previewgpomindmap
-"Preview]]></description>
+Preview]]></description>
 </item><item>
     <title>Search a specific entry over all GPO</title>
     <link>https://nasan92.github.io/posts/2021-05-07-search-gpo/</link>
@@ -31,7 +30,7 @@ Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportTy
     <guid>https://nasan92.github.io/posts/2021-05-07-gpresult-remote/</guid>
     <description><![CDATA[How to run a gpresult on a remote computer
 Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
- Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command  here comes the new highlight:
-199 200  Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39;   Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.]]></description>
+Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command here comes the new highlight:
+199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.]]></description>
 </item></channel>
 </rss>
