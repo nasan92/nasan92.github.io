@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen - NASAN</title><meta name="Description" content=""><meta property="og:title" content="ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen" />
+<meta property="og:description" content="ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen&#39;
+Exchange Online: Mailadressen anzeigen, hinzufügen, entfernen Voraussetzungen Das ExchangeOnlineManagment Module muss installiert, importiert sein und man muss sich mit der entsprechenden Exchange Online Umgebung verbinden:
+ExchangeOnlineManagement Module in Powershell installieren: Install-Module -Name ExchangeOnlineManagement
+Das Module importieren: Import-Module ExchangeOnlineManagement
+Mit der Exchange Online Environment verbinden (run this command as admin, then login) Connect-ExchangeOnline -UserPrincipalName admin@customerdomain.onmicrosoft.com
+Für die Befehle im lokalen AD, muss das ActiveDirectory Powershell Modul geladen sein: https://theitbros." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nasan92.github.io/posts/2021-05-25-exchangeonline-mailadressen/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-25T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen"/>
+<meta name="twitter:description" content="ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen&#39;
+Exchange Online: Mailadressen anzeigen, hinzufügen, entfernen Voraussetzungen Das ExchangeOnlineManagment Module muss installiert, importiert sein und man muss sich mit der entsprechenden Exchange Online Umgebung verbinden:
+ExchangeOnlineManagement Module in Powershell installieren: Install-Module -Name ExchangeOnlineManagement
+Das Module importieren: Import-Module ExchangeOnlineManagement
+Mit der Exchange Online Environment verbinden (run this command as admin, then login) Connect-ExchangeOnline -UserPrincipalName admin@customerdomain.onmicrosoft.com
+Für die Befehle im lokalen AD, muss das ActiveDirectory Powershell Modul geladen sein: https://theitbros."/>
+<meta name="application-name" content="NASAN">
+<meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nasan92.github.io/posts/2021-05-25-exchangeonline-mailadressen/" /><link rel="prev" href="https://nasan92.github.io/posts/2021-05-12-show-last-bootup-time/" /><link rel="next" href="https://nasan92.github.io/posts/2021-08-17-useful-chocolatey-commands/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nasan92.github.io\/posts\/2021-05-25-exchangeonline-mailadressen\/"
+        },"genre": "posts","keywords": "ExchangeOnline, Mailadressen","wordcount":  242 ,
+        "url": "https:\/\/nasan92.github.io\/posts\/2021-05-25-exchangeonline-mailadressen\/","datePublished": "2021-05-25T00:00:00+00:00","dateModified": "2021-05-25T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Nathanael Santschi"},"author": {
+                "@type": "Person",
+                "name": "Nathanael Santschi"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NASAN">NASAN</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" rel="noopener noreffer" target="_blank"> Youtube </a><a class="menu-item" href="/mindmaps/mindmaps"> MindMaps </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NASAN">NASAN</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" title="" rel="noopener noreffer" target="_blank">Youtube</a><a class="menu-item" href="/mindmaps/mindmaps" title="">MindMaps</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-25">2021-05-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;242 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+    <li><a href="#hinweise">Hinweise</a></li>
+    <li><a href="#auslesen-der-mailaddressen">Auslesen der Mailaddressen</a></li>
+    <li><a href="#mailadressen-hinzufügen--entfernen">Mailadressen hinzufügen / entfernen</a>
+      <ul>
+        <li><a href="#szenario-onprem-ad-mit-synch">Szenario Onprem AD mit Synch</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen'</p>
+<h1 id="exchange-online-mailadressen-anzeigen-hinzufügen-entfernen">Exchange Online: Mailadressen anzeigen, hinzufügen, entfernen</h1>
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+<p>Das ExchangeOnlineManagment Module muss installiert, importiert sein und man muss sich mit der entsprechenden Exchange Online Umgebung verbinden:</p>
+<p>ExchangeOnlineManagement Module in Powershell installieren:
+<code>Install-Module -Name ExchangeOnlineManagement</code></p>
+<p>Das Module importieren:
+<code>Import-Module ExchangeOnlineManagement</code></p>
+<p>Mit der Exchange Online Environment verbinden (run this command as admin, then login)
+<code>Connect-ExchangeOnline -UserPrincipalName admin@customerdomain.onmicrosoft.com</code></p>
+<p>Für die Befehle im lokalen AD, muss das ActiveDirectory Powershell Modul geladen sein: <a href="https://theitbros.com/install-and-import-powershell-active-directory-module/" target="_blank" rel="noopener noreffer">https://theitbros.com/install-and-import-powershell-active-directory-module/</a></p>
+<h2 id="hinweise">Hinweise</h2>
+<p>Die Verwaltung von Mailadressen auf Postfächern verhält sich anders in einem Setup mit einem on-prem active directory und eingerichtetem AD Connect, als wenn nur rein Exchange Online User bestehen.</p>
+<h2 id="auslesen-der-mailaddressen">Auslesen der Mailaddressen</h2>
+<p>Mit folgendem Befehl werden alle Mailadressen der Mailbox test-unico ausgelesen und angezeigt:</p>
+<p><code>Get-Mailbox -Identity test-unico | select EmailAddresses | fl</code></p>
+<h2 id="mailadressen-hinzufügen--entfernen">Mailadressen hinzufügen / entfernen</h2>
+<p>Es ist theoretisch auch möglich so Mailadressen zu hinzufügen, aber ACHTUNG: die folgenden Befehle funktionieren nur in einem reinen Exchange Online Szenario.</p>
+<p>``Set-Mailbox &ldquo;Dan Jump&rdquo; -EmailAddresses @{add=&ldquo;<a href="mailto:dan.jump@northamerica.contoso.com" rel="">dan.jump@northamerica.contoso.com</a>&rdquo;}</p>
+<p>Set-Mailbox &ldquo;Dan Jump&rdquo; -EmailAddresses @{add=&ldquo;<a href="mailto:dan.jump@northamerica.contoso.com" rel="">dan.jump@northamerica.contoso.com</a>&rdquo;,&ldquo;<a href="mailto:danj@tailspintoys.com" rel="">danj@tailspintoys.com</a>&rdquo;}``</p>
+<p>oder zu entfernen:</p>
+<p><code>Set-Mailbox &quot;Janet Schorr&quot; -EmailAddresses @{remove=&quot;janets@corp.contoso.com&quot;}</code></p>
+<h3 id="szenario-onprem-ad-mit-synch">Szenario Onprem AD mit Synch</h3>
+<p>Ist noch ein OnPrem AD mit einem Synch vorhanden, dann müssen Mailadressen über das AD gesetzt, entfernt werden:</p>
+<p>Die Mailadressen werden in diesem Fall dem User AD Attribut ProxyAddresses hinzugefügt oder entfernt, sobald dann der AD Synch in die Cloud durchläuft werden die Adressen dort entsprechend angepasst.</p>
+<p>Dem Benutzer paulie eine Mailadresse hinzufügen:</p>
+<p><code>Set-ADUser paulie -Add @{ProxyAddresses=&quot;SMTP:primaryaddress@tachytelic.net&quot;}</code></p>
+<p>Dem Benutzer paulie eine Mailadresse entfernen:</p>
+<p><code>Set-ADUser paulie -Remove @{ProxyAddresses=&quot;smtp:paulietest@tachytelic.net&quot;}</code></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-05-25</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/exchangeonline/">ExchangeOnline</a>,&nbsp;<a href="/tags/mailadressen/">Mailadressen</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2021-05-12-show-last-bootup-time/" class="prev" rel="prev" title="How to show last bootuptime of Computers with Powershell"><i class="fas fa-angle-left fa-fw"></i>How to show last bootuptime of Computers with Powershell</a>
+            <a href="/posts/2021-08-17-useful-chocolatey-commands/" class="next" rel="next" title="useful chocolatey commands ">useful chocolatey commands <i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
