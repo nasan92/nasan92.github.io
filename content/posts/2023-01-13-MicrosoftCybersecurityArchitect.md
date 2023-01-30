@@ -41,3 +41,6 @@ You can find some of those mind maps below:
 
 ## Design security for infrastructure
 ![Design security for infrastructure:](/images/Designsecurityforinfrastructure.svg "Preview")
+
+## Design strategy for data and applications
+![Design strategy for data and applications:](/images/Designastrategyfordataandapplications.svg "Preview")
