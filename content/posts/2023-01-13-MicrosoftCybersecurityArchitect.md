@@ -44,3 +44,7 @@ You can find some of those mind maps below:
 
 ## Design strategy for data and applications
 ![Design strategy for data and applications:](/images/Designastrategyfordataandapplications.svg "Preview")
+
+## Recommend security best practices
+## Security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks
+![Using Microsoft Cloud Security Benchmark:](/images/MCSBsecuritybestpractices.svg "Preview")
