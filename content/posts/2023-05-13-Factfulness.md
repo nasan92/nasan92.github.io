@@ -1,5 +1,5 @@
 ---
-title: "Factfulness - MindMap"
+title: "Factfulness by Hans Rosling - MindMap"
 author: Nathanael Santschi
 date: 2023-05-13T10:51:21+01:00
 draft: false
