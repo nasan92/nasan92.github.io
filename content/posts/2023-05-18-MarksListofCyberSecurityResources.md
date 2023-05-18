@@ -15,7 +15,7 @@ categories:
 
 Based on [Mark's List of cybersecurity Resources](https://www.linkedin.com/pulse/marks-list-mark-simos/), I created the following Mind Map:
 
-![Storyworthy - Mindmap:](/images/marks-list-of-cybersecurity-resources.svg "Preview")
+![Cybersecurity Resources - Mindmap:](/images/marks-list-of-cybersecurity-resources.svg "Preview")
 
 
 
