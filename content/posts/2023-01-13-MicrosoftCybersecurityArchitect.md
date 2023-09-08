@@ -7,6 +7,7 @@ tags:
   - MindMap
   - Microsoft
   - Security
+  - SC-100
 categories:
   - Azure
   - Security
