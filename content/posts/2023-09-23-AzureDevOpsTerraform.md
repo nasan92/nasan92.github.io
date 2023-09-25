@@ -1,5 +1,5 @@
 ---
-title: "Setting up Azure DevOps to deploy Azure Resources with Terraform using Workload Identity Federation"
+title: "Setting up Azure DevOps to deploy Azure Resources with Terraform using Workload Identity Federation (2 Part Series)"
 author: Nathanael Santschi
 date: 2023-09-23T06:10:21+01:00
 draft: true
@@ -24,14 +24,16 @@ To learn more about workload identity federation read the docs: [Workload identi
 - Azure DevOps Org
 - **"Customer Azure Tenant"** with Subscription
 - **"Backend Azure Tenant"** with Subscription (can be in the same tenant - in our example we use different tenants)
-- Azure Powershell Module 
+- [Azure Powershell Module](https://learn.microsoft.com/en-us/powershell/azure/)
 
 ## Overview
+
+![image](/images/terraform-overview-Demo1.png)
 
 ## Prepare "Backend Tenant" to store Terraform State File
 As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur. 
 
-### Create a Storage Account with Powershell
+### 1. Create a Storage Account with Powershell
 Run the following script in the Backend Tenant.  
 This will create:
 - ResourceGroup
@@ -65,7 +67,7 @@ New-AzStorageContainer -Name $containerName -Context (Get-AzStorageAccount -Reso
 ````
 
 
-### Create a managed identity to enable access to the state file from the pipeline via workload identity federation
+### 2. Create a managed identity to enable access to the state file from the pipeline via workload identity federation
 
 Official MS docs: [Manually configure Azure Resource Manager workload identity service connections - Azure Pipelines | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/configure-workload-identity?view=azure-devops)
 
@@ -108,7 +110,7 @@ New-AzRoleAssignment -RoleDefinitionName Contributor -Scope $TFRSGScope -ObjectI
 
 ## Prepare Azure DevOps
 
-### Install Terraform Extension
+### 3. Install Terraform Extension
 You will need this extension later in the pipeline:
 [Terraform - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks)
 ![image](/images/Pastedimage20230920075015.png)
@@ -116,10 +118,10 @@ You will need this extension later in the pipeline:
 ![image](/images/20230920075040.png)
 
 
-### Create new Azure DevOps Project
+### 4. Create new Azure DevOps Project
 ![image](/images/20230923201942.png)
 
-### Create a Service Connection to the "backend Tenant" where the terraform state file will be stored
+### 5. Create a Service Connection to the "backend Tenant" where the terraform state file will be stored
 MS Docs: [Manually configure Azure Resource Manager workload identity service connections - Azure Pipelines | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/configure-workload-identity?view=azure-devops#create-service-connection)
 
 
@@ -157,7 +159,7 @@ Then verify and save, and you can see a new service connection:
 
 ## Prepare Customer Tenant where we want to deploy Azure Resources with Terraform
 
-### Create Managed Identity 
+### 6. Create Managed Identity 
 To gain access to this tenant, we also need to create a managed identity with permissions at the desired scope.  
 In this example, we grant the managed identity the Contributor role on the Subscription.
 
@@ -194,7 +196,8 @@ New-AzRoleAssignment -RoleDefinitionName Contributor -Scope "/subscriptions/$Sub
 
 ````
 
-## Azure DevOps - Create a Service Connection to the "Customer Tenant" 
+## Azure DevOps - Customer Connection + Repo and Pipeline
+### 7. Create a Service Connection to the "Customer Tenant" 
 Now, let's proceed to create a second Service Connection:
 
 ![image](/images/20230923205704.png)
@@ -217,7 +220,7 @@ After verifying the settings, save the configuration, and you'll now have two se
 ![image](/images/20230923210441.png)
 
 
-## Azure Devops - Create a new Repository
+### 8. Create a new Repository
 Now, let's create a new repository where we will store our Terraform code and the pipeline file:
 
 ![image](/images/20230923210950.png)
@@ -225,7 +228,7 @@ Now, let's create a new repository where we will store our Terraform code and th
 
 After creating the repository, you can clone it, for example, into Visual Studio Code (VSCode).
 
-## Prepare Directory + terraform files in Repo
+#### Prepare Directory + terraform files in Repo
 We will organize the repository with the following directory structure:
 
 
@@ -265,8 +268,7 @@ resource "azurerm_resource_group" "demo" {
   location = "Switzerlandnorth"
 }
 ````
-
-## Create a Plan and Approval Environment
+### 9.1 Create a Plan and Approval Environment
 To enable reviewing the Terraform plan and approving it for execution, we'll set up an approval environment:
 
 - Navigate to Pipelines, Environment
@@ -281,10 +283,7 @@ for the terraform apply add an approval check:
 
 ![image](/images/20230923213336.png)
 
-
-## Create an Azure DevOps Pipeline
-
-### Prepare Pipeline file
+### 9.2 Prepare Pipeline file
 Important are the variables:
 - customer_repo_name: Name of the repository where Terraform Code is stored
 - backendServiceArm: Name of the Service Connection to the "Backend Tenant" where terraform state will be stored
@@ -437,7 +436,7 @@ stages:
       
 ````
 
-### Create the Pipeline
+### 9.3 Create the Pipeline
 ![image](/images/20230923214119.png)
 
 ![image](/images/20230923214137.png)
@@ -463,14 +462,9 @@ and now terraform can successfuly create my declared empty resource group:
 
 ## what about running terraform localy?
 Because we are using the managed identity and no service principal with a secret which has a certain lifetime we are not directly able to run terraform from local. 
+In Part 2 I will show you a possible solution how to use terraform local if necessary
 
-But what about using a service principal for local activities which secret will expire after a few hours instead of months until we did need to change it earlier on in the service connection? 
 
-My Workaround to use terraform local look in summary like this:
-- initial creation of app registration with permission to specific resources in my example - subscription
-- initial creation of a secrets.tfvars file + provider override file locally - with git ignore exceptions
-- Everytime I need to run terraform local - for example for debugging I create a new secrets with a lifetime of a few hours
-- the newly create secret will be stored into a secret tfvars file in the terraform repo
-- the backend information of the repo is stored in a override file 
-Importan: the secrets file and the override file are not included in the git repo.
+
+
 
