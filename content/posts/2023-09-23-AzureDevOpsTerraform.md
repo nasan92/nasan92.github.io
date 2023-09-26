@@ -16,7 +16,7 @@ categories:
   
 ---
 
-I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with workload identity federation instead of relying on a service principal with secrets. In this blog post, I will demonstrate how I set up this configuration.
+I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with **workload identity federation** instead of relying on a **service principal** with secrets. In this blog post, I will demonstrate how I set up this configuration.
 
 To learn more about workload identity federation read the docs:  
 [Workload identity federation - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identity-federation) 
@@ -27,8 +27,16 @@ To learn more about workload identity federation read the docs:
 - **"Backend Azure Tenant"** with Subscription (can be in the same tenant - in our example we use different tenants)
 - [Azure Powershell Module](https://learn.microsoft.com/en-us/powershell/azure/)
 
-## Overview
-
+## Overview - Setup Steps
+1. Create a **storage account** that will store the Terraform state file
+2. Create a **managed identity** which has contributor permissions on this storage account
+3. If not already the case, install the **Terraform extension** for your Azure DevOps Org
+4. Create a new **Azure DevOps Project**
+5. Create a **service connection** to the "backend tenant" using workload identity federation with your previously created managed identity
+6. Create a **managed identity** in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription
+7. Create a **service connection** to the customer tenant using workload identity federation with your previously created managed identity
+8. Create a **repository** with basic Terraform files
+9. Create an **Azure DevOps Pipeline** 
 ![image](/images/terraform-overview-Demo1.png "Preview")
 
 ## Prepare "Backend Tenant" to store Terraform State File
@@ -143,7 +151,7 @@ now you need to copy first the **issuer** and later the **subject Identifier** f
 
 And switch to the managed identity that we created earlier to add those values to the federated credential:
 
-![image](/images/20230923203306.png "Preview")
+![image](/images/20230923203306-2.png "Preview")
 
 Update the federated credential.
 
@@ -212,7 +220,7 @@ In this step, you'll also need to copy the issuer and subject identifier as show
 ![image](/images/20230923203124-2.png "Preview")
 
 Next, add these copied values to the federated credential of the managed identity in the "customer tenant":
-![image](/images/20230923210124.png "Preview")
+![image](/images/20230923210124-2.png "Preview")
 
 Now, return to the Azure DevOps Wizard and enter the necessary information for the customer tenant.  
 Specifically, set the Service Principal Id to the Client Id of the managed identity:
