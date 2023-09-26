@@ -2,7 +2,7 @@
 title: "Setting up Azure DevOps to deploy Azure Resources with Terraform using Workload Identity Federation (2 Part Series)"
 author: Nathanael Santschi
 date: 2023-09-23T06:10:21+01:00
-draft: true
+draft: false
 tags:
   - terraform
   - AzureDevOps
@@ -18,7 +18,8 @@ categories:
 
 I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with workload identity federation instead of relying on a service principal with secrets. In this blog post, I will demonstrate how I set up this configuration.
 
-To learn more about workload identity federation read the docs: [Workload identity federation - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identity-federation) 
+To learn more about workload identity federation read the docs:  
+[Workload identity federation - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identity-federation) 
 
 ## Prerequisites
 - Azure DevOps Org
@@ -28,7 +29,7 @@ To learn more about workload identity federation read the docs: [Workload identi
 
 ## Overview
 
-![image](/images/terraform-overview-Demo1.png)
+![image](/images/terraform-overview-Demo1.png "Preview")
 
 ## Prepare "Backend Tenant" to store Terraform State File
 As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur. 
@@ -69,7 +70,8 @@ New-AzStorageContainer -Name $containerName -Context (Get-AzStorageAccount -Reso
 
 ### 2. Create a managed identity to enable access to the state file from the pipeline via workload identity federation
 
-Official MS docs: [Manually configure Azure Resource Manager workload identity service connections - Azure Pipelines | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/configure-workload-identity?view=azure-devops)
+Official MS docs:  
+[Manually configure Azure Resource Manager workload identity service connections - Azure Pipelines | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/configure-workload-identity?view=azure-devops)
 
 Create the managed identity using Powershell and grant the required permissions:
 
@@ -113,35 +115,35 @@ New-AzRoleAssignment -RoleDefinitionName Contributor -Scope $TFRSGScope -ObjectI
 ### 3. Install Terraform Extension
 You will need this extension later in the pipeline:
 [Terraform - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks)
-![image](/images/Pastedimage20230920075015.png)
+![image](/images/Pastedimage20230920075015.png "Preview")
 
-![image](/images/20230920075040.png)
+![image](/images/20230920075040.png "Preview")
 
 
 ### 4. Create new Azure DevOps Project
-![image](/images/20230923201942.png)
+![image](/images/20230923201942.png "Preview")
 
 ### 5. Create a Service Connection to the "backend Tenant" where the terraform state file will be stored
 MS Docs: [Manually configure Azure Resource Manager workload identity service connections - Azure Pipelines | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/configure-workload-identity?view=azure-devops#create-service-connection)
 
 
-![image](/images/20230923202749.png)
+![image](/images/20230923202749.png "Preview")
 
-![image](/images/20230923202812.png)
+![image](/images/20230923202812.png "Preview")
 
 In earlier days we didn't had the option of Workload Identity federation which we select now:
 
-![image](/images/20230923202930.png)
+![image](/images/20230923202930.png "Preview")
 
-![image](/images/20230923203008.png)
+![image](/images/20230923203008.png "Preview")
 
 now you need to copy first the **issuer** and later the **subject Identifier** from here: 
 
-![image](/images/20230923203124.png)
+![image](/images/20230923203124.png "Preview")
 
 And switch to the managed identity that we created earlier to add those values to the federated credential:
 
-![image](/images/20230923203306.png)
+![image](/images/20230923203306.png "Preview")
 
 Update the federated credential.
 
@@ -151,11 +153,11 @@ Back in the Azure DevOps service connection window, you need to provide:
 - Tenant Id: from the tenant where the above subscription is located
 
 
-![image](/images/20230923203548.png)
+![image](/images/20230923203548.png "Preview")
 
 Then verify and save, and you can see a new service connection:
 
-![image](/images/20230923204010.png)
+![image](/images/20230923204010.png "Preview")
 
 ## Prepare Customer Tenant where we want to deploy Azure Resources with Terraform
 
@@ -200,30 +202,30 @@ New-AzRoleAssignment -RoleDefinitionName Contributor -Scope "/subscriptions/$Sub
 ### 7. Create a Service Connection to the "Customer Tenant" 
 Now, let's proceed to create a second Service Connection:
 
-![image](/images/20230923205704.png)
+![image](/images/20230923205704.png "Preview")
 
-![image](/images/20230923205727.png)
+![image](/images/20230923205727.png "Preview")
 
-![image](/images/20230923205846.png)
+![image](/images/20230923205846.png "Preview")
 
 In this step, you'll also need to copy the issuer and subject identifier as shown below:
-![image](/images/20230923205925.png)
+![image](/images/20230923205925.png "Preview")
 
 Next, add these copied values to the federated credential of the managed identity in the "customer tenant":
-![image](/images/20230923210124.png)
+![image](/images/20230923210124.png "Preview")
 
 Now, return to the Azure DevOps Wizard and enter the necessary information for the customer tenant.  
 Specifically, set the Service Principal Id to the Client Id of the managed identity:
-![image](/images/20230923210224.png)
+![image](/images/20230923210224.png "Preview")
 
 After verifying the settings, save the configuration, and you'll now have two service connections:
-![image](/images/20230923210441.png)
+![image](/images/20230923210441.png "Preview")
 
 
 ### 8. Create a new Repository
 Now, let's create a new repository where we will store our Terraform code and the pipeline file:
 
-![image](/images/20230923210950.png)
+![image](/images/20230923210950.png "Preview")
 
 
 After creating the repository, you can clone it, for example, into Visual Studio Code (VSCode).
@@ -240,27 +242,24 @@ Terraform-Demo
 └── azure-pipeline.yaml  
 ````
 
-
-provider tf:
+Note: In the provider file we add an empty backend. The values for the backend storage account will be provided in the pipeline.   
+00_provider tf:
 ````terraform
 terraform {
   backend "azurerm" {
-
   }
   required_version = "1.4.0" 
-
 }
-
 
 provider "azurerm" {
   alias           = "platform"
   features {
-    
   }
 }
 ````
 
-mainexample tf
+The only thing we want to create for now is an empty resource group:  
+01_mainexample tf
 ````terraform
 resource "azurerm_resource_group" "demo" {
   provider = azurerm.platform
@@ -278,10 +277,10 @@ To enable reviewing the Terraform plan and approving it for execution, we'll set
 
 for the terraform apply add an approval check:
 
-![image](/images/20230923213049.png)
+![image](/images/20230923213049.png "Preview")
 
 
-![image](/images/20230923213336.png)
+![image](/images/20230923213336.png "Preview")
 
 ### 9.2 Prepare Pipeline file
 Important are the variables:
@@ -437,32 +436,32 @@ stages:
 ````
 
 ### 9.3 Create the Pipeline
-![image](/images/20230923214119.png)
+![image](/images/20230923214119.png "Preview")
 
-![image](/images/20230923214137.png)
+![image](/images/20230923214137.png "Preview")
 
 select repo and pipeline file - and run
-![image](/images/20230923214211.png)
+![image](/images/20230923214211.png "Preview")
 
 note: first time you run the pipeline you need to permit access to environments and so on.
 
 you can look up the terraform plan
 
-![image](/images/20230923220002.png)
+![image](/images/20230923220002.png "Preview")
 
 
 If you want to approve it to run terraform apply you can do that:
 
-![image](/images/20230923220105.png)
+![image](/images/20230923220105.png "Preview")
 
 
 and now terraform can successfuly create my declared empty resource group:
-![image](/images/20230923221425.png)
+![image](/images/20230923221425.png "Preview")
 
 
 ## what about running terraform localy?
-Because we are using the managed identity and no service principal with a secret which has a certain lifetime we are not directly able to run terraform from local. 
-In Part 2 I will show you a possible solution how to use terraform local if necessary
+Because we are using a managed identity and not a service principal with a secret that has a certain lifetime we are not directly able to run terraform from the local Machine. 
+In Part 2 I will show you a possible solution for using terraform locally if necessary
 
 
 
