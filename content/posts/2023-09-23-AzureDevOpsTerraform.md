@@ -139,7 +139,7 @@ In earlier days we didn't had the option of Workload Identity federation which w
 
 now you need to copy first the **issuer** and later the **subject Identifier** from here: 
 
-![image](/images/20230923203124.png "Preview")
+![image](/images/20230923203124-2.png "Preview")
 
 And switch to the managed identity that we created earlier to add those values to the federated credential:
 
@@ -198,7 +198,7 @@ New-AzRoleAssignment -RoleDefinitionName Contributor -Scope "/subscriptions/$Sub
 
 ````
 
-## Azure DevOps - Customer Connection + Repo and Pipeline
+## Azure DevOps: Create Customer Connection + Repo and Pipeline
 ### 7. Create a Service Connection to the "Customer Tenant" 
 Now, let's proceed to create a second Service Connection:
 
@@ -209,7 +209,7 @@ Now, let's proceed to create a second Service Connection:
 ![image](/images/20230923205846.png "Preview")
 
 In this step, you'll also need to copy the issuer and subject identifier as shown below:
-![image](/images/20230923205925.png "Preview")
+![image](/images/20230923203124-2.png "Preview")
 
 Next, add these copied values to the federated credential of the managed identity in the "customer tenant":
 ![image](/images/20230923210124.png "Preview")
