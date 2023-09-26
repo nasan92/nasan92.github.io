@@ -36,7 +36,9 @@ To learn more about workload identity federation read the docs:
 6. Create a **managed identity** in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription
 7. Create a **service connection** to the customer tenant using workload identity federation with your previously created managed identity
 8. Create a **repository** with basic Terraform files
-9. Create an **Azure DevOps Pipeline** 
+9. Create an **Azure DevOps Pipeline**   
+
+
 ![image](/images/terraform-overview-Demo1.png "Preview")
 
 ## Prepare "Backend Tenant" to store Terraform State File
