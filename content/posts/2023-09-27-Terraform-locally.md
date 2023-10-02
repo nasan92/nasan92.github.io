@@ -1,5 +1,5 @@
 ---
-title: "(2/2) How to use terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)"
+title: "(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)"
 author: Nathanael Santschi
 date: 2023-09-26T06:10:21+01:00
 draft: false

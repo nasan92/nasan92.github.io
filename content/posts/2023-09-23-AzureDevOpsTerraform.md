@@ -471,7 +471,7 @@ and now terraform can successfuly create my declared empty resource group:
 
 ## what about running terraform locally?
 Because we are using a managed identity and not a service principal with a secret that has a certain lifetime we are not directly able to run terraform from the local Machine. 
-In [Part 2](https://nasan.ch/posts/2023-09-27-Terraform-locally.md/) I will show you a possible solution for using terraform locally if necessary.
+In [Part 2](https://nasan.ch/posts/2023-09-27-terraform-locally/) I will show you a possible solution for using terraform locally if necessary.
 
 
 
