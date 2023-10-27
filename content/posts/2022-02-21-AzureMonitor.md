@@ -9,6 +9,7 @@ tags:
   - AzureMonitor
 categories:
   - Azure
+  - MindMap
 ---
 
 I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I've created it based on the Azure Monitor Documentation.

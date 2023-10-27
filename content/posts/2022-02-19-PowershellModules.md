@@ -10,6 +10,7 @@ tags:
   - Book
 categories:
   - Books
+  - MindMap
 ---
 
 This MindMap tries to give an Overview over the book [Building Powershell Modules](https://leanpub.com/building-powershell-modules) - Brandon Olin

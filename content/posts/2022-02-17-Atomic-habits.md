@@ -8,6 +8,7 @@ tags:
   - Book
 categories:
   - Books
+  - MindMap
 ---
 ## Atomic Habits - Die 1% Methode
 

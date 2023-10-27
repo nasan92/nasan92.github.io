@@ -10,6 +10,7 @@ tags:
   - Azure
 categories:
   - Security
+  - MindMap
   
 ---
 

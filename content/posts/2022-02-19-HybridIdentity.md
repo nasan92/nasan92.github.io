@@ -8,6 +8,8 @@ tags:
   - Azure
   - AzureAD
   - ADConnect
+categories:
+  - MindMap
 ---
 
 

@@ -11,6 +11,7 @@ tags:
 categories:
   - Azure
   - MachineLearning
+  - MindMap
 ---
 
 This MindMap was created using the following Microsoft Youtube Video: [MLOps explained | Machine Learning Essentials](https://www.youtube.com/watch?v=ZVWg18AXXuE&ab_channel=MicrosoftAzure)

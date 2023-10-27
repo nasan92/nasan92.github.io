@@ -7,6 +7,8 @@ tags:
   - MindMap
   - Microsoft
   - Lizenzierung
+categories:
+  - MindMap
 ---
 
 Um eine gewisse Übersicht über die ganze Microsoft Lizenzierung zu erhalten, habe ich folgendes MindMap erstellt: 

@@ -7,6 +7,8 @@ tags:
   - Classes
   - Powershell
   - MindMap
+categories:
+  - MindMap
 ---
 A MindMap about PowerShell Classes
 

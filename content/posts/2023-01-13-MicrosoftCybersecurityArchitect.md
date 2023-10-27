@@ -11,6 +11,7 @@ tags:
 categories:
   - Azure
   - Security
+  - MindMap
   
 ---
 # Studying SC-100 

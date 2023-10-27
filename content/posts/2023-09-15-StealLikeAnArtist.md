@@ -8,6 +8,8 @@ tags:
   - StealLikeAnArtist
 categories:
   - Books
+  - MindMap
+
   
 ---
 

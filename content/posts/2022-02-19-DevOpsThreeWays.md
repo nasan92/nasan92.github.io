@@ -9,6 +9,7 @@ tags:
   - Book
 categories:
   - Books
+  - MindMap
 ---
 
 DevOps the three Ways from the DevOps Handbook [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002)

@@ -8,6 +8,7 @@ tags:
   - Docker
 categories:
   - Docker
+  - MindMap
 ---
 
 Docker Architecture Overview:   

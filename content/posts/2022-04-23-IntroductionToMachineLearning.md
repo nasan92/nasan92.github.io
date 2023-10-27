@@ -8,6 +8,7 @@ tags:
   - MachineLearning
 categories:
   - MachineLearning
+  - MindMap
 ---
 
 This MindMap was created using the following Microsoft Learn Path: [Introduction to Machine Learning](https://docs.microsoft.com/en-us/learn/paths/machine-learning-foundations-using-data-science/)
