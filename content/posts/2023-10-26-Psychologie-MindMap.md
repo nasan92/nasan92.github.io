@@ -12,12 +12,11 @@ categories:
   
 ---
 
-Anhand des sehr unterhaltsamen Buches "Klo-Psychologie" habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen. 
-
-Link zum Buch [Klo-Psychologe: In 100 Sitzungen zum Seelenklempner](https://www.amazon.de/-/en/Konrad-Clever/dp/3548064043/ref=sr_1_1?crid=3GF7CSQA6PLZT&keywords=klo+psychologie&qid=1698436003&sprefix=klo+psy%2Caps%2C101&sr=8-1)
+Anhand des sehr unterhaltsamen Buches [Klo-Psychologe: In 100 Sitzungen zum Seelenklempner](https://www.amazon.de/-/en/Konrad-Clever/dp/3548064043/ref=sr_1_1?crid=3GF7CSQA6PLZT&keywords=klo+psychologie&qid=1698436003&sprefix=klo+psy%2Caps%2C101&sr=8-1) habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen. 
 
 Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden: 
 ## Übersicht
+![MindMap](/images/Psychologie.svg "Preview")
 
 ## 1. Tiefenpsychologie
 ![MindMap](/images/Psychologie-Tiefenpsychologie-MindMap.svg "Preview")
