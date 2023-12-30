@@ -16,7 +16,7 @@ Der Vortrag behandelt das Thema: "Wie gehst Du mit tiefer Trauer und tiefem Leid
 Gegen Schluss des Vortrages zeigt er auf was für mögliche Früchte auf dem Boden von herausfordernden Situationen entstehen können.  
 Sogenannte Früchte des Herzens. Diese habe ich in folgendem MindMap veranschaulicht: 
 
-![MindMap](/images/Fruechte- des-Herzens.svg "Preview")
+![MindMap](/images/Fruechte-des-Herzens.svg "Preview")
 
 
 
