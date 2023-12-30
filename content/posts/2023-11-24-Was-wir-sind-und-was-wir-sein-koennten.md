@@ -17,7 +17,7 @@ Hier zwei eher grössere MindMaps als Buch Zusammenfassungen zum Buch ["Was wir 
 ## Was wir sind
 ![MindMap](/images/Was-wir-sind.svg "Preview")
 
-## was wir sein könnten
+## Was wir sein könnten
 ![MindMap](/images/was-wir-sein-koennten.svg "Preview")
 
 
