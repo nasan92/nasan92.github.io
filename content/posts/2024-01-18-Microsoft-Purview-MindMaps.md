@@ -28,7 +28,7 @@ The settings highlighted in **blue** on the Purview Compliance Portal are addres
 ## Microsoft Purview - Data security solutions Mind Map 
 The first Mind Map includes data security solutions based on the following documentation: [Microsoft Purview data security solutions](https://learn.microsoft.com/en-us/purview/purview-security)
 
-![MindMap](/images/Microsoft-Purview-datasecurity.svg "Preview")
+![Microsoft Purview MindMap SVG](/images/Microsoft-Purview-datasecurity.svg "Preview")
 
 
 ## Microsoft Purview - Risk and compliance Mind Map
