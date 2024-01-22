@@ -12,18 +12,7 @@ categories:
   - Security
   
 ---
-## Administering Information Protection and Compliance in Microsoft 365
-
-During my [SC-400](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-400/) studies I created the following two MindMaps. 
-
-Good to know:
-- Microsoft Purview Compliance Portal [compliance.microsoft.com](https://compliance.microsoft.com) (Data security + Risk and compliance MindMap)
-- Microsoft Purview Governance Portal [web.purview.azure.com](https://web.purview.azure.com)
-- The new Microsoft Purview Portal: [purview.microsoft.com](https://purview.microsoft.com/)
-
-The settings highlighted in **blue** on the Purview Compliance Portal are addressed in the **Data Security Solutions Mind Map**, while the settings highlighted in **yellow** are covered in the **Risk and Compliance Mind Map**:
-
-![portal](/images/microsoft-purview-portal-mindmapcolor.png "Preview")
+During my [SC-400](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-400/) studies I created the following two Mind Maps. 
 
 ## Microsoft Purview - Data security solutions Mind Map 
 The first Mind Map includes data security solutions based on the following documentation: [Microsoft Purview data security solutions](https://learn.microsoft.com/en-us/purview/purview-security)
@@ -43,8 +32,17 @@ For the data governance solutions I have not created a separate Mind Map because
 
 These governance solutions are specifically tailored for on-premises or multicloud scenarios. 
 
+## Mapping of the Mind Maps to the Compliance Portal
+The settings highlighted in **blue** on the Purview Compliance Portal are addressed in the **Data Security Solutions Mind Map**, while the settings highlighted in **yellow** are covered in the **Risk and Compliance Mind Map**:
 
+![portal](/images/microsoft-purview-portal-mindmapcolor.png "Preview")
 
+## Links to the portals 
+
+Good to know:
+- Microsoft Purview **Compliance Portal**: [compliance.microsoft.com](https://compliance.microsoft.com) (Data security + Risk and compliance MindMap)
+- Microsoft Purview **Governance Portal**: [web.purview.azure.com](https://web.purview.azure.com) (Governance solutions)
+- The **new Microsoft Purview Portal**: [purview.microsoft.com](https://purview.microsoft.com/)
 
 
 
