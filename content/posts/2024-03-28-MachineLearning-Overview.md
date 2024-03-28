@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - MindMaps"
 author: Nathanael Santschi
-date: 2024-03-18T05:10:21+01:00
+date: 2024-03-28T05:10:21+01:00
 draft: false
 tags:
   - MindMap
