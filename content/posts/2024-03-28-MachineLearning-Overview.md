@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning - MindMaps"
 author: Nathanael Santschi
-date: 2024-01-18T05:10:21+01:00
+date: 2024-03-18T05:10:21+01:00
 draft: false
 tags:
   - MindMap
@@ -15,7 +15,7 @@ categories:
 During my recent Machine Learning studies I created the following MindMaps. 
 
 ## Machine Learning Overview
-<!-- ![Machine Learning Overview MindMap SVG](/images/MachineLearning-Overview-simplified.svg "Preview")
+![Machine Learning Overview MindMap SVG](/images/MachineLearning-Overview-simplified.svg "Preview")
 
 
 ## Machine Learning Types
@@ -23,7 +23,7 @@ During my recent Machine Learning studies I created the following MindMaps.
 
 
 ## Machine Learning Algorithms
-![Machine Learning TAlgorithms MindMap SVG](/images/MachineLearning-Overview-Algorithms.svg "Preview") -->
+![Machine Learning TAlgorithms MindMap SVG](/images/MachineLearning-Overview-Algorithms.svg "Preview")
 
 
 
