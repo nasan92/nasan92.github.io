@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>AZ-500 - Tag - NASAN</title>
+        <link>https://nasan92.github.io/tags/az-500/</link>
+        <description>AZ-500 - Tag - NASAN</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 08 Sep 2023 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/tags/az-500/" rel="self" type="application/rss+xml" /><item>
+    <title>AZ-500 - Azure Security Engineer - MindMap</title>
+    <link>https://nasan92.github.io/posts/2023-09-08-az500-mindmap/</link>
+    <pubDate>Fri, 08 Sep 2023 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2023-09-08-az500-mindmap/</guid>
+    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
+This MindMap is based on the MS Learning path: AZ-500 Preview]]></description>
+</item></channel>
+</rss>

@@ -3,85 +3,93 @@
         <title>All Posts - NASAN</title>
         <link>https://nasan92.github.io/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 01 Jan 2023 10:51:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Psychologie des Geldes - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-01-01-psychologiedesgeldes/</link>
-    <pubDate>Sun, 01 Jan 2023 10:51:21 &#43;0100</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Machine Learning - MindMaps</title>
+    <link>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</link>
+    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-01-01-psychologiedesgeldes/</guid>
-    <description><![CDATA[Ein MindMap als Buchzusammenfassung für das Buch Pychologie des Geldes - von Morgan Housel
+    <guid>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</guid>
+    <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
+Machine Learning Overview PreviewMachine Learning Types PreviewMachine Learning Algorithms Preview]]></description>
+</item><item>
+    <title>Microsoft Purview - MindMaps</title>
+    <link>https://nasan92.github.io/posts/2024-01-18-microsoft-purview-mindmaps/</link>
+    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
+    <description><![CDATA[During my SC-400 studies I created the following two Mind Maps.
+Microsoft Purview - Data security solutions Mind Map The first Mind Map includes data security solutions based on the following documentation: Microsoft Purview data security solutions
+PreviewMicrosoft Purview - Risk and compliance Mind Map The second Mind Map focuses on risk and compliance solutions based on the following documentation: Microsoft Purview risk and compliance solutions
+PreviewMicrosoft Purview - Data governance solutions For the data governance solutions I have not created a separate Mind Map because the following picture from here What are Microsoft Purview&rsquo;s governance solutions?]]></description>
+</item><item>
+    <title>Was wir sind und was wir sein könnten von Gerald Hüther - MindMap</title>
+    <link>https://nasan92.github.io/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</link>
+    <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
+    <description><![CDATA[Hier zwei eher grössere MindMaps als Buch Zusammenfassungen zum Buch &ldquo;Was wir sind und was wir sein könnten&rdquo; von Gerald Hüther
+Was wir sind PreviewWas wir sein könnten Preview]]></description>
+</item><item>
+    <title>Früchte des Herzens - MindMap</title>
+    <link>https://nasan92.github.io/posts/2023-11-11-fruechte-des-herzens/</link>
+    <pubDate>Sat, 11 Nov 2023 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2023-11-11-fruechte-des-herzens/</guid>
+    <description><![CDATA[Kürzlich habe ich mir den Vortrag &ldquo;Übers Wasser gehen für Anfänger&rdquo; von Johannes Hartl angehört. Der Vortrag behandelt das Thema: &lsquo;Wie gehst du mit tiefer Trauer und tiefem Leid um?&rsquo;
+Gegen Ende des Vortrags zeigt er, welche möglichen Früchte auf dem Boden herausfordernder Situationen entstehen können – sogenannte &lsquo;Früchte des Herzens&rsquo;. Diese habe ich in folgender Mindmap veranschaulicht:
 Preview]]></description>
 </item><item>
-    <title>Storyworthy - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-11-14-storyworthy/</link>
-    <pubDate>Mon, 14 Nov 2022 10:51:21 &#43;0100</pubDate>
+    <title>Psychologie - MindMaps</title>
+    <link>https://nasan92.github.io/posts/2023-10-26-psychologie-mindmap/</link>
+    <pubDate>Thu, 26 Oct 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-11-14-storyworthy/</guid>
-    <description><![CDATA[MindMap for the Book Storyworthy - by Matthew Dicks
+    <guid>https://nasan92.github.io/posts/2023-10-26-psychologie-mindmap/</guid>
+    <description><![CDATA[Anhand des sehr unterhaltsamen Buches Klo-Psychologe: In 100 Sitzungen zum Seelenklempner habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.
+Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:
+Übersicht Preview1. Tiefenpsychologie Preview2. Persönlichtkeitspsychologie Preview3. Kognitive Psychologie und Intelligenz-Psychologie Preview4. Kommunikationspsychologie Preview5. Motivationspsychologie und positive Psychologie Preview6. Entwicklungs und Evolutionspsychologie Preview7. Organisationspsychologie Preview]]></description>
+</item><item>
+    <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</title>
+    <link>https://nasan92.github.io/posts/2023-09-27-terraform-locally/</link>
+    <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2023-09-27-terraform-locally/</guid>
+    <description><![CDATA[In the latest blog post (1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series) we learned how to setup Azure DevOps using Workload Identiy Federation
+Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.
+But what about using a service principal for local activities whose secret will expire after a few hours instead of months?]]></description>
+</item><item>
+    <title>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</title>
+    <link>https://nasan92.github.io/posts/2023-09-23-azuredevopsterraform/</link>
+    <pubDate>Sat, 23 Sep 2023 06:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2023-09-23-azuredevopsterraform/</guid>
+    <description><![CDATA[I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with workload identity federation instead of relying on a service principal with secrets. In this blog post, I will demonstrate how I set up this configuration.
+To learn more about workload identity federation read the docs:
+Workload identity federation - Microsoft Entra | Microsoft Learn
+Prerequisites Azure DevOps Org &ldquo;Customer Azure Tenant&rdquo; with Subscription &ldquo;Backend Azure Tenant&rdquo; with Subscription (can be in the same tenant - in our example we use different tenants) Azure Powershell Module Overview - Setup Steps Create a storage account that will store the Terraform state file Create a managed identity which has contributor permissions on this storage account If not already the case, install the Terraform extension for your Azure DevOps Org Create a new Azure DevOps Project Create a service connection to the &ldquo;backend tenant&rdquo; using workload identity federation with your previously created managed identity Create a managed identity in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription Create a service connection to the customer tenant using workload identity federation with your previously created managed identity Create a repository with basic Terraform files Create an Azure DevOps Pipeline PreviewPrepare &ldquo;Backend Tenant&rdquo; to store Terraform State File As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur.]]></description>
+</item><item>
+    <title>Steal like an Artist - MindMap</title>
+    <link>https://nasan92.github.io/posts/2023-09-15-steallikeanartist/</link>
+    <pubDate>Fri, 15 Sep 2023 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2023-09-15-steallikeanartist/</guid>
+    <description><![CDATA[MindMap for the Book
+Steal Like an Artist: 10 Things Nobody Told You About Being Creative
 Preview]]></description>
 </item><item>
-    <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
-    <link>https://nasan92.github.io/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
-    <pubDate>Thu, 27 Oct 2022 10:51:21 &#43;0100</pubDate>
+    <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
+    <link>https://nasan92.github.io/posts/2023-09-14-sc300-mindmap/</link>
+    <pubDate>Thu, 14 Sep 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
-    <description><![CDATA[link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
-I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.]]></description>
+    <guid>https://nasan92.github.io/posts/2023-09-14-sc300-mindmap/</guid>
+    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
+This MindMap is based on the MS Learning path: SC-300 Preview]]></description>
 </item><item>
-    <title>Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform</title>
-    <link>https://nasan92.github.io/posts/2022-09-08-createcustomroleterraform/</link>
-    <pubDate>Thu, 08 Sep 2022 10:51:21 &#43;0100</pubDate>
+    <title>Certificates (SSL/HTTPS)- MindMap</title>
+    <link>https://nasan92.github.io/posts/2023-09-09-certificates/</link>
+    <pubDate>Sat, 09 Sep 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-09-08-createcustomroleterraform/</guid>
-    <description><![CDATA[Yes&hellip; its annoying there is no built in role to only allow restarting of Azure Virtual Machines&hellip; The Virtual Machine Contributor Role allows to much. With this role you are able to destory and create VMs..
-So what I want to do in this case is creating a custom role which only allows to start / stop / restart Virtual Machines. And I want to do that with terraform because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.]]></description>
-</item><item>
-    <title>Building a Second Brain - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-07-04-buildingasecondbrain/</link>
-    <pubDate>Mon, 04 Jul 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-07-04-buildingasecondbrain/</guid>
-    <description><![CDATA[This MindMap tries to give an Overview over the book Building a Second Brain - by Tiago Forte
-Preview]]></description>
-</item><item>
-    <title>ThinkAgain Buch Umdenktipps - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-06-13-thinkagain/</link>
-    <pubDate>Mon, 13 Jun 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-06-13-thinkagain/</guid>
-    <description><![CDATA[Folgendes MindMap bietet eine Übersicht über die Umdenktipps vom Buch ThinkAgain von Adam Grant.
-PreviewLink zum Buch: ThinkAgain]]></description>
-</item><item>
-    <title>MINDFUCK Buch Zusammenfassung - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-06-13-mindfuck/</link>
-    <pubDate>Mon, 13 Jun 2022 10:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-06-13-mindfuck/</guid>
-    <description><![CDATA[In folgendem MindMap habe ich Teile des Buches MINDFUCK von Petra Bock zusammengefasst:
-PreviewLink zum Buch: https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071]]></description>
-</item><item>
-    <title>Docker Architecture Overview - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-04-24-dockeroverview/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-04-24-dockeroverview/</guid>
-    <description><![CDATA[Docker Architecture Overview:
-Preview]]></description>
-</item><item>
-    <title>Introduction to Machine Learning- MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-04-23-introductiontomachinelearning/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-04-23-introductiontomachinelearning/</guid>
-    <description><![CDATA[This MindMap was created using the following Microsoft Learn Path: Introduction to Machine Learning
-Preview]]></description>
-</item><item>
-    <title>MLOps explained - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</guid>
-    <description><![CDATA[This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
-Preview]]></description>
+    <guid>https://nasan92.github.io/posts/2023-09-09-certificates/</guid>
+    <description><![CDATA[Certificates MindMap:
+SSL certificates - what? why? How do certificates work? Types of certificates How HTTPS encryption works CERTIFICATION AUTHORITIES (CA) .. Preview]]></description>
 </item></channel>
 </rss>

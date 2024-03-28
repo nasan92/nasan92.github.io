@@ -3,19 +3,61 @@
         <title>Categories - Category - NASAN</title>
         <link>https://nasan92.github.io/categories/</link>
         <description>Categories - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 01 Jan 2023 10:51:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>MachineLearning</title>
+    <link>https://nasan92.github.io/categories/machinelearning/</link>
+    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/categories/machinelearning/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MindMap</title>
+    <link>https://nasan92.github.io/categories/mindmap/</link>
+    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/categories/mindmap/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Security</title>
+    <link>https://nasan92.github.io/categories/security/</link>
+    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/categories/security/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Books</title>
     <link>https://nasan92.github.io/categories/books/</link>
-    <pubDate>Sun, 01 Jan 2023 10:51:21 &#43;0100</pubDate>
+    <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://nasan92.github.io/categories/books/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Azure</title>
     <link>https://nasan92.github.io/categories/azure/</link>
-    <pubDate>Thu, 27 Oct 2022 10:51:21 &#43;0100</pubDate>
+    <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://nasan92.github.io/categories/azure/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AzureDevOps</title>
+    <link>https://nasan92.github.io/categories/azuredevops/</link>
+    <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/categories/azuredevops/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Encryption</title>
+    <link>https://nasan92.github.io/categories/encryption/</link>
+    <pubDate>Sat, 09 Sep 2023 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/categories/encryption/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MicrosoftEntraPrivateAccess</title>
+    <link>https://nasan92.github.io/categories/microsoftentraprivateaccess/</link>
+    <pubDate>Thu, 31 Aug 2023 06:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/categories/microsoftentraprivateaccess/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Docker</title>
@@ -23,13 +65,6 @@
     <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://nasan92.github.io/categories/docker/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MachineLearning</title>
-    <link>https://nasan92.github.io/categories/machinelearning/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/categories/machinelearning/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

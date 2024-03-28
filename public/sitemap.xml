@@ -2,24 +2,75 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://nasan92.github.io/tags/book/</loc><lastmod>2023-01-01T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/categories/books/</loc><lastmod>2023-01-01T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/categories/</loc><lastmod>2023-01-01T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/tags/mindmap/</loc><lastmod>2023-01-01T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/</loc><lastmod>2023-01-01T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/posts/</loc><lastmod>2023-01-01T10:51:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/deeplearning/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/machinelearning/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/machinelearning/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/mindmap/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/mindmap/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/</loc><lastmod>2024-03-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2024-01-18-microsoft-purview-mindmaps/</loc><lastmod>2024-01-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/microsoftpurview/</loc><lastmod>2024-01-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/purview/</loc><lastmod>2024-01-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/security/</loc><lastmod>2024-01-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/book/</loc><lastmod>2023-11-24T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/books/</loc><lastmod>2023-11-24T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/gehirnforschung/</loc><lastmod>2023-11-24T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</loc><lastmod>2023-11-24T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-11-11-fruechte-des-herzens/</loc><lastmod>2023-11-11T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/psychologie/</loc><lastmod>2023-11-11T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-10-26-psychologie-mindmap/</loc><lastmod>2023-10-26T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-09-27-terraform-locally/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/azure/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/azuredevops/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/azuredevops/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/infrastructureascode/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/microsoft/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/microsoftentra/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/terraform/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/workloadidentityfederation/</loc><lastmod>2023-09-26T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-09-23-azuredevopsterraform/</loc><lastmod>2023-09-23T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-09-15-steallikeanartist/</loc><lastmod>2023-09-15T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/steallikeanartist/</loc><lastmod>2023-09-15T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/azure/</loc><lastmod>2023-09-14T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/sc-300/</loc><lastmod>2023-09-14T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-09-14-sc300-mindmap/</loc><lastmod>2023-09-14T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/security/</loc><lastmod>2023-09-14T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/certificates/</loc><lastmod>2023-09-09T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-09-09-certificates/</loc><lastmod>2023-09-09T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/certificationauthority/</loc><lastmod>2023-09-09T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/encryption/</loc><lastmod>2023-09-09T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/https/</loc><lastmod>2023-09-09T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/ssl/</loc><lastmod>2023-09-09T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/sslcertificates/</loc><lastmod>2023-09-09T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/az-500/</loc><lastmod>2023-09-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-09-08-az500-mindmap/</loc><lastmod>2023-09-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/entra/</loc><lastmod>2023-08-31T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/globalaccess/</loc><lastmod>2023-08-31T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/hubspoke/</loc><lastmod>2023-08-31T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/categories/microsoftentraprivateaccess/</loc><lastmod>2023-08-31T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/privateaccess/</loc><lastmod>2023-08-31T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-08-31-entraprivateaccess/</loc><lastmod>2023-08-31T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/vpnalternative/</loc><lastmod>2023-08-31T06:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-05-18-markslistofcybersecurityresources/</loc><lastmod>2023-05-18T05:15:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/activedirectory/</loc><lastmod>2023-05-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-05-18-top10adattackmethods/</loc><lastmod>2023-05-18T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-05-13-factfulness/</loc><lastmod>2023-05-13T10:51:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/appregistration/</loc><lastmod>2023-05-01T05:51:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-05-01-azureappregistrations-explained/</loc><lastmod>2023-05-01T05:51:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/tags/sc-100/</loc><lastmod>2023-01-12T10:51:21&#43;01:00</lastmod></url><url>
+            <loc>https://nasan92.github.io/posts/2023-01-13-microsoftcybersecurityarchitect/</loc><lastmod>2023-01-12T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2023-01-01-psychologiedesgeldes/</loc><lastmod>2023-01-01T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/tags/</loc><lastmod>2023-01-01T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-11-14-storyworthy/</loc><lastmod>2022-11-14T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/tags/azure/</loc><lastmod>2022-10-27T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/categories/azure/</loc><lastmod>2022-10-27T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/azurebackup/</loc><lastmod>2022-10-27T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/powershell/</loc><lastmod>2022-10-27T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/sqlonazurevm/</loc><lastmod>2022-10-27T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</loc><lastmod>2022-10-27T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-09-08-createcustomroleterraform/</loc><lastmod>2022-09-08T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/rbac/</loc><lastmod>2022-09-08T10:51:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/tags/terraform/</loc><lastmod>2022-09-08T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-07-04-buildingasecondbrain/</loc><lastmod>2022-07-04T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-06-13-thinkagain/</loc><lastmod>2022-06-13T10:51:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-06-13-mindfuck/</loc><lastmod>2022-06-13T10:39:21&#43;01:00</lastmod></url><url>
@@ -27,14 +78,11 @@
             <loc>https://nasan92.github.io/categories/docker/</loc><lastmod>2022-04-22T13:39:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-04-24-dockeroverview/</loc><lastmod>2022-04-22T13:39:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-04-23-introductiontomachinelearning/</loc><lastmod>2022-04-22T13:39:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/tags/machinelearning/</loc><lastmod>2022-04-22T13:39:21&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/categories/machinelearning/</loc><lastmod>2022-04-22T13:39:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/mlops/</loc><lastmod>2022-04-22T13:39:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</loc><lastmod>2022-04-22T13:39:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-02-21-azuremonitor/</loc><lastmod>2022-02-21T13:39:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/azuremonitor/</loc><lastmod>2022-02-21T13:39:21&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/lizenzierung/</loc><lastmod>2022-02-19T15:35:13&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/tags/microsoft/</loc><lastmod>2022-02-19T15:35:13&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-02-19-microsoftlizenzierung/</loc><lastmod>2022-02-19T15:35:13&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/devops/</loc><lastmod>2022-02-19T08:08:41&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-02-19-devopsthreeways/</loc><lastmod>2022-02-19T08:08:41&#43;01:00</lastmod></url><url>
@@ -46,7 +94,6 @@
             <loc>https://nasan92.github.io/posts/2022-02-18-deepwork/</loc><lastmod>2022-02-18T06:55:23&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/books/</loc><lastmod>2022-02-18T06:19:23&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-02-18-edenculture/</loc><lastmod>2022-02-18T06:19:23&#43;01:00</lastmod></url><url>
-            <loc>https://nasan92.github.io/tags/activedirectory/</loc><lastmod>2022-02-17T21:30:23&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/tags/gpo/</loc><lastmod>2022-02-17T21:30:23&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-02-17-gpo/</loc><lastmod>2022-02-17T21:30:23&#43;01:00</lastmod></url><url>
             <loc>https://nasan92.github.io/posts/2022-02-17-atomic-habits/</loc><lastmod>2022-02-17T21:19:23&#43;01:00</lastmod></url><url>

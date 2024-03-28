@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.109.0">
+	<meta name="generator" content="Hugo 0.121.2">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -10,9 +10,10 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nasan92.github.io/" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="NASAN"/>
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="NASAN"/>
 <meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@nasantschi"/>
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -32,7 +33,7 @@
             <a href="/" title="NASAN">NASAN</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" rel="noopener noreffer" target="_blank"> Youtube </a><a class="menu-item" href="/mindmaps/mindmaps"> MindMaps </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" rel="noopener noreffer" target="_blank"> Youtube </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw"></i>
@@ -75,7 +76,7 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" title="" rel="noopener noreffer" target="_blank">Youtube</a><a class="menu-item" href="/mindmaps/mindmaps" title="">MindMaps</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" title="" rel="noopener noreffer" target="_blank">Youtube</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -96,29 +97,41 @@
         alt="/images/nasan-avatar.jpeg"
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2021-05-07-search-gpo/">Search a specific entry over all GPO</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-07">2021-05-07</time></span></div><div class="content">A way to search a specific setting over all GPOs
-Generate a GPO Report over your Domain You can generate a GPO Report over your Domain either in a XML or HTML file and then search through that file.
-To generate a XML use this command:
-Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportType XML -Path &#34;C:\GPOReports\GPOReportsAll.xml&#34; To generate a HTML file you can use this command:
-Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportType HTML -Path &#34;C:\GPOReports\GPOReportsAll.</div><div class="post-footer">
-        <a href="/posts/2021-05-07-search-gpo/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2021-05-07-gpresult-remote/">Run a gpresult on a remote computer</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-06">2021-05-06</time></span></div><div class="content">How to run a gpresult on a remote computer
-Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
-Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command here comes the new highlight:
-199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.</div><div class="post-footer">
-        <a href="/posts/2021-05-07-gpresult-remote/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2018-12-01-logik/">Infografik Logik</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-12-01">2018-12-01</time></span></div><div class="content">Die folgende Infografik gibt einen groben Überblick zu den Themen:
-Was ist Logik? Was ist ein Argument? Was macht ein Argument schlüssig? Beispiele für Logische Fehlschlüsse Zum Thema habe ich auch ein kurzes Video erstellt: https://youtu.be/Tp9WzwUMjDs
+        <a href="/posts/2022-04-24-dockeroverview/">Docker Architecture Overview - MindMap</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-22">2022-04-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/docker/"><i class="far fa-folder fa-fw"></i>Docker</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">Docker Architecture Overview:
 Preview</div><div class="post-footer">
-        <a href="/posts/2018-12-01-logik/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/infografik/">Infografik</a>,&nbsp;<a href="/tags/logik/">Logik</a></div></div>
+        <a href="/posts/2022-04-24-dockeroverview/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/docker/">Docker</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2022-04-23-introductiontomachinelearning/">Introduction to Machine Learning- MindMap</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-22">2022-04-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/machinelearning/"><i class="far fa-folder fa-fw"></i>MachineLearning</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">This MindMap was created using the following Microsoft Learn Path: Introduction to Machine Learning
+Preview</div><div class="post-footer">
+        <a href="/posts/2022-04-23-introductiontomachinelearning/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/machinelearning/">MachineLearning</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2022-04-22-mlops-explained/">MLOps explained - MindMap</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-22">2022-04-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw"></i>Azure</a>&nbsp;<a href="/categories/machinelearning/"><i class="far fa-folder fa-fw"></i>MachineLearning</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
+Preview</div><div class="post-footer">
+        <a href="/posts/2022-04-22-mlops-explained/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/mlops/">MLOps</a>,&nbsp;<a href="/tags/machinelearning/">MachineLearning</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2022-02-21-azuremonitor/">Azure Monitor MindMap</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-21">2022-02-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw"></i>Azure</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I&rsquo;ve created it based on the Azure Monitor Documentation. Somethings may be outdated today -&gt; you can find the Microsoft Docs to that topic here: Azure Monitor
+Preview</div><div class="post-footer">
+        <a href="/posts/2022-02-21-azuremonitor/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/azuremonitor/">AzureMonitor</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2022-02-19-microsoftlizenzierung/">Microsoft Lizenzierung MindMap und Linksammlung</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-19">2022-02-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">Um eine gewisse Übersicht über die ganze Microsoft Lizenzierung zu erhalten, habe ich folgendes MindMap erstellt: PreviewDas MindMap wurde anhand des Microsoft Webinars &ldquo;Grundlagen der Microsoft Lizenzierung&rdquo; erstellt: https://www.youtube.com/watch?v=pM7g56pIgJI
+Links Offizielle Microsoft Links https://www.microsoft.com/en-us/licensing/default https://www.microsoft.com/en-us/Licensing/learn-more/volume-licensing-briefs
+Sehr hilfreich um die verschiedenen Microsoft Pläne zu vergleichen: https://m365maps.com/</div><div class="post-footer">
+        <a href="/posts/2022-02-19-microsoftlizenzierung/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/microsoft/">Microsoft</a>,&nbsp;<a href="/tags/lizenzierung/">Lizenzierung</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2022-02-19-devopsthreeways/">MindMap DevOps the three Ways from the DevOps Handbook</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-19">2022-02-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">DevOps the three Ways from the DevOps Handbook The DevOps Handbook Preview</div><div class="post-footer">
+        <a href="/posts/2022-02-19-devopsthreeways/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/devops/">DevOps</a>,&nbsp;<a href="/tags/book/">Book</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -137,10 +150,22 @@ Preview</div><div class="post-footer">
                     <span class="page-link">
                         <a href="/page/5/">5</a>
                     </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/6/">6</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/7/">7</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/8/">8</a>
+                    </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.121.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

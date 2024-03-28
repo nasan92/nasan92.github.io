@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>AppRegistration - Tag - NASAN</title>
+        <link>https://nasan92.github.io/tags/appregistration/</link>
+        <description>AppRegistration - Tag - NASAN</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 May 2023 05:51:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/tags/appregistration/" rel="self" type="application/rss+xml" /><item>
+    <title>AzureAD App Registrations explained</title>
+    <link>https://nasan92.github.io/posts/2023-05-01-azureappregistrations-explained/</link>
+    <pubDate>Mon, 01 May 2023 05:51:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2023-05-01-azureappregistrations-explained/</guid>
+    <description><![CDATA[Azure AD App registration Recently I had some talks with developers which made me to realize that I didn&rsquo;t fully understand how App Registrations are working. I was aware that we are registering an app and allowing the app certain permissions but in detail I didn&rsquo;t understand it.
+Why Azure AD App registration? Basically for every app where you want to use the Microsoft Identity Platform, you need to register your app.]]></description>
+</item></channel>
+</rss>

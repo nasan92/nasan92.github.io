@@ -3,7 +3,15 @@
         <title>MachineLearning - Category - NASAN</title>
         <link>https://nasan92.github.io/categories/machinelearning/</link>
         <description>MachineLearning - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/categories/machinelearning/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/categories/machinelearning/" rel="self" type="application/rss+xml" /><item>
+    <title>Machine Learning - MindMaps</title>
+    <link>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</link>
+    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</guid>
+    <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
+Machine Learning Overview PreviewMachine Learning Types PreviewMachine Learning Algorithms Preview]]></description>
+</item><item>
     <title>Introduction to Machine Learning- MindMap</title>
     <link>https://nasan92.github.io/posts/2022-04-23-introductiontomachinelearning/</link>
     <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>

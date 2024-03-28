@@ -6,17 +6,14 @@
     <description>Recent content in MindMaps on NASAN</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Jan 2022 07:44:20 +0100</lastBuildDate><atom:link href="https://nasan92.github.io/mindmaps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jan 2022 07:44:20 +0100</lastBuildDate>
+    <atom:link href="https://nasan92.github.io/mindmaps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MindMaps</title>
       <link>https://nasan92.github.io/mindmaps/mindmaps/</link>
       <pubDate>Mon, 10 Jan 2022 07:44:20 +0100</pubDate>
-      
       <guid>https://nasan92.github.io/mindmaps/mindmaps/</guid>
-      <description>I&amp;rsquo;m really in love with MindMaps. I can recommend you the book Mind Map Mastery by Tony Buzan.
-Here I have a collection of some MindMaps I&amp;rsquo;ve created:
-IT related DevOps DevOps the three Ways from the DevOps Handbook PreviewPowerShell PowerShellModules from the book Building Powershell Modules - Brandon Olin PreviewPowershell Classes MindMap - more infos: About_Classes PreviewAzure Hybrid Identity Azure AD - AD Connect - MindMap Microsoft Docs - Hybrid Identity PreviewActive Directory GPO MindMap Overview - nice blog concerning GPOs: GPO From zero to hero PreviewBooks MindMap Übersicht zum Buch Atomic Habits - Die 1% Methode: PreviewMindMap Overview - DeepWork - Carl Newport PreviewMindMap Übersicht zum Buch Eden Culture von Johannes Hartl: Preview</description>
+      <description>I&amp;rsquo;m really in love with MindMaps. I can recommend you the book Mind Map Mastery by Tony Buzan.&#xA;Here I have a collection of some MindMaps I&amp;rsquo;ve created:&#xA;IT related DevOps DevOps the three Ways from the DevOps Handbook Preview&#xD;PowerShell PowerShellModules from the book Building Powershell Modules - Brandon Olin Preview&#xD;Powershell Classes MindMap - more infos: About_Classes Preview&#xD;Azure Hybrid Identity Azure AD - AD Connect - MindMap Microsoft Docs - Hybrid Identity Preview&#xD;Active Directory GPO MindMap Overview - nice blog concerning GPOs: GPO From zero to hero Preview&#xD;Books MindMap Übersicht zum Buch Atomic Habits - Die 1% Methode: Preview&#xD;MindMap Overview - DeepWork - Carl Newport Preview&#xD;MindMap Übersicht zum Buch Eden Culture von Johannes Hartl: Preview&#xD;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series) - NASAN</title><meta name="Description" content=""><meta property="og:title" content="(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)" />
+<meta property="og:description" content="In the latest blog post (1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series) we learned how to setup Azure DevOps using Workload Identiy Federation
+Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.
+But what about using a service principal for local activities whose secret will expire after a few hours instead of months?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nasan92.github.io/posts/2023-09-27-terraform-locally/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-26T06:10:21+01:00" />
+<meta property="article:modified_time" content="2023-09-26T06:10:21+01:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)"/>
+<meta name="twitter:description" content="In the latest blog post (1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series) we learned how to setup Azure DevOps using Workload Identiy Federation
+Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.
+But what about using a service principal for local activities whose secret will expire after a few hours instead of months?"/>
+<meta name="twitter:site" content="@nasantschi"/>
+<meta name="application-name" content="NASAN">
+<meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nasan92.github.io/posts/2023-09-27-terraform-locally/" /><link rel="prev" href="https://nasan92.github.io/posts/2023-09-23-azuredevopsterraform/" /><link rel="next" href="https://nasan92.github.io/posts/2023-10-26-psychologie-mindmap/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nasan92.github.io\/posts\/2023-09-27-terraform-locally\/"
+        },"genre": "posts","keywords": "terraform, AzureDevOps, Microsoft, WorkloadIdentityFederation, MicrosoftEntra, InfrastructureAsCode","wordcount":  1215 ,
+        "url": "https:\/\/nasan92.github.io\/posts\/2023-09-27-terraform-locally\/","datePublished": "2023-09-26T06:10:21+01:00","dateModified": "2023-09-26T06:10:21+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Nathanael Santschi"},"author": {
+                "@type": "Person",
+                "name": "Nathanael Santschi"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NASAN">NASAN</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" rel="noopener noreffer" target="_blank"> Youtube </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NASAN">NASAN</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" title="" rel="noopener noreffer" target="_blank">Youtube</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw"></i>Azure</a>&nbsp;<a href="/categories/azuredevops/"><i class="far fa-folder fa-fw"></i>AzureDevOps</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-09-26">2023-09-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1215 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#overview---initial-setup-steps">Overview - Initial Setup Steps</a></li>
+    <li><a href="#initial-steps">Initial steps</a>
+      <ul>
+        <li><a href="#1-create-an-app-and-service-principal-and-add-contributor-permissions-to-the-subscription">1. Create an app and service principal, and add contributor permissions to the subscription</a></li>
+        <li><a href="#2-create-a-gitignore-file">2. Create a .gitignore file</a></li>
+        <li><a href="#3-create-secrets-file">3. Create secrets file</a></li>
+        <li><a href="#4-define-variables">4. Define variables</a></li>
+        <li><a href="#5-create-a-provider-override-file">5. Create a provider override file</a></li>
+        <li><a href="#6-add-helper-scripts">6. Add helper scripts</a></li>
+      </ul>
+    </li>
+    <li><a href="#recurring-steps">Recurring steps</a>
+      <ul>
+        <li><a href="#1-create-new-secrets">1. Create new secrets</a></li>
+        <li><a href="#2-go-and-use-terraform-locally">2. Go and use terraform locally</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>In the latest blog post <a href="https://nasan.ch/posts/2023-09-23-azuredevopsterraform/" target="_blank" rel="noopener noreffer">(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</a> we learned how to setup Azure DevOps using Workload Identiy Federation</p>
+<p>Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.</p>
+<p>But what about using a service principal for local activities whose secret will expire after a few hours instead of months?<br>
+This wasn&rsquo;t practical when using a service principal in the service connection. Typically, the secret had a longer lifetime, so it didn&rsquo;t need to be renewed every time within the service connection.</p>
+<p>And there is another challenge. What about the provider? I don&rsquo;t want to change the provider locally everytime?.</p>
+<p>My Workaround to use terraform locally:</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>You worked through <a href="https://nasan.ch/posts/2023-09-23-azuredevopsterraform/" target="_blank" rel="noopener noreffer">Series 1</a></li>
+<li><a href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli" target="_blank" rel="noopener noreffer">Terraform</a> installed</li>
+<li><a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreffer">Git</a> installed</li>
+<li><a href="https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0" target="_blank" rel="noopener noreffer">Microsoft Graph Powershell Module</a> installed</li>
+<li><a href="https://learn.microsoft.com/en-us/powershell/azure/" target="_blank" rel="noopener noreffer">Azure Powershell Module</a> installed</li>
+</ul>
+<h2 id="overview---initial-setup-steps">Overview - Initial Setup Steps</h2>
+<ol>
+<li>Create an app and a service principal, and add contributor permissions to the subscription (this service principal will be used to connect from locally)</li>
+<li>Create a .gitignore file (to ignore secrets and override file)</li>
+<li>Create secrets file (here we will store temporarily valid secrets)</li>
+<li>Define variables</li>
+<li>Create a provider override file</li>
+<li>Add helper scripts</li>
+</ol>
+<p><figure><a class="lightgallery" href="/images/terraform-overview-Demo-tf-local.png" title="image" data-thumbnail="/images/terraform-overview-Demo-tf-local.png" data-sub-html="<h2>Preview</h2><p>image</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/terraform-overview-Demo-tf-local.png"
+            data-srcset="/images/terraform-overview-Demo-tf-local.png, /images/terraform-overview-Demo-tf-local.png 1.5x, /images/terraform-overview-Demo-tf-local.png 2x"
+            data-sizes="auto"
+            alt="/images/terraform-overview-Demo-tf-local.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>The directory structure will look like this:</p>
+<pre tabindex="0"><code>Terraform-Demo
+└── Helper-Scripts  
+    ├── update-secrets.ps1  
+└── terraform  
+    ├── 00_provider_override.tf
+    ├── 00_provider.tf  
+    ├── 01_mainexample.tf
+    ├── 02_variables.tf
+    ├── secrets.auto.tfvars 
+└── .gitignore 
+└── azure-pipeline.yaml  
+</code></pre><h2 id="initial-steps">Initial steps</h2>
+<p>The following steps need to be prepared only initialy.</p>
+<h3 id="1-create-an-app-and-service-principal-and-add-contributor-permissions-to-the-subscription">1. Create an app and service principal, and add contributor permissions to the subscription</h3>
+<ul>
+<li>initial creation of an app registration and service principal with permission to specific resources in my example the subscription.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$AppName</span> <span class="p">=</span> <span class="s1">&#39;Terraform-Demo-2609&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$subscriptionName</span> <span class="p">=</span> <span class="s2">&#34;SUB-Terraformdemo-01&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># connect with mgraph and azaccount</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Connect-MgGraph</span> <span class="n">-Scopes</span> <span class="s1">&#39;Application.ReadWrite.All&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Connect-AzAccount</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set Azure Subscription</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Set-AzContext</span> <span class="n">-SubscriptionName</span> <span class="nv">$subscriptionName</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Create new App</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$App</span> <span class="p">=</span> <span class="nb">New-MgApplication</span> <span class="n">-DisplayName</span> <span class="nv">$AppName</span> <span class="n">-SignInAudience</span> <span class="s1">&#39;AzureADMyOrg&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$AppId</span> <span class="p">=</span> <span class="nv">$App</span><span class="p">.</span><span class="py">AppId</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Create a new service principal object</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$ServicePrincipalID</span><span class="p">=</span><span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;AppId&#34;</span> <span class="p">=</span> <span class="nv">$AppId</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$ServicePrincipal</span> <span class="p">=</span>  <span class="nb">New-MgServicePrincipal</span> <span class="n">-BodyParameter</span> <span class="nv">$ServicePrincipalId</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Assign permission to the service principal</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$SubscriptionId</span> <span class="p">=</span> <span class="p">(</span><span class="nb">get-azsubscription</span> <span class="n">-SubscriptionName</span> <span class="nv">$subscriptionName</span><span class="p">).</span><span class="py">Id</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">New-AzRoleAssignment</span> <span class="n">-RoleDefinitionName</span> <span class="n">Contributor</span> <span class="n">-Scope</span> <span class="s2">&#34;/subscriptions/</span><span class="nv">$SubscriptionId</span><span class="s2">&#34;</span> <span class="n">-ObjectId</span> <span class="nv">$ServicePrincipal</span><span class="p">.</span><span class="py">Id</span>
+</span></span><span class="line"><span class="cl"><span class="p">`</span>
+</span></span></code></pre></div><h3 id="2-create-a-gitignore-file">2. Create a .gitignore file</h3>
+<p>Let&rsquo;s create a gitignore file. For our example are two ignorations specifically important:</p>
+<ul>
+<li>secrets.auto.tfvars</li>
+<li>override.tf</li>
+</ul>
+<p>The secrets file will include the client id and secret of our app registration. We will have one override file which basically will override the provider file from the repo with details to the backend storage account, where the terraform state file is stored.<br>
+So we don&rsquo;t want to have those files in the repository.</p>
+<p>.gitignore:</p>
+<pre tabindex="0"><code class="language-git" data-lang="git">`# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Secrests
+secrets.auto.tfvars
+
+# Crash log files
+crash.log
+
+# Exclude all .tfvars files, which are likely to contain sentitive data, such as
+# password, private keys, and other secrets. These should not be part of version 
+# control as they are data points which are potentially sensitive and subject 
+# to change depending on the environment.
+#
+#*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+</code></pre><h3 id="3-create-secrets-file">3. Create secrets file</h3>
+<p>Within the terraform folder create a new file secrets.auto.tfvars with the following content:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-terraform" data-lang="terraform"><span class="line"><span class="cl"><span class="na">client_id</span>          = <span class="s2">&#34;addheretheclientidofyourapp&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="na">client_secret</span>      = <span class="s2">&#34;leavethatemptynow&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">azure_tenant_id</span> = <span class="s2">&#34;add-here-the-customer-tenant-id&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="na">platform_subscription_id</span> = <span class="s2">&#34;add-here-subscription-id&#34;</span>
+</span></span></code></pre></div><h3 id="4-define-variables">4. Define variables</h3>
+<p>We&rsquo;ll later use some variables so create a new file 02_variables.tf with the following variables:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-terraform" data-lang="terraform"><span class="line"><span class="cl"><span class="kr">variable</span> <span class="s2">&#34;client_id&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">type</span>    = <span class="nx">string</span>
+</span></span><span class="line"><span class="cl">  <span class="na">default</span> = <span class="s2">&#34;none&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">variable</span> <span class="s2">&#34;client_secret&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">type</span>    = <span class="nx">string</span>
+</span></span><span class="line"><span class="cl">  <span class="na">default</span> = <span class="s2">&#34;none&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">variable</span> <span class="s2">&#34;azure_tenant_id&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">type</span>    = <span class="nx">string</span>
+</span></span><span class="line"><span class="cl">  <span class="na">default</span> = <span class="s2">&#34;none&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">variable</span> <span class="s2">&#34;platform_subscription_id&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">type</span>    = <span class="nx">string</span>
+</span></span><span class="line"><span class="cl">  <span class="na">default</span> = <span class="s2">&#34;none&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="5-create-a-provider-override-file">5. Create a provider override file</h3>
+<p>I have this idea from here: <a href="https://bzzzt.io/post/2021-10/2021-10-04-run-tf-locally-and-in-pipeline/" target="_blank" rel="noopener noreffer">run terraform locally and in pipeline</a></p>
+<p>simply copy the 00_provider.tf file and add override at the end of the file name
+In this file we need now to add the backend storage account with all necessary information.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-terraform" data-lang="terraform"><span class="line"><span class="cl"><span class="err">`</span><span class="nx">terraform</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">backend</span> <span class="s2">&#34;azurerm&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">resource_group_name</span>  = <span class="s2">&#34;rg-terraform-backend-demo&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">storage_account_name</span> = <span class="s2">&#34;tfdemo23092314462014&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">container_name</span>       = <span class="s2">&#34;terraform01&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">key</span>                  = <span class="s2">&#34;terraform.tfstate&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">access_key</span>           = <span class="s2">&#34;addaccesskeyhere&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="na">required_version</span> = <span class="s2">&#34;1.4.0&#34;</span><span class="c1"> // remember to update azure-pipelines.yml file too (when updating version)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">
+</span></span></span><span class="line"><span class="cl"><span class="kr">provider</span> <span class="s2">&#34;azurerm&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">alias</span>           = <span class="s2">&#34;platform&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">tenant_id</span>       = <span class="nb">var</span><span class="p">.</span><span class="nx">azure_tenant_id</span>
+</span></span><span class="line"><span class="cl">  <span class="na">subscription_id</span> = <span class="nb">var</span><span class="p">.</span><span class="nx">platform_subscription_id</span>
+</span></span><span class="line"><span class="cl">  <span class="na">client_id</span>       = <span class="nb">var</span><span class="p">.</span><span class="nx">client_id</span>
+</span></span><span class="line"><span class="cl">  <span class="na">client_secret</span>   = <span class="nb">var</span><span class="p">.</span><span class="nx">client_secret</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="6-add-helper-scripts">6. Add helper scripts</h3>
+<p>create a new directory &ldquo;Helper-Scripts&rdquo; for example and add the following script</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># Retrieve Client ID from secrets file</span>
+</span></span><span class="line"><span class="cl"><span class="c">#-------------------------------------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Define the path to the secrets.tf file</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$secretsFilePath</span> <span class="p">=</span> <span class="s2">&#34;.\terraform\secrets.auto.tfvars&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Read the contents of the file</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$fileContent</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="n">-Path</span> <span class="nv">$secretsFilePath</span> <span class="n">-Raw</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Define a regular expression pattern to match the client_id value</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$pattern</span> <span class="p">=</span> <span class="s1">&#39;client_id\s*=\s*&#34;([^&#34;]+)&#34;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Use the Select-String cmdlet to find the pattern in the file content</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$match</span> <span class="p">=</span> <span class="nv">$fileContent</span> <span class="p">|</span> <span class="nb">Select-String</span> <span class="n">-Pattern</span> <span class="nv">$pattern</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Check if a match was found</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$match</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># Extract the captured value (client_id) from the match</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$client_id</span> <span class="p">=</span> <span class="nv">$match</span><span class="p">.</span><span class="py">Matches</span><span class="p">.</span><span class="n">Groups</span><span class="p">[</span><span class="mf">1</span><span class="p">].</span><span class="py">Value</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c"># Print the client_id value</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Host</span> <span class="s2">&#34;client_id value: </span><span class="nv">$client_id</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Host</span> <span class="s2">&#34;client_id not found in </span><span class="nv">$secretsFilePath</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Create a new secret</span>
+</span></span><span class="line"><span class="cl"><span class="c">#-------------------------------------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-host</span> <span class="s2">&#34;Login with a user which has permissions to read/write applications&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Connect-MgGraph</span> <span class="n">-Scopes</span> <span class="s1">&#39;Application.ReadWrite.All&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$appObjectId</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-MgApplication</span> <span class="n">-Filter</span> <span class="s2">&#34;AppId eq &#39;</span><span class="nv">$client_id</span><span class="s2">&#39;&#34;</span><span class="p">).</span><span class="py">Id</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$expirationDate</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="py">AddHours</span><span class="p">(</span><span class="mf">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$credentialName</span> <span class="p">=</span> <span class="s2">&#34;TFTempLocal_EndDate_</span><span class="p">$(</span><span class="nv">$expirationDate</span><span class="p">.</span><span class="py">ToString</span><span class="p">(</span><span class="s1">&#39;yyyy-MM-dd_HH-mm&#39;</span><span class="p">))</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$passwordCred</span> <span class="p">=</span> <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">displayName</span> <span class="p">=</span> <span class="nv">$credentialName</span>
+</span></span><span class="line"><span class="cl">    <span class="n">endDateTime</span> <span class="p">=</span> <span class="nv">$expirationDate</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$secret</span> <span class="p">=</span> <span class="nb">Add-MgApplicationPassword</span> <span class="n">-applicationId</span> <span class="nv">$appObjectId</span> <span class="n">-PasswordCredential</span> <span class="nv">$passwordCred</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$secret</span> <span class="p">|</span> <span class="nb">Format-List</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$secretText</span> <span class="p">=</span> <span class="p">(</span><span class="nv">$secret</span><span class="p">).</span><span class="py">SecretText</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Save new secret into secret file</span>
+</span></span><span class="line"><span class="cl"><span class="c">#-------------------------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Define the new client_secret value with the $secret variable</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$newClientSecret</span> <span class="p">=</span> <span class="s1">&#39;client_secret = &#34;&#39;</span> <span class="p">+</span> <span class="nv">$secretText</span> <span class="p">+</span> <span class="s1">&#39;&#34;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Use regular expressions to find and replace the client_secret line</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$fileContent</span> <span class="p">=</span> <span class="nv">$fileContent</span> <span class="o">-replace</span> <span class="s1">&#39;client_secret\s*=\s*&#34;[^&#34;]*&#34;&#39;</span><span class="p">,</span> <span class="nv">$newClientSecret</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Write the updated content back to the file</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$fileContent</span> <span class="p">|</span> <span class="nb">Set-Content</span> <span class="n">-Path</span> <span class="nv">$secretsFilePath</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Display a success message</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Host</span> <span class="s2">&#34;Updated </span><span class="nv">$secretsFilePath</span><span class="s2"> with the new client_secret value.&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">``</span>
+</span></span></code></pre></div><h2 id="recurring-steps">Recurring steps</h2>
+<p>Now you prepared so far everything to be able to use terrafrom from you local machine.
+Now everytime you need to use terraform from your local machine you can run the following steps:</p>
+<h3 id="1-create-new-secrets">1. Create new secrets</h3>
+<p>run the script:
+<strong>.\Helper-Scripts\update-secrets.ps1</strong></p>
+<p>this will force you to login with an account which has enough permissions to create new secrets on an application and then it will create a new secret.</p>
+<p>The script stores the secret directly in the secrets.auto.tfvars file.</p>
+<p>I hardcoded an expirationtime of 8 hours - so you can use terraform for 8 hours locally.</p>
+<p><figure><a class="lightgallery" href="/images/update-secrets.png" title="image" data-thumbnail="/images/update-secrets.png" data-sub-html="<h2>Preview</h2><p>image</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/update-secrets.png"
+            data-srcset="/images/update-secrets.png, /images/update-secrets.png 1.5x, /images/update-secrets.png 2x"
+            data-sizes="auto"
+            alt="/images/update-secrets.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p><figure><a class="lightgallery" href="/images/update-secrets2.png" title="image" data-thumbnail="/images/update-secrets2.png" data-sub-html="<h2>Preview</h2><p>image</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/update-secrets2.png"
+            data-srcset="/images/update-secrets2.png, /images/update-secrets2.png 1.5x, /images/update-secrets2.png 2x"
+            data-sizes="auto"
+            alt="/images/update-secrets2.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<h3 id="2-go-and-use-terraform-locally">2. Go and use terraform locally</h3>
+<p><figure><a class="lightgallery" href="/images/Pastedimage20230926174850.png" title="image" data-thumbnail="/images/Pastedimage20230926174850.png" data-sub-html="<h2>Preview</h2><p>image</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/Pastedimage20230926174850.png"
+            data-srcset="/images/Pastedimage20230926174850.png, /images/Pastedimage20230926174850.png 1.5x, /images/Pastedimage20230926174850.png 2x"
+            data-sizes="auto"
+            alt="/images/Pastedimage20230926174850.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p><figure><a class="lightgallery" href="/images/terraform-plan.png" title="image" data-thumbnail="/images/terraform-plan.png" data-sub-html="<h2>Preview</h2><p>image</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/terraform-plan.png"
+            data-srcset="/images/terraform-plan.png, /images/terraform-plan.png 1.5x, /images/terraform-plan.png 2x"
+            data-sizes="auto"
+            alt="/images/terraform-plan.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>Using Terraform locally is especially useful for troubleshooting or if you want to manipulate the state.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>With this solution, we still need a service principal with permissions on the subscription, which is in addition to the managed identity we are using within the pipeline. <br>
+However, we don&rsquo;t have any long-valid secret that could be misused. The only place where your temporarily valid secret is stored is on your local machine.<br>
+So, we can use the same repository locally and in the Azure DevOps Pipeline without manually changing the provider every time</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-09-26</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/terraform/">terraform</a>,&nbsp;<a href="/tags/azuredevops/">AzureDevOps</a>,&nbsp;<a href="/tags/microsoft/">Microsoft</a>,&nbsp;<a href="/tags/workloadidentityfederation/">WorkloadIdentityFederation</a>,&nbsp;<a href="/tags/microsoftentra/">MicrosoftEntra</a>,&nbsp;<a href="/tags/infrastructureascode/">InfrastructureAsCode</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2023-09-23-azuredevopsterraform/" class="prev" rel="prev" title="(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)"><i class="fas fa-angle-left fa-fw"></i>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</a>
+            <a href="/posts/2023-10-26-psychologie-mindmap/" class="next" rel="next" title="Psychologie - MindMaps">Psychologie - MindMaps<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.121.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
