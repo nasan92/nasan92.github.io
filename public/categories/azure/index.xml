@@ -1,92 +1,92 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Azure - Category - NASAN</title>
-        <link>https://nasan92.github.io/categories/azure/</link>
+        <link>http://localhost:1313/categories/azure/</link>
         <description>Azure - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/categories/azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/azure/" rel="self" type="application/rss+xml" /><item>
     <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</title>
-    <link>https://nasan92.github.io/posts/2023-09-27-terraform-locally/</link>
+    <link>http://localhost:1313/posts/2023-09-27-terraform-locally/</link>
     <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-27-terraform-locally/</guid>
+    <guid>http://localhost:1313/posts/2023-09-27-terraform-locally/</guid>
     <description><![CDATA[In the latest blog post (1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series) we learned how to setup Azure DevOps using Workload Identiy Federation
 Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.
 But what about using a service principal for local activities whose secret will expire after a few hours instead of months?]]></description>
 </item><item>
     <title>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</title>
-    <link>https://nasan92.github.io/posts/2023-09-23-azuredevopsterraform/</link>
+    <link>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</link>
     <pubDate>Sat, 23 Sep 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-23-azuredevopsterraform/</guid>
+    <guid>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</guid>
     <description><![CDATA[I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with workload identity federation instead of relying on a service principal with secrets. In this blog post, I will demonstrate how I set up this configuration.
 To learn more about workload identity federation read the docs:
 Workload identity federation - Microsoft Entra | Microsoft Learn
-Prerequisites Azure DevOps Org &ldquo;Customer Azure Tenant&rdquo; with Subscription &ldquo;Backend Azure Tenant&rdquo; with Subscription (can be in the same tenant - in our example we use different tenants) Azure Powershell Module Overview - Setup Steps Create a storage account that will store the Terraform state file Create a managed identity which has contributor permissions on this storage account If not already the case, install the Terraform extension for your Azure DevOps Org Create a new Azure DevOps Project Create a service connection to the &ldquo;backend tenant&rdquo; using workload identity federation with your previously created managed identity Create a managed identity in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription Create a service connection to the customer tenant using workload identity federation with your previously created managed identity Create a repository with basic Terraform files Create an Azure DevOps Pipeline PreviewPrepare &ldquo;Backend Tenant&rdquo; to store Terraform State File As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur.]]></description>
+Prerequisites Azure DevOps Org &ldquo;Customer Azure Tenant&rdquo; with Subscription &ldquo;Backend Azure Tenant&rdquo; with Subscription (can be in the same tenant - in our example we use different tenants) Azure Powershell Module Overview - Setup Steps Create a storage account that will store the Terraform state file Create a managed identity which has contributor permissions on this storage account If not already the case, install the Terraform extension for your Azure DevOps Org Create a new Azure DevOps Project Create a service connection to the &ldquo;backend tenant&rdquo; using workload identity federation with your previously created managed identity Create a managed identity in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription Create a service connection to the customer tenant using workload identity federation with your previously created managed identity Create a repository with basic Terraform files Create an Azure DevOps Pipeline Preview Prepare &ldquo;Backend Tenant&rdquo; to store Terraform State File As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur.]]></description>
 </item><item>
     <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-09-14-sc300-mindmap/</link>
+    <link>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</link>
     <pubDate>Thu, 14 Sep 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-14-sc300-mindmap/</guid>
+    <guid>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</guid>
     <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: SC-300 Preview]]></description>
+This MindMap is based on the MS Learning path: SC-300 Preview ]]></description>
 </item><item>
     <title>AZ-500 - Azure Security Engineer - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-09-08-az500-mindmap/</link>
+    <link>http://localhost:1313/posts/2023-09-08-az500-mindmap/</link>
     <pubDate>Fri, 08 Sep 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-08-az500-mindmap/</guid>
+    <guid>http://localhost:1313/posts/2023-09-08-az500-mindmap/</guid>
     <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: AZ-500 Preview]]></description>
+This MindMap is based on the MS Learning path: AZ-500 Preview ]]></description>
 </item><item>
     <title>Securing Resources in Azure VMs with Microsoft Entra Private Access in a Hub-and-Spoke Architecture</title>
-    <link>https://nasan92.github.io/posts/2023-08-31-entraprivateaccess/</link>
+    <link>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</link>
     <pubDate>Thu, 31 Aug 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-08-31-entraprivateaccess/</guid>
+    <guid>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</guid>
     <description><![CDATA[I did a little Microsoft Entra Private Access Test setup.
 My goal was to test access to some private Resources hosted on Azure Virtual Machines with Microsoft Entra Private Access instead of VPN.
-Overview The test setup is illustrated below: PreviewI have one Virtual Machine (VM) with a Windows File Share that I wish to access from my endpoint and I also want to be able to access this VM via RDP.]]></description>
+Overview The test setup is illustrated below: Preview I have one Virtual Machine (VM) with a Windows File Share that I wish to access from my endpoint and I also want to be able to access this VM via RDP.]]></description>
 </item><item>
     <title>AzureAD App Registrations explained</title>
-    <link>https://nasan92.github.io/posts/2023-05-01-azureappregistrations-explained/</link>
+    <link>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</link>
     <pubDate>Mon, 01 May 2023 05:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-05-01-azureappregistrations-explained/</guid>
+    <guid>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</guid>
     <description><![CDATA[Azure AD App registration Recently I had some talks with developers which made me to realize that I didn&rsquo;t fully understand how App Registrations are working. I was aware that we are registering an app and allowing the app certain permissions but in detail I didn&rsquo;t understand it.
 Why Azure AD App registration? Basically for every app where you want to use the Microsoft Identity Platform, you need to register your app.]]></description>
 </item><item>
     <title>SC-100 - Microsoft Certified Cybersecurity Architect Expert - MindMap Collection</title>
-    <link>https://nasan92.github.io/posts/2023-01-13-microsoftcybersecurityarchitect/</link>
+    <link>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</link>
     <pubDate>Thu, 12 Jan 2023 10:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-01-13-microsoftcybersecurityarchitect/</guid>
+    <guid>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</guid>
     <description><![CDATA[Studying SC-100 In my recent self-study, I have been working through the Microsoft SC-100 learning path. One of the ways that I have been organizing and consolidating my learning is by creating mind maps of the key concepts and topics covered in the course.
 You can find some of those mind maps below:
-Design a Zero Trust strategy and architecture Build an overall security strategy and architecture: PreviewDesign a security operations strategy: PreviewDesign an identity security strategy: PreviewEvaluate Governance Risk Compliance (GRC) technical strategies and security operations strategies Evaluate a regulatory compliance strategy PreviewEvaluate Security Posture - Manage Risk PreviewDesign security for infrastructure PreviewDesign strategy for data and applications PreviewRecommend security best practices Security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks Preview]]></description>
+Design a Zero Trust strategy and architecture Build an overall security strategy and architecture: Preview Design a security operations strategy: Preview Design an identity security strategy: Preview Evaluate Governance Risk Compliance (GRC) technical strategies and security operations strategies Evaluate a regulatory compliance strategy Preview Evaluate Security Posture - Manage Risk Preview Design security for infrastructure Preview Design strategy for data and applications Preview Recommend security best practices Security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks Preview ]]></description>
 </item><item>
     <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
-    <link>https://nasan92.github.io/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
+    <link>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
     <pubDate>Thu, 27 Oct 2022 10:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
+    <guid>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
     <description><![CDATA[link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
 I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.]]></description>
 </item><item>
     <title>Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform</title>
-    <link>https://nasan92.github.io/posts/2022-09-08-createcustomroleterraform/</link>
+    <link>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</link>
     <pubDate>Thu, 08 Sep 2022 10:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-09-08-createcustomroleterraform/</guid>
+    <guid>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</guid>
     <description><![CDATA[Yes&hellip; its annoying there is no built in role to only allow restarting of Azure Virtual Machines&hellip; The Virtual Machine Contributor Role allows to much. With this role you are able to destory and create VMs..
 So what I want to do in this case is creating a custom role which only allows to start / stop / restart Virtual Machines. And I want to do that with terraform because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.]]></description>
 </item><item>
     <title>MLOps explained - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</link>
+    <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
     <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</guid>
+    <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
     <description><![CDATA[This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
-Preview]]></description>
+Preview ]]></description>
 </item></channel>
 </rss>

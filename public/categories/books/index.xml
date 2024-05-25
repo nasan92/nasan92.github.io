@@ -1,89 +1,90 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Books - Category - NASAN</title>
-        <link>https://nasan92.github.io/categories/books/</link>
+        <link>http://localhost:1313/categories/books/</link>
         <description>Books - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/categories/books/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 07 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/books/" rel="self" type="application/rss+xml" /><item>
+    <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - MindMap Buch Zusammenfassung</title>
+    <link>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</link>
+    <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</guid>
+    <description><![CDATA[Kürzlich habe ich das Buch Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther gelesen und dazu folgendes MindMap erstellt:
+Preview ]]></description>
+</item><item>
     <title>Was wir sind und was wir sein könnten von Gerald Hüther - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</link>
+    <link>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</link>
     <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
+    <guid>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
     <description><![CDATA[Hier zwei eher grössere MindMaps als Buch Zusammenfassungen zum Buch &ldquo;Was wir sind und was wir sein könnten&rdquo; von Gerald Hüther
-Was wir sind PreviewWas wir sein könnten Preview]]></description>
+Was wir sind Preview Was wir sein könnten Preview ]]></description>
 </item><item>
     <title>Psychologie - MindMaps</title>
-    <link>https://nasan92.github.io/posts/2023-10-26-psychologie-mindmap/</link>
+    <link>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</link>
     <pubDate>Thu, 26 Oct 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-10-26-psychologie-mindmap/</guid>
+    <guid>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</guid>
     <description><![CDATA[Anhand des sehr unterhaltsamen Buches Klo-Psychologe: In 100 Sitzungen zum Seelenklempner habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.
 Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:
-Übersicht Preview1. Tiefenpsychologie Preview2. Persönlichtkeitspsychologie Preview3. Kognitive Psychologie und Intelligenz-Psychologie Preview4. Kommunikationspsychologie Preview5. Motivationspsychologie und positive Psychologie Preview6. Entwicklungs und Evolutionspsychologie Preview7. Organisationspsychologie Preview]]></description>
+Übersicht Preview 1. Tiefenpsychologie Preview 2. Persönlichtkeitspsychologie Preview 3. Kognitive Psychologie und Intelligenz-Psychologie Preview 4. Kommunikationspsychologie Preview 5. Motivationspsychologie und positive Psychologie Preview 6. Entwicklungs und Evolutionspsychologie Preview 7. Organisationspsychologie Preview ]]></description>
 </item><item>
     <title>Steal like an Artist - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-09-15-steallikeanartist/</link>
+    <link>http://localhost:1313/posts/2023-09-15-steallikeanartist/</link>
     <pubDate>Fri, 15 Sep 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-15-steallikeanartist/</guid>
+    <guid>http://localhost:1313/posts/2023-09-15-steallikeanartist/</guid>
     <description><![CDATA[MindMap for the Book
 Steal Like an Artist: 10 Things Nobody Told You About Being Creative
-Preview]]></description>
+Preview ]]></description>
 </item><item>
     <title>Factfulness by Hans Rosling - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-05-13-factfulness/</link>
+    <link>http://localhost:1313/posts/2023-05-13-factfulness/</link>
     <pubDate>Sat, 13 May 2023 10:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-05-13-factfulness/</guid>
+    <guid>http://localhost:1313/posts/2023-05-13-factfulness/</guid>
     <description><![CDATA[MindMap for the Book
 Factfulness: Ten Reasons We&rsquo;re Wrong About The World - And Why Things Are Better Than You Think - by Hans Rosling
-Preview]]></description>
+Preview ]]></description>
 </item><item>
     <title>Psychologie des Geldes - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-01-01-psychologiedesgeldes/</link>
+    <link>http://localhost:1313/posts/2023-01-01-psychologiedesgeldes/</link>
     <pubDate>Sun, 01 Jan 2023 10:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-01-01-psychologiedesgeldes/</guid>
+    <guid>http://localhost:1313/posts/2023-01-01-psychologiedesgeldes/</guid>
     <description><![CDATA[Ein MindMap als Buchzusammenfassung für das Buch Pychologie des Geldes - von Morgan Housel
-Preview]]></description>
+Preview ]]></description>
 </item><item>
     <title>Storyworthy - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-11-14-storyworthy/</link>
+    <link>http://localhost:1313/posts/2022-11-14-storyworthy/</link>
     <pubDate>Mon, 14 Nov 2022 10:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-11-14-storyworthy/</guid>
+    <guid>http://localhost:1313/posts/2022-11-14-storyworthy/</guid>
     <description><![CDATA[MindMap for the Book Storyworthy - by Matthew Dicks
-Preview]]></description>
+Preview ]]></description>
 </item><item>
     <title>Building a Second Brain - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-07-04-buildingasecondbrain/</link>
+    <link>http://localhost:1313/posts/2022-07-04-buildingasecondbrain/</link>
     <pubDate>Mon, 04 Jul 2022 10:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-07-04-buildingasecondbrain/</guid>
+    <guid>http://localhost:1313/posts/2022-07-04-buildingasecondbrain/</guid>
     <description><![CDATA[This MindMap tries to give an Overview over the book Building a Second Brain - by Tiago Forte
-Preview]]></description>
+Preview ]]></description>
 </item><item>
     <title>ThinkAgain Buch Umdenktipps - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-06-13-thinkagain/</link>
+    <link>http://localhost:1313/posts/2022-06-13-thinkagain/</link>
     <pubDate>Mon, 13 Jun 2022 10:51:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-06-13-thinkagain/</guid>
+    <guid>http://localhost:1313/posts/2022-06-13-thinkagain/</guid>
     <description><![CDATA[Folgendes MindMap bietet eine Übersicht über die Umdenktipps vom Buch ThinkAgain von Adam Grant.
-PreviewLink zum Buch: ThinkAgain]]></description>
+Preview Link zum Buch: ThinkAgain]]></description>
 </item><item>
     <title>MINDFUCK Buch Zusammenfassung - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-06-13-mindfuck/</link>
+    <link>http://localhost:1313/posts/2022-06-13-mindfuck/</link>
     <pubDate>Mon, 13 Jun 2022 10:39:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-06-13-mindfuck/</guid>
+    <guid>http://localhost:1313/posts/2022-06-13-mindfuck/</guid>
     <description><![CDATA[In folgendem MindMap habe ich Teile des Buches MINDFUCK von Petra Bock zusammengefasst:
-PreviewLink zum Buch: https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071]]></description>
-</item><item>
-    <title>MindMap DevOps the three Ways from the DevOps Handbook</title>
-    <link>https://nasan92.github.io/posts/2022-02-19-devopsthreeways/</link>
-    <pubDate>Sat, 19 Feb 2022 08:08:41 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-02-19-devopsthreeways/</guid>
-    <description><![CDATA[DevOps the three Ways from the DevOps Handbook The DevOps Handbook Preview]]></description>
+Preview Link zum Buch: https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071]]></description>
 </item></channel>
 </rss>

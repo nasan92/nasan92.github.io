@@ -1,17 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>MicrosoftPurview - Tag - NASAN</title>
-        <link>https://nasan92.github.io/tags/microsoftpurview/</link>
+        <link>http://localhost:1313/tags/microsoftpurview/</link>
         <description>MicrosoftPurview - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/tags/microsoftpurview/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/microsoftpurview/" rel="self" type="application/rss+xml" /><item>
     <title>Microsoft Purview - MindMaps</title>
-    <link>https://nasan92.github.io/posts/2024-01-18-microsoft-purview-mindmaps/</link>
+    <link>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</link>
     <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
+    <guid>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
     <description><![CDATA[During my SC-400 studies I created the following two Mind Maps.
 Microsoft Purview - Data security solutions Mind Map The first Mind Map includes data security solutions based on the following documentation: Microsoft Purview data security solutions
-PreviewMicrosoft Purview - Risk and compliance Mind Map The second Mind Map focuses on risk and compliance solutions based on the following documentation: Microsoft Purview risk and compliance solutions
-PreviewMicrosoft Purview - Data governance solutions For the data governance solutions I have not created a separate Mind Map because the following picture from here What are Microsoft Purview&rsquo;s governance solutions?]]></description>
+Preview Microsoft Purview - Risk and compliance Mind Map The second Mind Map focuses on risk and compliance solutions based on the following documentation: Microsoft Purview risk and compliance solutions
+Preview Microsoft Purview - Data governance solutions For the data governance solutions I have not created a separate Mind Map because the following picture from here What are Microsoft Purview&rsquo;s governance solutions?]]></description>
 </item></channel>
 </rss>

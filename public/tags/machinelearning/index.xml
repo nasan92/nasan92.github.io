@@ -1,31 +1,39 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>MachineLearning - Tag - NASAN</title>
-        <link>https://nasan92.github.io/tags/machinelearning/</link>
+        <link>http://localhost:1313/tags/machinelearning/</link>
         <description>MachineLearning - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/tags/machinelearning/" rel="self" type="application/rss+xml" /><item>
-    <title>Machine Learning - MindMaps</title>
-    <link>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</link>
-    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/machinelearning/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Machine Learning - MindMap</title>
+    <link>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</link>
+    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</guid>
+    <guid>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</guid>
+    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
+Azure Machine Learning: Preview ]]></description>
+</item><item>
+    <title>Machine Learning - MindMaps</title>
+    <link>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</link>
+    <pubDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</guid>
     <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
-Machine Learning Overview PreviewMachine Learning Types PreviewMachine Learning Algorithms Preview]]></description>
+Machine Learning Overview Preview Machine Learning Types Preview Machine Learning Algorithms Preview ]]></description>
 </item><item>
     <title>Introduction to Machine Learning- MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-04-23-introductiontomachinelearning/</link>
+    <link>http://localhost:1313/posts/2022-04-23-introductiontomachinelearning/</link>
     <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-04-23-introductiontomachinelearning/</guid>
+    <guid>http://localhost:1313/posts/2022-04-23-introductiontomachinelearning/</guid>
     <description><![CDATA[This MindMap was created using the following Microsoft Learn Path: Introduction to Machine Learning
-Preview]]></description>
+Preview ]]></description>
 </item><item>
     <title>MLOps explained - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</link>
+    <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
     <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-04-22-mlops-explained/</guid>
+    <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
     <description><![CDATA[This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
-Preview]]></description>
+Preview ]]></description>
 </item></channel>
 </rss>

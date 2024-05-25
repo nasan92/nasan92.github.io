@@ -1,70 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Categories - Category - NASAN</title>
-        <link>https://nasan92.github.io/categories/</link>
+        <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>MachineLearning</title>
-    <link>https://nasan92.github.io/categories/machinelearning/</link>
-    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Beziehungen</title>
+    <link>http://localhost:1313/categories/beziehungen/</link>
+    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/categories/machinelearning/</guid>
+    <guid>http://localhost:1313/categories/beziehungen/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MindMap</title>
-    <link>https://nasan92.github.io/categories/mindmap/</link>
-    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <link>http://localhost:1313/categories/mindmap/</link>
+    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/categories/mindmap/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Security</title>
-    <link>https://nasan92.github.io/categories/security/</link>
-    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/categories/security/</guid>
+    <guid>http://localhost:1313/categories/mindmap/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Books</title>
-    <link>https://nasan92.github.io/categories/books/</link>
-    <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
+    <link>http://localhost:1313/categories/books/</link>
+    <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/categories/books/</guid>
+    <guid>http://localhost:1313/categories/books/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MachineLearning</title>
+    <link>http://localhost:1313/categories/machinelearning/</link>
+    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/categories/machinelearning/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Security</title>
+    <link>http://localhost:1313/categories/security/</link>
+    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/categories/security/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Azure</title>
-    <link>https://nasan92.github.io/categories/azure/</link>
+    <link>http://localhost:1313/categories/azure/</link>
     <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/categories/azure/</guid>
+    <guid>http://localhost:1313/categories/azure/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>AzureDevOps</title>
-    <link>https://nasan92.github.io/categories/azuredevops/</link>
+    <link>http://localhost:1313/categories/azuredevops/</link>
     <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/categories/azuredevops/</guid>
+    <guid>http://localhost:1313/categories/azuredevops/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Encryption</title>
-    <link>https://nasan92.github.io/categories/encryption/</link>
+    <link>http://localhost:1313/categories/encryption/</link>
     <pubDate>Sat, 09 Sep 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/categories/encryption/</guid>
+    <guid>http://localhost:1313/categories/encryption/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MicrosoftEntraPrivateAccess</title>
-    <link>https://nasan92.github.io/categories/microsoftentraprivateaccess/</link>
+    <link>http://localhost:1313/categories/microsoftentraprivateaccess/</link>
     <pubDate>Thu, 31 Aug 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/categories/microsoftentraprivateaccess/</guid>
+    <guid>http://localhost:1313/categories/microsoftentraprivateaccess/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Docker</title>
-    <link>https://nasan92.github.io/categories/docker/</link>
+    <link>http://localhost:1313/categories/docker/</link>
     <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/categories/docker/</guid>
+    <guid>http://localhost:1313/categories/docker/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

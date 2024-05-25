@@ -1,95 +1,94 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - NASAN</title>
-        <link>https://nasan92.github.io/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Machine Learning - MindMaps</title>
-    <link>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</link>
-    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Woran erkenne ich eine ungesunde Beziehung? - MindMap zum Vortrag von Johannes Hartl</title>
+    <link>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</link>
+    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</guid>
+    <guid>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</guid>
+    <description><![CDATA[Zum Vortrag Woran erkenne ich eine ungesunde Beziehung von Johannes Hartl, habe ich mir erlaubt folgendes MindMap zu erstellen:
+Preview ]]></description>
+</item><item>
+    <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - MindMap Buch Zusammenfassung</title>
+    <link>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</link>
+    <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</guid>
+    <description><![CDATA[Kürzlich habe ich das Buch Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther gelesen und dazu folgendes MindMap erstellt:
+Preview ]]></description>
+</item><item>
+    <title>Azure Machine Learning - MindMap</title>
+    <link>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</link>
+    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</guid>
+    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
+Azure Machine Learning: Preview ]]></description>
+</item><item>
+    <title>Machine Learning - MindMaps</title>
+    <link>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</link>
+    <pubDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</guid>
     <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
-Machine Learning Overview PreviewMachine Learning Types PreviewMachine Learning Algorithms Preview]]></description>
+Machine Learning Overview Preview Machine Learning Types Preview Machine Learning Algorithms Preview ]]></description>
 </item><item>
     <title>Microsoft Purview - MindMaps</title>
-    <link>https://nasan92.github.io/posts/2024-01-18-microsoft-purview-mindmaps/</link>
+    <link>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</link>
     <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
+    <guid>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
     <description><![CDATA[During my SC-400 studies I created the following two Mind Maps.
 Microsoft Purview - Data security solutions Mind Map The first Mind Map includes data security solutions based on the following documentation: Microsoft Purview data security solutions
-PreviewMicrosoft Purview - Risk and compliance Mind Map The second Mind Map focuses on risk and compliance solutions based on the following documentation: Microsoft Purview risk and compliance solutions
-PreviewMicrosoft Purview - Data governance solutions For the data governance solutions I have not created a separate Mind Map because the following picture from here What are Microsoft Purview&rsquo;s governance solutions?]]></description>
+Preview Microsoft Purview - Risk and compliance Mind Map The second Mind Map focuses on risk and compliance solutions based on the following documentation: Microsoft Purview risk and compliance solutions
+Preview Microsoft Purview - Data governance solutions For the data governance solutions I have not created a separate Mind Map because the following picture from here What are Microsoft Purview&rsquo;s governance solutions?]]></description>
 </item><item>
     <title>Was wir sind und was wir sein könnten von Gerald Hüther - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</link>
+    <link>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</link>
     <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
+    <guid>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
     <description><![CDATA[Hier zwei eher grössere MindMaps als Buch Zusammenfassungen zum Buch &ldquo;Was wir sind und was wir sein könnten&rdquo; von Gerald Hüther
-Was wir sind PreviewWas wir sein könnten Preview]]></description>
+Was wir sind Preview Was wir sein könnten Preview ]]></description>
 </item><item>
     <title>Früchte des Herzens - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-11-11-fruechte-des-herzens/</link>
+    <link>http://localhost:1313/posts/2023-11-11-fruechte-des-herzens/</link>
     <pubDate>Sat, 11 Nov 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-11-11-fruechte-des-herzens/</guid>
+    <guid>http://localhost:1313/posts/2023-11-11-fruechte-des-herzens/</guid>
     <description><![CDATA[Kürzlich habe ich mir den Vortrag &ldquo;Übers Wasser gehen für Anfänger&rdquo; von Johannes Hartl angehört. Der Vortrag behandelt das Thema: &lsquo;Wie gehst du mit tiefer Trauer und tiefem Leid um?&rsquo;
 Gegen Ende des Vortrags zeigt er, welche möglichen Früchte auf dem Boden herausfordernder Situationen entstehen können – sogenannte &lsquo;Früchte des Herzens&rsquo;. Diese habe ich in folgender Mindmap veranschaulicht:
-Preview]]></description>
+Preview ]]></description>
 </item><item>
     <title>Psychologie - MindMaps</title>
-    <link>https://nasan92.github.io/posts/2023-10-26-psychologie-mindmap/</link>
+    <link>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</link>
     <pubDate>Thu, 26 Oct 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-10-26-psychologie-mindmap/</guid>
+    <guid>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</guid>
     <description><![CDATA[Anhand des sehr unterhaltsamen Buches Klo-Psychologe: In 100 Sitzungen zum Seelenklempner habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.
 Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:
-Übersicht Preview1. Tiefenpsychologie Preview2. Persönlichtkeitspsychologie Preview3. Kognitive Psychologie und Intelligenz-Psychologie Preview4. Kommunikationspsychologie Preview5. Motivationspsychologie und positive Psychologie Preview6. Entwicklungs und Evolutionspsychologie Preview7. Organisationspsychologie Preview]]></description>
+Übersicht Preview 1. Tiefenpsychologie Preview 2. Persönlichtkeitspsychologie Preview 3. Kognitive Psychologie und Intelligenz-Psychologie Preview 4. Kommunikationspsychologie Preview 5. Motivationspsychologie und positive Psychologie Preview 6. Entwicklungs und Evolutionspsychologie Preview 7. Organisationspsychologie Preview ]]></description>
 </item><item>
     <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</title>
-    <link>https://nasan92.github.io/posts/2023-09-27-terraform-locally/</link>
+    <link>http://localhost:1313/posts/2023-09-27-terraform-locally/</link>
     <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-27-terraform-locally/</guid>
+    <guid>http://localhost:1313/posts/2023-09-27-terraform-locally/</guid>
     <description><![CDATA[In the latest blog post (1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series) we learned how to setup Azure DevOps using Workload Identiy Federation
 Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.
 But what about using a service principal for local activities whose secret will expire after a few hours instead of months?]]></description>
 </item><item>
     <title>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</title>
-    <link>https://nasan92.github.io/posts/2023-09-23-azuredevopsterraform/</link>
+    <link>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</link>
     <pubDate>Sat, 23 Sep 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-23-azuredevopsterraform/</guid>
+    <guid>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</guid>
     <description><![CDATA[I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with workload identity federation instead of relying on a service principal with secrets. In this blog post, I will demonstrate how I set up this configuration.
 To learn more about workload identity federation read the docs:
 Workload identity federation - Microsoft Entra | Microsoft Learn
-Prerequisites Azure DevOps Org &ldquo;Customer Azure Tenant&rdquo; with Subscription &ldquo;Backend Azure Tenant&rdquo; with Subscription (can be in the same tenant - in our example we use different tenants) Azure Powershell Module Overview - Setup Steps Create a storage account that will store the Terraform state file Create a managed identity which has contributor permissions on this storage account If not already the case, install the Terraform extension for your Azure DevOps Org Create a new Azure DevOps Project Create a service connection to the &ldquo;backend tenant&rdquo; using workload identity federation with your previously created managed identity Create a managed identity in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription Create a service connection to the customer tenant using workload identity federation with your previously created managed identity Create a repository with basic Terraform files Create an Azure DevOps Pipeline PreviewPrepare &ldquo;Backend Tenant&rdquo; to store Terraform State File As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur.]]></description>
-</item><item>
-    <title>Steal like an Artist - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-09-15-steallikeanartist/</link>
-    <pubDate>Fri, 15 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-15-steallikeanartist/</guid>
-    <description><![CDATA[MindMap for the Book
-Steal Like an Artist: 10 Things Nobody Told You About Being Creative
-Preview]]></description>
-</item><item>
-    <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-09-14-sc300-mindmap/</link>
-    <pubDate>Thu, 14 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-14-sc300-mindmap/</guid>
-    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: SC-300 Preview]]></description>
-</item><item>
-    <title>Certificates (SSL/HTTPS)- MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-09-09-certificates/</link>
-    <pubDate>Sat, 09 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-09-09-certificates/</guid>
-    <description><![CDATA[Certificates MindMap:
-SSL certificates - what? why? How do certificates work? Types of certificates How HTTPS encryption works CERTIFICATION AUTHORITIES (CA) .. Preview]]></description>
+Prerequisites Azure DevOps Org &ldquo;Customer Azure Tenant&rdquo; with Subscription &ldquo;Backend Azure Tenant&rdquo; with Subscription (can be in the same tenant - in our example we use different tenants) Azure Powershell Module Overview - Setup Steps Create a storage account that will store the Terraform state file Create a managed identity which has contributor permissions on this storage account If not already the case, install the Terraform extension for your Azure DevOps Org Create a new Azure DevOps Project Create a service connection to the &ldquo;backend tenant&rdquo; using workload identity federation with your previously created managed identity Create a managed identity in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription Create a service connection to the customer tenant using workload identity federation with your previously created managed identity Create a repository with basic Terraform files Create an Azure DevOps Pipeline Preview Prepare &ldquo;Backend Tenant&rdquo; to store Terraform State File As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur.]]></description>
 </item></channel>
 </rss>

@@ -1,23 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>ActiveDirectory - Tag - NASAN</title>
-        <link>https://nasan92.github.io/tags/activedirectory/</link>
+        <link>http://localhost:1313/tags/activedirectory/</link>
         <description>ActiveDirectory - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 May 2023 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/tags/activedirectory/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 May 2023 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/activedirectory/" rel="self" type="application/rss+xml" /><item>
     <title>Top 10 Active Directory Attack Methods and How To Protect against it - MindMap</title>
-    <link>https://nasan92.github.io/posts/2023-05-18-top10adattackmethods/</link>
+    <link>http://localhost:1313/posts/2023-05-18-top10adattackmethods/</link>
     <pubDate>Thu, 18 May 2023 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2023-05-18-top10adattackmethods/</guid>
+    <guid>http://localhost:1313/posts/2023-05-18-top10adattackmethods/</guid>
     <description><![CDATA[MindMap with Top 10 Active Directory Attack methods and How to Protect against them:
-Preview]]></description>
+Preview ]]></description>
 </item><item>
     <title>MindMap GPO</title>
-    <link>https://nasan92.github.io/posts/2022-02-17-gpo/</link>
+    <link>http://localhost:1313/posts/2022-02-17-gpo/</link>
     <pubDate>Thu, 17 Feb 2022 21:30:23 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-02-17-gpo/</guid>
+    <guid>http://localhost:1313/posts/2022-02-17-gpo/</guid>
     <description><![CDATA[Group Policy Object (GPO) in Active Directory environment I can you recommend this blog GPO From zero to hero In the following MindMap I&rsquo;ve tried to create a little Overview of GPO in Active Directory Environments
-Preview]]></description>
+Preview ]]></description>
 </item></channel>
 </rss>

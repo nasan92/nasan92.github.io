@@ -1,16 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Infografik - Tag - NASAN</title>
-        <link>https://nasan92.github.io/tags/infografik/</link>
+        <link>http://localhost:1313/tags/infografik/</link>
         <description>Infografik - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Dec 2018 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://nasan92.github.io/tags/infografik/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Dec 2018 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/infografik/" rel="self" type="application/rss+xml" /><item>
     <title>Infografik Logik</title>
-    <link>https://nasan92.github.io/posts/2018-12-01-logik/</link>
+    <link>http://localhost:1313/posts/2018-12-01-logik/</link>
     <pubDate>Sat, 01 Dec 2018 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2018-12-01-logik/</guid>
+    <guid>http://localhost:1313/posts/2018-12-01-logik/</guid>
     <description><![CDATA[Die folgende Infografik gibt einen groben Überblick zu den Themen:
 Was ist Logik? Was ist ein Argument? Was macht ein Argument schlüssig? Beispiele für Logische Fehlschlüsse Zum Thema habe ich auch ein kurzes Video erstellt: https://youtu.be/Tp9WzwUMjDs
-Preview]]></description>
+Preview ]]></description>
 </item></channel>
 </rss>

@@ -1,77 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - NASAN</title>
-        <link>https://nasan92.github.io/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>DeepLearning</title>
-    <link>https://nasan92.github.io/tags/deeplearning/</link>
-    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Beziehungen</title>
+    <link>http://localhost:1313/tags/beziehungen/</link>
+    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/tags/deeplearning/</guid>
+    <guid>http://localhost:1313/tags/beziehungen/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>MachineLearning</title>
-    <link>https://nasan92.github.io/tags/machinelearning/</link>
-    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <title>JohannesHartl</title>
+    <link>http://localhost:1313/tags/johanneshartl/</link>
+    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/tags/machinelearning/</guid>
+    <guid>http://localhost:1313/tags/johanneshartl/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MindMap</title>
-    <link>https://nasan92.github.io/tags/mindmap/</link>
-    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <link>http://localhost:1313/tags/mindmap/</link>
+    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/tags/mindmap/</guid>
+    <guid>http://localhost:1313/tags/mindmap/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>UngesundeBeziehungen</title>
+    <link>http://localhost:1313/tags/ungesundebeziehungen/</link>
+    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/ungesundebeziehungen/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Würde</title>
+    <link>http://localhost:1313/tags/w%C3%BCrde/</link>
+    <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/w%C3%BCrde/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AzureMachineLearning</title>
+    <link>http://localhost:1313/tags/azuremachinelearning/</link>
+    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/azuremachinelearning/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MachineLearning</title>
+    <link>http://localhost:1313/tags/machinelearning/</link>
+    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/machinelearning/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>DeepLearning</title>
+    <link>http://localhost:1313/tags/deeplearning/</link>
+    <pubDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/deeplearning/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MicrosoftPurview</title>
-    <link>https://nasan92.github.io/tags/microsoftpurview/</link>
+    <link>http://localhost:1313/tags/microsoftpurview/</link>
     <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/tags/microsoftpurview/</guid>
+    <guid>http://localhost:1313/tags/microsoftpurview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Purview</title>
-    <link>https://nasan92.github.io/tags/purview/</link>
+    <link>http://localhost:1313/tags/purview/</link>
     <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/tags/purview/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Book</title>
-    <link>https://nasan92.github.io/tags/book/</link>
-    <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/tags/book/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Gehirnforschung</title>
-    <link>https://nasan92.github.io/tags/gehirnforschung/</link>
-    <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/tags/gehirnforschung/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Psychologie</title>
-    <link>https://nasan92.github.io/tags/psychologie/</link>
-    <pubDate>Sat, 11 Nov 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/tags/psychologie/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>AzureDevOps</title>
-    <link>https://nasan92.github.io/tags/azuredevops/</link>
-    <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/tags/azuredevops/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>InfrastructureAsCode</title>
-    <link>https://nasan92.github.io/tags/infrastructureascode/</link>
-    <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/tags/infrastructureascode/</guid>
+    <guid>http://localhost:1313/tags/purview/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Docker - Category - NASAN</title>
-        <link>https://nasan92.github.io/categories/docker/</link>
+        <link>http://localhost:1313/categories/docker/</link>
         <description>Docker - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/categories/docker/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/docker/" rel="self" type="application/rss+xml" /><item>
     <title>Docker Architecture Overview - MindMap</title>
-    <link>https://nasan92.github.io/posts/2022-04-24-dockeroverview/</link>
+    <link>http://localhost:1313/posts/2022-04-24-dockeroverview/</link>
     <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2022-04-24-dockeroverview/</guid>
+    <guid>http://localhost:1313/posts/2022-04-24-dockeroverview/</guid>
     <description><![CDATA[Docker Architecture Overview:
-Preview]]></description>
+Preview ]]></description>
 </item></channel>
 </rss>

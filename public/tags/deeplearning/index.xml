@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>DeepLearning - Tag - NASAN</title>
-        <link>https://nasan92.github.io/tags/deeplearning/</link>
+        <link>http://localhost:1313/tags/deeplearning/</link>
         <description>DeepLearning - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/tags/deeplearning/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/deeplearning/" rel="self" type="application/rss+xml" /><item>
     <title>Machine Learning - MindMaps</title>
-    <link>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</link>
-    <pubDate>Mon, 18 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <link>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</link>
+    <pubDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2024-03-28-machinelearning-overview/</guid>
+    <guid>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</guid>
     <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
-Machine Learning Overview PreviewMachine Learning Types PreviewMachine Learning Algorithms Preview]]></description>
+Machine Learning Overview Preview Machine Learning Types Preview Machine Learning Algorithms Preview ]]></description>
 </item></channel>
 </rss>
