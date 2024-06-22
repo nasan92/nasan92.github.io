@@ -3,7 +3,35 @@
         <title>Tags - Tag - NASAN</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>AI</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/ai/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Azure</title>
+    <link>http://localhost:1313/tags/azure/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/azure/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AzureAISearch</title>
+    <link>http://localhost:1313/tags/azureaisearch/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/azureaisearch/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MindMap</title>
+    <link>http://localhost:1313/tags/mindmap/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/mindmap/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Beziehungen</title>
     <link>http://localhost:1313/tags/beziehungen/</link>
     <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
@@ -16,13 +44,6 @@
     <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/johanneshartl/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MindMap</title>
-    <link>http://localhost:1313/tags/mindmap/</link>
-    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/mindmap/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>UngesundeBeziehungen</title>
@@ -51,27 +72,6 @@
     <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/machinelearning/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>DeepLearning</title>
-    <link>http://localhost:1313/tags/deeplearning/</link>
-    <pubDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/deeplearning/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MicrosoftPurview</title>
-    <link>http://localhost:1313/tags/microsoftpurview/</link>
-    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/microsoftpurview/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Purview</title>
-    <link>http://localhost:1313/tags/purview/</link>
-    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/purview/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

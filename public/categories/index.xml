@@ -3,7 +3,21 @@
         <title>Categories - Category - NASAN</title>
         <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>MachineLearning</title>
+    <link>http://localhost:1313/categories/machinelearning/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/categories/machinelearning/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MindMap</title>
+    <link>http://localhost:1313/categories/mindmap/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/categories/mindmap/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Beziehungen</title>
     <link>http://localhost:1313/categories/beziehungen/</link>
     <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
@@ -11,25 +25,11 @@
     <guid>http://localhost:1313/categories/beziehungen/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>MindMap</title>
-    <link>http://localhost:1313/categories/mindmap/</link>
-    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/mindmap/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
     <title>Books</title>
     <link>http://localhost:1313/categories/books/</link>
     <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/categories/books/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MachineLearning</title>
-    <link>http://localhost:1313/categories/machinelearning/</link>
-    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/machinelearning/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Security</title>

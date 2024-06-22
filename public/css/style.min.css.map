@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/nathanaelsantschi/Documents/GIT/nasan92.github.io",
+	"sourceRoot": "C:/Hugo/nasan92.github.io",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/css/_variables.scss",

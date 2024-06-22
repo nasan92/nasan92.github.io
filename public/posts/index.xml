@@ -3,7 +3,15 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure AI Search - MindMap</title>
+    <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
+    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
+Azure AI Search: Preview Preview ]]></description>
+</item><item>
     <title>Woran erkenne ich eine ungesunde Beziehung? - MindMap zum Vortrag von Johannes Hartl</title>
     <link>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</link>
     <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
@@ -80,15 +88,5 @@ Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurde
     <description><![CDATA[In the latest blog post (1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series) we learned how to setup Azure DevOps using Workload Identiy Federation
 Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.
 But what about using a service principal for local activities whose secret will expire after a few hours instead of months?]]></description>
-</item><item>
-    <title>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</title>
-    <link>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</link>
-    <pubDate>Sat, 23 Sep 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</guid>
-    <description><![CDATA[I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with workload identity federation instead of relying on a service principal with secrets. In this blog post, I will demonstrate how I set up this configuration.
-To learn more about workload identity federation read the docs:
-Workload identity federation - Microsoft Entra | Microsoft Learn
-Prerequisites Azure DevOps Org &ldquo;Customer Azure Tenant&rdquo; with Subscription &ldquo;Backend Azure Tenant&rdquo; with Subscription (can be in the same tenant - in our example we use different tenants) Azure Powershell Module Overview - Setup Steps Create a storage account that will store the Terraform state file Create a managed identity which has contributor permissions on this storage account If not already the case, install the Terraform extension for your Azure DevOps Org Create a new Azure DevOps Project Create a service connection to the &ldquo;backend tenant&rdquo; using workload identity federation with your previously created managed identity Create a managed identity in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription Create a service connection to the customer tenant using workload identity federation with your previously created managed identity Create a repository with basic Terraform files Create an Azure DevOps Pipeline Preview Prepare &ldquo;Backend Tenant&rdquo; to store Terraform State File As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur.]]></description>
 </item></channel>
 </rss>

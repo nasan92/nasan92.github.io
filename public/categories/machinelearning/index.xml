@@ -3,7 +3,15 @@
         <title>MachineLearning - Category - NASAN</title>
         <link>http://localhost:1313/categories/machinelearning/</link>
         <description>MachineLearning - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/machinelearning/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/machinelearning/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure AI Search - MindMap</title>
+    <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
+    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
+Azure AI Search: Preview Preview ]]></description>
+</item><item>
     <title>Azure Machine Learning - MindMap</title>
     <link>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</link>
     <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>

@@ -3,7 +3,15 @@
         <title>MindMap - Tag - NASAN</title>
         <link>http://localhost:1313/tags/mindmap/</link>
         <description>MindMap - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure AI Search - MindMap</title>
+    <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
+    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
+    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
+Azure AI Search: Preview Preview ]]></description>
+</item><item>
     <title>Woran erkenne ich eine ungesunde Beziehung? - MindMap zum Vortrag von Johannes Hartl</title>
     <link>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</link>
     <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
@@ -80,13 +88,5 @@ Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurde
     <description><![CDATA[MindMap for the Book
 Steal Like an Artist: 10 Things Nobody Told You About Being Creative
 Preview ]]></description>
-</item><item>
-    <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</link>
-    <pubDate>Thu, 14 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</guid>
-    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: SC-300 Preview ]]></description>
 </item></channel>
 </rss>
