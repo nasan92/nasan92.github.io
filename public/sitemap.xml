@@ -2,17 +2,20 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/tags/ai/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/azure/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/ai/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/ai/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/ai-102/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/azure/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/azureaiservices/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2024-07-20T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/azureaisearch/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/machinelearning/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2024-06-22T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/beziehungen/</loc><lastmod>2024-05-11T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/beziehungen/</loc><lastmod>2024-05-11T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/johanneshartl/</loc><lastmod>2024-05-11T05:10:21&#43;01:00</lastmod></url><url>
@@ -24,6 +27,7 @@
             <loc>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</loc><lastmod>2024-03-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/azuremachinelearning/</loc><lastmod>2024-03-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/machinelearning/</loc><lastmod>2024-03-30T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/machinelearning/</loc><lastmod>2024-03-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/deeplearning/</loc><lastmod>2024-03-28T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</loc><lastmod>2024-03-28T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</loc><lastmod>2024-01-18T05:10:21&#43;01:00</lastmod></url><url>

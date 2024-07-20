@@ -3,19 +3,40 @@
         <title>Tags - Tag - NASAN</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>AI</title>
     <link>http://localhost:1313/tags/ai/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/ai/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+    <title>AI-102</title>
+    <link>http://localhost:1313/tags/ai-102/</link>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/ai-102/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Azure</title>
     <link>http://localhost:1313/tags/azure/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/azure/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AzureAIServices</title>
+    <link>http://localhost:1313/tags/azureaiservices/</link>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/azureaiservices/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MindMap</title>
+    <link>http://localhost:1313/tags/mindmap/</link>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/mindmap/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>AzureAISearch</title>
@@ -23,13 +44,6 @@
     <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/azureaisearch/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MindMap</title>
-    <link>http://localhost:1313/tags/mindmap/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/mindmap/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Beziehungen</title>
@@ -58,20 +72,6 @@
     <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/w%C3%BCrde/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>AzureMachineLearning</title>
-    <link>http://localhost:1313/tags/azuremachinelearning/</link>
-    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/azuremachinelearning/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MachineLearning</title>
-    <link>http://localhost:1313/tags/machinelearning/</link>
-    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/machinelearning/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

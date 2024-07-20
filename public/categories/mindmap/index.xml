@@ -3,14 +3,26 @@
         <title>MindMap - Category - NASAN</title>
         <link>http://localhost:1313/categories/mindmap/</link>
         <description>MindMap - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/mindmap/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure AI Services - MindMap</title>
+    <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
+    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
+Azure AI Services: MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
     <title>Azure AI Search - MindMap</title>
     <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
     <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
-    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
-Azure AI Search: Preview Preview ]]></description>
+    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
+Azure AI Search: MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
 </item><item>
     <title>Woran erkenne ich eine ungesunde Beziehung? - MindMap zum Vortrag von Johannes Hartl</title>
     <link>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</link>
@@ -79,14 +91,5 @@ Preview ]]></description>
     <description><![CDATA[Anhand des sehr unterhaltsamen Buches Klo-Psychologe: In 100 Sitzungen zum Seelenklempner habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.
 Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:
 Übersicht Preview 1. Tiefenpsychologie Preview 2. Persönlichtkeitspsychologie Preview 3. Kognitive Psychologie und Intelligenz-Psychologie Preview 4. Kommunikationspsychologie Preview 5. Motivationspsychologie und positive Psychologie Preview 6. Entwicklungs und Evolutionspsychologie Preview 7. Organisationspsychologie Preview ]]></description>
-</item><item>
-    <title>Steal like an Artist - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-15-steallikeanartist/</link>
-    <pubDate>Fri, 15 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-15-steallikeanartist/</guid>
-    <description><![CDATA[MindMap for the Book
-Steal Like an Artist: 10 Things Nobody Told You About Being Creative
-Preview ]]></description>
 </item></channel>
 </rss>

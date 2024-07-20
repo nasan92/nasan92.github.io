@@ -3,17 +3,17 @@
         <title>Categories - Category - NASAN</title>
         <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>MachineLearning</title>
-    <link>http://localhost:1313/categories/machinelearning/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>AI</title>
+    <link>http://localhost:1313/categories/ai/</link>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>http://localhost:1313/categories/machinelearning/</guid>
+    <guid>http://localhost:1313/categories/ai/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MindMap</title>
     <link>http://localhost:1313/categories/mindmap/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/categories/mindmap/</guid>
     <description><![CDATA[]]></description>
@@ -30,6 +30,13 @@
     <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/categories/books/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MachineLearning</title>
+    <link>http://localhost:1313/categories/machinelearning/</link>
+    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/categories/machinelearning/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Security</title>
@@ -65,13 +72,6 @@
     <pubDate>Thu, 31 Aug 2023 06:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/categories/microsoftentraprivateaccess/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Docker</title>
-    <link>http://localhost:1313/categories/docker/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/docker/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

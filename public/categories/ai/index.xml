@@ -3,13 +3,23 @@
         <title>AI - Category - NASAN</title>
         <link>http://localhost:1313/categories/ai/</link>
         <description>AI - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/ai/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/ai/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure AI Services - MindMap</title>
+    <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
+    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
+    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
+Azure AI Services: MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
     <title>Azure AI Search - MindMap</title>
     <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
     <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map
+    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
 Azure AI Search: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
