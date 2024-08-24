@@ -3,13 +3,23 @@
         <title>MindMap - Category - NASAN</title>
         <link>http://localhost:1313/categories/mindmap/</link>
         <description>MindMap - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/mindmap/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure AI Studio - MindMap</title>
+    <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
+    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
+    <description><![CDATA[To get an overview of the Azure AI Studio, I&rsquo;ve created the following mind map:
+Azure AI Services: MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
     <title>Azure AI Services - MindMap</title>
     <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
     <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
+    <description><![CDATA[To get an overview of the current Azure AI services, I&rsquo;ve created the following mind map:
 Azure AI Services: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
@@ -82,14 +92,5 @@ Was wir sind Preview Was wir sein könnten Preview ]]></description>
     <description><![CDATA[Kürzlich habe ich mir den Vortrag &ldquo;Übers Wasser gehen für Anfänger&rdquo; von Johannes Hartl angehört. Der Vortrag behandelt das Thema: &lsquo;Wie gehst du mit tiefer Trauer und tiefem Leid um?&rsquo;
 Gegen Ende des Vortrags zeigt er, welche möglichen Früchte auf dem Boden herausfordernder Situationen entstehen können – sogenannte &lsquo;Früchte des Herzens&rsquo;. Diese habe ich in folgender Mindmap veranschaulicht:
 Preview ]]></description>
-</item><item>
-    <title>Psychologie - MindMaps</title>
-    <link>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</link>
-    <pubDate>Thu, 26 Oct 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</guid>
-    <description><![CDATA[Anhand des sehr unterhaltsamen Buches Klo-Psychologe: In 100 Sitzungen zum Seelenklempner habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.
-Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:
-Übersicht Preview 1. Tiefenpsychologie Preview 2. Persönlichtkeitspsychologie Preview 3. Kognitive Psychologie und Intelligenz-Psychologie Preview 4. Kommunikationspsychologie Preview 5. Motivationspsychologie und positive Psychologie Preview 6. Entwicklungs und Evolutionspsychologie Preview 7. Organisationspsychologie Preview ]]></description>
 </item></channel>
 </rss>

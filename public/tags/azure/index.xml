@@ -3,13 +3,23 @@
         <title>Azure - Tag - NASAN</title>
         <link>http://localhost:1313/tags/azure/</link>
         <description>Azure - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure AI Studio - MindMap</title>
+    <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
+    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
+    <description><![CDATA[To get an overview of the Azure AI Studio, I&rsquo;ve created the following mind map:
+Azure AI Services: MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
     <title>Azure AI Services - MindMap</title>
     <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
     <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
+    <description><![CDATA[To get an overview of the current Azure AI services, I&rsquo;ve created the following mind map:
 Azure AI Services: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
@@ -79,13 +89,5 @@ Preview ]]></description>
     <guid>http://localhost:1313/posts/2022-02-21-azuremonitor/</guid>
     <description><![CDATA[I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I&rsquo;ve created it based on the Azure Monitor Documentation. Somethings may be outdated today -&gt; you can find the Microsoft Docs to that topic here: Azure Monitor
 Preview ]]></description>
-</item><item>
-    <title>MindMap Hybrid Identity with Azure AD - AD Connect</title>
-    <link>http://localhost:1313/posts/2022-02-19-hybrididentity/</link>
-    <pubDate>Sat, 19 Feb 2022 07:53:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-02-19-hybrididentity/</guid>
-    <description><![CDATA[You can find the official documentation from Microsoft to that topic here: Microsoft Docs - Hybrid Identity
-In this MindMap you can see the different Authentication and Single Sign On Methods which are available. Preview ]]></description>
 </item></channel>
 </rss>

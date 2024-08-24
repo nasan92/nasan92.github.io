@@ -3,13 +3,23 @@
         <title>AzureAIServices - Tag - NASAN</title>
         <link>http://localhost:1313/tags/azureaiservices/</link>
         <description>AzureAIServices - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azureaiservices/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azureaiservices/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure AI Studio - MindMap</title>
+    <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
+    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
+    <description><![CDATA[To get an overview of the Azure AI Studio, I&rsquo;ve created the following mind map:
+Azure AI Services: MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
     <title>Azure AI Services - MindMap</title>
     <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
     <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
+    <description><![CDATA[To get an overview of the current Azure AI services, I&rsquo;ve created the following mind map:
 Azure AI Services: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
