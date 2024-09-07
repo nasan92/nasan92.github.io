@@ -1,5 +1,5 @@
 ---
-title: "Azure AI Services - MindMap"
+title: "Azure AI Services - mind map"
 author: Nathanael Santschi
 date: 2024-07-20T05:10:21+01:00
 draft: false

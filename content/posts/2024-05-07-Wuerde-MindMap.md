@@ -1,5 +1,5 @@
 ---
-title: "Würde: Was uns stark macht - als Einzelne und als Gesellschaft - MindMap Buch Zusammenfassung"
+title: "Würde: Was uns stark macht - als Einzelne und als Gesellschaft - mind map Buch Zusammenfassung"
 author: Nathanael Santschi
 date: 2024-05-07T05:10:21+01:00
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Woran erkenne ich eine ungesunde Beziehung? - MindMap zum Vortrag von Johannes Hartl"
+title: "Woran erkenne ich eine ungesunde Beziehung? - mind map zum Vortrag von Johannes Hartl"
 author: Nathanael Santschi
 date: 2024-05-11T05:10:21+01:00
 draft: false

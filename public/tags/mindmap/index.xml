@@ -3,8 +3,18 @@
         <title>MindMap - Tag - NASAN</title>
         <link>http://localhost:1313/tags/mindmap/</link>
         <description>MindMap - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure AI Studio - MindMap</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>RAG Fundamentals - the vanilla RAG framwork mind map</title>
+    <link>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</link>
+    <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</guid>
+    <description><![CDATA[I recently came across an insightful article: https://decodingml.substack.com/p/rag-fundamentals-first?source=queue, which delved into the fundamentals of RAG (Retrieval Augmented Generation) To further process and organize my understanding of the topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:
+The vanilla RAG framework mind map: MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
+    <title>Azure AI Studio - mind map</title>
     <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
     <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
@@ -14,7 +24,7 @@ Azure AI Services: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
 </item><item>
-    <title>Azure AI Services - MindMap</title>
+    <title>Azure AI Services - mind map</title>
     <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
     <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
@@ -24,7 +34,7 @@ Azure AI Services: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
 </item><item>
-    <title>Azure AI Search - MindMap</title>
+    <title>Azure AI Search - mind map</title>
     <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
     <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
@@ -34,7 +44,7 @@ Azure AI Search: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
 </item><item>
-    <title>Woran erkenne ich eine ungesunde Beziehung? - MindMap zum Vortrag von Johannes Hartl</title>
+    <title>Woran erkenne ich eine ungesunde Beziehung? - mind map zum Vortrag von Johannes Hartl</title>
     <link>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</link>
     <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
@@ -42,7 +52,7 @@ Preview ]]></description>
     <description><![CDATA[Zum Vortrag Woran erkenne ich eine ungesunde Beziehung von Johannes Hartl, habe ich mir erlaubt folgendes MindMap zu erstellen:
 Preview ]]></description>
 </item><item>
-    <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - MindMap Buch Zusammenfassung</title>
+    <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - mind map Buch Zusammenfassung</title>
     <link>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</link>
     <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
@@ -50,7 +60,7 @@ Preview ]]></description>
     <description><![CDATA[Kürzlich habe ich das Buch Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther gelesen und dazu folgendes MindMap erstellt:
 Preview ]]></description>
 </item><item>
-    <title>Azure Machine Learning - MindMap</title>
+    <title>Azure Machine Learning - mind map</title>
     <link>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</link>
     <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
@@ -83,14 +93,5 @@ Preview Microsoft Purview - Data governance solutions For the data governance so
     <guid>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
     <description><![CDATA[Hier zwei eher grössere MindMaps als Buch Zusammenfassungen zum Buch &ldquo;Was wir sind und was wir sein könnten&rdquo; von Gerald Hüther
 Was wir sind Preview Was wir sein könnten Preview ]]></description>
-</item><item>
-    <title>Früchte des Herzens - MindMap</title>
-    <link>http://localhost:1313/posts/2023-11-11-fruechte-des-herzens/</link>
-    <pubDate>Sat, 11 Nov 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-11-11-fruechte-des-herzens/</guid>
-    <description><![CDATA[Kürzlich habe ich mir den Vortrag &ldquo;Übers Wasser gehen für Anfänger&rdquo; von Johannes Hartl angehört. Der Vortrag behandelt das Thema: &lsquo;Wie gehst du mit tiefer Trauer und tiefem Leid um?&rsquo;
-Gegen Ende des Vortrags zeigt er, welche möglichen Früchte auf dem Boden herausfordernder Situationen entstehen können – sogenannte &lsquo;Früchte des Herzens&rsquo;. Diese habe ich in folgender Mindmap veranschaulicht:
-Preview ]]></description>
 </item></channel>
 </rss>
