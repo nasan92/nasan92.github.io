@@ -1,5 +1,5 @@
 ---
-title: "RAG Fundamentals - the vanilla RAG framwork mind map"
+title: "RAG Fundamentals - the vanilla RAG framework mind map"
 author: Nathanael Santschi
 date: 2024-09-07T05:10:21+01:00
 draft: false
