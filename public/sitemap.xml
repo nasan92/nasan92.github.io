@@ -2,19 +2,25 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://localhost:1313/posts/2024-20-08-5-elements-of-effective-thinking-book-summary-mind-map/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/books/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/effectivethinking/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/productivity/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</loc><lastmod>2024-09-14T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/developing/</loc><lastmod>2024-09-14T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/ai/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/ai/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/llm/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/rag/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/rag/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/retrievalaugmentedgeneration/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2024-09-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/ai-102/</loc><lastmod>2024-08-24T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/azure/</loc><lastmod>2024-08-24T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</loc><lastmod>2024-08-24T05:10:21&#43;01:00</lastmod></url><url>
@@ -28,7 +34,6 @@
             <loc>http://localhost:1313/tags/johanneshartl/</loc><lastmod>2024-05-11T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/ungesundebeziehungen/</loc><lastmod>2024-05-11T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</loc><lastmod>2024-05-11T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/books/</loc><lastmod>2024-05-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/w%C3%BCrde/</loc><lastmod>2024-05-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</loc><lastmod>2024-05-07T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</loc><lastmod>2024-03-30T05:10:21&#43;01:00</lastmod></url><url>

@@ -3,13 +3,34 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>RAG Fundamentals - the vanilla RAG framwork mind map</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>5 Elements of Effective Thinking - mind map</title>
+    <link>http://localhost:1313/posts/2024-20-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
+    <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-20-08-5-elements-of-effective-thinking-book-summary-mind-map/</guid>
+    <description><![CDATA[The following mind map provides a summary of the key takeaways from the book 5 Elements of Effective Thinking
+5 Elements of Effective Thinking Mind Map MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
+    <title>14 Habits of Highly Productive Developers - mind map</title>
+    <link>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</link>
+    <pubDate>Sat, 14 Sep 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</guid>
+    <description><![CDATA[The following mind map provides a concise summary of the key takeaways from the book 14 Habits of Highly Productive Developers
+14 Habits of Highly Productive Developers Mind Map MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
+    <title>RAG Fundamentals - the vanilla RAG framework mind map</title>
     <link>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</link>
     <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</guid>
-    <description><![CDATA[I recently came across an insightful article: https://decodingml.substack.com/p/rag-fundamentals-first?source=queue, which delved into the fundamentals of RAG (Retrieval Augmented Generation) To further process and organize my understanding of the topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:
+    <description><![CDATA[I recently came across an insightful article: RAG Fundamentals First, which delved into the fundamentals of RAG (Retrieval Augmented Generation)
+To further process and organize my understanding of the topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:
 The vanilla RAG framework mind map: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
@@ -75,23 +96,5 @@ Azure Machine Learning: Preview ]]></description>
     <guid>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</guid>
     <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
 Machine Learning Overview Preview Machine Learning Types Preview Machine Learning Algorithms Preview ]]></description>
-</item><item>
-    <title>Microsoft Purview - MindMaps</title>
-    <link>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</link>
-    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
-    <description><![CDATA[During my SC-400 studies I created the following two Mind Maps.
-Microsoft Purview - Data security solutions Mind Map The first Mind Map includes data security solutions based on the following documentation: Microsoft Purview data security solutions
-Preview Microsoft Purview - Risk and compliance Mind Map The second Mind Map focuses on risk and compliance solutions based on the following documentation: Microsoft Purview risk and compliance solutions
-Preview Microsoft Purview - Data governance solutions For the data governance solutions I have not created a separate Mind Map because the following picture from here What are Microsoft Purview&rsquo;s governance solutions?]]></description>
-</item><item>
-    <title>Was wir sind und was wir sein könnten von Gerald Hüther - MindMap</title>
-    <link>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</link>
-    <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
-    <description><![CDATA[Hier zwei eher grössere MindMaps als Buch Zusammenfassungen zum Buch &ldquo;Was wir sind und was wir sein könnten&rdquo; von Gerald Hüther
-Was wir sind Preview Was wir sein könnten Preview ]]></description>
 </item></channel>
 </rss>

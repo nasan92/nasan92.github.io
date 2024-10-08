@@ -4,12 +4,13 @@
         <link>http://localhost:1313/categories/ai/</link>
         <description>AI - Category - NASAN</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/ai/" rel="self" type="application/rss+xml" /><item>
-    <title>RAG Fundamentals - the vanilla RAG framwork mind map</title>
+    <title>RAG Fundamentals - the vanilla RAG framework mind map</title>
     <link>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</link>
     <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</guid>
-    <description><![CDATA[I recently came across an insightful article: https://decodingml.substack.com/p/rag-fundamentals-first?source=queue, which delved into the fundamentals of RAG (Retrieval Augmented Generation) To further process and organize my understanding of the topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:
+    <description><![CDATA[I recently came across an insightful article: RAG Fundamentals First, which delved into the fundamentals of RAG (Retrieval Augmented Generation)
+To further process and organize my understanding of the topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:
 The vanilla RAG framework mind map: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>

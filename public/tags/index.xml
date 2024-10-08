@@ -3,7 +3,35 @@
         <title>Tags - Tag - NASAN</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>EffectiveThinking</title>
+    <link>http://localhost:1313/tags/effectivethinking/</link>
+    <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/effectivethinking/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MindMap</title>
+    <link>http://localhost:1313/tags/mindmap/</link>
+    <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/mindmap/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Productivity</title>
+    <link>http://localhost:1313/tags/productivity/</link>
+    <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/productivity/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Developing</title>
+    <link>http://localhost:1313/tags/developing/</link>
+    <pubDate>Sat, 14 Sep 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/developing/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>AI</title>
     <link>http://localhost:1313/tags/ai/</link>
     <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
@@ -16,13 +44,6 @@
     <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/llm/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MindMap</title>
-    <link>http://localhost:1313/tags/mindmap/</link>
-    <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/mindmap/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>RAG</title>
@@ -51,27 +72,6 @@
     <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/azure/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>AzureAIServices</title>
-    <link>http://localhost:1313/tags/azureaiservices/</link>
-    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/azureaiservices/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>AzureAIStudio</title>
-    <link>http://localhost:1313/tags/azureaistudio/</link>
-    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/azureaistudio/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>AzureAISearch</title>
-    <link>http://localhost:1313/tags/azureaisearch/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/azureaisearch/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

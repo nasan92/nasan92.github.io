@@ -3,7 +3,27 @@
         <title>Books - Category - NASAN</title>
         <link>http://localhost:1313/categories/books/</link>
         <description>Books - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 07 May 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/books/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/books/" rel="self" type="application/rss+xml" /><item>
+    <title>5 Elements of Effective Thinking - mind map</title>
+    <link>http://localhost:1313/posts/2024-20-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
+    <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-20-08-5-elements-of-effective-thinking-book-summary-mind-map/</guid>
+    <description><![CDATA[The following mind map provides a summary of the key takeaways from the book 5 Elements of Effective Thinking
+5 Elements of Effective Thinking Mind Map MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
+    <title>14 Habits of Highly Productive Developers - mind map</title>
+    <link>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</link>
+    <pubDate>Sat, 14 Sep 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</guid>
+    <description><![CDATA[The following mind map provides a concise summary of the key takeaways from the book 14 Habits of Highly Productive Developers
+14 Habits of Highly Productive Developers Mind Map MindMap PNG
+MindMap SVG - (Links working)
+Preview ]]></description>
+</item><item>
     <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - mind map Buch Zusammenfassung</title>
     <link>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</link>
     <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
@@ -73,21 +93,5 @@ Preview ]]></description>
     <guid>http://localhost:1313/posts/2022-07-04-buildingasecondbrain/</guid>
     <description><![CDATA[This MindMap tries to give an Overview over the book Building a Second Brain - by Tiago Forte
 Preview ]]></description>
-</item><item>
-    <title>ThinkAgain Buch Umdenktipps - MindMap</title>
-    <link>http://localhost:1313/posts/2022-06-13-thinkagain/</link>
-    <pubDate>Mon, 13 Jun 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-06-13-thinkagain/</guid>
-    <description><![CDATA[Folgendes MindMap bietet eine Übersicht über die Umdenktipps vom Buch ThinkAgain von Adam Grant.
-Preview Link zum Buch: ThinkAgain]]></description>
-</item><item>
-    <title>MINDFUCK Buch Zusammenfassung - MindMap</title>
-    <link>http://localhost:1313/posts/2022-06-13-mindfuck/</link>
-    <pubDate>Mon, 13 Jun 2022 10:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-06-13-mindfuck/</guid>
-    <description><![CDATA[In folgendem MindMap habe ich Teile des Buches MINDFUCK von Petra Bock zusammengefasst:
-Preview Link zum Buch: https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071]]></description>
 </item></channel>
 </rss>
