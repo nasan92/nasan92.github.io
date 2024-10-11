@@ -23,7 +23,7 @@ During my recent Machine Learning studies I created the following MindMaps.
 
 
 ## Machine Learning Algorithms
-![Machine Learning TAlgorithms MindMap SVG](/images/MachineLearning-Overview-Algorithms.svg "Preview")
+![Machine Learning Algorithms MindMap SVG](/images/MachineLearning-Overview-Algorithms.svg "Preview")
 
 
 
