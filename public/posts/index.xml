@@ -3,12 +3,21 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Databricks - mind map</title>
+    <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
+    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
+    <description><![CDATA[As part of my recent deep dive into Azure Databricks, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate. Checkout the mindmap in the link below to find a SVG Version of it with working links.
+Explore essential areas like:
+📊 Data Management 🗄️: Centralized governance, cataloging, and access control.]]></description>
+</item><item>
     <title>5 Elements of Effective Thinking - mind map</title>
-    <link>http://localhost:1313/posts/2024-20-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
+    <link>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
     <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-20-08-5-elements-of-effective-thinking-book-summary-mind-map/</guid>
+    <guid>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</guid>
     <description><![CDATA[The following mind map provides a summary of the key takeaways from the book 5 Elements of Effective Thinking
 5 Elements of Effective Thinking Mind Map MindMap PNG
 MindMap SVG
@@ -88,13 +97,5 @@ Preview ]]></description>
     <guid>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</guid>
     <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
 Azure Machine Learning: Preview ]]></description>
-</item><item>
-    <title>Machine Learning - MindMaps</title>
-    <link>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</link>
-    <pubDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</guid>
-    <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
-Machine Learning Overview Preview Machine Learning Types Preview Machine Learning Algorithms Preview ]]></description>
 </item></channel>
 </rss>

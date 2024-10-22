@@ -98,6 +98,14 @@
         alt="/images/nasan-avatar.jpeg"
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2021-08-23-windows-sandbox-customization-dsc/">Windows Sandbox Customization with DSC </a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-23">2021-08-23</time></span></div><div class="content">Demo Windows Sandbox Customization with Powershell DSC
+In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.
+Enable Windows Sandbox First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:
+Enable-WindowsOptionalFeature -FeatureName &#34;Containers-DisposableClientVM&#34; -Online Customization Files You can create a XML Config file like the following example and save it anywhere as .</div><div class="post-footer">
+        <a href="/posts/2021-08-23-windows-sandbox-customization-dsc/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/windowssandbox/">WindowsSandbox</a>,&nbsp;<a href="/tags/dsc/">DSC</a>,&nbsp;<a href="/tags/powershell/">Powershell</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-08-17-useful-chocolatey-commands/">useful chocolatey commands </a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-17">2021-08-17</time></span></div><div class="content">Useful Chocolatey commands
 Useful Chocolatey commands search a package: choco search appname
@@ -141,13 +149,6 @@ Define the ComputerName after the Invoke-Command In the ScriptBlock you can simp
 199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.</div><div class="post-footer">
         <a href="/posts/2021-05-07-gpresult-remote/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2018-12-01-logik/">Infografik Logik</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-12-01">2018-12-01</time></span></div><div class="content">Die folgende Infografik gibt einen groben Überblick zu den Themen:
-Was ist Logik? Was ist ein Argument? Was macht ein Argument schlüssig? Beispiele für Logische Fehlschlüsse Zum Thema habe ich auch ein kurzes Video erstellt: https://youtu.be/Tp9WzwUMjDs
-Preview </div><div class="post-footer">
-        <a href="/posts/2018-12-01-logik/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/infografik/">Infografik</a>,&nbsp;<a href="/tags/logik/">Logik</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -165,6 +166,10 @@ Preview </div><div class="post-footer">
                 </li><li class="page-item active">
                     <span class="page-link">
                         <a href="/page/9/">9</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/10/">10</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

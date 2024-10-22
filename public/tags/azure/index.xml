@@ -3,7 +3,16 @@
         <title>Azure - Tag - NASAN</title>
         <link>http://localhost:1313/tags/azure/</link>
         <description>Azure - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Databricks - mind map</title>
+    <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
+    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
+    <description><![CDATA[As part of my recent deep dive into Azure Databricks, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate. Checkout the mindmap in the link below to find a SVG Version of it with working links.
+Explore essential areas like:
+📊 Data Management 🗄️: Centralized governance, cataloging, and access control.]]></description>
+</item><item>
     <title>Azure AI Studio - mind map</title>
     <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
     <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
@@ -80,14 +89,6 @@ So what I want to do in this case is creating a custom role which only allows to
     <author>Author</author>
     <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
     <description><![CDATA[This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
-Preview ]]></description>
-</item><item>
-    <title>Azure Monitor MindMap</title>
-    <link>http://localhost:1313/posts/2022-02-21-azuremonitor/</link>
-    <pubDate>Mon, 21 Feb 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-02-21-azuremonitor/</guid>
-    <description><![CDATA[I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I&rsquo;ve created it based on the Azure Monitor Documentation. Somethings may be outdated today -&gt; you can find the Microsoft Docs to that topic here: Azure Monitor
 Preview ]]></description>
 </item></channel>
 </rss>
