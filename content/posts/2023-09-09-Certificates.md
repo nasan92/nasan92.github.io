@@ -28,5 +28,8 @@ Certificates MindMap:
 
 ![Certificates- Mindmap:](/images/Certificates.svg "Preview")
 
+Download the mind map as PNG 
+[SSL/TLS Certificates - Mindmap:](/images/Certificates.png "Preview")
+
 
 
