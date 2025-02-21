@@ -11,7 +11,7 @@ tags:
   - API
 categories:
   - Azure
-  - MindMapa
+  - MindMap
   - APIManagement
 
   

@@ -13,7 +13,7 @@ tags:
   - DataSciene
 categories:
   - AI
-  - MindMapa
+  - MindMap
 
   
 ---

@@ -11,7 +11,7 @@ tags:
   - container
 categories:
   - Azure
-  - MindMapa
+  - MindMap
   - Kubernetes
 
   
