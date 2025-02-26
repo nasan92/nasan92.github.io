@@ -3,7 +3,31 @@
         <title>MindMap - Tag - NASAN</title>
         <link>http://localhost:1313/tags/mindmap/</link>
         <description>MindMap - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>GenAI Azure Databricks - mind map - capabilities</title>
+    <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
+    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks. Also, check out the Azure Databricks Key Concepts mind map
+GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: MLflow Mind Map visualizing core components
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
+    <title>MLflow - mind map - core components</title>
+    <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
+    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
+    <description><![CDATA[This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.
+MLflow Mind Map MLflow Mind Map showcasing core components Figure 1: MLflow Mind Map visualizing core components
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
     <title>Azure Kubernetes - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
     <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
@@ -79,24 +103,6 @@ Preview ]]></description>
     <description><![CDATA[To get an overview of the current Azure AI services, I&rsquo;ve created the following mind map:
 Azure AI Services: MindMap PNG
 MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Azure AI Search - mind map</title>
-    <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
-Azure AI Search: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Woran erkenne ich eine ungesunde Beziehung? - mind map zum Vortrag von Johannes Hartl</title>
-    <link>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</link>
-    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</guid>
-    <description><![CDATA[Zum Vortrag Woran erkenne ich eine ungesunde Beziehung von Johannes Hartl, habe ich mir erlaubt folgendes MindMap zu erstellen:
 Preview ]]></description>
 </item></channel>
 </rss>

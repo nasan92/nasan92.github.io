@@ -3,7 +3,57 @@
         <title>MindMap - Category - NASAN</title>
         <link>http://localhost:1313/categories/mindmap/</link>
         <description>MindMap - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/mindmap/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>GenAI Azure Databricks - mind map - capabilities</title>
+    <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
+    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks. Also, check out the Azure Databricks Key Concepts mind map
+GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: MLflow Mind Map visualizing core components
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
+    <title>MLflow - mind map - core components</title>
+    <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
+    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
+    <description><![CDATA[This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.
+MLflow Mind Map MLflow Mind Map showcasing core components Figure 1: MLflow Mind Map visualizing core components
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
+    <title>Azure Kubernetes - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
+    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
+    <description><![CDATA[As part of my recent studies about Azure Kubernetes, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.
+Azure Kubernetes Mind Map Azure Kubernetes Mind Map showcasing core concepts Figure 1: Azure Kubernetes Mind Map visualizing key concepts
+Download the mind map in multiple formats:]]></description>
+</item><item>
+    <title>Azure API Management - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
+    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
+    <description><![CDATA[As part of my recent deep dive into Azure API Management, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.
+Azure API Management Mind Map Azure API Management Mind Map showcasing key concepts Figure 1: Azure API Management Mind Map visualizing key concepts]]></description>
+</item><item>
+    <title>Azure Databricks - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
+    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
+    <description><![CDATA[As part of my recent deep dive into Azure Databricks, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.
+Explore essential areas like:
+📊 Data Management 🗄️: Centralized governance, cataloging, and access control. 🛠️ Data Engineering 📊: Tools for building data pipelines, notebooks, and version control.]]></description>
+</item><item>
     <title>5 Elements of Effective Thinking - mind map</title>
     <link>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
     <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
@@ -54,47 +104,5 @@ Preview ]]></description>
 Azure AI Services: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
-</item><item>
-    <title>Azure AI Search - mind map</title>
-    <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
-Azure AI Search: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Woran erkenne ich eine ungesunde Beziehung? - mind map zum Vortrag von Johannes Hartl</title>
-    <link>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</link>
-    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</guid>
-    <description><![CDATA[Zum Vortrag Woran erkenne ich eine ungesunde Beziehung von Johannes Hartl, habe ich mir erlaubt folgendes MindMap zu erstellen:
-Preview ]]></description>
-</item><item>
-    <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - mind map Buch Zusammenfassung</title>
-    <link>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</link>
-    <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</guid>
-    <description><![CDATA[Kürzlich habe ich das Buch Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther gelesen und dazu folgendes MindMap erstellt:
-Preview ]]></description>
-</item><item>
-    <title>Azure Machine Learning - mind map</title>
-    <link>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</link>
-    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</guid>
-    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
-Azure Machine Learning: Preview ]]></description>
-</item><item>
-    <title>Machine Learning - MindMaps</title>
-    <link>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</link>
-    <pubDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</guid>
-    <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
-Machine Learning Overview Preview Machine Learning Types Preview Machine Learning Algorithms Preview ]]></description>
 </item></channel>
 </rss>

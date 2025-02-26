@@ -3,7 +3,19 @@
         <title>Azure - Tag - NASAN</title>
         <link>http://localhost:1313/tags/azure/</link>
         <description>Azure - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>GenAI Azure Databricks - mind map - capabilities</title>
+    <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
+    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks. Also, check out the Azure Databricks Key Concepts mind map
+GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: MLflow Mind Map visualizing core components
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
     <title>Azure Kubernetes - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
     <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
@@ -83,13 +95,5 @@ This MindMap is based on the MS Learning path: AZ-500 Preview ]]></description>
     <guid>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</guid>
     <description><![CDATA[Based on Mark&rsquo;s List of cybersecurity Resources, I created the following Mind Map:
 Preview ]]></description>
-</item><item>
-    <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
-    <link>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
-    <pubDate>Thu, 27 Oct 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
-    <description><![CDATA[link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
-I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.]]></description>
 </item></channel>
 </rss>

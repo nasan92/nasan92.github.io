@@ -3,75 +3,75 @@
         <title>Tags - Tag - NASAN</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure</title>
-    <link>http://localhost:1313/tags/azure/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/azure/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Azure Kubernetes</title>
-    <link>http://localhost:1313/tags/azure-kubernetes/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/azure-kubernetes/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Container</title>
-    <link>http://localhost:1313/tags/container/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/container/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Kubernetes</title>
-    <link>http://localhost:1313/tags/kubernetes/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/kubernetes/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MindMap</title>
-    <link>http://localhost:1313/tags/mindmap/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/mindmap/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>API</title>
-    <link>http://localhost:1313/tags/api/</link>
-    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/api/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>APIM</title>
-    <link>http://localhost:1313/tags/apim/</link>
-    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/apim/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>AzureAPIManagement</title>
-    <link>http://localhost:1313/tags/azureapimanagement/</link>
-    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/azureapimanagement/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>AI</title>
     <link>http://localhost:1313/tags/ai/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/ai/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+    <title>Azure</title>
+    <link>http://localhost:1313/tags/azure/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/azure/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>AzureDatabricks</title>
     <link>http://localhost:1313/tags/azuredatabricks/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/azuredatabricks/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Databricks</title>
+    <link>http://localhost:1313/tags/databricks/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/databricks/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>DataEngineering</title>
+    <link>http://localhost:1313/tags/dataengineering/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/dataengineering/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>DataSciene</title>
+    <link>http://localhost:1313/tags/datasciene/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/datasciene/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MindMap</title>
+    <link>http://localhost:1313/tags/mindmap/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/mindmap/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AzureMachineLearning</title>
+    <link>http://localhost:1313/tags/azuremachinelearning/</link>
+    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/azuremachinelearning/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MachineLearning</title>
+    <link>http://localhost:1313/tags/machinelearning/</link>
+    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/machinelearning/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MLflow</title>
+    <link>http://localhost:1313/tags/mlflow/</link>
+    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/mlflow/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
