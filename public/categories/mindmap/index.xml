@@ -3,14 +3,37 @@
         <title>MindMap - Category - NASAN</title>
         <link>http://localhost:1313/categories/mindmap/</link>
         <description>MindMap - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/mindmap/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 29 May 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>MCP - Model Context Protocol - mind map</title>
+    <link>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</link>
+    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</guid>
+    <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol
+To learn more about MCP - Model Context Protocol: MCP - Model Context Protocol mind map MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
+    <title>OpenTelemetry - mind map - concepts</title>
+    <link>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</link>
+    <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</guid>
+    <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of OpenTelemetry The purpose of OpenTelemetry is to collect, process and export signals. The signals (telemetry data) which OpenTelemetry currently supports can be found on the right side of the mind map:
+Signals: Traces Metrics Logs The mind map illustrates the components that make up these signals and how they are interconnected.
+To learn more about OpenTelemetry:
+Official docs: What is OpenTelemetry?]]></description>
+</item><item>
     <title>GenAI Azure Databricks - mind map - capabilities</title>
     <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
     <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
-    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks. Also, check out the Azure Databricks Key Concepts mind map
-GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: MLflow Mind Map visualizing core components
+    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.
+Also, check out the Azure Databricks Key Concepts mind map
+GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities
 Download the mind map in multiple formats:
 MindMap PNG
 MindMap JPG
@@ -82,26 +105,6 @@ Preview ]]></description>
     <description><![CDATA[I recently came across an insightful article: RAG Fundamentals First, which delved into the fundamentals of RAG (Retrieval Augmented Generation)
 To further process and organize my understanding of the topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:
 The vanilla RAG framework mind map: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Azure AI Studio - mind map</title>
-    <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
-    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
-    <description><![CDATA[To get an overview of the Azure AI Studio, I&rsquo;ve created the following mind map:
-Azure AI Services: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Azure AI Services - mind map</title>
-    <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
-    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
-    <description><![CDATA[To get an overview of the current Azure AI services, I&rsquo;ve created the following mind map:
-Azure AI Services: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
 </item></channel>

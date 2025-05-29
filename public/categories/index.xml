@@ -3,19 +3,33 @@
         <title>Categories - Category - NASAN</title>
         <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 29 May 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>MCP</title>
+    <link>http://localhost:1313/categories/mcp/</link>
+    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/categories/mcp/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MindMap</title>
+    <link>http://localhost:1313/categories/mindmap/</link>
+    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/categories/mindmap/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>OpenTelemetry</title>
+    <link>http://localhost:1313/categories/opentelemetry/</link>
+    <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/categories/opentelemetry/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>AI</title>
     <link>http://localhost:1313/categories/ai/</link>
     <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/categories/ai/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MindMap</title>
-    <link>http://localhost:1313/categories/mindmap/</link>
-    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/mindmap/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MachineLearning</title>
@@ -58,20 +72,6 @@
     <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/categories/books/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>RAG</title>
-    <link>http://localhost:1313/categories/rag/</link>
-    <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/rag/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Beziehungen</title>
-    <link>http://localhost:1313/categories/beziehungen/</link>
-    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/beziehungen/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

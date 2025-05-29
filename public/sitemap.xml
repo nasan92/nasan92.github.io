@@ -2,20 +2,28 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/tags/ai/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/ai/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/mcp/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/mcp/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/modelcontextprotocol/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/observability/</loc><lastmod>2025-05-14T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/opentelemetry/</loc><lastmod>2025-05-14T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/opentelemetry/</loc><lastmod>2025-05-14T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</loc><lastmod>2025-05-14T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/ai/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/azure/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/azuredatabricks/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/databricks/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/dataengineering/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/datasciene/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2025-02-26T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/azuremachinelearning/</loc><lastmod>2025-02-21T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/machinelearning/</loc><lastmod>2025-02-21T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/machinelearning/</loc><lastmod>2025-02-21T05:10:21&#43;01:00</lastmod></url><url>
