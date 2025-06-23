@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>APIM - Tag - NASAN</title>
+        <link>http://localhost:1313/tags/apim/</link>
+        <description>APIM - Tag - NASAN</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/apim/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure API Management - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
+    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
+    <description><![CDATA[As part of my recent deep dive into Azure API Management, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.
+Azure API Management Mind Map Azure API Management Mind Map showcasing key concepts Figure 1: Azure API Management Mind Map visualizing key concepts]]></description>
+</item></channel>
+</rss>

@@ -4,13 +4,13 @@
         <link>http://localhost:1313/tags/dataengineering/</link>
         <description>DataEngineering - Tag - NASAN</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/dataengineering/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure Databricks - mind map</title>
+    <title>Azure Databricks - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
     <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
-    <description><![CDATA[As part of my recent deep dive into Azure Databricks, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate. Checkout the mindmap in the link below to find a SVG Version of it with working links.
+    <description><![CDATA[As part of my recent deep dive into Azure Databricks, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.
 Explore essential areas like:
-📊 Data Management 🗄️: Centralized governance, cataloging, and access control.]]></description>
+📊 Data Management 🗄️: Centralized governance, cataloging, and access control. 🛠️ Data Engineering 📊: Tools for building data pipelines, notebooks, and version control.]]></description>
 </item></channel>
 </rss>

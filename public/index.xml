@@ -3,9 +3,17 @@
         <title>NASAN</title>
         <link>http://localhost:1313/</link>
         <description>NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Azure API Management - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
+    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
+    <description><![CDATA[As part of my recent deep dive into Azure API Management, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.
+Azure API Management Mind Map Azure API Management Mind Map showcasing key concepts Figure 1: Azure API Management Mind Map visualizing key concepts]]></description>
+</item><item>
     <title>Azure Databricks - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
     <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
@@ -91,13 +99,5 @@ Preview ]]></description>
     <guid>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</guid>
     <description><![CDATA[Kürzlich habe ich das Buch Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther gelesen und dazu folgendes MindMap erstellt:
 Preview ]]></description>
-</item><item>
-    <title>Azure Machine Learning - mind map</title>
-    <link>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</link>
-    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</guid>
-    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
-Azure Machine Learning: Preview ]]></description>
 </item></channel>
 </rss>

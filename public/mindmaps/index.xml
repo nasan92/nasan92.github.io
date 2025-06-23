@@ -4,7 +4,7 @@
     <title>MindMaps on NASAN</title>
     <link>http://localhost:1313/mindmaps/</link>
     <description>Recent content in MindMaps on NASAN</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 10 Jan 2022 07:44:20 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/mindmaps/index.xml" rel="self" type="application/rss+xml" />

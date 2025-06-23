@@ -3,7 +3,15 @@
         <title>Azure - Category - NASAN</title>
         <link>http://localhost:1313/categories/azure/</link>
         <description>Azure - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure API Management - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
+    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
+    <description><![CDATA[As part of my recent deep dive into Azure API Management, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.
+Azure API Management Mind Map Azure API Management Mind Map showcasing key concepts Figure 1: Azure API Management Mind Map visualizing key concepts]]></description>
+</item><item>
     <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</title>
     <link>http://localhost:1313/posts/2023-09-27-terraform-locally/</link>
     <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
@@ -80,13 +88,5 @@ I had a case where I did need to migrate a lot of databases from one SQL Server 
     <guid>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</guid>
     <description><![CDATA[Yes&hellip; its annoying there is no built in role to only allow restarting of Azure Virtual Machines&hellip; The Virtual Machine Contributor Role allows to much. With this role you are able to destory and create VMs..
 So what I want to do in this case is creating a custom role which only allows to start / stop / restart Virtual Machines. And I want to do that with terraform because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.]]></description>
-</item><item>
-    <title>MLOps explained - MindMap</title>
-    <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
-    <description><![CDATA[This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
-Preview ]]></description>
 </item></channel>
 </rss>

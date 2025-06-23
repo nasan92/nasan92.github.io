@@ -5,25 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>How to show last bootuptime of Computers with Powershell - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2021-05-12-show-last-bootup-time/">
-  <meta property="og:site_name" content="NASAN">
-  <meta property="og:title" content="How to show last bootuptime of Computers with Powershell">
-  <meta property="og:description" content="Use Get-CimInstance with the ClassName win32_operatingsystem You can query the ClassName win32_operatingsystem and select from there the computername csname and the last bootup time lastbootuptime
+        <title>How to show last bootuptime of Computers with Powershell - NASAN</title><meta name="Description" content=""><meta property="og:title" content="How to show last bootuptime of Computers with Powershell" />
+<meta property="og:description" content="Use Get-CimInstance with the ClassName win32_operatingsystem You can query the ClassName win32_operatingsystem and select from there the computername csname and the last bootup time lastbootuptime
 Get-CimInstance -ComputerName &#39;DC01&#39; -ClassName win32_operatingsystem | select csname, lastbootuptime Show last bootuptime for multiple computers If you want to do that for multiple computers you can for example do it wit a foreach loop:
-# First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2021-05-12T00:00:00+00:00">
-    <meta property="article:modified_time" content="2021-05-12T00:00:00+00:00">
-    <meta property="article:tag" content="Powershell">
+# First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/2021-05-12-show-last-bootup-time/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-12T00:00:00+00:00" />
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="How to show last bootuptime of Computers with Powershell">
-  <meta name="twitter:description" content="Use Get-CimInstance with the ClassName win32_operatingsystem You can query the ClassName win32_operatingsystem and select from there the computername csname and the last bootup time lastbootuptime
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="How to show last bootuptime of Computers with Powershell"/>
+<meta name="twitter:description" content="Use Get-CimInstance with the ClassName win32_operatingsystem You can query the ClassName win32_operatingsystem and select from there the computername csname and the last bootup time lastbootuptime
 Get-CimInstance -ComputerName &#39;DC01&#39; -ClassName win32_operatingsystem | select csname, lastbootuptime Show last bootuptime for multiple computers If you want to do that for multiple computers you can for example do it wit a foreach loop:
-# First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c.">
-      <meta name="twitter:site" content="@nasantschi">
+# First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c."/>
+<meta name="twitter:site" content="@nasantschi"/>
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -253,8 +248,8 @@ Get-CimInstance -ComputerName &#39;DC01&#39; -ClassName win32_operatingsystem | 
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.127.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.7">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

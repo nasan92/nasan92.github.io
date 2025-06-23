@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.127.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/">
-  <meta property="og:site_name" content="NASAN">
-  <meta property="og:title" content="NASAN">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+        <title>NASAN</title><meta name="Description" content=""><meta property="og:title" content="NASAN" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/" />
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NASAN">
-      <meta name="twitter:site" content="@nasantschi">
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="NASAN"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@nasantschi"/>
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -98,6 +97,14 @@
         alt="/images/nasan-avatar.jpeg"
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2021-12-06-powershellclasses/">MindMap PowerShell Classes</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-12-06">2021-12-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">A MindMap about PowerShell Classes
+PowerShell Classes MindMap I&rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes. It should help to get a better overview over the topic.
+Preview Further Links To learn more about classes follow those links:
+About_Classes PowerShell Classes - Getting Started</div><div class="post-footer">
+        <a href="/posts/2021-12-06-powershellclasses/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/classes/">Classes</a>,&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/mindmap/">MindMap</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-08-23-windows-sandbox-customization-dsc/">Windows Sandbox Customization with DSC </a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-23">2021-08-23</time></span></div><div class="content">Demo Windows Sandbox Customization with Powershell DSC
 In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.
@@ -141,14 +148,6 @@ Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportTy
 Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportType HTML -Path &#34;C:\GPOReports\GPOReportsAll.</div><div class="post-footer">
         <a href="/posts/2021-05-07-search-gpo/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2021-05-07-gpresult-remote/">Run a gpresult on a remote computer</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-06">2021-05-06</time></span></div><div class="content">How to run a gpresult on a remote computer
-Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
-Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command here comes the new highlight:
-199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.</div><div class="post-footer">
-        <a href="/posts/2021-05-07-gpresult-remote/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -173,8 +172,8 @@ Define the ComputerName after the Invoke-Command In the ScriptBlock you can simp
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.127.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.7">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

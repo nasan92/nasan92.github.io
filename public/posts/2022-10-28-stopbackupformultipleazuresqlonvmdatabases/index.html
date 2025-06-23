@@ -5,26 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/">
-  <meta property="og:site_name" content="NASAN">
-  <meta property="og:title" content="Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell">
-  <meta property="og:description" content="link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
-I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the “old SQL Server” offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2022-10-27T10:51:21+01:00">
-    <meta property="article:modified_time" content="2022-10-27T10:51:21+01:00">
-    <meta property="article:tag" content="Powershell">
-    <meta property="article:tag" content="Azure">
-    <meta property="article:tag" content="AzureBackup">
-    <meta property="article:tag" content="SQLonAzureVM">
+        <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell - NASAN</title><meta name="Description" content=""><meta property="og:title" content="Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell" />
+<meta property="og:description" content="link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
+I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-27T10:51:21+01:00" />
+<meta property="article:modified_time" content="2022-10-27T10:51:21+01:00" />
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell">
-  <meta name="twitter:description" content="link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
-I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the “old SQL Server” offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.">
-      <meta name="twitter:site" content="@nasantschi">
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell"/>
+<meta name="twitter:description" content="link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
+I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job."/>
+<meta name="twitter:site" content="@nasantschi"/>
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -252,8 +244,8 @@ To get all Databases into an Array which names are not in the <strong>$dbsToKeep
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.127.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.7">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
