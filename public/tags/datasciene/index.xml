@@ -3,9 +3,6 @@
         <title>DataSciene - Tag - NASAN</title>
         <link>http://localhost:1313/tags/datasciene/</link>
         <description>DataSciene - Tag - NASAN</description>
-<<<<<<< HEAD
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/datasciene/" rel="self" type="application/rss+xml" /><item>
-=======
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/datasciene/" rel="self" type="application/rss+xml" /><item>
     <title>GenAI Azure Databricks - mind map - capabilities</title>
     <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
@@ -20,7 +17,6 @@ MindMap PNG
 MindMap JPG
 MindMap SVG]]></description>
 </item><item>
->>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
     <title>Azure Databricks - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
     <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>

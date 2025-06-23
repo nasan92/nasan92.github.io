@@ -3,17 +3,23 @@
         <title>MindMap - Tag - NASAN</title>
         <link>http://localhost:1313/tags/mindmap/</link>
         <description>MindMap - Tag - NASAN</description>
-<<<<<<< HEAD
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
-=======
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 29 May 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>Software Architecture - mind maps</title>
+    <link>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</link>
+    <pubDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</guid>
+    <description><![CDATA[I started to create some minmal mind maps about Software Architecture. The current mind maps were created based on the book &ldquo;Head first - software architecture&rdquo;. Eventually I will later extend those.
+Software Architecture Roadmap You start with architectural characteristics. Then you&rsquo;ll need to get the logical components, pick a style and finally document your decision.
+Software Architecture Mind Map Architectural Characteristics Logical Components Architectural Style Architectural Decisions MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts]]></description>
+</item><item>
     <title>MCP - Model Context Protocol - mind map</title>
     <link>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</link>
     <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</guid>
     <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol
-To learn more about MCP - Model Context Protocol: MCP - Model Context Protocol mind map MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts
+MCP - Model Context Protocol mind map MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts
 Download the mind map in multiple formats:
 MindMap PNG
 MindMap JPG
@@ -63,7 +69,6 @@ MindMap SVG]]></description>
 Azure Kubernetes Mind Map Azure Kubernetes Mind Map showcasing core concepts Figure 1: Azure Kubernetes Mind Map visualizing key concepts
 Download the mind map in multiple formats:]]></description>
 </item><item>
->>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
     <title>Azure API Management - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
     <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
@@ -100,65 +105,5 @@ Preview ]]></description>
 14 Habits of Highly Productive Developers Mind Map MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
-</item><item>
-    <title>RAG Fundamentals - the vanilla RAG framework mind map</title>
-    <link>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</link>
-    <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</guid>
-    <description><![CDATA[I recently came across an insightful article: RAG Fundamentals First, which delved into the fundamentals of RAG (Retrieval Augmented Generation)
-To further process and organize my understanding of the topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:
-The vanilla RAG framework mind map: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-<<<<<<< HEAD
-</item><item>
-    <title>Azure AI Studio - mind map</title>
-    <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
-    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
-    <description><![CDATA[To get an overview of the Azure AI Studio, I&rsquo;ve created the following mind map:
-Azure AI Services: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Azure AI Services - mind map</title>
-    <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
-    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
-    <description><![CDATA[To get an overview of the current Azure AI services, I&rsquo;ve created the following mind map:
-Azure AI Services: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Azure AI Search - mind map</title>
-    <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
-Azure AI Search: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Woran erkenne ich eine ungesunde Beziehung? - mind map zum Vortrag von Johannes Hartl</title>
-    <link>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</link>
-    <pubDate>Sat, 11 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-05-11-ungesunde-beziehungen-erkennen/</guid>
-    <description><![CDATA[Zum Vortrag Woran erkenne ich eine ungesunde Beziehung von Johannes Hartl, habe ich mir erlaubt folgendes MindMap zu erstellen:
-Preview ]]></description>
-</item><item>
-    <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - mind map Buch Zusammenfassung</title>
-    <link>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</link>
-    <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</guid>
-    <description><![CDATA[Kürzlich habe ich das Buch Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther gelesen und dazu folgendes MindMap erstellt:
-Preview ]]></description>
-=======
->>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
 </item></channel>
 </rss>

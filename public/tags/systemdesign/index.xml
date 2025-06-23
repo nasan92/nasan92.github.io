@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SystemDesign - Tag - NASAN</title>
+        <link>http://localhost:1313/tags/systemdesign/</link>
+        <description>SystemDesign - Tag - NASAN</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/systemdesign/" rel="self" type="application/rss+xml" /><item>
+    <title>Software Architecture - mind maps</title>
+    <link>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</link>
+    <pubDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</guid>
+    <description><![CDATA[I started to create some minmal mind maps about Software Architecture. The current mind maps were created based on the book &ldquo;Head first - software architecture&rdquo;. Eventually I will later extend those.
+Software Architecture Roadmap You start with architectural characteristics. Then you&rsquo;ll need to get the logical components, pick a style and finally document your decision.
+Software Architecture Mind Map Architectural Characteristics Logical Components Architectural Style Architectural Decisions MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts]]></description>
+</item></channel>
+</rss>

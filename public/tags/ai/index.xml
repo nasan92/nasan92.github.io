@@ -3,9 +3,6 @@
         <title>AI - Tag - NASAN</title>
         <link>http://localhost:1313/tags/ai/</link>
         <description>AI - Tag - NASAN</description>
-<<<<<<< HEAD
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/ai/" rel="self" type="application/rss+xml" /><item>
-=======
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 29 May 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/ai/" rel="self" type="application/rss+xml" /><item>
     <title>MCP - Model Context Protocol - mind map</title>
     <link>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</link>
@@ -13,7 +10,7 @@
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</guid>
     <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol
-To learn more about MCP - Model Context Protocol: MCP - Model Context Protocol mind map MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts
+MCP - Model Context Protocol mind map MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts
 Download the mind map in multiple formats:
 MindMap PNG
 MindMap JPG
@@ -32,7 +29,6 @@ MindMap PNG
 MindMap JPG
 MindMap SVG]]></description>
 </item><item>
->>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
     <title>Azure Databricks - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
     <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>

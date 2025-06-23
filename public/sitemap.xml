@@ -2,39 +2,22 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-<<<<<<< HEAD
-            <loc>http://localhost:1313/tags/api/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/apim/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/apimanagement/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/azure/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/azure/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/azureapimanagement/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/mindmapa/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/ai/</loc><lastmod>2024-10-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/ai/</loc><lastmod>2024-10-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</loc><lastmod>2024-10-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/azuredatabricks/</loc><lastmod>2024-10-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/databricks/</loc><lastmod>2024-10-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/dataengineering/</loc><lastmod>2024-10-22T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/datasciene/</loc><lastmod>2024-10-22T05:10:21&#43;01:00</lastmod></url><url>
-=======
+            <loc>http://localhost:1313/tags/architecture/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/softwarearchitecture/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/softwareengineering/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/systemdesign/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/ai/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/mcp/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/mcp/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/modelcontextprotocol/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2025-05-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/observability/</loc><lastmod>2025-05-14T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/opentelemetry/</loc><lastmod>2025-05-14T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/opentelemetry/</loc><lastmod>2025-05-14T05:10:21&#43;01:00</lastmod></url><url>
@@ -65,7 +48,6 @@
             <loc>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/azureapimanagement/</loc><lastmod>2024-12-19T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</loc><lastmod>2024-10-22T05:10:21&#43;01:00</lastmod></url><url>
->>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
             <loc>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/books/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/effectivethinking/</loc><lastmod>2024-10-08T05:10:21&#43;01:00</lastmod></url><url>
@@ -175,7 +157,6 @@
             <loc>http://localhost:1313/tags/gpo/</loc><lastmod>2022-02-17T21:30:23&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2022-02-17-gpo/</loc><lastmod>2022-02-17T21:30:23&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2022-02-17-atomic-habits/</loc><lastmod>2022-02-17T21:19:23&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/euc-overview/</loc><lastmod>2022-01-15T23:00:07&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/mindmaps/</loc><lastmod>2022-01-10T07:44:20&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/mindmaps/mindmaps/</loc><lastmod>2022-01-10T07:44:20&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/classes/</loc><lastmod>2021-12-06T00:00:00&#43;00:00</lastmod></url><url>
