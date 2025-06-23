@@ -3,7 +3,20 @@
         <title>Azure - Category - NASAN</title>
         <link>http://localhost:1313/categories/azure/</link>
         <description>Azure - Category - NASAN</description>
+<<<<<<< HEAD
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/azure/" rel="self" type="application/rss+xml" /><item>
+=======
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Kubernetes - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
+    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
+    <description><![CDATA[As part of my recent studies about Azure Kubernetes, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.
+Azure Kubernetes Mind Map Azure Kubernetes Mind Map showcasing core concepts Figure 1: Azure Kubernetes Mind Map visualizing key concepts
+Download the mind map in multiple formats:]]></description>
+</item><item>
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
     <title>Azure API Management - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
     <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
@@ -80,6 +93,7 @@ Design a Zero Trust strategy and architecture Build an overall security strategy
     <guid>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
     <description><![CDATA[link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
 I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.]]></description>
+<<<<<<< HEAD
 </item><item>
     <title>Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform</title>
     <link>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</link>
@@ -88,5 +102,7 @@ I had a case where I did need to migrate a lot of databases from one SQL Server 
     <guid>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</guid>
     <description><![CDATA[Yes&hellip; its annoying there is no built in role to only allow restarting of Azure Virtual Machines&hellip; The Virtual Machine Contributor Role allows to much. With this role you are able to destory and create VMs..
 So what I want to do in this case is creating a custom role which only allows to start / stop / restart Virtual Machines. And I want to do that with terraform because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.]]></description>
+=======
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
 </item></channel>
 </rss>

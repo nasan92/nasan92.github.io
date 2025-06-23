@@ -3,6 +3,7 @@
         <title>Tags - Tag - NASAN</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - NASAN</description>
+<<<<<<< HEAD
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>API</title>
     <link>http://localhost:1313/tags/api/</link>
@@ -39,33 +40,82 @@
     <guid>http://localhost:1313/tags/mindmap/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+=======
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 29 May 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
     <title>AI</title>
     <link>http://localhost:1313/tags/ai/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/ai/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+<<<<<<< HEAD
+=======
+    <title>MCP</title>
+    <link>http://localhost:1313/tags/mcp/</link>
+    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/mcp/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MindMap</title>
+    <link>http://localhost:1313/tags/mindmap/</link>
+    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/mindmap/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>ModelContextProtocol</title>
+    <link>http://localhost:1313/tags/modelcontextprotocol/</link>
+    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/modelcontextprotocol/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Observability</title>
+    <link>http://localhost:1313/tags/observability/</link>
+    <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/observability/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>OpenTelemetry</title>
+    <link>http://localhost:1313/tags/opentelemetry/</link>
+    <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/opentelemetry/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Azure</title>
+    <link>http://localhost:1313/tags/azure/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/tags/azure/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
     <title>AzureDatabricks</title>
     <link>http://localhost:1313/tags/azuredatabricks/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/azuredatabricks/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Databricks</title>
     <link>http://localhost:1313/tags/databricks/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/databricks/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>DataEngineering</title>
     <link>http://localhost:1313/tags/dataengineering/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/tags/dataengineering/</guid>
     <description><![CDATA[]]></description>
+<<<<<<< HEAD
 </item><item>
     <title>DataSciene</title>
     <link>http://localhost:1313/tags/datasciene/</link>
@@ -73,5 +123,7 @@
     <author>Author</author>
     <guid>http://localhost:1313/tags/datasciene/</guid>
     <description><![CDATA[]]></description>
+=======
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
 </item></channel>
 </rss>

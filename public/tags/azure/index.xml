@@ -3,7 +3,33 @@
         <title>Azure - Tag - NASAN</title>
         <link>http://localhost:1313/tags/azure/</link>
         <description>Azure - Tag - NASAN</description>
+<<<<<<< HEAD
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
+=======
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>GenAI Azure Databricks - mind map - capabilities</title>
+    <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
+    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.
+Also, check out the Azure Databricks Key Concepts mind map
+GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
+    <title>Azure Kubernetes - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
+    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
+    <description><![CDATA[As part of my recent studies about Azure Kubernetes, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.
+Azure Kubernetes Mind Map Azure Kubernetes Mind Map showcasing core concepts Figure 1: Azure Kubernetes Mind Map visualizing key concepts
+Download the mind map in multiple formats:]]></description>
+</item><item>
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
     <title>Azure API Management - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
     <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
@@ -74,6 +100,7 @@ This MindMap is based on the MS Learning path: AZ-500 Preview ]]></description>
     <guid>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</guid>
     <description><![CDATA[Based on Mark&rsquo;s List of cybersecurity Resources, I created the following Mind Map:
 Preview ]]></description>
+<<<<<<< HEAD
 </item><item>
     <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
     <link>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
@@ -90,5 +117,7 @@ I had a case where I did need to migrate a lot of databases from one SQL Server 
     <guid>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</guid>
     <description><![CDATA[Yes&hellip; its annoying there is no built in role to only allow restarting of Azure Virtual Machines&hellip; The Virtual Machine Contributor Role allows to much. With this role you are able to destory and create VMs..
 So what I want to do in this case is creating a custom role which only allows to start / stop / restart Virtual Machines. And I want to do that with terraform because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.]]></description>
+=======
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
 </item></channel>
 </rss>

@@ -3,7 +3,67 @@
         <title>MindMap - Tag - NASAN</title>
         <link>http://localhost:1313/tags/mindmap/</link>
         <description>MindMap - Tag - NASAN</description>
+<<<<<<< HEAD
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+=======
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 29 May 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mindmap/" rel="self" type="application/rss+xml" /><item>
+    <title>MCP - Model Context Protocol - mind map</title>
+    <link>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</link>
+    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</guid>
+    <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol
+To learn more about MCP - Model Context Protocol: MCP - Model Context Protocol mind map MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
+    <title>OpenTelemetry - mind map - concepts</title>
+    <link>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</link>
+    <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</guid>
+    <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of OpenTelemetry The purpose of OpenTelemetry is to collect, process and export signals. The signals (telemetry data) which OpenTelemetry currently supports can be found on the right side of the mind map:
+Signals: Traces Metrics Logs The mind map illustrates the components that make up these signals and how they are interconnected.
+To learn more about OpenTelemetry:
+Official docs: What is OpenTelemetry?]]></description>
+</item><item>
+    <title>GenAI Azure Databricks - mind map - capabilities</title>
+    <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
+    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
+    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.
+Also, check out the Azure Databricks Key Concepts mind map
+GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
+    <title>MLflow - mind map - core components</title>
+    <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
+    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
+    <description><![CDATA[This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.
+MLflow Mind Map MLflow Mind Map showcasing core components Figure 1: MLflow Mind Map visualizing core components
+Download the mind map in multiple formats:
+MindMap PNG
+MindMap JPG
+MindMap SVG]]></description>
+</item><item>
+    <title>Azure Kubernetes - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
+    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
+    <description><![CDATA[As part of my recent studies about Azure Kubernetes, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.
+Azure Kubernetes Mind Map Azure Kubernetes Mind Map showcasing core concepts Figure 1: Azure Kubernetes Mind Map visualizing key concepts
+Download the mind map in multiple formats:]]></description>
+</item><item>
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
     <title>Azure API Management - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
     <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
@@ -51,6 +111,7 @@ To further process and organize my understanding of the topic, I created a mind 
 The vanilla RAG framework mind map: MindMap PNG
 MindMap SVG - (Links working)
 Preview ]]></description>
+<<<<<<< HEAD
 </item><item>
     <title>Azure AI Studio - mind map</title>
     <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
@@ -97,5 +158,7 @@ Preview ]]></description>
     <guid>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</guid>
     <description><![CDATA[Kürzlich habe ich das Buch Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther gelesen und dazu folgendes MindMap erstellt:
 Preview ]]></description>
+=======
+>>>>>>> 6cd214833adc0d051a9e5ea825abef021484e96f
 </item></channel>
 </rss>
