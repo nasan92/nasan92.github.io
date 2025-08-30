@@ -1,35 +1,33 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>MicrosoftEntra - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/microsoftentra/</link>
-        <description>MicrosoftEntra - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/microsoftentra/" rel="self" type="application/rss+xml" /><item>
-    <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</title>
-    <link>http://localhost:1313/posts/2023-09-27-terraform-locally/</link>
-    <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-27-terraform-locally/</guid>
-    <description><![CDATA[In the latest blog post (1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series) we learned how to setup Azure DevOps using Workload Identiy Federation
-Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.
-But what about using a service principal for local activities whose secret will expire after a few hours instead of months?]]></description>
-</item><item>
-    <title>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</title>
-    <link>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</link>
-    <pubDate>Sat, 23 Sep 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</guid>
-    <description><![CDATA[I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with workload identity federation instead of relying on a service principal with secrets. In this blog post, I will demonstrate how I set up this configuration.
-To learn more about workload identity federation read the docs:
-Workload identity federation - Microsoft Entra | Microsoft Learn
-Prerequisites Azure DevOps Org &ldquo;Customer Azure Tenant&rdquo; with Subscription &ldquo;Backend Azure Tenant&rdquo; with Subscription (can be in the same tenant - in our example we use different tenants) Azure Powershell Module Overview - Setup Steps Create a storage account that will store the Terraform state file Create a managed identity which has contributor permissions on this storage account If not already the case, install the Terraform extension for your Azure DevOps Org Create a new Azure DevOps Project Create a service connection to the &ldquo;backend tenant&rdquo; using workload identity federation with your previously created managed identity Create a managed identity in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription Create a service connection to the customer tenant using workload identity federation with your previously created managed identity Create a repository with basic Terraform files Create an Azure DevOps Pipeline Preview Prepare &ldquo;Backend Tenant&rdquo; to store Terraform State File As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur.]]></description>
-</item><item>
-    <title>Securing Resources in Azure VMs with Microsoft Entra Private Access in a Hub-and-Spoke Architecture</title>
-    <link>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</link>
-    <pubDate>Thu, 31 Aug 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</guid>
-    <description><![CDATA[I did a little Microsoft Entra Private Access Test setup.
-My goal was to test access to some private Resources hosted on Azure Virtual Machines with Microsoft Entra Private Access instead of VPN.
-Overview The test setup is illustrated below: Preview I have one Virtual Machine (VM) with a Windows File Share that I wish to access from my endpoint and I also want to be able to access this VM via RDP.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MicrosoftEntra on NASAN</title>
+    <link>http://localhost:1313/tags/microsoftentra/</link>
+    <description>Recent content in MicrosoftEntra on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Sep 2023 06:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/microsoftentra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</title>
+      <link>http://localhost:1313/posts/2023-09-27-terraform-locally/</link>
+      <pubDate>Tue, 26 Sep 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-27-terraform-locally/</guid>
+      <description>&lt;p&gt;In the latest blog post &lt;a href=&#34;https://nasan.ch/posts/2023-09-23-azuredevopsterraform/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)&lt;/a&gt; we learned how to setup Azure DevOps using Workload Identiy Federation&lt;/p&gt;&#xA;&lt;p&gt;Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.&lt;/p&gt;&#xA;&lt;p&gt;But what about using a service principal for local activities whose secret will expire after a few hours instead of months?&lt;br&gt;&#xA;This wasn&amp;rsquo;t practical when using a service principal in the service connection. Typically, the secret had a longer lifetime, so it didn&amp;rsquo;t need to be renewed every time within the service connection.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</title>
+      <link>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</link>
+      <pubDate>Sat, 23 Sep 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</guid>
+      <description>&lt;p&gt;I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with &lt;strong&gt;workload identity federation&lt;/strong&gt; instead of relying on a &lt;strong&gt;service principal&lt;/strong&gt; with secrets. In this blog post, I will demonstrate how I set up this configuration.&lt;/p&gt;&#xA;&lt;p&gt;To learn more about workload identity federation read the docs:&lt;br&gt;&#xA;&lt;a href=&#34;https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identity-federation&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Workload identity federation - Microsoft Entra | Microsoft Learn&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Azure DevOps Org&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;Customer Azure Tenant&amp;rdquo;&lt;/strong&gt; with Subscription&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;Backend Azure Tenant&amp;rdquo;&lt;/strong&gt; with Subscription (can be in the same tenant - in our example we use different tenants)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/azure/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure Powershell Module&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview---setup-steps&#34;&gt;Overview - Setup Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;storage account&lt;/strong&gt; that will store the Terraform state file&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;managed identity&lt;/strong&gt; which has contributor permissions on this storage account&lt;/li&gt;&#xA;&lt;li&gt;If not already the case, install the &lt;strong&gt;Terraform extension&lt;/strong&gt; for your Azure DevOps Org&lt;/li&gt;&#xA;&lt;li&gt;Create a new &lt;strong&gt;Azure DevOps Project&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;service connection&lt;/strong&gt; to the &amp;ldquo;backend tenant&amp;rdquo; using workload identity federation with your previously created managed identity&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;managed identity&lt;/strong&gt; in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;service connection&lt;/strong&gt; to the customer tenant using workload identity federation with your previously created managed identity&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;repository&lt;/strong&gt; with basic Terraform files&lt;/li&gt;&#xA;&lt;li&gt;Create an &lt;strong&gt;Azure DevOps Pipeline&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/terraform-overview-Demo1.png&#34; title=&#34;image&#34; data-thumbnail=&#34;/images/terraform-overview-Demo1.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;image&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Securing Resources in Azure VMs with Microsoft Entra Private Access in a Hub-and-Spoke Architecture</title>
+      <link>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</link>
+      <pubDate>Thu, 31 Aug 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</guid>
+      <description>&lt;p&gt;I did a little &lt;strong&gt;Microsoft Entra Private Access&lt;/strong&gt; Test setup.&lt;br&gt;&#xA;My goal was to test access to some &lt;strong&gt;private Resources&lt;/strong&gt; hosted on &lt;strong&gt;Azure Virtual Machines&lt;/strong&gt; with &lt;strong&gt;Microsoft Entra Private Access&lt;/strong&gt; instead of VPN.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The test setup is illustrated below:&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; title=&#34;Overview Test Setup:&#34; data-thumbnail=&#34;/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Overview Test Setup:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png, http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png 1.5x, http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;I have one Virtual Machine (VM) with a &lt;strong&gt;Windows File Share&lt;/strong&gt; that I wish to access from my endpoint and I also want to be able to access this VM via &lt;strong&gt;RDP.&lt;/strong&gt;&lt;br&gt;&#xA;Additionaly in another Spoke VNET I have a simple &lt;strong&gt;Web Server&lt;/strong&gt; which I also would like to access via &lt;strong&gt;Private Access&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,74 +1,68 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Security - Category - NASAN</title>
-        <link>http://localhost:1313/categories/security/</link>
-        <description>Security - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/security/" rel="self" type="application/rss+xml" /><item>
-    <title>Microsoft Purview - MindMaps</title>
-    <link>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</link>
-    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
-    <description><![CDATA[During my SC-400 studies I created the following two Mind Maps.
-Microsoft Purview - Data security solutions Mind Map The first Mind Map includes data security solutions based on the following documentation: Microsoft Purview data security solutions
-Preview Microsoft Purview - Risk and compliance Mind Map The second Mind Map focuses on risk and compliance solutions based on the following documentation: Microsoft Purview risk and compliance solutions
-Preview Microsoft Purview - Data governance solutions For the data governance solutions I have not created a separate Mind Map because the following picture from here What are Microsoft Purview&rsquo;s governance solutions?]]></description>
-</item><item>
-    <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</link>
-    <pubDate>Thu, 14 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</guid>
-    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: SC-300 Preview ]]></description>
-</item><item>
-    <title>Certificates (SSL/HTTPS)- MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-09-certificates/</link>
-    <pubDate>Sat, 09 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-09-certificates/</guid>
-    <description><![CDATA[Certificates MindMap:
-SSL certificates - what? why? How do certificates work? Types of certificates How HTTPS encryption works CERTIFICATION AUTHORITIES (CA) .. Preview Download the mind map as PNG SSL/TLS Certificates - Mindmap:]]></description>
-</item><item>
-    <title>AZ-500 - Azure Security Engineer - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-08-az500-mindmap/</link>
-    <pubDate>Fri, 08 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-08-az500-mindmap/</guid>
-    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: AZ-500 Preview ]]></description>
-</item><item>
-    <title>Mark&#39;s Simos List of Cybersecurity Resources - MindMap</title>
-    <link>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</link>
-    <pubDate>Thu, 18 May 2023 05:15:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</guid>
-    <description><![CDATA[Based on Mark&rsquo;s List of cybersecurity Resources, I created the following Mind Map:
-Preview ]]></description>
-</item><item>
-    <title>Top 10 Active Directory Attack Methods and How To Protect against it - MindMap</title>
-    <link>http://localhost:1313/posts/2023-05-18-top10adattackmethods/</link>
-    <pubDate>Thu, 18 May 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-05-18-top10adattackmethods/</guid>
-    <description><![CDATA[MindMap with Top 10 Active Directory Attack methods and How to Protect against them:
-Preview ]]></description>
-</item><item>
-    <title>AzureAD App Registrations explained</title>
-    <link>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</link>
-    <pubDate>Mon, 01 May 2023 05:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</guid>
-    <description><![CDATA[Azure AD App registration Recently I had some talks with developers which made me to realize that I didn&rsquo;t fully understand how App Registrations are working. I was aware that we are registering an app and allowing the app certain permissions but in detail I didn&rsquo;t understand it.
-Why Azure AD App registration? Basically for every app where you want to use the Microsoft Identity Platform, you need to register your app.]]></description>
-</item><item>
-    <title>SC-100 - Microsoft Certified Cybersecurity Architect Expert - MindMap Collection</title>
-    <link>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</link>
-    <pubDate>Thu, 12 Jan 2023 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</guid>
-    <description><![CDATA[Studying SC-100 In my recent self-study, I have been working through the Microsoft SC-100 learning path. One of the ways that I have been organizing and consolidating my learning is by creating mind maps of the key concepts and topics covered in the course.
-You can find some of those mind maps below:
-Design a Zero Trust strategy and architecture Build an overall security strategy and architecture: Preview Design a security operations strategy: Preview Design an identity security strategy: Preview Evaluate Governance Risk Compliance (GRC) technical strategies and security operations strategies Evaluate a regulatory compliance strategy Preview Evaluate Security Posture - Manage Risk Preview Design security for infrastructure Preview Design strategy for data and applications Preview Recommend security best practices Security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on NASAN</title>
+    <link>http://localhost:1313/categories/security/</link>
+    <description>Recent content in Security on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jan 2024 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft Purview - MindMaps</title>
+      <link>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</link>
+      <pubDate>Thu, 18 Jan 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
+      <description>&lt;p&gt;During my &lt;a href=&#34;https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-400/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-400&lt;/a&gt; studies I created the following two Mind Maps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;microsoft-purview---data-security-solutions-mind-map&#34;&gt;Microsoft Purview - Data security solutions Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;The first Mind Map includes data security solutions based on the following documentation: &lt;a href=&#34;https://learn.microsoft.com/en-us/purview/purview-security&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Purview data security solutions&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Microsoft-Purview-datasecurity.svg&#34; title=&#34;Microsoft Purview MindMap SVG&#34; data-thumbnail=&#34;/images/Microsoft-Purview-datasecurity.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Microsoft Purview MindMap SVG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Microsoft-Purview-datasecurity.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Microsoft-Purview-datasecurity.svg, http://localhost:1313/images/Microsoft-Purview-datasecurity.svg 1.5x, http://localhost:1313/images/Microsoft-Purview-datasecurity.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Microsoft-Purview-datasecurity.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;microsoft-purview---risk-and-compliance-mind-map&#34;&gt;Microsoft Purview - Risk and compliance Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;The second Mind Map focuses on risk and compliance solutions based on the following documentation:  &lt;a href=&#34;https://learn.microsoft.com/en-us/purview/purview-compliance&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Purview risk and compliance solutions&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
+      <link>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</link>
+      <pubDate>Thu, 14 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</guid>
+      <description>&lt;p&gt;Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: &lt;a href=&#34;https://nasan.ch/posts/2023-01-13-microsoftcybersecurityarchitect/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-100 MindMap Collection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This MindMap is based on the MS Learning path: &lt;a href=&#34;https://learn.microsoft.com/en-us/certifications/exams/sc-300/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-300 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; title=&#34;SC-300 - Mindmap:&#34; data-thumbnail=&#34;/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;SC-300 - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg, http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg 1.5x, http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Certificates (SSL/HTTPS)- MindMap</title>
+      <link>http://localhost:1313/posts/2023-09-09-certificates/</link>
+      <pubDate>Sat, 09 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-09-certificates/</guid>
+      <description>&lt;p&gt;Certificates MindMap:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SSL certificates - what? why?&lt;/li&gt;&#xA;&lt;li&gt;How do certificates work?&lt;/li&gt;&#xA;&lt;li&gt;Types of certificates&lt;/li&gt;&#xA;&lt;li&gt;How HTTPS encryption works&lt;/li&gt;&#xA;&lt;li&gt;CERTIFICATION AUTHORITIES (CA)&lt;/li&gt;&#xA;&lt;li&gt;..&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Certificates.svg&#34; title=&#34;Certificates- Mindmap:&#34; data-thumbnail=&#34;/images/Certificates.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Certificates- Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Certificates.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Certificates.svg, http://localhost:1313/images/Certificates.svg 1.5x, http://localhost:1313/images/Certificates.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Certificates.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;Download the mind map as PNG&#xA;&lt;a href=&#34;http://localhost:1313/images/Certificates.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;SSL/TLS Certificates - Mindmap:&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AZ-500 - Azure Security Engineer - MindMap</title>
+      <link>http://localhost:1313/posts/2023-09-08-az500-mindmap/</link>
+      <pubDate>Fri, 08 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-08-az500-mindmap/</guid>
+      <description>&lt;p&gt;Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: &lt;a href=&#34;https://nasan.ch/posts/2023-01-13-microsoftcybersecurityarchitect/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-100 MindMap Collection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This MindMap is based on the MS Learning path: &lt;a href=&#34;https://learn.microsoft.com/en-us/certifications/exams/az-500/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;AZ-500 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg&#34; title=&#34;AZ500 - Mindmap:&#34; data-thumbnail=&#34;/images/AZ500-AzureSecurityEngineer.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;AZ500 - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg, http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg 1.5x, http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/AZ500-AzureSecurityEngineer.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mark&#39;s Simos List of Cybersecurity Resources - MindMap</title>
+      <link>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</link>
+      <pubDate>Thu, 18 May 2023 05:15:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</guid>
+      <description>&lt;p&gt;Based on &lt;a href=&#34;https://www.linkedin.com/pulse/marks-list-mark-simos/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Mark&amp;rsquo;s List of cybersecurity Resources&lt;/a&gt;, I created the following Mind Map:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg&#34; title=&#34;Cybersecurity Resources - Mindmap:&#34; data-thumbnail=&#34;/images/marks-list-of-cybersecurity-resources.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Cybersecurity Resources - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg, http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg 1.5x, http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/marks-list-of-cybersecurity-resources.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Top 10 Active Directory Attack Methods and How To Protect against it - MindMap</title>
+      <link>http://localhost:1313/posts/2023-05-18-top10adattackmethods/</link>
+      <pubDate>Thu, 18 May 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-05-18-top10adattackmethods/</guid>
+      <description>&lt;p&gt;MindMap with Top 10 Active Directory Attack methods and How to Protect against them:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Top-10-Active-directory-Attack-methods-and-How-to-protect.svg&#34; title=&#34;Top 10 AD Attack Methods - Mindmap:&#34; data-thumbnail=&#34;/images/Top-10-Active-directory-Attack-methods-and-How-to-protect.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Top 10 AD Attack Methods - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Top-10-Active-directory-Attack-methods-and-How-to-protect.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Top-10-Active-directory-Attack-methods-and-How-to-protect.svg, http://localhost:1313/images/Top-10-Active-directory-Attack-methods-and-How-to-protect.svg 1.5x, http://localhost:1313/images/Top-10-Active-directory-Attack-methods-and-How-to-protect.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Top-10-Active-directory-Attack-methods-and-How-to-protect.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AzureAD App Registrations explained</title>
+      <link>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</link>
+      <pubDate>Mon, 01 May 2023 05:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</guid>
+      <description>&lt;h1 id=&#34;azure-ad-app-registration&#34;&gt;Azure AD App registration&lt;/h1&gt;&#xA;&lt;p&gt;Recently I had some talks with developers which made me to realize that I didn&amp;rsquo;t fully understand how &lt;strong&gt;App Registrations&lt;/strong&gt; are working.&#xA;I was aware that we are registering an app and allowing the app certain permissions but in detail I didn&amp;rsquo;t understand it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-azure-ad-app-registration&#34;&gt;Why Azure AD App registration?&lt;/h2&gt;&#xA;&lt;p&gt;Basically for every app where you want to use the Microsoft Identity Platform, you need to register your app.&#xA;So you want to login into a certain webapp with your Microsoft Account? This app needs to be registered in Azure AD. After you logged in into your application, this app maybe also need some data of your Microsoft Account and you maybe need to grant perrmissions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SC-100 - Microsoft Certified Cybersecurity Architect Expert - MindMap Collection</title>
+      <link>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</link>
+      <pubDate>Thu, 12 Jan 2023 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</guid>
+      <description>&lt;h1 id=&#34;studying-sc-100&#34;&gt;Studying SC-100&lt;/h1&gt;&#xA;&lt;p&gt;In my recent self-study, I have been working through the Microsoft SC-100 learning path. One of the ways that I have been organizing and consolidating my learning is by creating mind maps of the key concepts and topics covered in the course.&lt;/p&gt;&#xA;&lt;p&gt;You can find some of those mind maps below:&lt;/p&gt;&#xA;&lt;h2 id=&#34;design-a-zero-trust-strategy-and-architecture&#34;&gt;Design a Zero Trust strategy and architecture&lt;/h2&gt;&#xA;&lt;h3 id=&#34;build-an-overall-security-strategy-and-architecture&#34;&gt;Build an overall security strategy and architecture:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/BuildAnOverallSecurityStrategyAndArchitecture.svg&#34; title=&#34;Build an overall security strategy and architecture:&#34; data-thumbnail=&#34;/images/BuildAnOverallSecurityStrategyAndArchitecture.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Build an overall security strategy and architecture:&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

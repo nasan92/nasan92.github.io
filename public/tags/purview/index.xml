@@ -1,17 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Purview - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/purview/</link>
-        <description>Purview - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/purview/" rel="self" type="application/rss+xml" /><item>
-    <title>Microsoft Purview - MindMaps</title>
-    <link>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</link>
-    <pubDate>Thu, 18 Jan 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
-    <description><![CDATA[During my SC-400 studies I created the following two Mind Maps.
-Microsoft Purview - Data security solutions Mind Map The first Mind Map includes data security solutions based on the following documentation: Microsoft Purview data security solutions
-Preview Microsoft Purview - Risk and compliance Mind Map The second Mind Map focuses on risk and compliance solutions based on the following documentation: Microsoft Purview risk and compliance solutions
-Preview Microsoft Purview - Data governance solutions For the data governance solutions I have not created a separate Mind Map because the following picture from here What are Microsoft Purview&rsquo;s governance solutions?]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Purview on NASAN</title>
+    <link>http://localhost:1313/tags/purview/</link>
+    <description>Recent content in Purview on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jan 2024 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/purview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft Purview - MindMaps</title>
+      <link>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</link>
+      <pubDate>Thu, 18 Jan 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-01-18-microsoft-purview-mindmaps/</guid>
+      <description>&lt;p&gt;During my &lt;a href=&#34;https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-400/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-400&lt;/a&gt; studies I created the following two Mind Maps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;microsoft-purview---data-security-solutions-mind-map&#34;&gt;Microsoft Purview - Data security solutions Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;The first Mind Map includes data security solutions based on the following documentation: &lt;a href=&#34;https://learn.microsoft.com/en-us/purview/purview-security&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Purview data security solutions&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Microsoft-Purview-datasecurity.svg&#34; title=&#34;Microsoft Purview MindMap SVG&#34; data-thumbnail=&#34;/images/Microsoft-Purview-datasecurity.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Microsoft Purview MindMap SVG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Microsoft-Purview-datasecurity.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Microsoft-Purview-datasecurity.svg, http://localhost:1313/images/Microsoft-Purview-datasecurity.svg 1.5x, http://localhost:1313/images/Microsoft-Purview-datasecurity.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Microsoft-Purview-datasecurity.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;microsoft-purview---risk-and-compliance-mind-map&#34;&gt;Microsoft Purview - Risk and compliance Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;The second Mind Map focuses on risk and compliance solutions based on the following documentation:  &lt;a href=&#34;https://learn.microsoft.com/en-us/purview/purview-compliance&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Purview risk and compliance solutions&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

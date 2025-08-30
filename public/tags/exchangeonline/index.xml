@@ -1,19 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>ExchangeOnline - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/exchangeonline/</link>
-        <description>ExchangeOnline - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 25 May 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/exchangeonline/" rel="self" type="application/rss+xml" /><item>
-    <title>ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen</title>
-    <link>http://localhost:1313/posts/2021-05-25-exchangeonline-mailadressen/</link>
-    <pubDate>Tue, 25 May 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-05-25-exchangeonline-mailadressen/</guid>
-    <description><![CDATA[ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen'
-Exchange Online: Mailadressen anzeigen, hinzufügen, entfernen Voraussetzungen Das ExchangeOnlineManagment Module muss installiert, importiert sein und man muss sich mit der entsprechenden Exchange Online Umgebung verbinden:
-ExchangeOnlineManagement Module in Powershell installieren: Install-Module -Name ExchangeOnlineManagement
-Das Module importieren: Import-Module ExchangeOnlineManagement
-Mit der Exchange Online Environment verbinden (run this command as admin, then login) Connect-ExchangeOnline -UserPrincipalName admin@customerdomain.onmicrosoft.com
-Für die Befehle im lokalen AD, muss das ActiveDirectory Powershell Modul geladen sein: https://theitbros.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ExchangeOnline on NASAN</title>
+    <link>http://localhost:1313/tags/exchangeonline/</link>
+    <description>Recent content in ExchangeOnline on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/exchangeonline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen</title>
+      <link>http://localhost:1313/posts/2021-05-25-exchangeonline-mailadressen/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-05-25-exchangeonline-mailadressen/</guid>
+      <description>&lt;p&gt;ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen&#39;&lt;/p&gt;&#xA;&lt;h1 id=&#34;exchange-online-mailadressen-anzeigen-hinzufügen-entfernen&#34;&gt;Exchange Online: Mailadressen anzeigen, hinzufügen, entfernen&lt;/h1&gt;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Das ExchangeOnlineManagment Module muss installiert, importiert sein und man muss sich mit der entsprechenden Exchange Online Umgebung verbinden:&lt;/p&gt;&#xA;&lt;p&gt;ExchangeOnlineManagement Module in Powershell installieren:&#xA;&lt;code&gt;Install-Module -Name ExchangeOnlineManagement&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Das Module importieren:&#xA;&lt;code&gt;Import-Module ExchangeOnlineManagement&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mit der Exchange Online Environment verbinden (run this command as admin, then login)&#xA;&lt;code&gt;Connect-ExchangeOnline -UserPrincipalName admin@customerdomain.onmicrosoft.com&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Für die Befehle im lokalen AD, muss das ActiveDirectory Powershell Modul geladen sein: &lt;a href=&#34;https://theitbros.com/install-and-import-powershell-active-directory-module/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;https://theitbros.com/install-and-import-powershell-active-directory-module/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

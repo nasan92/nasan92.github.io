@@ -1,15 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>RBAC - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/rbac/</link>
-        <description>RBAC - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 08 Sep 2022 10:51:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/rbac/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform</title>
-    <link>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</link>
-    <pubDate>Thu, 08 Sep 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</guid>
-    <description><![CDATA[Yes&hellip; its annoying there is no built in role to only allow restarting of Azure Virtual Machines&hellip; The Virtual Machine Contributor Role allows to much. With this role you are able to destory and create VMs..
-So what I want to do in this case is creating a custom role which only allows to start / stop / restart Virtual Machines. And I want to do that with terraform because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RBAC on NASAN</title>
+    <link>http://localhost:1313/tags/rbac/</link>
+    <description>Recent content in RBAC on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Sep 2022 10:51:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rbac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform</title>
+      <link>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</link>
+      <pubDate>Thu, 08 Sep 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</guid>
+      <description>&lt;p&gt;Yes&amp;hellip; its annoying there is &lt;strong&gt;no built in role&lt;/strong&gt; to only allow restarting of Azure Virtual Machines&amp;hellip;&#xA;The &lt;strong&gt;Virtual Machine Contributor Role&lt;/strong&gt; allows to much. With this role you are able to destory and create VMs..&lt;/p&gt;&#xA;&lt;p&gt;So what I want to do in this case is creating a &lt;strong&gt;custom role which only allows to start / stop / restart Virtual Machines.&lt;/strong&gt;&#xA;And I want to do that with &lt;strong&gt;terraform&lt;/strong&gt; because I&amp;rsquo;m doing the whole Azure Resource Deployment with terraform anyway.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

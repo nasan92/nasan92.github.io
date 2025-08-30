@@ -1,97 +1,131 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Books - Category - NASAN</title>
-        <link>http://localhost:1313/categories/books/</link>
-        <description>Books - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/books/" rel="self" type="application/rss+xml" /><item>
-    <title>5 Elements of Effective Thinking - mind map</title>
-    <link>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
-    <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</guid>
-    <description><![CDATA[The following mind map provides a summary of the key takeaways from the book 5 Elements of Effective Thinking
-5 Elements of Effective Thinking Mind Map MindMap PNG
-MindMap SVG
-Preview ]]></description>
-</item><item>
-    <title>14 Habits of Highly Productive Developers - mind map</title>
-    <link>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</link>
-    <pubDate>Sat, 14 Sep 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</guid>
-    <description><![CDATA[The following mind map provides a concise summary of the key takeaways from the book 14 Habits of Highly Productive Developers
-14 Habits of Highly Productive Developers Mind Map MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - mind map Buch Zusammenfassung</title>
-    <link>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</link>
-    <pubDate>Tue, 07 May 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</guid>
-    <description><![CDATA[Kürzlich habe ich das Buch Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther gelesen und dazu folgendes MindMap erstellt:
-Preview ]]></description>
-</item><item>
-    <title>Was wir sind und was wir sein könnten von Gerald Hüther - MindMap</title>
-    <link>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</link>
-    <pubDate>Fri, 24 Nov 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
-    <description><![CDATA[Hier zwei eher grössere MindMaps als Buch Zusammenfassungen zum Buch &ldquo;Was wir sind und was wir sein könnten&rdquo; von Gerald Hüther
-Was wir sind Preview Was wir sein könnten Preview ]]></description>
-</item><item>
-    <title>Psychologie - MindMaps</title>
-    <link>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</link>
-    <pubDate>Thu, 26 Oct 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</guid>
-    <description><![CDATA[Anhand des sehr unterhaltsamen Buches Klo-Psychologe: In 100 Sitzungen zum Seelenklempner habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.
-Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:
-Übersicht Preview 1. Tiefenpsychologie Preview 2. Persönlichtkeitspsychologie Preview 3. Kognitive Psychologie und Intelligenz-Psychologie Preview 4. Kommunikationspsychologie Preview 5. Motivationspsychologie und positive Psychologie Preview 6. Entwicklungs und Evolutionspsychologie Preview 7. Organisationspsychologie Preview ]]></description>
-</item><item>
-    <title>Steal like an Artist - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-15-steallikeanartist/</link>
-    <pubDate>Fri, 15 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-15-steallikeanartist/</guid>
-    <description><![CDATA[MindMap for the Book
-Steal Like an Artist: 10 Things Nobody Told You About Being Creative
-Preview ]]></description>
-</item><item>
-    <title>Factfulness by Hans Rosling - MindMap</title>
-    <link>http://localhost:1313/posts/2023-05-13-factfulness/</link>
-    <pubDate>Sat, 13 May 2023 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-05-13-factfulness/</guid>
-    <description><![CDATA[MindMap for the Book
-Factfulness: Ten Reasons We&rsquo;re Wrong About The World - And Why Things Are Better Than You Think - by Hans Rosling
-Preview ]]></description>
-</item><item>
-    <title>Psychologie des Geldes - MindMap</title>
-    <link>http://localhost:1313/posts/2023-01-01-psychologiedesgeldes/</link>
-    <pubDate>Sun, 01 Jan 2023 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-01-01-psychologiedesgeldes/</guid>
-    <description><![CDATA[Ein MindMap als Buchzusammenfassung für das Buch Pychologie des Geldes - von Morgan Housel
-Links:
-Psychologie-des-Geldes-MindMap.svg
-Psychologie-des-Geldes-MindMap.png
-Preview ]]></description>
-</item><item>
-    <title>Storyworthy - MindMap</title>
-    <link>http://localhost:1313/posts/2022-11-14-storyworthy/</link>
-    <pubDate>Mon, 14 Nov 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-11-14-storyworthy/</guid>
-    <description><![CDATA[MindMap for the Book Storyworthy - by Matthew Dicks
-Preview ]]></description>
-</item><item>
-    <title>Building a Second Brain - MindMap</title>
-    <link>http://localhost:1313/posts/2022-07-04-buildingasecondbrain/</link>
-    <pubDate>Mon, 04 Jul 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-07-04-buildingasecondbrain/</guid>
-    <description><![CDATA[This MindMap tries to give an Overview over the book Building a Second Brain - by Tiago Forte
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on NASAN</title>
+    <link>http://localhost:1313/categories/books/</link>
+    <description>Recent content in Books on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Oct 2024 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 Elements of Effective Thinking - mind map</title>
+      <link>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
+      <pubDate>Tue, 08 Oct 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</guid>
+      <description>&lt;p&gt;The following mind map provides a summary of the key takeaways from the book  &lt;a href=&#34;https://amzn.eu/d/2qDJFLr&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;5 Elements of Effective Thinking&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;5-elements-of-effective-thinking-mind-map&#34;&gt;5 Elements of Effective Thinking Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png&#34; title=&#34;5 Elements of Effective Thinking&#34; data-thumbnail=&#34;/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;5 Elements of Effective Thinking&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png, http://localhost:1313/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png 1.5x, http://localhost:1313/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>14 Habits of Highly Productive Developers - mind map</title>
+      <link>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</link>
+      <pubDate>Sat, 14 Sep 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</guid>
+      <description>&lt;p&gt;The following mind map provides a concise summary of the key takeaways from the book  &lt;a href=&#34;https://amzn.eu/d/6NrlATH&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;14 Habits of Highly Productive Developers&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;14-habits-of-highly-productive-developers-mind-map&#34;&gt;14 Habits of Highly Productive Developers Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/RAG-the-vanilla-RAG-framework-mindmap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/14-habits-of-higly-productive-developers-mind-map.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG - (Links working)&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/14-habits-of-higly-productive-developers-mind-map.png&#34; title=&#34;14 Habits of Highly Productive Developers&#34; data-thumbnail=&#34;/images/14-habits-of-higly-productive-developers-mind-map.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;14 Habits of Highly Productive Developers&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/14-habits-of-higly-productive-developers-mind-map.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/14-habits-of-higly-productive-developers-mind-map.png, http://localhost:1313/images/14-habits-of-higly-productive-developers-mind-map.png 1.5x, http://localhost:1313/images/14-habits-of-higly-productive-developers-mind-map.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/14-habits-of-higly-productive-developers-mind-map.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Würde: Was uns stark macht - als Einzelne und als Gesellschaft - mind map Buch Zusammenfassung</title>
+      <link>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</link>
+      <pubDate>Tue, 07 May 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-05-07-wuerde-mindmap/</guid>
+      <description>&lt;p&gt;Kürzlich habe ich das Buch &lt;a href=&#34;https://amzn.eu/d/0WVn5ID&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Würde: Was uns stark macht - als Einzelne und als Gesellschaft von Gerald Hüther&lt;/a&gt; gelesen und dazu folgendes MindMap erstellt:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Wuerde.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Wuerde.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Wuerde.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Wuerde.svg, http://localhost:1313/images/Wuerde.svg 1.5x, http://localhost:1313/images/Wuerde.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Wuerde.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Was wir sind und was wir sein könnten von Gerald Hüther - MindMap</title>
+      <link>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</link>
+      <pubDate>Fri, 24 Nov 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-11-24-was-wir-sind-und-was-wir-sein-koennten/</guid>
+      <description>&lt;p&gt;Hier zwei eher grössere MindMaps als Buch Zusammenfassungen zum Buch &lt;a href=&#34;https://www.amazon.de/-/en/Gerald-H%C3%BCther/dp/3596188504/ref=sr_1_1?crid=2ERM71E83A3X9&amp;amp;keywords=was&amp;#43;wir&amp;#43;sind&amp;#43;und&amp;#43;was&amp;#43;wir&amp;#43;sein&amp;#43;k%C3%B6nnten&amp;amp;qid=1703950688&amp;amp;sprefix=was&amp;#43;wir&amp;#43;sind&amp;#43;und&amp;#43;%2Caps%2C141&amp;amp;sr=8-1&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&amp;ldquo;Was wir sind und was wir sein könnten&amp;rdquo; von Gerald Hüther&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-wir-sind&#34;&gt;Was wir sind&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Was-wir-sind.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Was-wir-sind.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Was-wir-sind.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Was-wir-sind.svg, http://localhost:1313/images/Was-wir-sind.svg 1.5x, http://localhost:1313/images/Was-wir-sind.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Was-wir-sind.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-wir-sein-könnten&#34;&gt;Was wir sein könnten&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/was-wir-sein-koennten.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/was-wir-sein-koennten.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/was-wir-sein-koennten.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/was-wir-sein-koennten.svg, http://localhost:1313/images/was-wir-sein-koennten.svg 1.5x, http://localhost:1313/images/was-wir-sein-koennten.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/was-wir-sein-koennten.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Psychologie - MindMaps</title>
+      <link>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</link>
+      <pubDate>Thu, 26 Oct 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</guid>
+      <description>&lt;p&gt;Anhand des sehr unterhaltsamen Buches &lt;a href=&#34;https://www.amazon.de/-/en/Konrad-Clever/dp/3548064043/ref=sr_1_1?crid=3GF7CSQA6PLZT&amp;amp;keywords=klo&amp;#43;psychologie&amp;amp;qid=1698436003&amp;amp;sprefix=klo&amp;#43;psy%2Caps%2C101&amp;amp;sr=8-1&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Klo-Psychologe: In 100 Sitzungen zum Seelenklempner&lt;/a&gt; habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.&lt;/p&gt;&#xA;&lt;p&gt;Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:&lt;/p&gt;&#xA;&lt;h2 id=&#34;übersicht&#34;&gt;Übersicht&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Psychologie.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Psychologie.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Psychologie.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Psychologie.svg, http://localhost:1313/images/Psychologie.svg 1.5x, http://localhost:1313/images/Psychologie.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Psychologie.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-tiefenpsychologie&#34;&gt;1. Tiefenpsychologie&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Psychologie-Tiefenpsychologie-MindMap.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg, http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg 1.5x, http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Psychologie-Tiefenpsychologie-MindMap.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-persönlichtkeitspsychologie&#34;&gt;2. Persönlichtkeitspsychologie&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Psychologie-Persoenlichkeits-psychologie-MindMap.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Psychologie-Persoenlichkeits-psychologie-MindMap.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Steal like an Artist - MindMap</title>
+      <link>http://localhost:1313/posts/2023-09-15-steallikeanartist/</link>
+      <pubDate>Fri, 15 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-15-steallikeanartist/</guid>
+      <description>&lt;p&gt;MindMap for the Book&lt;br&gt;&#xA;&lt;a href=&#34;https://www.amazon.com/Steal-Like-Artist-Things-Creative/dp/0761169253&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Steal Like an Artist: 10 Things Nobody Told You About Being Creative&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/StealLikeanArtist.svg&#34; title=&#34;Steal like an Artist - Mindmap:&#34; data-thumbnail=&#34;/images/StealLikeanArtist.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Steal like an Artist - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/StealLikeanArtist.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/StealLikeanArtist.svg, http://localhost:1313/images/StealLikeanArtist.svg 1.5x, http://localhost:1313/images/StealLikeanArtist.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/StealLikeanArtist.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Factfulness by Hans Rosling - MindMap</title>
+      <link>http://localhost:1313/posts/2023-05-13-factfulness/</link>
+      <pubDate>Sat, 13 May 2023 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-05-13-factfulness/</guid>
+      <description>&lt;p&gt;MindMap for the Book&lt;br&gt;&#xA;&lt;a href=&#34;https://www.amazon.de/-/en/Hans-Rosling-ebook/dp/B0769XK7D6/ref=sr_1_2?keywords=factfulness&amp;#43;buch&amp;amp;qid=1683982006&amp;amp;sprefix=factf%2Caps%2C162&amp;amp;sr=8-2&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Factfulness: Ten Reasons We&amp;rsquo;re Wrong About The World - And Why Things Are Better Than You Think&lt;/a&gt; - by Hans Rosling&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Factfulness.svg&#34; title=&#34;Mindmap:&#34; data-thumbnail=&#34;/images/Factfulness.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Factfulness.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Factfulness.svg, http://localhost:1313/images/Factfulness.svg 1.5x, http://localhost:1313/images/Factfulness.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Factfulness.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Psychologie des Geldes - MindMap</title>
+      <link>http://localhost:1313/posts/2023-01-01-psychologiedesgeldes/</link>
+      <pubDate>Sun, 01 Jan 2023 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-01-psychologiedesgeldes/</guid>
+      <description>&lt;p&gt;Ein MindMap als Buchzusammenfassung für das Buch &lt;a href=&#34;https://www.amazon.de/%C3%9Cber-die-Psychologie-Geldes-Lektionen/dp/3959724438&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Pychologie des Geldes&lt;/a&gt; - von Morgan Housel&lt;/p&gt;&#xA;&lt;p&gt;Links:&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/Psychologie-des-Geldes-MindMap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;Psychologie-des-Geldes-MindMap.svg&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/Psychologie-des-Geldes-MindMap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;Psychologie-des-Geldes-MindMap.png&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Psychologie-des-Geldes-MindMap.png&#34; title=&#34;Psychologie des Geldes - Mindmap:&#34; data-thumbnail=&#34;/images/Psychologie-des-Geldes-MindMap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Psychologie des Geldes - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Psychologie-des-Geldes-MindMap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Psychologie-des-Geldes-MindMap.png, http://localhost:1313/images/Psychologie-des-Geldes-MindMap.png 1.5x, http://localhost:1313/images/Psychologie-des-Geldes-MindMap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Psychologie-des-Geldes-MindMap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Storyworthy - MindMap</title>
+      <link>http://localhost:1313/posts/2022-11-14-storyworthy/</link>
+      <pubDate>Mon, 14 Nov 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-11-14-storyworthy/</guid>
+      <description>&lt;p&gt;MindMap for the Book &lt;a href=&#34;https://www.amazon.de/-/en/Matthew-Dicks/dp/1608685489/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;amp;qid=1668442982&amp;amp;sr=8-1&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Storyworthy&lt;/a&gt; - by Matthew Dicks&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/storyworthy.png&#34; title=&#34;Storyworthy - Mindmap:&#34; data-thumbnail=&#34;/images/storyworthy.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Storyworthy - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/storyworthy.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/storyworthy.png, http://localhost:1313/images/storyworthy.png 1.5x, http://localhost:1313/images/storyworthy.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/storyworthy.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building a Second Brain - MindMap</title>
+      <link>http://localhost:1313/posts/2022-07-04-buildingasecondbrain/</link>
+      <pubDate>Mon, 04 Jul 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-07-04-buildingasecondbrain/</guid>
+      <description>&lt;p&gt;This MindMap tries to give an Overview over the book  &lt;a href=&#34;https://www.amazon.com/Building-Second-Brain-Organize-Potential/dp/1982167386&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Building a Second Brain&lt;/a&gt; - by Tiago Forte&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/buildingasecondbrain.png&#34; title=&#34;Building a Second Brain - Mindmap:&#34; data-thumbnail=&#34;/images/buildingasecondbrain.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Building a Second Brain - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/buildingasecondbrain.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/buildingasecondbrain.png, http://localhost:1313/images/buildingasecondbrain.png 1.5x, http://localhost:1313/images/buildingasecondbrain.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/buildingasecondbrain.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ThinkAgain Buch Umdenktipps - MindMap</title>
+      <link>http://localhost:1313/posts/2022-06-13-thinkagain/</link>
+      <pubDate>Mon, 13 Jun 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-06-13-thinkagain/</guid>
+      <description>&lt;p&gt;Folgendes MindMap bietet eine Übersicht über die Umdenktipps vom Buch &lt;strong&gt;ThinkAgain&lt;/strong&gt; von Adam Grant.&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/thinkagain.png&#34; title=&#34;ThinkAgain Mindmap:&#34; data-thumbnail=&#34;/images/thinkagain.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;ThinkAgain Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/thinkagain.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/thinkagain.png, http://localhost:1313/images/thinkagain.png 1.5x, http://localhost:1313/images/thinkagain.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/thinkagain.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;Link zum Buch: &lt;a href=&#34;https://www.amazon.de/Think-Again-flexiblen-umschmei%C3%9Fen-Times-Bestseller/dp/349207135X/ref=asc_df_349207135X/?tag=googshopde-21&amp;amp;linkCode=df0&amp;amp;hvadid=546377563338&amp;amp;hvpos=&amp;amp;hvnetw=g&amp;amp;hvrand=7032104991320317398&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=c&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=1002930&amp;amp;hvtargid=pla-1439813935915&amp;amp;psc=1&amp;amp;th=1&amp;amp;psc=1&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;ThinkAgain&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MINDFUCK Buch Zusammenfassung - MindMap</title>
+      <link>http://localhost:1313/posts/2022-06-13-mindfuck/</link>
+      <pubDate>Mon, 13 Jun 2022 10:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-06-13-mindfuck/</guid>
+      <description>&lt;p&gt;In folgendem MindMap habe ich Teile des Buches MINDFUCK von Petra Bock zusammengefasst:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/mindfuck.png&#34; title=&#34;Mindfuck Mindmap:&#34; data-thumbnail=&#34;/images/mindfuck.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Mindfuck Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/mindfuck.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/mindfuck.png, http://localhost:1313/images/mindfuck.png 1.5x, http://localhost:1313/images/mindfuck.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/mindfuck.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;Link zum Buch: &lt;a href=&#34;https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MindMap DevOps the three Ways from the DevOps Handbook</title>
+      <link>http://localhost:1313/posts/2022-02-19-devopsthreeways/</link>
+      <pubDate>Sat, 19 Feb 2022 08:08:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-19-devopsthreeways/</guid>
+      <description>&lt;p&gt;DevOps the three Ways from the DevOps Handbook &lt;a href=&#34;https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;The DevOps Handbook&lt;/a&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/DevOps-threeways.png&#34; title=&#34;DevOps-threeways&#34; data-thumbnail=&#34;/images/DevOps-threeways.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;DevOps-threeways&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/DevOps-threeways.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/DevOps-threeways.png, http://localhost:1313/images/DevOps-threeways.png 1.5x, http://localhost:1313/images/DevOps-threeways.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/DevOps-threeways.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MindMap Building Powershell Modules - Brandon Olin</title>
+      <link>http://localhost:1313/posts/2022-02-19-powershellmodules/</link>
+      <pubDate>Sat, 19 Feb 2022 08:05:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-19-powershellmodules/</guid>
+      <description>&lt;p&gt;This MindMap tries to give an Overview over the book &lt;a href=&#34;https://leanpub.com/building-powershell-modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Building Powershell Modules&lt;/a&gt; - Brandon Olin&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/PowerShellModules.png&#34; title=&#34;PowerShellModules&#34; data-thumbnail=&#34;/images/PowerShellModules.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;PowerShellModules&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/PowerShellModules.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/PowerShellModules.png, http://localhost:1313/images/PowerShellModules.png 1.5x, http://localhost:1313/images/PowerShellModules.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/PowerShellModules.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MindMap Deep Work - Carl Newport </title>
+      <link>http://localhost:1313/posts/2022-02-18-deepwork/</link>
+      <pubDate>Fri, 18 Feb 2022 06:55:23 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-18-deepwork/</guid>
+      <description>&lt;h2 id=&#34;deep-work---carl-newport&#34;&gt;Deep Work - Carl Newport&lt;/h2&gt;&#xA;&lt;p&gt;MindMap Overview - &lt;a href=&#34;https://www.amazon.de/Deep-Work-Focused-Success-Distracted/dp/0349411905&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;DeepWork&lt;/a&gt; - Carl Newport&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/DeepWork.png&#34; title=&#34;DeepWork&#34; data-thumbnail=&#34;/images/DeepWork.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;DeepWork&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/DeepWork.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/DeepWork.png, http://localhost:1313/images/DeepWork.png 1.5x, http://localhost:1313/images/DeepWork.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/DeepWork.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MindMap Eden Culture - Johannes Hartl</title>
+      <link>http://localhost:1313/posts/2022-02-18-edenculture/</link>
+      <pubDate>Fri, 18 Feb 2022 06:19:23 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-18-edenculture/</guid>
+      <description>&lt;h2 id=&#34;eden-culture-von-johannes-hartl&#34;&gt;Eden Culture von Johannes Hartl&lt;/h2&gt;&#xA;&lt;p&gt;Dieses MindMap bietet eine grobe Übersicht über das Buch &lt;a href=&#34;https://www.amazon.de/Eden-Culture-%C3%96kologie-Herzens-Morgen/dp/3451033089&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Eden Culture&lt;/a&gt; von Johannes Hartl:&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/edenculture.png&#34; title=&#34;edenculture&#34; data-thumbnail=&#34;/images/edenculture.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;edenculture&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/edenculture.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/edenculture.png, http://localhost:1313/images/edenculture.png 1.5x, http://localhost:1313/images/edenculture.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/edenculture.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MindMap Atomic Habits - James Clear</title>
+      <link>http://localhost:1313/posts/2022-02-17-atomic-habits/</link>
+      <pubDate>Thu, 17 Feb 2022 21:19:23 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-17-atomic-habits/</guid>
+      <description>&lt;h2 id=&#34;atomic-habits---die-1-methode&#34;&gt;Atomic Habits - Die 1% Methode&lt;/h2&gt;&#xA;&lt;p&gt;In diesem MindMap habe ich versucht die wichtigsten Ansätze des Buches Atomic Habits - oder auf deutsch &amp;ldquo;Die 1% Methode&amp;rdquo; zusammenzufassen.&#xA;Ich kann das Buch sehr empfehlen: &lt;a href=&#34;https://www.amazon.de/-/en/James-Clear/dp/3442178584/ref=sr_1_1?crid=109NZ0JX7A5CL&amp;amp;keywords=die&amp;#43;1%25&amp;#43;methode&amp;#43;buch&amp;amp;qid=1641883989&amp;amp;sprefix=die&amp;#43;1%2Caps%2C92&amp;amp;sr=8-1&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Atomic Habits - Die 1% Methode&lt;/a&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/atomichabits.png&#34; title=&#34;atomichabits&#34; data-thumbnail=&#34;/images/atomichabits.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;atomichabits&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/atomichabits.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/atomichabits.png, http://localhost:1313/images/atomichabits.png 1.5x, http://localhost:1313/images/atomichabits.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/atomichabits.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

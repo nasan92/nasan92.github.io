@@ -1,16 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>SC-100 - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/sc-100/</link>
-        <description>SC-100 - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 12 Jan 2023 10:51:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/sc-100/" rel="self" type="application/rss+xml" /><item>
-    <title>SC-100 - Microsoft Certified Cybersecurity Architect Expert - MindMap Collection</title>
-    <link>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</link>
-    <pubDate>Thu, 12 Jan 2023 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</guid>
-    <description><![CDATA[Studying SC-100 In my recent self-study, I have been working through the Microsoft SC-100 learning path. One of the ways that I have been organizing and consolidating my learning is by creating mind maps of the key concepts and topics covered in the course.
-You can find some of those mind maps below:
-Design a Zero Trust strategy and architecture Build an overall security strategy and architecture: Preview Design a security operations strategy: Preview Design an identity security strategy: Preview Evaluate Governance Risk Compliance (GRC) technical strategies and security operations strategies Evaluate a regulatory compliance strategy Preview Evaluate Security Posture - Manage Risk Preview Design security for infrastructure Preview Design strategy for data and applications Preview Recommend security best practices Security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SC-100 on NASAN</title>
+    <link>http://localhost:1313/tags/sc-100/</link>
+    <description>Recent content in SC-100 on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Jan 2023 10:51:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sc-100/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SC-100 - Microsoft Certified Cybersecurity Architect Expert - MindMap Collection</title>
+      <link>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</link>
+      <pubDate>Thu, 12 Jan 2023 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</guid>
+      <description>&lt;h1 id=&#34;studying-sc-100&#34;&gt;Studying SC-100&lt;/h1&gt;&#xA;&lt;p&gt;In my recent self-study, I have been working through the Microsoft SC-100 learning path. One of the ways that I have been organizing and consolidating my learning is by creating mind maps of the key concepts and topics covered in the course.&lt;/p&gt;&#xA;&lt;p&gt;You can find some of those mind maps below:&lt;/p&gt;&#xA;&lt;h2 id=&#34;design-a-zero-trust-strategy-and-architecture&#34;&gt;Design a Zero Trust strategy and architecture&lt;/h2&gt;&#xA;&lt;h3 id=&#34;build-an-overall-security-strategy-and-architecture&#34;&gt;Build an overall security strategy and architecture:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/BuildAnOverallSecurityStrategyAndArchitecture.svg&#34; title=&#34;Build an overall security strategy and architecture:&#34; data-thumbnail=&#34;/images/BuildAnOverallSecurityStrategyAndArchitecture.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Build an overall security strategy and architecture:&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

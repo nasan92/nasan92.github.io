@@ -1,19 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>ModelContextProtocol - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/modelcontextprotocol/</link>
-        <description>ModelContextProtocol - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 29 May 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/modelcontextprotocol/" rel="self" type="application/rss+xml" /><item>
-    <title>MCP - Model Context Protocol - mind map</title>
-    <link>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</link>
-    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</guid>
-    <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol
-MCP - Model Context Protocol mind map MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts
-Download the mind map in multiple formats:
-MindMap PNG
-MindMap JPG
-MindMap SVG]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ModelContextProtocol on NASAN</title>
+    <link>http://localhost:1313/tags/modelcontextprotocol/</link>
+    <description>Recent content in ModelContextProtocol on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 May 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/modelcontextprotocol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCP - Model Context Protocol - mind map</title>
+      <link>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</link>
+      <pubDate>Thu, 29 May 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</guid>
+      <description>&lt;p&gt;In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol&lt;/p&gt;&#xA;&lt;h2 id=&#34;mcp---model-context-protocol-mind-map&#34;&gt;MCP - Model Context Protocol mind map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MCP-Model-Context-Protocol-mind-map.svg&#34; title=&#34;MCP - Model Context Protocol Mind Map&#34; data-thumbnail=&#34;/images/MCP-Model-Context-Protocol-mind-map.svg&#34; data-sub-html=&#34;&lt;h2&gt;MCP - Model Context Protocol Mind Map illustrates basic concepts&lt;/h2&gt;&lt;p&gt;MCP - Model Context Protocol Mind Map&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MCP-Model-Context-Protocol-mind-map.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MCP-Model-Context-Protocol-mind-map.svg, http://localhost:1313/images/MCP-Model-Context-Protocol-mind-map.svg 1.5x, http://localhost:1313/images/MCP-Model-Context-Protocol-mind-map.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MCP-Model-Context-Protocol-mind-map.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;MCP - Model Context Protocol Mind Map illustrates basic concepts&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;br&gt;&#xA;&lt;em&gt;Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

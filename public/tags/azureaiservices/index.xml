@@ -1,27 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>AzureAIServices - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/azureaiservices/</link>
-        <description>AzureAIServices - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azureaiservices/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure AI Studio - mind map</title>
-    <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
-    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
-    <description><![CDATA[To get an overview of the Azure AI Studio, I&rsquo;ve created the following mind map:
-Azure AI Services: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Azure AI Services - mind map</title>
-    <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
-    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
-    <description><![CDATA[To get an overview of the current Azure AI services, I&rsquo;ve created the following mind map:
-Azure AI Services: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AzureAIServices on NASAN</title>
+    <link>http://localhost:1313/tags/azureaiservices/</link>
+    <description>Recent content in AzureAIServices on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Aug 2024 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/azureaiservices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure AI Studio - mind map</title>
+      <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
+      <pubDate>Sat, 24 Aug 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
+      <description>&lt;p&gt;To get an overview of the Azure AI Studio, I&amp;rsquo;ve created the following mind map:&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-ai-services&#34;&gt;Azure AI Services:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG - (Links working)&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.png&#34; title=&#34;Azure AI Studio PNG&#34; data-thumbnail=&#34;/images/azure-ai-studio-mindmap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azure AI Studio PNG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.png, http://localhost:1313/images/azure-ai-studio-mindmap.png 1.5x, http://localhost:1313/images/azure-ai-studio-mindmap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/azure-ai-studio-mindmap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure AI Services - mind map</title>
+      <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
+      <pubDate>Sat, 20 Jul 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
+      <description>&lt;p&gt;To get an overview of the current Azure AI services, I&amp;rsquo;ve created the following mind map:&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-ai-services&#34;&gt;Azure AI Services:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG - (Links working)&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.png&#34; title=&#34;Azure AI Search PNG&#34; data-thumbnail=&#34;/images/Azure-AI-Services-MindMap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azure AI Search PNG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.png, http://localhost:1313/images/Azure-AI-Services-MindMap.png 1.5x, http://localhost:1313/images/Azure-AI-Services-MindMap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Azure-AI-Services-MindMap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

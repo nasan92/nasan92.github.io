@@ -1,16 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Architecture - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/architecture/</link>
-        <description>Architecture - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/architecture/" rel="self" type="application/rss+xml" /><item>
-    <title>Software Architecture - mind maps</title>
-    <link>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</link>
-    <pubDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</guid>
-    <description><![CDATA[I started to create some minmal mind maps about Software Architecture. The current mind maps were created based on the book &ldquo;Head first - software architecture&rdquo;. Eventually I will later extend those.
-Software Architecture Roadmap You start with architectural characteristics. Then you&rsquo;ll need to get the logical components, pick a style and finally document your decision.
-Software Architecture Mind Map Architectural Characteristics Logical Components Architectural Style Architectural Decisions MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on NASAN</title>
+    <link>http://localhost:1313/tags/architecture/</link>
+    <description>Recent content in Architecture on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Jun 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Architecture - mind maps</title>
+      <link>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</link>
+      <pubDate>Mon, 23 Jun 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</guid>
+      <description>&lt;p&gt;I have started creating minimal mind maps about Software Architecture. I plan to extend them further in the future.&lt;/p&gt;&#xA;&lt;h2 id=&#34;software-architecture-roadmap&#34;&gt;Software Architecture Roadmap&lt;/h2&gt;&#xA;&lt;p&gt;You start with architectural characteristics. Then you&amp;rsquo;ll need to get the logical components, pick a style and finally document your decision.&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/SOFTWAREARCHITECTURE-Overview.jpg&#34; title=&#34;Software Architecture Roadmap Overview Mind Map&#34; data-thumbnail=&#34;/images/SOFTWAREARCHITECTURE-Overview.jpg&#34; data-sub-html=&#34;&lt;h2&gt;Software Architecture Mind Map&lt;/h2&gt;&lt;p&gt;Software Architecture Roadmap Overview Mind Map&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/SOFTWAREARCHITECTURE-Overview.jpg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/SOFTWAREARCHITECTURE-Overview.jpg, http://localhost:1313/images/SOFTWAREARCHITECTURE-Overview.jpg 1.5x, http://localhost:1313/images/SOFTWAREARCHITECTURE-Overview.jpg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/SOFTWAREARCHITECTURE-Overview.jpg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Software Architecture Mind Map&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

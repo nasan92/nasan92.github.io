@@ -1,14 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>PowerShellModules - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/powershellmodules/</link>
-        <description>PowerShellModules - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 19 Feb 2022 08:05:41 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/powershellmodules/" rel="self" type="application/rss+xml" /><item>
-    <title>MindMap Building Powershell Modules - Brandon Olin</title>
-    <link>http://localhost:1313/posts/2022-02-19-powershellmodules/</link>
-    <pubDate>Sat, 19 Feb 2022 08:05:41 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-02-19-powershellmodules/</guid>
-    <description><![CDATA[This MindMap tries to give an Overview over the book Building Powershell Modules - Brandon Olin Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShellModules on NASAN</title>
+    <link>http://localhost:1313/tags/powershellmodules/</link>
+    <description>Recent content in PowerShellModules on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Feb 2022 08:05:41 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/powershellmodules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MindMap Building Powershell Modules - Brandon Olin</title>
+      <link>http://localhost:1313/posts/2022-02-19-powershellmodules/</link>
+      <pubDate>Sat, 19 Feb 2022 08:05:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-19-powershellmodules/</guid>
+      <description>&lt;p&gt;This MindMap tries to give an Overview over the book &lt;a href=&#34;https://leanpub.com/building-powershell-modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Building Powershell Modules&lt;/a&gt; - Brandon Olin&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/PowerShellModules.png&#34; title=&#34;PowerShellModules&#34; data-thumbnail=&#34;/images/PowerShellModules.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;PowerShellModules&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/PowerShellModules.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/PowerShellModules.png, http://localhost:1313/images/PowerShellModules.png 1.5x, http://localhost:1313/images/PowerShellModules.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/PowerShellModules.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

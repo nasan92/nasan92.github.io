@@ -1,29 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>AzureDatabricks - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/azuredatabricks/</link>
-        <description>AzureDatabricks - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azuredatabricks/" rel="self" type="application/rss+xml" /><item>
-    <title>GenAI Azure Databricks - mind map - capabilities</title>
-    <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
-    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
-    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.
-Also, check out the Azure Databricks Key Concepts mind map
-GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities
-Download the mind map in multiple formats:
-MindMap PNG
-MindMap JPG
-MindMap SVG]]></description>
-</item><item>
-    <title>Azure Databricks - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
-    <description><![CDATA[As part of my recent deep dive into Azure Databricks, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.
-Explore essential areas like:
-📊 Data Management 🗄️: Centralized governance, cataloging, and access control. 🛠️ Data Engineering 📊: Tools for building data pipelines, notebooks, and version control.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AzureDatabricks on NASAN</title>
+    <link>http://localhost:1313/tags/azuredatabricks/</link>
+    <description>Recent content in AzureDatabricks on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Feb 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/azuredatabricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GenAI Azure Databricks - mind map - capabilities</title>
+      <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
+      <pubDate>Wed, 26 Feb 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
+      <description>&lt;p&gt;This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.&lt;/p&gt;&#xA;&lt;p&gt;Also, check out the &lt;a href=&#34;http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/&#34; rel=&#34;&#34;&gt;Azure Databricks Key Concepts mind map&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;genai-capabilities-azure-databricks-mind-map&#34;&gt;GenAI capabilities Azure Databricks mind map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg&#34; title=&#34;GenAI capabilities Azure Databricks Mind Map&#34; data-thumbnail=&#34;/images/GenAI-capabilites-Azure-Databricks-mind-map.svg&#34; data-sub-html=&#34;&lt;h2&gt;Azure Databricks Mind Map showcasing GenAI capabilities&lt;/h2&gt;&lt;p&gt;GenAI capabilities Azure Databricks Mind Map&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg, http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg 1.5x, http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/GenAI-capabilites-Azure-Databricks-mind-map.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Azure Databricks Mind Map showcasing GenAI capabilities&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;br&gt;&#xA;&lt;em&gt;Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Databricks - mind map - key concepts</title>
+      <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
+      <pubDate>Tue, 22 Oct 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
+      <description>&lt;p&gt;As part of my recent deep dive into &lt;strong&gt;Azure Databricks&lt;/strong&gt;, I’ve created a  &lt;strong&gt;mindmap&lt;/strong&gt; that outlines and connects some of its &lt;strong&gt;core concepts&lt;/strong&gt;. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.&lt;/p&gt;&#xA;&lt;p&gt;Explore essential areas like:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;📊 Data Management 🗄️&lt;/strong&gt;: Centralized governance, cataloging, and access control.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🛠️ Data Engineering 📊&lt;/strong&gt;: Tools for building data pipelines, notebooks, and version control.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🏢 Data Warehousing 📊&lt;/strong&gt;: Efficient data storage, querying, and visualization for business insights.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;⚙️ Computation Management 🖥️&lt;/strong&gt;: Managing clusters, workflows, and computation resources.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🤖 AI and Machine Learning 🧠&lt;/strong&gt;: Machine learning runtimes, experiments, and model deployment.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🔌 Interfaces&lt;/strong&gt;: Accessing Databricks through UI, APIs, and CLI.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;azure-databricks-mind-map&#34;&gt;Azure Databricks Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Azure-Databricks-MindMap.svg&#34; title=&#34;Azure Databricks MindMap&#34; data-thumbnail=&#34;/images/Azure-Databricks-MindMap.svg&#34; data-sub-html=&#34;&lt;h2&gt;Azure Databricks Mind Map showcasing key concepts&lt;/h2&gt;&lt;p&gt;Azure Databricks MindMap&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

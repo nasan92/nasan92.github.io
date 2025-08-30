@@ -1,17 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Classes - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/classes/</link>
-        <description>Classes - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 06 Dec 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/classes/" rel="self" type="application/rss+xml" /><item>
-    <title>MindMap PowerShell Classes</title>
-    <link>http://localhost:1313/posts/2021-12-06-powershellclasses/</link>
-    <pubDate>Mon, 06 Dec 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-12-06-powershellclasses/</guid>
-    <description><![CDATA[A MindMap about PowerShell Classes
-PowerShell Classes MindMap I&rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes. It should help to get a better overview over the topic.
-Preview Further Links To learn more about classes follow those links:
-About_Classes PowerShell Classes - Getting Started]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classes on NASAN</title>
+    <link>http://localhost:1313/tags/classes/</link>
+    <description>Recent content in Classes on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/classes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MindMap PowerShell Classes</title>
+      <link>http://localhost:1313/posts/2021-12-06-powershellclasses/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-12-06-powershellclasses/</guid>
+      <description>&lt;p&gt;A MindMap about PowerShell Classes&lt;/p&gt;&#xA;&lt;h2 id=&#34;powershell-classes-mindmap&#34;&gt;PowerShell Classes MindMap&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes.&#xA;It should help to get a better overview over the topic.&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/PowerShellClasses.png&#34; title=&#34;Powershell Classes&#34; data-thumbnail=&#34;/images/PowerShellClasses.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Powershell Classes&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/PowerShellClasses.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/PowerShellClasses.png, http://localhost:1313/images/PowerShellClasses.png 1.5x, http://localhost:1313/images/PowerShellClasses.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/PowerShellClasses.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;further-links&#34;&gt;Further Links&lt;/h2&gt;&#xA;&lt;p&gt;To learn more about classes follow those links:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_classes?view=powershell-7.2#inheritance-in-powershell-classes&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;About_Classes&lt;/a&gt; &lt;!-- raw HTML omitted --&gt;&#xA;&lt;a href=&#34;https://adamtheautomator.com/powershell-classes/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;PowerShell Classes - Getting Started&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

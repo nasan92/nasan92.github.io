@@ -1,19 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Chocolatey - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/chocolatey/</link>
-        <description>Chocolatey - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 17 Aug 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/chocolatey/" rel="self" type="application/rss+xml" /><item>
-    <title>useful chocolatey commands </title>
-    <link>http://localhost:1313/posts/2021-08-17-useful-chocolatey-commands/</link>
-    <pubDate>Tue, 17 Aug 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-08-17-useful-chocolatey-commands/</guid>
-    <description><![CDATA[Useful Chocolatey commands
-Useful Chocolatey commands search a package: choco search appname
-Install a package choco install appname
-list all installed packages choco list -localonly
-list specific package choco list appname upgrade specific package: choco upgrade appname
-upgrade all packages choco upgrade all]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chocolatey on NASAN</title>
+    <link>http://localhost:1313/tags/chocolatey/</link>
+    <description>Recent content in Chocolatey on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/chocolatey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>useful chocolatey commands </title>
+      <link>http://localhost:1313/posts/2021-08-17-useful-chocolatey-commands/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-08-17-useful-chocolatey-commands/</guid>
+      <description>&lt;p&gt;Useful Chocolatey commands&lt;/p&gt;&#xA;&lt;h1 id=&#34;useful-chocolatey-commands&#34;&gt;Useful Chocolatey commands&lt;/h1&gt;&#xA;&lt;p&gt;search a package:&#xA;&lt;code&gt;choco search appname&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Install a package&#xA;&lt;code&gt;choco install appname&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;list all installed packages&#xA;&lt;code&gt;choco list -localonly&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;list specific package&#xA;&lt;code&gt;choco list appname &lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;upgrade specific package:&#xA;&lt;code&gt;choco upgrade appname&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;upgrade all packages&#xA;&lt;code&gt;choco upgrade all&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

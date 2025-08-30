@@ -1,51 +1,47 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>MachineLearning - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/machinelearning/</link>
-        <description>MachineLearning - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/machinelearning/" rel="self" type="application/rss+xml" /><item>
-    <title>MLflow - mind map - core components</title>
-    <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
-    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
-    <description><![CDATA[This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.
-MLflow Mind Map MLflow Mind Map showcasing core components Figure 1: MLflow Mind Map visualizing core components
-Download the mind map in multiple formats:
-MindMap PNG
-MindMap JPG
-MindMap SVG]]></description>
-</item><item>
-    <title>Azure Machine Learning - mind map</title>
-    <link>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</link>
-    <pubDate>Sat, 30 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</guid>
-    <description><![CDATA[To get to know better the Azure Machine Learning workspace I created the following MindMap:
-Azure Machine Learning: Preview ]]></description>
-</item><item>
-    <title>Machine Learning - MindMaps</title>
-    <link>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</link>
-    <pubDate>Thu, 28 Mar 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</guid>
-    <description><![CDATA[During my recent Machine Learning studies I created the following MindMaps.
-Machine Learning Overview Preview Machine Learning Types Preview Machine Learning Algorithms Preview ]]></description>
-</item><item>
-    <title>Introduction to Machine Learning- MindMap</title>
-    <link>http://localhost:1313/posts/2022-04-23-introductiontomachinelearning/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-04-23-introductiontomachinelearning/</guid>
-    <description><![CDATA[This MindMap was created using the following Microsoft Learn Path: Introduction to Machine Learning
-Preview ]]></description>
-</item><item>
-    <title>MLOps explained - MindMap</title>
-    <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
-    <description><![CDATA[This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MachineLearning on NASAN</title>
+    <link>http://localhost:1313/tags/machinelearning/</link>
+    <description>Recent content in MachineLearning on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 21 Feb 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MLflow - mind map - core components</title>
+      <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
+      <pubDate>Fri, 21 Feb 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
+      <description>&lt;p&gt;This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mlflow-mind-map&#34;&gt;MLflow Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.svg&#34; title=&#34;MLflow MindMap&#34; data-thumbnail=&#34;/images/mlflow-core-components-mind-map.svg&#34; data-sub-html=&#34;&lt;h2&gt;MLflow Mind Map showcasing core components&lt;/h2&gt;&lt;p&gt;MLflow MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.svg, http://localhost:1313/images/mlflow-core-components-mind-map.svg 1.5x, http://localhost:1313/images/mlflow-core-components-mind-map.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/mlflow-core-components-mind-map.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;MLflow Mind Map showcasing core components&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;br&gt;&#xA;&lt;em&gt;Figure 1: MLflow Mind Map visualizing core components&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Download the mind map in multiple formats:&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.jpg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap JPG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Machine Learning - mind map</title>
+      <link>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</link>
+      <pubDate>Sat, 30 Mar 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-30-azuremachinelearning-overview/</guid>
+      <description>&lt;p&gt;To get to know better the Azure Machine Learning workspace I created the following MindMap:&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-machine-learning&#34;&gt;Azure Machine Learning:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/AzureMachineLearning-Overview.svg&#34; title=&#34;Azure Machine Learning Overview MindMap SVG&#34; data-thumbnail=&#34;/images/AzureMachineLearning-Overview.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azure Machine Learning Overview MindMap SVG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/AzureMachineLearning-Overview.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/AzureMachineLearning-Overview.svg, http://localhost:1313/images/AzureMachineLearning-Overview.svg 1.5x, http://localhost:1313/images/AzureMachineLearning-Overview.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/AzureMachineLearning-Overview.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Machine Learning - MindMaps</title>
+      <link>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</link>
+      <pubDate>Thu, 28 Mar 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-28-machinelearning-overview/</guid>
+      <description>&lt;p&gt;During my recent Machine Learning studies I created the following MindMaps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;machine-learning-overview&#34;&gt;Machine Learning Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MachineLearning-Overview-simplified.svg&#34; title=&#34;Machine Learning Overview MindMap SVG&#34; data-thumbnail=&#34;/images/MachineLearning-Overview-simplified.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Machine Learning Overview MindMap SVG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MachineLearning-Overview-simplified.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MachineLearning-Overview-simplified.svg, http://localhost:1313/images/MachineLearning-Overview-simplified.svg 1.5x, http://localhost:1313/images/MachineLearning-Overview-simplified.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MachineLearning-Overview-simplified.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;machine-learning-types&#34;&gt;Machine Learning Types&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MachineLearning-Overview-Types.svg&#34; title=&#34;Machine Learning Types MindMap SVG&#34; data-thumbnail=&#34;/images/MachineLearning-Overview-Types.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Machine Learning Types MindMap SVG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MachineLearning-Overview-Types.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MachineLearning-Overview-Types.svg, http://localhost:1313/images/MachineLearning-Overview-Types.svg 1.5x, http://localhost:1313/images/MachineLearning-Overview-Types.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MachineLearning-Overview-Types.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;machine-learning-algorithms&#34;&gt;Machine Learning Algorithms&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MachineLearning-Overview-Algorithms.svg&#34; title=&#34;Machine Learning Algorithms MindMap SVG&#34; data-thumbnail=&#34;/images/MachineLearning-Overview-Algorithms.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Machine Learning Algorithms MindMap SVG&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to Machine Learning- MindMap</title>
+      <link>http://localhost:1313/posts/2022-04-23-introductiontomachinelearning/</link>
+      <pubDate>Fri, 22 Apr 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-04-23-introductiontomachinelearning/</guid>
+      <description>&lt;p&gt;This MindMap was created using the following Microsoft Learn Path: &lt;a href=&#34;https://docs.microsoft.com/en-us/learn/paths/machine-learning-foundations-using-data-science/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Introduction to Machine Learning&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/IntroductionMachineLearning-MindMap.png&#34; title=&#34;Introduction to Machine Learning - MindMap&#34; data-thumbnail=&#34;/images/IntroductionMachineLearning-MindMap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Introduction to Machine Learning - MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/IntroductionMachineLearning-MindMap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/IntroductionMachineLearning-MindMap.png, http://localhost:1313/images/IntroductionMachineLearning-MindMap.png 1.5x, http://localhost:1313/images/IntroductionMachineLearning-MindMap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/IntroductionMachineLearning-MindMap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MLOps explained - MindMap</title>
+      <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
+      <pubDate>Fri, 22 Apr 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
+      <description>&lt;p&gt;This MindMap was created using the following Microsoft Youtube Video: &lt;a href=&#34;https://www.youtube.com/watch?v=ZVWg18AXXuE&amp;amp;ab_channel=MicrosoftAzure&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;MLOps explained | Machine Learning Essentials&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MLOpsExplained.png&#34; title=&#34;MLOps Explained MindMap&#34; data-thumbnail=&#34;/images/MLOpsExplained.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MLOps Explained MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MLOpsExplained.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MLOpsExplained.png, http://localhost:1313/images/MLOpsExplained.png 1.5x, http://localhost:1313/images/MLOpsExplained.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MLOpsExplained.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

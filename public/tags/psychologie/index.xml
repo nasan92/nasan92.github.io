@@ -1,25 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Psychologie - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/psychologie/</link>
-        <description>Psychologie - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 Nov 2023 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/psychologie/" rel="self" type="application/rss+xml" /><item>
-    <title>Früchte des Herzens - MindMap</title>
-    <link>http://localhost:1313/posts/2023-11-11-fruechte-des-herzens/</link>
-    <pubDate>Sat, 11 Nov 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-11-11-fruechte-des-herzens/</guid>
-    <description><![CDATA[Kürzlich habe ich mir den Vortrag &ldquo;Übers Wasser gehen für Anfänger&rdquo; von Johannes Hartl angehört. Der Vortrag behandelt das Thema: &lsquo;Wie gehst du mit tiefer Trauer und tiefem Leid um?&rsquo;
-Gegen Ende des Vortrags zeigt er, welche möglichen Früchte auf dem Boden herausfordernder Situationen entstehen können – sogenannte &lsquo;Früchte des Herzens&rsquo;. Diese habe ich in folgender Mindmap veranschaulicht:
-Preview ]]></description>
-</item><item>
-    <title>Psychologie - MindMaps</title>
-    <link>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</link>
-    <pubDate>Thu, 26 Oct 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</guid>
-    <description><![CDATA[Anhand des sehr unterhaltsamen Buches Klo-Psychologe: In 100 Sitzungen zum Seelenklempner habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.
-Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:
-Übersicht Preview 1. Tiefenpsychologie Preview 2. Persönlichtkeitspsychologie Preview 3. Kognitive Psychologie und Intelligenz-Psychologie Preview 4. Kommunikationspsychologie Preview 5. Motivationspsychologie und positive Psychologie Preview 6. Entwicklungs und Evolutionspsychologie Preview 7. Organisationspsychologie Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Psychologie on NASAN</title>
+    <link>http://localhost:1313/tags/psychologie/</link>
+    <description>Recent content in Psychologie on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Nov 2023 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/psychologie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Früchte des Herzens - MindMap</title>
+      <link>http://localhost:1313/posts/2023-11-11-fruechte-des-herzens/</link>
+      <pubDate>Sat, 11 Nov 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-11-11-fruechte-des-herzens/</guid>
+      <description>&lt;p&gt;Kürzlich habe ich mir den Vortrag &lt;a href=&#34;https://www.youtube.com/watch?v=jAyWPLIclvQ&amp;amp;ab_channel=Dr.JohannesHartl&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&amp;ldquo;Übers Wasser gehen für Anfänger&amp;rdquo;&lt;/a&gt; von Johannes Hartl angehört. Der Vortrag behandelt das Thema: &amp;lsquo;Wie gehst du mit tiefer Trauer und tiefem Leid um?&amp;rsquo;&lt;br&gt;&#xA;Gegen Ende des Vortrags zeigt er, welche möglichen Früchte auf dem Boden herausfordernder Situationen entstehen können – sogenannte &amp;lsquo;Früchte des Herzens&amp;rsquo;. Diese habe ich in folgender Mindmap veranschaulicht:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Fruechte-des-Herzens.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Fruechte-des-Herzens.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Fruechte-des-Herzens.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Fruechte-des-Herzens.svg, http://localhost:1313/images/Fruechte-des-Herzens.svg 1.5x, http://localhost:1313/images/Fruechte-des-Herzens.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Fruechte-des-Herzens.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Psychologie - MindMaps</title>
+      <link>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</link>
+      <pubDate>Thu, 26 Oct 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-10-26-psychologie-mindmap/</guid>
+      <description>&lt;p&gt;Anhand des sehr unterhaltsamen Buches &lt;a href=&#34;https://www.amazon.de/-/en/Konrad-Clever/dp/3548064043/ref=sr_1_1?crid=3GF7CSQA6PLZT&amp;amp;keywords=klo&amp;#43;psychologie&amp;amp;qid=1698436003&amp;amp;sprefix=klo&amp;#43;psy%2Caps%2C101&amp;amp;sr=8-1&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Klo-Psychologe: In 100 Sitzungen zum Seelenklempner&lt;/a&gt; habe ich mich nach hundert lehrreichen Sitzungen entscheiden, ein paar MindMaps zur Übersicht der Themen zu erstellen.&lt;/p&gt;&#xA;&lt;p&gt;Folgendes MindMap zur Übersicht der Hauptthemen, welche im Buch behandelt wurden:&lt;/p&gt;&#xA;&lt;h2 id=&#34;übersicht&#34;&gt;Übersicht&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Psychologie.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Psychologie.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Psychologie.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Psychologie.svg, http://localhost:1313/images/Psychologie.svg 1.5x, http://localhost:1313/images/Psychologie.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Psychologie.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-tiefenpsychologie&#34;&gt;1. Tiefenpsychologie&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Psychologie-Tiefenpsychologie-MindMap.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg, http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg 1.5x, http://localhost:1313/images/Psychologie-Tiefenpsychologie-MindMap.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Psychologie-Tiefenpsychologie-MindMap.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-persönlichtkeitspsychologie&#34;&gt;2. Persönlichtkeitspsychologie&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Psychologie-Persoenlichkeits-psychologie-MindMap.svg&#34; title=&#34;MindMap&#34; data-thumbnail=&#34;/images/Psychologie-Persoenlichkeits-psychologie-MindMap.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MindMap&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

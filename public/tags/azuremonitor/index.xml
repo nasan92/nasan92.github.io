@@ -1,15 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>AzureMonitor - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/azuremonitor/</link>
-        <description>AzureMonitor - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 21 Feb 2022 13:39:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azuremonitor/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure Monitor MindMap</title>
-    <link>http://localhost:1313/posts/2022-02-21-azuremonitor/</link>
-    <pubDate>Mon, 21 Feb 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-02-21-azuremonitor/</guid>
-    <description><![CDATA[I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I&rsquo;ve created it based on the Azure Monitor Documentation. Somethings may be outdated today -&gt; you can find the Microsoft Docs to that topic here: Azure Monitor
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AzureMonitor on NASAN</title>
+    <link>http://localhost:1313/tags/azuremonitor/</link>
+    <description>Recent content in AzureMonitor on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 Feb 2022 13:39:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/azuremonitor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Monitor MindMap</title>
+      <link>http://localhost:1313/posts/2022-02-21-azuremonitor/</link>
+      <pubDate>Mon, 21 Feb 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-21-azuremonitor/</guid>
+      <description>&lt;p&gt;I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I&amp;rsquo;ve created it based on the Azure Monitor Documentation.&#xA;Somethings may be outdated today -&amp;gt; you can find the Microsoft Docs to that topic here: &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-monitor/overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure Monitor&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/AzureMonitorMindMap.png&#34; title=&#34;Azur Monitor MindMap&#34; data-thumbnail=&#34;/images/AzureMonitorMindMap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azur Monitor MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/AzureMonitorMindMap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/AzureMonitorMindMap.png, http://localhost:1313/images/AzureMonitorMindMap.png 1.5x, http://localhost:1313/images/AzureMonitorMindMap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/AzureMonitorMindMap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

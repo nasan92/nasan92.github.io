@@ -1,100 +1,117 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Azure - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/azure/</link>
-        <description>Azure - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/" rel="self" type="application/rss+xml" /><item>
-    <title>GenAI Azure Databricks - mind map - capabilities</title>
-    <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
-    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
-    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.
-Also, check out the Azure Databricks Key Concepts mind map
-GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities
-Download the mind map in multiple formats:
-MindMap PNG
-MindMap JPG
-MindMap SVG]]></description>
-</item><item>
-    <title>Azure Kubernetes - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
-    <description><![CDATA[As part of my recent studies about Azure Kubernetes, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.
-Azure Kubernetes Mind Map Azure Kubernetes Mind Map showcasing core concepts Figure 1: Azure Kubernetes Mind Map visualizing key concepts
-Download the mind map in multiple formats:]]></description>
-</item><item>
-    <title>Azure API Management - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
-    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
-    <description><![CDATA[As part of my recent deep dive into Azure API Management, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.
-Azure API Management Mind Map Azure API Management Mind Map showcasing key concepts Figure 1: Azure API Management Mind Map visualizing key concepts]]></description>
-</item><item>
-    <title>Azure Databricks - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
-    <description><![CDATA[As part of my recent deep dive into Azure Databricks, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.
-Explore essential areas like:
-📊 Data Management 🗄️: Centralized governance, cataloging, and access control. 🛠️ Data Engineering 📊: Tools for building data pipelines, notebooks, and version control.]]></description>
-</item><item>
-    <title>Azure AI Studio - mind map</title>
-    <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
-    <pubDate>Sat, 24 Aug 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
-    <description><![CDATA[To get an overview of the Azure AI Studio, I&rsquo;ve created the following mind map:
-Azure AI Services: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Azure AI Services - mind map</title>
-    <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
-    <pubDate>Sat, 20 Jul 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
-    <description><![CDATA[To get an overview of the current Azure AI services, I&rsquo;ve created the following mind map:
-Azure AI Services: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>Azure AI Search - mind map</title>
-    <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
-Azure AI Search: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item><item>
-    <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</link>
-    <pubDate>Thu, 14 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</guid>
-    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: SC-300 Preview ]]></description>
-</item><item>
-    <title>AZ-500 - Azure Security Engineer - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-08-az500-mindmap/</link>
-    <pubDate>Fri, 08 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-08-az500-mindmap/</guid>
-    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: AZ-500 Preview ]]></description>
-</item><item>
-    <title>Mark&#39;s Simos List of Cybersecurity Resources - MindMap</title>
-    <link>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</link>
-    <pubDate>Thu, 18 May 2023 05:15:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</guid>
-    <description><![CDATA[Based on Mark&rsquo;s List of cybersecurity Resources, I created the following Mind Map:
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on NASAN</title>
+    <link>http://localhost:1313/tags/azure/</link>
+    <description>Recent content in Azure on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Feb 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GenAI Azure Databricks - mind map - capabilities</title>
+      <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
+      <pubDate>Wed, 26 Feb 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
+      <description>&lt;p&gt;This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.&lt;/p&gt;&#xA;&lt;p&gt;Also, check out the &lt;a href=&#34;http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/&#34; rel=&#34;&#34;&gt;Azure Databricks Key Concepts mind map&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;genai-capabilities-azure-databricks-mind-map&#34;&gt;GenAI capabilities Azure Databricks mind map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg&#34; title=&#34;GenAI capabilities Azure Databricks Mind Map&#34; data-thumbnail=&#34;/images/GenAI-capabilites-Azure-Databricks-mind-map.svg&#34; data-sub-html=&#34;&lt;h2&gt;Azure Databricks Mind Map showcasing GenAI capabilities&lt;/h2&gt;&lt;p&gt;GenAI capabilities Azure Databricks Mind Map&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg, http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg 1.5x, http://localhost:1313/images/GenAI-capabilites-Azure-Databricks-mind-map.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/GenAI-capabilites-Azure-Databricks-mind-map.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Azure Databricks Mind Map showcasing GenAI capabilities&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;br&gt;&#xA;&lt;em&gt;Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Kubernetes - mind map - key concepts</title>
+      <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
+      <pubDate>Sat, 11 Jan 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
+      <description>&lt;p&gt;As part of my recent studies about &lt;strong&gt;Azure Kubernetes&lt;/strong&gt;, I’ve created a  &lt;strong&gt;mindmap&lt;/strong&gt; that outlines and connects some of its &lt;strong&gt;core concepts&lt;/strong&gt;. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-kubernetes-mind-map&#34;&gt;Azure Kubernetes Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg&#34; title=&#34;Azure Kubernetes MindMap&#34; data-thumbnail=&#34;/images/azure-kubernetes-mindmap-core-concepts.svg&#34; data-sub-html=&#34;&lt;h2&gt;Azure Kubernetes Mind Map showcasing core concepts&lt;/h2&gt;&lt;p&gt;Azure Kubernetes MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg, http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg 1.5x, http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/azure-kubernetes-mindmap-core-concepts.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Azure Kubernetes Mind Map showcasing core concepts&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;br&gt;&#xA;&lt;em&gt;Figure 1: Azure Kubernetes Mind Map visualizing key concepts&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure API Management - mind map - key concepts</title>
+      <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
+      <pubDate>Thu, 19 Dec 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
+      <description>&lt;p&gt;As part of my recent deep dive into &lt;strong&gt;Azure API Management&lt;/strong&gt;, I’ve created a  &lt;strong&gt;mindmap&lt;/strong&gt; that outlines and connects some of its &lt;strong&gt;core concepts&lt;/strong&gt;. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-api-management-mind-map&#34;&gt;Azure API Management Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Azure-API-Management-Mind-Map.svg&#34; title=&#34;Azure API Management MindMap&#34; data-thumbnail=&#34;/images/Azure-API-Management-Mind-Map.svg&#34; data-sub-html=&#34;&lt;h2&gt;Azure API Management Mind Map showcasing key concepts&lt;/h2&gt;&lt;p&gt;Azure API Management MindMap&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Databricks - mind map - key concepts</title>
+      <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
+      <pubDate>Tue, 22 Oct 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
+      <description>&lt;p&gt;As part of my recent deep dive into &lt;strong&gt;Azure Databricks&lt;/strong&gt;, I’ve created a  &lt;strong&gt;mindmap&lt;/strong&gt; that outlines and connects some of its &lt;strong&gt;core concepts&lt;/strong&gt;. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.&lt;/p&gt;&#xA;&lt;p&gt;Explore essential areas like:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;📊 Data Management 🗄️&lt;/strong&gt;: Centralized governance, cataloging, and access control.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🛠️ Data Engineering 📊&lt;/strong&gt;: Tools for building data pipelines, notebooks, and version control.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🏢 Data Warehousing 📊&lt;/strong&gt;: Efficient data storage, querying, and visualization for business insights.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;⚙️ Computation Management 🖥️&lt;/strong&gt;: Managing clusters, workflows, and computation resources.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🤖 AI and Machine Learning 🧠&lt;/strong&gt;: Machine learning runtimes, experiments, and model deployment.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🔌 Interfaces&lt;/strong&gt;: Accessing Databricks through UI, APIs, and CLI.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;azure-databricks-mind-map&#34;&gt;Azure Databricks Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Azure-Databricks-MindMap.svg&#34; title=&#34;Azure Databricks MindMap&#34; data-thumbnail=&#34;/images/Azure-Databricks-MindMap.svg&#34; data-sub-html=&#34;&lt;h2&gt;Azure Databricks Mind Map showcasing key concepts&lt;/h2&gt;&lt;p&gt;Azure Databricks MindMap&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure AI Studio - mind map</title>
+      <link>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</link>
+      <pubDate>Sat, 24 Aug 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-08-24-azure-ai-studio-mindmap-overview/</guid>
+      <description>&lt;p&gt;To get an overview of the Azure AI Studio, I&amp;rsquo;ve created the following mind map:&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-ai-services&#34;&gt;Azure AI Services:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG - (Links working)&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.png&#34; title=&#34;Azure AI Studio PNG&#34; data-thumbnail=&#34;/images/azure-ai-studio-mindmap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azure AI Studio PNG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/azure-ai-studio-mindmap.png, http://localhost:1313/images/azure-ai-studio-mindmap.png 1.5x, http://localhost:1313/images/azure-ai-studio-mindmap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/azure-ai-studio-mindmap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure AI Services - mind map</title>
+      <link>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</link>
+      <pubDate>Sat, 20 Jul 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-20-azure-ai-services-mindmap-overview/</guid>
+      <description>&lt;p&gt;To get an overview of the current Azure AI services, I&amp;rsquo;ve created the following mind map:&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-ai-services&#34;&gt;Azure AI Services:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG - (Links working)&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.png&#34; title=&#34;Azure AI Search PNG&#34; data-thumbnail=&#34;/images/Azure-AI-Services-MindMap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azure AI Search PNG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Azure-AI-Services-MindMap.png, http://localhost:1313/images/Azure-AI-Services-MindMap.png 1.5x, http://localhost:1313/images/Azure-AI-Services-MindMap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Azure-AI-Services-MindMap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure AI Search - mind map</title>
+      <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
+      <pubDate>Sat, 22 Jun 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
+      <description>&lt;p&gt;To better understand &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure AI Search&lt;/a&gt;, I&amp;rsquo;ve created the following mind map:&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-ai-search&#34;&gt;Azure AI Search:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG - (Links working)&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.svg&#34; title=&#34;Azure AI Search SVG&#34; data-thumbnail=&#34;/images/Azure-AI-Search-MindMap.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azure AI Search SVG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.svg, http://localhost:1313/images/Azure-AI-Search-MindMap.svg 1.5x, http://localhost:1313/images/Azure-AI-Search-MindMap.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Azure-AI-Search-MindMap.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
+      <link>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</link>
+      <pubDate>Thu, 14 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</guid>
+      <description>&lt;p&gt;Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: &lt;a href=&#34;https://nasan.ch/posts/2023-01-13-microsoftcybersecurityarchitect/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-100 MindMap Collection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This MindMap is based on the MS Learning path: &lt;a href=&#34;https://learn.microsoft.com/en-us/certifications/exams/sc-300/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-300 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; title=&#34;SC-300 - Mindmap:&#34; data-thumbnail=&#34;/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;SC-300 - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg, http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg 1.5x, http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AZ-500 - Azure Security Engineer - MindMap</title>
+      <link>http://localhost:1313/posts/2023-09-08-az500-mindmap/</link>
+      <pubDate>Fri, 08 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-08-az500-mindmap/</guid>
+      <description>&lt;p&gt;Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: &lt;a href=&#34;https://nasan.ch/posts/2023-01-13-microsoftcybersecurityarchitect/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-100 MindMap Collection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This MindMap is based on the MS Learning path: &lt;a href=&#34;https://learn.microsoft.com/en-us/certifications/exams/az-500/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;AZ-500 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg&#34; title=&#34;AZ500 - Mindmap:&#34; data-thumbnail=&#34;/images/AZ500-AzureSecurityEngineer.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;AZ500 - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg, http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg 1.5x, http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/AZ500-AzureSecurityEngineer.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mark&#39;s Simos List of Cybersecurity Resources - MindMap</title>
+      <link>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</link>
+      <pubDate>Thu, 18 May 2023 05:15:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-05-18-markslistofcybersecurityresources/</guid>
+      <description>&lt;p&gt;Based on &lt;a href=&#34;https://www.linkedin.com/pulse/marks-list-mark-simos/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Mark&amp;rsquo;s List of cybersecurity Resources&lt;/a&gt;, I created the following Mind Map:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg&#34; title=&#34;Cybersecurity Resources - Mindmap:&#34; data-thumbnail=&#34;/images/marks-list-of-cybersecurity-resources.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Cybersecurity Resources - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg, http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg 1.5x, http://localhost:1313/images/marks-list-of-cybersecurity-resources.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/marks-list-of-cybersecurity-resources.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
+      <link>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
+      <pubDate>Thu, 27 Oct 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
+      <description>&lt;p&gt;link: &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &amp;ldquo;old SQL Server&amp;rdquo; offline and I got a lot of Azure Backup Alerts.&#xA;Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform</title>
+      <link>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</link>
+      <pubDate>Thu, 08 Sep 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</guid>
+      <description>&lt;p&gt;Yes&amp;hellip; its annoying there is &lt;strong&gt;no built in role&lt;/strong&gt; to only allow restarting of Azure Virtual Machines&amp;hellip;&#xA;The &lt;strong&gt;Virtual Machine Contributor Role&lt;/strong&gt; allows to much. With this role you are able to destory and create VMs..&lt;/p&gt;&#xA;&lt;p&gt;So what I want to do in this case is creating a &lt;strong&gt;custom role which only allows to start / stop / restart Virtual Machines.&lt;/strong&gt;&#xA;And I want to do that with &lt;strong&gt;terraform&lt;/strong&gt; because I&amp;rsquo;m doing the whole Azure Resource Deployment with terraform anyway.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MLOps explained - MindMap</title>
+      <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
+      <pubDate>Fri, 22 Apr 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
+      <description>&lt;p&gt;This MindMap was created using the following Microsoft Youtube Video: &lt;a href=&#34;https://www.youtube.com/watch?v=ZVWg18AXXuE&amp;amp;ab_channel=MicrosoftAzure&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;MLOps explained | Machine Learning Essentials&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MLOpsExplained.png&#34; title=&#34;MLOps Explained MindMap&#34; data-thumbnail=&#34;/images/MLOpsExplained.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MLOps Explained MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MLOpsExplained.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MLOpsExplained.png, http://localhost:1313/images/MLOpsExplained.png 1.5x, http://localhost:1313/images/MLOpsExplained.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MLOpsExplained.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Monitor MindMap</title>
+      <link>http://localhost:1313/posts/2022-02-21-azuremonitor/</link>
+      <pubDate>Mon, 21 Feb 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-21-azuremonitor/</guid>
+      <description>&lt;p&gt;I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I&amp;rsquo;ve created it based on the Azure Monitor Documentation.&#xA;Somethings may be outdated today -&amp;gt; you can find the Microsoft Docs to that topic here: &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-monitor/overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure Monitor&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/AzureMonitorMindMap.png&#34; title=&#34;Azur Monitor MindMap&#34; data-thumbnail=&#34;/images/AzureMonitorMindMap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azur Monitor MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/AzureMonitorMindMap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/AzureMonitorMindMap.png, http://localhost:1313/images/AzureMonitorMindMap.png 1.5x, http://localhost:1313/images/AzureMonitorMindMap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/AzureMonitorMindMap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MindMap Hybrid Identity with Azure AD - AD Connect</title>
+      <link>http://localhost:1313/posts/2022-02-19-hybrididentity/</link>
+      <pubDate>Sat, 19 Feb 2022 07:53:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-19-hybrididentity/</guid>
+      <description>&lt;p&gt;You can find the official documentation from Microsoft to that topic here: &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/active-directory/hybrid/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Docs - Hybrid Identity&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this MindMap you can see the different Authentication and Single Sign On Methods which are available.&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/hybrididentity-AzureAD-Mindmap.png&#34; title=&#34;hybrididentity-AzureAD-Mindmap&#34; data-thumbnail=&#34;/images/hybrididentity-AzureAD-Mindmap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;hybrididentity-AzureAD-Mindmap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/hybrididentity-AzureAD-Mindmap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/hybrididentity-AzureAD-Mindmap.png, http://localhost:1313/images/hybrididentity-AzureAD-Mindmap.png 1.5x, http://localhost:1313/images/hybrididentity-AzureAD-Mindmap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/hybrididentity-AzureAD-Mindmap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -5,22 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Run a gpresult on a remote computer - NASAN</title><meta name="Description" content=""><meta property="og:title" content="Run a gpresult on a remote computer" />
-<meta property="og:description" content="How to run a gpresult on a remote computer
+        <title>Run a gpresult on a remote computer - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2021-05-07-gpresult-remote/">
+  <meta property="og:site_name" content="NASAN">
+  <meta property="og:title" content="Run a gpresult on a remote computer">
+  <meta property="og:description" content="How to run a gpresult on a remote computer
 Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
 Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command here comes the new highlight:
-199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username &#43; the RDS ConnectionBroker." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/2021-05-07-gpresult-remote/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-06T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-05-06T00:00:00+00:00" />
+199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username &#43; the RDS ConnectionBroker. It will automatically find the Remote Desktop Server where the user is logged in an run the gpresult there:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-05-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-05-06T00:00:00+00:00">
+    <meta property="article:tag" content="Powershell">
+    <meta property="article:tag" content="GPO">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Run a gpresult on a remote computer"/>
-<meta name="twitter:description" content="How to run a gpresult on a remote computer
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Run a gpresult on a remote computer">
+  <meta name="twitter:description" content="How to run a gpresult on a remote computer
 Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
 Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command here comes the new highlight:
-199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username &#43; the RDS ConnectionBroker."/>
-<meta name="twitter:site" content="@nasantschi"/>
+199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username &#43; the RDS ConnectionBroker. It will automatically find the Remote Desktop Server where the user is logged in an run the gpresult there:">
+      <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -122,9 +128,7 @@ Define the ComputerName after the Invoke-Command In the ScriptBlock you can simp
     <li><a href="#run-gpresult-for-a-specific-user-in-a-rds-environment">Run gpresult for a specific User in a RDS environment</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>How to run a gpresult on a remote computer</p>
+            </div><div class="content" id="content"><p>How to run a gpresult on a remote computer</p>
 <h1 id="use-the-invoke-command">Use the Invoke-Command</h1>
 <p>You can simply use the Invoke Command to run the gpresult command on a remote computer:</p>
 <ul>
@@ -207,7 +211,7 @@ It will automatically find the Remote Desktop Server where the user is logged in
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.7">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.149.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

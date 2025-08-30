@@ -1,77 +1,138 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - NASAN</title>
-        <link>http://localhost:1313/categories/</link>
-        <description>Categories - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>MindMap</title>
-    <link>http://localhost:1313/categories/mindmap/</link>
-    <pubDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/mindmap/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>SoftwareArchitecture</title>
-    <link>http://localhost:1313/categories/softwarearchitecture/</link>
-    <pubDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/softwarearchitecture/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MCP</title>
-    <link>http://localhost:1313/categories/mcp/</link>
-    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/mcp/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>OpenTelemetry</title>
-    <link>http://localhost:1313/categories/opentelemetry/</link>
-    <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/opentelemetry/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>AI</title>
-    <link>http://localhost:1313/categories/ai/</link>
-    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/ai/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MachineLearning</title>
-    <link>http://localhost:1313/categories/machinelearning/</link>
-    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/machinelearning/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MLOps</title>
-    <link>http://localhost:1313/categories/mlops/</link>
-    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/mlops/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Azure</title>
-    <link>http://localhost:1313/categories/azure/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/azure/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Kubernetes</title>
-    <link>http://localhost:1313/categories/kubernetes/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/kubernetes/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>APIManagement</title>
-    <link>http://localhost:1313/categories/apimanagement/</link>
-    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/categories/apimanagement/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on NASAN</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Jun 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MindMap</title>
+      <link>http://localhost:1313/categories/mindmap/</link>
+      <pubDate>Mon, 23 Jun 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/mindmap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SoftwareArchitecture</title>
+      <link>http://localhost:1313/categories/softwarearchitecture/</link>
+      <pubDate>Mon, 23 Jun 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/softwarearchitecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>http://localhost:1313/categories/mcp/</link>
+      <pubDate>Thu, 29 May 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/mcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenTelemetry</title>
+      <link>http://localhost:1313/categories/opentelemetry/</link>
+      <pubDate>Wed, 14 May 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/opentelemetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/categories/ai/</link>
+      <pubDate>Wed, 26 Feb 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MachineLearning</title>
+      <link>http://localhost:1313/categories/machinelearning/</link>
+      <pubDate>Fri, 21 Feb 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/machinelearning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MLOps</title>
+      <link>http://localhost:1313/categories/mlops/</link>
+      <pubDate>Fri, 21 Feb 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/mlops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure</title>
+      <link>http://localhost:1313/categories/azure/</link>
+      <pubDate>Sat, 11 Jan 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>http://localhost:1313/categories/kubernetes/</link>
+      <pubDate>Sat, 11 Jan 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>APIManagement</title>
+      <link>http://localhost:1313/categories/apimanagement/</link>
+      <pubDate>Thu, 19 Dec 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/apimanagement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>http://localhost:1313/categories/books/</link>
+      <pubDate>Tue, 08 Oct 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/books/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RAG</title>
+      <link>http://localhost:1313/categories/rag/</link>
+      <pubDate>Sat, 07 Sep 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/rag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beziehungen</title>
+      <link>http://localhost:1313/categories/beziehungen/</link>
+      <pubDate>Sat, 11 May 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/beziehungen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/categories/security/</link>
+      <pubDate>Thu, 18 Jan 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AzureDevOps</title>
+      <link>http://localhost:1313/categories/azuredevops/</link>
+      <pubDate>Tue, 26 Sep 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/azuredevops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encryption</title>
+      <link>http://localhost:1313/categories/encryption/</link>
+      <pubDate>Sat, 09 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/encryption/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MicrosoftEntraPrivateAccess</title>
+      <link>http://localhost:1313/categories/microsoftentraprivateaccess/</link>
+      <pubDate>Thu, 31 Aug 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/microsoftentraprivateaccess/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/categories/docker/</link>
+      <pubDate>Fri, 22 Apr 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/docker/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

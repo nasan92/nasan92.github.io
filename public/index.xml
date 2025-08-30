@@ -11,101 +11,149 @@
     <pubDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</guid>
-    <description><![CDATA[I started to create some minmal mind maps about Software Architecture. The current mind maps were created based on the book &ldquo;Head first - software architecture&rdquo;. Eventually I will later extend those.
-Software Architecture Roadmap You start with architectural characteristics. Then you&rsquo;ll need to get the logical components, pick a style and finally document your decision.
-Software Architecture Mind Map Architectural Characteristics Software Architecture - Architectural Characteristics Mind Map illustrates basic concepts Figure 1: Software Architecture - Architectural Characteristics Mind Map visualizing basic concepts]]></description>
+    <description><![CDATA[<p>I have started creating minimal mind maps about Software Architecture. I plan to extend them further in the future.</p>
+<h2 id="software-architecture-roadmap">Software Architecture Roadmap</h2>
+<p>You start with architectural characteristics. Then you&rsquo;ll need to get the logical components, pick a style and finally document your decision.</p>
+<p><figure><a class="lightgallery" href="/images/SOFTWAREARCHITECTURE-Overview.jpg" title="Software Architecture Roadmap Overview Mind Map" data-thumbnail="/images/SOFTWAREARCHITECTURE-Overview.jpg" data-sub-html="<h2>Software Architecture Mind Map</h2><p>Software Architecture Roadmap Overview Mind Map</p>">
+        
+    </a><figcaption class="image-caption">Software Architecture Mind Map</figcaption>
+    </figure></p>]]></description>
 </item><item>
     <title>MCP - Model Context Protocol - mind map</title>
     <link>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</link>
     <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</guid>
-    <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol
-MCP - Model Context Protocol mind map MCP - Model Context Protocol Mind Map illustrates basic concepts Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts
-Download the mind map in multiple formats:
-MindMap PNG
-MindMap JPG
-MindMap SVG]]></description>
+    <description><![CDATA[<p>In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol</p>
+<h2 id="mcp---model-context-protocol-mind-map">MCP - Model Context Protocol mind map</h2>
+<p><figure><a class="lightgallery" href="/images/MCP-Model-Context-Protocol-mind-map.svg" title="MCP - Model Context Protocol Mind Map" data-thumbnail="/images/MCP-Model-Context-Protocol-mind-map.svg" data-sub-html="<h2>MCP - Model Context Protocol Mind Map illustrates basic concepts</h2><p>MCP - Model Context Protocol Mind Map</p>">
+        
+    </a><figcaption class="image-caption">MCP - Model Context Protocol Mind Map illustrates basic concepts</figcaption>
+    </figure><br>
+<em>Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts</em></p>]]></description>
 </item><item>
     <title>OpenTelemetry - mind map - concepts</title>
     <link>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</link>
     <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</guid>
-    <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of OpenTelemetry The purpose of OpenTelemetry is to collect, process and export signals. The signals (telemetry data) which OpenTelemetry currently supports can be found on the right side of the mind map:
-Signals: Traces Metrics Logs The mind map illustrates the components that make up these signals and how they are interconnected.
-To learn more about OpenTelemetry:
-Official docs: What is OpenTelemetry?]]></description>
+    <description><![CDATA[<p>In the following mind map, I attempted to visualize some core concepts of OpenTelemetry
+The purpose of OpenTelemetry is to collect, process and export signals. The signals (telemetry data) which OpenTelemetry currently supports can be found on the right side of the mind map:</p>
+<ul>
+<li>Signals:
+<ul>
+<li>Traces</li>
+<li>Metrics</li>
+<li>Logs</li>
+</ul>
+</li>
+</ul>
+<p>The mind map illustrates the components that make up these signals and how they are interconnected.</p>
+<p>To learn more about OpenTelemetry:</p>
+<ul>
+<li>Official docs: <a href="https://opentelemetry.io/docs/what-is-opentelemetry/" target="_blank" rel="noopener noreffer">What is OpenTelemetry?</a></li>
+<li>A very helpful resource to getting started with OpenTelemetry is the following course from the Linux Foundation: <a href="https://training.linuxfoundation.org/training/getting-started-with-opentelemetry-lfs148/" target="_blank" rel="noopener noreffer">Getting Started with OpenTelemetry</a></li>
+</ul>
+<h2 id="opentelemetry-concepts-mind-map">OpenTelemetry Concepts mind map</h2>
+<p><figure><a class="lightgallery" href="/images/OpenTelemetry-mindmap-concepts.svg" title="OpenTelemetry Concepts Mind Map" data-thumbnail="/images/OpenTelemetry-mindmap-concepts.svg" data-sub-html="<h2>OpenTelemetry Mind Map illustrates basic concepts</h2><p>OpenTelemetry Concepts Mind Map</p>]]></description>
 </item><item>
     <title>GenAI Azure Databricks - mind map - capabilities</title>
     <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
     <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
-    <description><![CDATA[This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.
-Also, check out the Azure Databricks Key Concepts mind map
-GenAI capabilities Azure Databricks mind map Azure Databricks Mind Map showcasing GenAI capabilities Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities
-Download the mind map in multiple formats:
-MindMap PNG
-MindMap JPG
-MindMap SVG]]></description>
+    <description><![CDATA[<p>This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.</p>
+<p>Also, check out the <a href="/posts/2024-10-22-azure-databricks-mindmap/" rel="">Azure Databricks Key Concepts mind map</a></p>
+<h2 id="genai-capabilities-azure-databricks-mind-map">GenAI capabilities Azure Databricks mind map</h2>
+<p><figure><a class="lightgallery" href="/images/GenAI-capabilites-Azure-Databricks-mind-map.svg" title="GenAI capabilities Azure Databricks Mind Map" data-thumbnail="/images/GenAI-capabilites-Azure-Databricks-mind-map.svg" data-sub-html="<h2>Azure Databricks Mind Map showcasing GenAI capabilities</h2><p>GenAI capabilities Azure Databricks Mind Map</p>">
+        
+    </a><figcaption class="image-caption">Azure Databricks Mind Map showcasing GenAI capabilities</figcaption>
+    </figure><br>
+<em>Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities</em></p>]]></description>
 </item><item>
     <title>MLflow - mind map - core components</title>
     <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
     <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
-    <description><![CDATA[This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.
-MLflow Mind Map MLflow Mind Map showcasing core components Figure 1: MLflow Mind Map visualizing core components
-Download the mind map in multiple formats:
-MindMap PNG
-MindMap JPG
-MindMap SVG]]></description>
+    <description><![CDATA[<p>This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.</p>
+<h2 id="mlflow-mind-map">MLflow Mind Map</h2>
+<p><figure><a class="lightgallery" href="/images/mlflow-core-components-mind-map.svg" title="MLflow MindMap" data-thumbnail="/images/mlflow-core-components-mind-map.svg" data-sub-html="<h2>MLflow Mind Map showcasing core components</h2><p>MLflow MindMap</p>">
+        
+    </a><figcaption class="image-caption">MLflow Mind Map showcasing core components</figcaption>
+    </figure><br>
+<em>Figure 1: MLflow Mind Map visualizing core components</em></p>
+<p>Download the mind map in multiple formats:<br>
+<a href="/images/mlflow-core-components-mind-map.png" title="Preview" rel="">MindMap PNG</a><br>
+<a href="/images/mlflow-core-components-mind-map.jpg" title="Preview" rel="">MindMap JPG</a><br>
+<a href="/images/mlflow-core-components-mind-map.svg" title="Preview" rel="">MindMap SVG</a></p>]]></description>
 </item><item>
     <title>Azure Kubernetes - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
     <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
-    <description><![CDATA[As part of my recent studies about Azure Kubernetes, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.
-Azure Kubernetes Mind Map Azure Kubernetes Mind Map showcasing core concepts Figure 1: Azure Kubernetes Mind Map visualizing key concepts
-Download the mind map in multiple formats:]]></description>
+    <description><![CDATA[<p>As part of my recent studies about <strong>Azure Kubernetes</strong>, I’ve created a  <strong>mindmap</strong> that outlines and connects some of its <strong>core concepts</strong>. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.</p>
+<h2 id="azure-kubernetes-mind-map">Azure Kubernetes Mind Map</h2>
+<p><figure><a class="lightgallery" href="/images/azure-kubernetes-mindmap-core-concepts.svg" title="Azure Kubernetes MindMap" data-thumbnail="/images/azure-kubernetes-mindmap-core-concepts.svg" data-sub-html="<h2>Azure Kubernetes Mind Map showcasing core concepts</h2><p>Azure Kubernetes MindMap</p>">
+        
+    </a><figcaption class="image-caption">Azure Kubernetes Mind Map showcasing core concepts</figcaption>
+    </figure><br>
+<em>Figure 1: Azure Kubernetes Mind Map visualizing key concepts</em></p>]]></description>
 </item><item>
     <title>Azure API Management - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
     <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
-    <description><![CDATA[As part of my recent deep dive into Azure API Management, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.
-Azure API Management Mind Map Azure API Management Mind Map showcasing key concepts Figure 1: Azure API Management Mind Map visualizing key concepts]]></description>
+    <description><![CDATA[<p>As part of my recent deep dive into <strong>Azure API Management</strong>, I’ve created a  <strong>mindmap</strong> that outlines and connects some of its <strong>core concepts</strong>. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.</p>
+<h2 id="azure-api-management-mind-map">Azure API Management Mind Map</h2>
+<p><figure><a class="lightgallery" href="/images/Azure-API-Management-Mind-Map.svg" title="Azure API Management MindMap" data-thumbnail="/images/Azure-API-Management-Mind-Map.svg" data-sub-html="<h2>Azure API Management Mind Map showcasing key concepts</h2><p>Azure API Management MindMap</p>]]></description>
 </item><item>
     <title>Azure Databricks - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
     <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
-    <description><![CDATA[As part of my recent deep dive into Azure Databricks, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.
-Explore essential areas like:
-📊 Data Management 🗄️: Centralized governance, cataloging, and access control. 🛠️ Data Engineering 📊: Tools for building data pipelines, notebooks, and version control.]]></description>
+    <description><![CDATA[<p>As part of my recent deep dive into <strong>Azure Databricks</strong>, I’ve created a  <strong>mindmap</strong> that outlines and connects some of its <strong>core concepts</strong>. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.</p>
+<p>Explore essential areas like:</p>
+<ul>
+<li><strong>📊 Data Management 🗄️</strong>: Centralized governance, cataloging, and access control.</li>
+<li><strong>🛠️ Data Engineering 📊</strong>: Tools for building data pipelines, notebooks, and version control.</li>
+<li><strong>🏢 Data Warehousing 📊</strong>: Efficient data storage, querying, and visualization for business insights.</li>
+<li><strong>⚙️ Computation Management 🖥️</strong>: Managing clusters, workflows, and computation resources.</li>
+<li><strong>🤖 AI and Machine Learning 🧠</strong>: Machine learning runtimes, experiments, and model deployment.</li>
+<li><strong>🔌 Interfaces</strong>: Accessing Databricks through UI, APIs, and CLI.</li>
+</ul>
+<h2 id="azure-databricks-mind-map">Azure Databricks Mind Map</h2>
+<p><figure><a class="lightgallery" href="/images/Azure-Databricks-MindMap.svg" title="Azure Databricks MindMap" data-thumbnail="/images/Azure-Databricks-MindMap.svg" data-sub-html="<h2>Azure Databricks Mind Map showcasing key concepts</h2><p>Azure Databricks MindMap</p>]]></description>
 </item><item>
     <title>5 Elements of Effective Thinking - mind map</title>
     <link>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
     <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</guid>
-    <description><![CDATA[The following mind map provides a summary of the key takeaways from the book 5 Elements of Effective Thinking
-5 Elements of Effective Thinking Mind Map MindMap PNG
-MindMap SVG
-Preview ]]></description>
+    <description><![CDATA[<p>The following mind map provides a summary of the key takeaways from the book  <a href="https://amzn.eu/d/2qDJFLr" target="_blank" rel="noopener noreffer">5 Elements of Effective Thinking</a></p>
+<h2 id="5-elements-of-effective-thinking-mind-map">5 Elements of Effective Thinking Mind Map</h2>
+<p><a href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" title="Preview" rel="">MindMap PNG</a><br>
+<a href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.svg" title="Preview" rel="">MindMap SVG</a><br>
+<figure><a class="lightgallery" href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" title="5 Elements of Effective Thinking" data-thumbnail="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" data-sub-html="<h2>Preview</h2><p>5 Elements of Effective Thinking</p>">
+        
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>]]></description>
 </item><item>
     <title>14 Habits of Highly Productive Developers - mind map</title>
     <link>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</link>
     <pubDate>Sat, 14 Sep 2024 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</guid>
-    <description><![CDATA[The following mind map provides a concise summary of the key takeaways from the book 14 Habits of Highly Productive Developers
-14 Habits of Highly Productive Developers Mind Map MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
+    <description><![CDATA[<p>The following mind map provides a concise summary of the key takeaways from the book  <a href="https://amzn.eu/d/6NrlATH" target="_blank" rel="noopener noreffer">14 Habits of Highly Productive Developers</a></p>
+<h2 id="14-habits-of-highly-productive-developers-mind-map">14 Habits of Highly Productive Developers Mind Map</h2>
+<p><a href="/images/RAG-the-vanilla-RAG-framework-mindmap.png" title="Preview" rel="">MindMap PNG</a><br>
+<a href="/images/14-habits-of-higly-productive-developers-mind-map.svg" title="Preview" rel="">MindMap SVG - (Links working)</a><br>
+<figure><a class="lightgallery" href="/images/14-habits-of-higly-productive-developers-mind-map.png" title="14 Habits of Highly Productive Developers" data-thumbnail="/images/14-habits-of-higly-productive-developers-mind-map.png" data-sub-html="<h2>Preview</h2><p>14 Habits of Highly Productive Developers</p>">
+        
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>]]></description>
 </item></channel>
 </rss>

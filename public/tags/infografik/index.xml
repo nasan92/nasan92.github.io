@@ -1,16 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Infografik - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/infografik/</link>
-        <description>Infografik - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Dec 2018 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/infografik/" rel="self" type="application/rss+xml" /><item>
-    <title>Infografik Logik</title>
-    <link>http://localhost:1313/posts/2018-12-01-logik/</link>
-    <pubDate>Sat, 01 Dec 2018 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2018-12-01-logik/</guid>
-    <description><![CDATA[Die folgende Infografik gibt einen groben Überblick zu den Themen:
-Was ist Logik? Was ist ein Argument? Was macht ein Argument schlüssig? Beispiele für Logische Fehlschlüsse Zum Thema habe ich auch ein kurzes Video erstellt: https://youtu.be/Tp9WzwUMjDs
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infografik on NASAN</title>
+    <link>http://localhost:1313/tags/infografik/</link>
+    <description>Recent content in Infografik on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/infografik/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Infografik Logik</title>
+      <link>http://localhost:1313/posts/2018-12-01-logik/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-12-01-logik/</guid>
+      <description>&lt;p&gt;Die folgende Infografik gibt einen groben Überblick zu den Themen:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Was ist Logik?&lt;/li&gt;&#xA;&lt;li&gt;Was ist ein Argument?&lt;/li&gt;&#xA;&lt;li&gt;Was macht ein Argument schlüssig?&lt;/li&gt;&#xA;&lt;li&gt;Beispiele für Logische Fehlschlüsse&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Zum Thema habe ich auch ein kurzes Video erstellt:&#xA;&lt;a href=&#34;https://youtu.be/Tp9WzwUMjDs&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;https://youtu.be/Tp9WzwUMjDs&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Logik-Infografik.drawio.svg&#34; title=&#34;Logik Infografik&#34; data-thumbnail=&#34;/images/Logik-Infografik.drawio.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Logik Infografik&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Logik-Infografik.drawio.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Logik-Infografik.drawio.svg, http://localhost:1313/images/Logik-Infografik.drawio.svg 1.5x, http://localhost:1313/images/Logik-Infografik.drawio.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Logik-Infografik.drawio.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

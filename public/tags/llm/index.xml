@@ -1,18 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>LLM - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/llm/</link>
-        <description>LLM - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/llm/" rel="self" type="application/rss+xml" /><item>
-    <title>RAG Fundamentals - the vanilla RAG framework mind map</title>
-    <link>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</link>
-    <pubDate>Sat, 07 Sep 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</guid>
-    <description><![CDATA[I recently came across an insightful article: RAG Fundamentals First, which delved into the fundamentals of RAG (Retrieval Augmented Generation)
-To further process and organize my understanding of the topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:
-The vanilla RAG framework mind map: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LLM on NASAN</title>
+    <link>http://localhost:1313/tags/llm/</link>
+    <description>Recent content in LLM on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Sep 2024 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG Fundamentals - the vanilla RAG framework mind map</title>
+      <link>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</link>
+      <pubDate>Sat, 07 Sep 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-09-07-rag-the-vanilla-rag-framework-mind-map/</guid>
+      <description>&lt;p&gt;I recently came across an insightful article: &lt;a href=&#34;https://decodingml.substack.com/p/rag-fundamentals-first?source=queue&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;RAG Fundamentals First&lt;/a&gt;,&#xA;which delved into the fundamentals of RAG (Retrieval Augmented Generation)&lt;/p&gt;&#xA;&lt;p&gt;To further process and organize my understanding of the&#xA;topic, I created a mind map that summarizes the key concepts and relationships of the vanilla RAG framework:&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-vanilla-rag-framework-mind-map&#34;&gt;The vanilla RAG framework mind map:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/RAG-the-vanilla-RAG-framework-mindmap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/RAG-the-vanilla-RAG-framework-mindmap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG - (Links working)&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/RAG-the-vanilla-RAG-framework-mindmap.png&#34; title=&#34;the vanilla RAG framework PNG&#34; data-thumbnail=&#34;/images/RAG-the-vanilla-RAG-framework-mindmap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;the vanilla RAG framework PNG&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

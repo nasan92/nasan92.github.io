@@ -1,27 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>MLOps - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/mlops/</link>
-        <description>MLOps - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/mlops/" rel="self" type="application/rss+xml" /><item>
-    <title>MLflow - mind map - core components</title>
-    <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
-    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
-    <description><![CDATA[This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.
-MLflow Mind Map MLflow Mind Map showcasing core components Figure 1: MLflow Mind Map visualizing core components
-Download the mind map in multiple formats:
-MindMap PNG
-MindMap JPG
-MindMap SVG]]></description>
-</item><item>
-    <title>MLOps explained - MindMap</title>
-    <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
-    <pubDate>Fri, 22 Apr 2022 13:39:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
-    <description><![CDATA[This MindMap was created using the following Microsoft Youtube Video: MLOps explained | Machine Learning Essentials
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MLOps on NASAN</title>
+    <link>http://localhost:1313/tags/mlops/</link>
+    <description>Recent content in MLOps on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 21 Feb 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MLflow - mind map - core components</title>
+      <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
+      <pubDate>Fri, 21 Feb 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
+      <description>&lt;p&gt;This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mlflow-mind-map&#34;&gt;MLflow Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.svg&#34; title=&#34;MLflow MindMap&#34; data-thumbnail=&#34;/images/mlflow-core-components-mind-map.svg&#34; data-sub-html=&#34;&lt;h2&gt;MLflow Mind Map showcasing core components&lt;/h2&gt;&lt;p&gt;MLflow MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.svg, http://localhost:1313/images/mlflow-core-components-mind-map.svg 1.5x, http://localhost:1313/images/mlflow-core-components-mind-map.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/mlflow-core-components-mind-map.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;MLflow Mind Map showcasing core components&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;br&gt;&#xA;&lt;em&gt;Figure 1: MLflow Mind Map visualizing core components&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Download the mind map in multiple formats:&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.jpg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap JPG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/mlflow-core-components-mind-map.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MLOps explained - MindMap</title>
+      <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
+      <pubDate>Fri, 22 Apr 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
+      <description>&lt;p&gt;This MindMap was created using the following Microsoft Youtube Video: &lt;a href=&#34;https://www.youtube.com/watch?v=ZVWg18AXXuE&amp;amp;ab_channel=MicrosoftAzure&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;MLOps explained | Machine Learning Essentials&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MLOpsExplained.png&#34; title=&#34;MLOps Explained MindMap&#34; data-thumbnail=&#34;/images/MLOpsExplained.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MLOps Explained MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MLOpsExplained.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MLOpsExplained.png, http://localhost:1313/images/MLOpsExplained.png 1.5x, http://localhost:1313/images/MLOpsExplained.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MLOpsExplained.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

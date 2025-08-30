@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.149.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>NASAN</title><meta name="Description" content=""><meta property="og:title" content="NASAN" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+        <title>NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="NASAN">
+  <meta property="og:title" content="NASAN">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="NASAN"/>
-<meta name="twitter:description" content=""/>
-<meta name="twitter:site" content="@nasantschi"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NASAN">
+      <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -98,54 +99,101 @@
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-08-23-windows-sandbox-customization-dsc/">Windows Sandbox Customization with DSC </a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-23">2021-08-23</time></span></div><div class="content">Demo Windows Sandbox Customization with Powershell DSC
-In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.
-Enable Windows Sandbox First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:
-Enable-WindowsOptionalFeature -FeatureName &#34;Containers-DisposableClientVM&#34; -Online Customization Files You can create a XML Config file like the following example and save it anywhere as .</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-23">2021-08-23</time></span></div><div class="content"><p>Demo Windows Sandbox Customization with Powershell DSC</p>
+<p>In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.</p>
+<h2 id="enable-windows-sandbox">Enable Windows Sandbox</h2>
+<p>First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Enable-WindowsOptionalFeature</span> <span class="n">-FeatureName</span> <span class="s2">&#34;Containers-DisposableClientVM&#34;</span> <span class="n">-Online</span>
+</span></span></code></pre></div><h2 id="customization-files">Customization Files</h2>
+<p>You can create a XML Config file like the following example and save it anywhere as <strong>.wsb -</strong>&gt; which will link automatically to Windows Sandbox :</p></div><div class="post-footer">
         <a href="/posts/2021-08-23-windows-sandbox-customization-dsc/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/windowssandbox/">WindowsSandbox</a>,&nbsp;<a href="/tags/dsc/">DSC</a>,&nbsp;<a href="/tags/powershell/">Powershell</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-08-17-useful-chocolatey-commands/">useful chocolatey commands </a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-17">2021-08-17</time></span></div><div class="content">Useful Chocolatey commands
-Useful Chocolatey commands search a package: choco search appname
-Install a package choco install appname
-list all installed packages choco list -localonly
-list specific package choco list appname upgrade specific package: choco upgrade appname
-upgrade all packages choco upgrade all</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-17">2021-08-17</time></span></div><div class="content"><p>Useful Chocolatey commands</p>
+<h1 id="useful-chocolatey-commands">Useful Chocolatey commands</h1>
+<p>search a package:
+<code>choco search appname</code></p>
+<p>Install a package
+<code>choco install appname</code></p>
+<p>list all installed packages
+<code>choco list -localonly</code></p>
+<p>list specific package
+<code>choco list appname </code></p>
+<p>upgrade specific package:
+<code>choco upgrade appname</code></p>
+<p>upgrade all packages
+<code>choco upgrade all</code></p></div><div class="post-footer">
         <a href="/posts/2021-08-17-useful-chocolatey-commands/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/chocolatey/">Chocolatey</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-05-25-exchangeonline-mailadressen/">ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-25">2021-05-25</time></span></div><div class="content">ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen'
-Exchange Online: Mailadressen anzeigen, hinzufügen, entfernen Voraussetzungen Das ExchangeOnlineManagment Module muss installiert, importiert sein und man muss sich mit der entsprechenden Exchange Online Umgebung verbinden:
-ExchangeOnlineManagement Module in Powershell installieren: Install-Module -Name ExchangeOnlineManagement
-Das Module importieren: Import-Module ExchangeOnlineManagement
-Mit der Exchange Online Environment verbinden (run this command as admin, then login) Connect-ExchangeOnline -UserPrincipalName admin@customerdomain.onmicrosoft.com
-Für die Befehle im lokalen AD, muss das ActiveDirectory Powershell Modul geladen sein: https://theitbros.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-25">2021-05-25</time></span></div><div class="content"><p>ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen'</p>
+<h1 id="exchange-online-mailadressen-anzeigen-hinzufügen-entfernen">Exchange Online: Mailadressen anzeigen, hinzufügen, entfernen</h1>
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+<p>Das ExchangeOnlineManagment Module muss installiert, importiert sein und man muss sich mit der entsprechenden Exchange Online Umgebung verbinden:</p>
+<p>ExchangeOnlineManagement Module in Powershell installieren:
+<code>Install-Module -Name ExchangeOnlineManagement</code></p>
+<p>Das Module importieren:
+<code>Import-Module ExchangeOnlineManagement</code></p>
+<p>Mit der Exchange Online Environment verbinden (run this command as admin, then login)
+<code>Connect-ExchangeOnline -UserPrincipalName admin@customerdomain.onmicrosoft.com</code></p>
+<p>Für die Befehle im lokalen AD, muss das ActiveDirectory Powershell Modul geladen sein: <a href="https://theitbros.com/install-and-import-powershell-active-directory-module/" target="_blank" rel="noopener noreffer">https://theitbros.com/install-and-import-powershell-active-directory-module/</a></p></div><div class="post-footer">
         <a href="/posts/2021-05-25-exchangeonline-mailadressen/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/exchangeonline/">ExchangeOnline</a>,&nbsp;<a href="/tags/mailadressen/">Mailadressen</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-05-12-show-last-bootup-time/">How to show last bootuptime of Computers with Powershell</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-12">2021-05-12</time></span></div><div class="content">Use Get-CimInstance with the ClassName win32_operatingsystem You can query the ClassName win32_operatingsystem and select from there the computername csname and the last bootup time lastbootuptime
-Get-CimInstance -ComputerName &#39;DC01&#39; -ClassName win32_operatingsystem | select csname, lastbootuptime Show last bootuptime for multiple computers If you want to do that for multiple computers you can for example do it wit a foreach loop:
-# First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-12">2021-05-12</time></span></div><div class="content"><h2 id="use-get-ciminstance-with-the-classname-win32_operatingsystem">Use Get-CimInstance with the ClassName win32_operatingsystem</h2>
+<p>You can query the ClassName win32_operatingsystem and select from there the computername <strong>csname</strong> and the last bootup time <strong>lastbootuptime</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Get-CimInstance</span> <span class="n">-ComputerName</span> <span class="s1">&#39;DC01&#39;</span> <span class="n">-ClassName</span> <span class="n">win32_operatingsystem</span> <span class="p">|</span> <span class="nb">select </span><span class="n">csname</span><span class="p">,</span> <span class="n">lastbootuptime</span>
+</span></span></code></pre></div><h2 id="show-last-bootuptime-for-multiple-computers">Show last bootuptime for multiple computers</h2>
+<p>If you want to do that for multiple computers you can for example do it wit a foreach loop:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># First query the computer from which you want to have this information:</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$computer</span> <span class="p">=</span> <span class="nb">Get-ADComputer</span> <span class="n">-Filter</span> <span class="p">*</span> <span class="p">|</span> <span class="nb">where </span><span class="n">Name</span> <span class="o">-Match</span> <span class="n">dc</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Now get the lastbootuptime for every computer in the computer array:</span>
+</span></span><span class="line"><span class="cl"><span class="k">foreach</span><span class="p">(</span><span class="nv">$c</span> <span class="k">in</span> <span class="nv">$computer</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$computername</span> <span class="p">=</span> <span class="nv">$c</span><span class="p">.</span><span class="py">DNSHostname</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Get-CimInstance</span> <span class="n">-ComputerName</span> <span class="nv">$computername</span> <span class="n">-ClassName</span> <span class="n">win32_operatingsystem</span> <span class="p">|</span> <span class="nb">select </span><span class="n">csname</span><span class="p">,</span> <span class="n">lastbootuptime</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="which-other-information-can-you-get-from-this-class">Which other information can you get from this class?</h2>
+<p>If you&rsquo;re curious what other information you can get from this class you can simply run a Get-Member which will list you all properties and methods:</p></div><div class="post-footer">
         <a href="/posts/2021-05-12-show-last-bootup-time/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-05-07-search-gpo/">Search a specific entry over all GPO</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-07">2021-05-07</time></span></div><div class="content">A way to search a specific setting over all GPOs
-Generate a GPO Report over your Domain You can generate a GPO Report over your Domain either in a XML or HTML file and then search through that file.
-To generate a XML use this command:
-Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportType XML -Path &#34;C:\GPOReports\GPOReportsAll.xml&#34; To generate a HTML file you can use this command:
-Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportType HTML -Path &#34;C:\GPOReports\GPOReportsAll.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-07">2021-05-07</time></span></div><div class="content"><p>A way to search a specific setting over all GPOs</p>
+<h1 id="generate-a-gpo-report-over-your-domain">Generate a GPO Report over your Domain</h1>
+<p>You can generate a GPO Report over your Domain either in a XML or HTML file and then search through that file.</p>
+<p>To generate a XML use this command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Get-GPOReport</span> <span class="n">-All</span> <span class="n">-Domain</span> <span class="s2">&#34;domain.com&#34;</span> <span class="n">-Server</span> <span class="s2">&#34;DC01&#34;</span> <span class="n">-ReportType</span> <span class="n">XML</span> <span class="n">-Path</span> <span class="s2">&#34;C:\GPOReports\GPOReportsAll.xml&#34;</span>
+</span></span></code></pre></div><p>To generate a HTML file you can use this command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Get-GPOReport</span> <span class="n">-All</span> <span class="n">-Domain</span> <span class="s2">&#34;domain.com&#34;</span> <span class="n">-Server</span> <span class="s2">&#34;DC01&#34;</span> <span class="n">-ReportType</span> <span class="n">HTML</span> <span class="n">-Path</span> <span class="s2">&#34;C:\GPOReports\GPOReportsAll.html&#34;</span>
+</span></span></code></pre></div><p>All GPO settings will be included in this Report file. So you can search through that file and find your settings.</p></div><div class="post-footer">
         <a href="/posts/2021-05-07-search-gpo/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-05-07-gpresult-remote/">Run a gpresult on a remote computer</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-06">2021-05-06</time></span></div><div class="content">How to run a gpresult on a remote computer
-Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
-Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command here comes the new highlight:
-199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-06">2021-05-06</time></span></div><div class="content"><p>How to run a gpresult on a remote computer</p>
+<h1 id="use-the-invoke-command">Use the Invoke-Command</h1>
+<p>You can simply use the Invoke Command to run the gpresult command on a remote computer:</p>
+<ul>
+<li>Define the ComputerName after the Invoke-Command</li>
+<li>In the ScriptBlock you can simply run your command</li>
+</ul>
+<p>here comes the new highlight:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">199
+</span><span class="lnt">200
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Powershell" data-lang="Powershell"><span class="line"><span class="cl"><span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="s1">&#39;ComputerName&#39;</span> <span class="n">-ScriptBlock</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">gpresult</span> <span class="p">/</span><span class="nb">r </span><span class="p">/</span><span class="n">USER</span> <span class="s1">&#39;username&#39;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="run-gpresult-for-a-specific-user-in-a-rds-environment">Run gpresult for a specific User in a RDS environment</h2>
+<p>In the following script you just have to define the username + the RDS ConnectionBroker.
+It will automatically find the Remote Desktop Server where the user is logged in an run the gpresult there:</p></div><div class="post-footer">
         <a href="/posts/2021-05-07-gpresult-remote/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
@@ -172,7 +220,7 @@ Define the ComputerName after the Invoke-Command In the ScriptBlock you can simp
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.7">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.149.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

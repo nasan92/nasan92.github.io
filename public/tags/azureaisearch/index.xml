@@ -1,17 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>AzureAISearch - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/azureaisearch/</link>
-        <description>AzureAISearch - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azureaisearch/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure AI Search - mind map</title>
-    <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
-    <pubDate>Sat, 22 Jun 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
-    <description><![CDATA[To better understand Azure AI Search, I&rsquo;ve created the following mind map:
-Azure AI Search: MindMap PNG
-MindMap SVG - (Links working)
-Preview ]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AzureAISearch on NASAN</title>
+    <link>http://localhost:1313/tags/azureaisearch/</link>
+    <description>Recent content in AzureAISearch on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Jun 2024 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/azureaisearch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure AI Search - mind map</title>
+      <link>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</link>
+      <pubDate>Sat, 22 Jun 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-06-22-azure-ai-search-mindmap-overview/</guid>
+      <description>&lt;p&gt;To better understand &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure AI Search&lt;/a&gt;, I&amp;rsquo;ve created the following mind map:&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-ai-search&#34;&gt;Azure AI Search:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.png&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.svg&#34; title=&#34;Preview&#34; rel=&#34;&#34;&gt;MindMap SVG - (Links working)&lt;/a&gt;&lt;br&gt;&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.svg&#34; title=&#34;Azure AI Search SVG&#34; data-thumbnail=&#34;/images/Azure-AI-Search-MindMap.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azure AI Search SVG&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Azure-AI-Search-MindMap.svg, http://localhost:1313/images/Azure-AI-Search-MindMap.svg 1.5x, http://localhost:1313/images/Azure-AI-Search-MindMap.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Azure-AI-Search-MindMap.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

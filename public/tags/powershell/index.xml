@@ -1,72 +1,61 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Powershell - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/powershell/</link>
-        <description>Powershell - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 27 Oct 2022 10:51:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/" rel="self" type="application/rss+xml" /><item>
-    <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
-    <link>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
-    <pubDate>Thu, 27 Oct 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
-    <description><![CDATA[link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
-I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.]]></description>
-</item><item>
-    <title>MindMap Building Powershell Modules - Brandon Olin</title>
-    <link>http://localhost:1313/posts/2022-02-19-powershellmodules/</link>
-    <pubDate>Sat, 19 Feb 2022 08:05:41 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-02-19-powershellmodules/</guid>
-    <description><![CDATA[This MindMap tries to give an Overview over the book Building Powershell Modules - Brandon Olin Preview ]]></description>
-</item><item>
-    <title>MindMap PowerShell Classes</title>
-    <link>http://localhost:1313/posts/2021-12-06-powershellclasses/</link>
-    <pubDate>Mon, 06 Dec 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-12-06-powershellclasses/</guid>
-    <description><![CDATA[A MindMap about PowerShell Classes
-PowerShell Classes MindMap I&rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes. It should help to get a better overview over the topic.
-Preview Further Links To learn more about classes follow those links:
-About_Classes PowerShell Classes - Getting Started]]></description>
-</item><item>
-    <title>Windows Sandbox Customization with DSC </title>
-    <link>http://localhost:1313/posts/2021-08-23-windows-sandbox-customization-dsc/</link>
-    <pubDate>Mon, 23 Aug 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-08-23-windows-sandbox-customization-dsc/</guid>
-    <description><![CDATA[Demo Windows Sandbox Customization with Powershell DSC
-In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.
-Enable Windows Sandbox First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:
-Enable-WindowsOptionalFeature -FeatureName &#34;Containers-DisposableClientVM&#34; -Online Customization Files You can create a XML Config file like the following example and save it anywhere as .]]></description>
-</item><item>
-    <title>How to show last bootuptime of Computers with Powershell</title>
-    <link>http://localhost:1313/posts/2021-05-12-show-last-bootup-time/</link>
-    <pubDate>Wed, 12 May 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-05-12-show-last-bootup-time/</guid>
-    <description><![CDATA[Use Get-CimInstance with the ClassName win32_operatingsystem You can query the ClassName win32_operatingsystem and select from there the computername csname and the last bootup time lastbootuptime
-Get-CimInstance -ComputerName &#39;DC01&#39; -ClassName win32_operatingsystem | select csname, lastbootuptime Show last bootuptime for multiple computers If you want to do that for multiple computers you can for example do it wit a foreach loop:
-# First query the computer from which you want to have this information: $computer = Get-ADComputer -Filter * | where Name -Match dc # Now get the lastbootuptime for every computer in the computer array: foreach($c in $computer){ $computername = $c.]]></description>
-</item><item>
-    <title>Search a specific entry over all GPO</title>
-    <link>http://localhost:1313/posts/2021-05-07-search-gpo/</link>
-    <pubDate>Fri, 07 May 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-05-07-search-gpo/</guid>
-    <description><![CDATA[A way to search a specific setting over all GPOs
-Generate a GPO Report over your Domain You can generate a GPO Report over your Domain either in a XML or HTML file and then search through that file.
-To generate a XML use this command:
-Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportType XML -Path &#34;C:\GPOReports\GPOReportsAll.xml&#34; To generate a HTML file you can use this command:
-Get-GPOReport -All -Domain &#34;domain.com&#34; -Server &#34;DC01&#34; -ReportType HTML -Path &#34;C:\GPOReports\GPOReportsAll.]]></description>
-</item><item>
-    <title>Run a gpresult on a remote computer</title>
-    <link>http://localhost:1313/posts/2021-05-07-gpresult-remote/</link>
-    <pubDate>Thu, 06 May 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-05-07-gpresult-remote/</guid>
-    <description><![CDATA[How to run a gpresult on a remote computer
-Use the Invoke-Command You can simply use the Invoke Command to run the gpresult command on a remote computer:
-Define the ComputerName after the Invoke-Command In the ScriptBlock you can simply run your command here comes the new highlight:
-199 200 Invoke-Command -ComputerName &#39;ComputerName&#39; -ScriptBlock{ gpresult /r /USER &#39;username&#39; Run gpresult for a specific User in a RDS environment In the following script you just have to define the username + the RDS ConnectionBroker.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on NASAN</title>
+    <link>http://localhost:1313/tags/powershell/</link>
+    <description>Recent content in Powershell on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Oct 2022 10:51:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
+      <link>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
+      <pubDate>Thu, 27 Oct 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
+      <description>&lt;p&gt;link: &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &amp;ldquo;old SQL Server&amp;rdquo; offline and I got a lot of Azure Backup Alerts.&#xA;Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MindMap Building Powershell Modules - Brandon Olin</title>
+      <link>http://localhost:1313/posts/2022-02-19-powershellmodules/</link>
+      <pubDate>Sat, 19 Feb 2022 08:05:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-19-powershellmodules/</guid>
+      <description>&lt;p&gt;This MindMap tries to give an Overview over the book &lt;a href=&#34;https://leanpub.com/building-powershell-modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Building Powershell Modules&lt;/a&gt; - Brandon Olin&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/PowerShellModules.png&#34; title=&#34;PowerShellModules&#34; data-thumbnail=&#34;/images/PowerShellModules.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;PowerShellModules&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/PowerShellModules.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/PowerShellModules.png, http://localhost:1313/images/PowerShellModules.png 1.5x, http://localhost:1313/images/PowerShellModules.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/PowerShellModules.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MindMap PowerShell Classes</title>
+      <link>http://localhost:1313/posts/2021-12-06-powershellclasses/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-12-06-powershellclasses/</guid>
+      <description>&lt;p&gt;A MindMap about PowerShell Classes&lt;/p&gt;&#xA;&lt;h2 id=&#34;powershell-classes-mindmap&#34;&gt;PowerShell Classes MindMap&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes.&#xA;It should help to get a better overview over the topic.&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/PowerShellClasses.png&#34; title=&#34;Powershell Classes&#34; data-thumbnail=&#34;/images/PowerShellClasses.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Powershell Classes&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/PowerShellClasses.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/PowerShellClasses.png, http://localhost:1313/images/PowerShellClasses.png 1.5x, http://localhost:1313/images/PowerShellClasses.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/PowerShellClasses.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;further-links&#34;&gt;Further Links&lt;/h2&gt;&#xA;&lt;p&gt;To learn more about classes follow those links:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_classes?view=powershell-7.2#inheritance-in-powershell-classes&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;About_Classes&lt;/a&gt; &lt;!-- raw HTML omitted --&gt;&#xA;&lt;a href=&#34;https://adamtheautomator.com/powershell-classes/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;PowerShell Classes - Getting Started&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows Sandbox Customization with DSC </title>
+      <link>http://localhost:1313/posts/2021-08-23-windows-sandbox-customization-dsc/</link>
+      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-08-23-windows-sandbox-customization-dsc/</guid>
+      <description>&lt;p&gt;Demo Windows Sandbox Customization with Powershell DSC&lt;/p&gt;&#xA;&lt;p&gt;In this Demo I&amp;rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.&lt;/p&gt;&#xA;&lt;h2 id=&#34;enable-windows-sandbox&#34;&gt;Enable Windows Sandbox&lt;/h2&gt;&#xA;&lt;p&gt;First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Enable-WindowsOptionalFeature&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-FeatureName&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Containers-DisposableClientVM&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Online&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;customization-files&#34;&gt;Customization Files&lt;/h2&gt;&#xA;&lt;p&gt;You can create a XML Config file like the following example and save it anywhere as &lt;strong&gt;.wsb -&lt;/strong&gt;&amp;gt; which will link automatically to Windows Sandbox :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to show last bootuptime of Computers with Powershell</title>
+      <link>http://localhost:1313/posts/2021-05-12-show-last-bootup-time/</link>
+      <pubDate>Wed, 12 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-05-12-show-last-bootup-time/</guid>
+      <description>&lt;h2 id=&#34;use-get-ciminstance-with-the-classname-win32_operatingsystem&#34;&gt;Use Get-CimInstance with the ClassName win32_operatingsystem&lt;/h2&gt;&#xA;&lt;p&gt;You can query the ClassName win32_operatingsystem and select from there the computername &lt;strong&gt;csname&lt;/strong&gt; and the last bootup time &lt;strong&gt;lastbootuptime&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-CimInstance&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ComputerName&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;DC01&amp;#39;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ClassName&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;win32_operatingsystem&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;select &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;csname&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lastbootuptime&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;show-last-bootuptime-for-multiple-computers&#34;&gt;Show last bootuptime for multiple computers&lt;/h2&gt;&#xA;&lt;p&gt;If you want to do that for multiple computers you can for example do it wit a foreach loop:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# First query the computer from which you want to have this information:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$computer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-ADComputer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Filter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;where &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-Match&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dc&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Now get the lastbootuptime for every computer in the computer array:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$c&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$computer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$computername&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;DNSHostname&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;Get-CimInstance&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ComputerName&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$computername&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ClassName&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;win32_operatingsystem&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;select &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;csname&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lastbootuptime&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;which-other-information-can-you-get-from-this-class&#34;&gt;Which other information can you get from this class?&lt;/h2&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re curious what other information you can get from this class you can simply run a Get-Member which will list you all properties and methods:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Search a specific entry over all GPO</title>
+      <link>http://localhost:1313/posts/2021-05-07-search-gpo/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-05-07-search-gpo/</guid>
+      <description>&lt;p&gt;A way to search a specific setting over all GPOs&lt;/p&gt;&#xA;&lt;h1 id=&#34;generate-a-gpo-report-over-your-domain&#34;&gt;Generate a GPO Report over your Domain&lt;/h1&gt;&#xA;&lt;p&gt;You can generate a GPO Report over your Domain either in a XML or HTML file and then search through that file.&lt;/p&gt;&#xA;&lt;p&gt;To generate a XML use this command:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-GPOReport&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-All&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Domain&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;domain.com&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;DC01&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ReportType&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;XML&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Path&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\GPOReports\GPOReportsAll.xml&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To generate a HTML file you can use this command:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-GPOReport&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-All&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Domain&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;domain.com&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;DC01&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ReportType&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HTML&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Path&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\GPOReports\GPOReportsAll.html&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;All GPO settings will be included in this Report file. So you can search through that file and find your settings.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Run a gpresult on a remote computer</title>
+      <link>http://localhost:1313/posts/2021-05-07-gpresult-remote/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-05-07-gpresult-remote/</guid>
+      <description>&lt;p&gt;How to run a gpresult on a remote computer&lt;/p&gt;&#xA;&lt;h1 id=&#34;use-the-invoke-command&#34;&gt;Use the Invoke-Command&lt;/h1&gt;&#xA;&lt;p&gt;You can simply use the Invoke Command to run the gpresult command on a remote computer:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Define the ComputerName after the Invoke-Command&lt;/li&gt;&#xA;&lt;li&gt;In the ScriptBlock you can simply run your command&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;here comes the new highlight:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;199&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;200&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Powershell&#34; data-lang=&#34;Powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Invoke-Command&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ComputerName&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;ComputerName&amp;#39;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ScriptBlock&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;gpresult&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;r &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;USER&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;run-gpresult-for-a-specific-user-in-a-rds-environment&#34;&gt;Run gpresult for a specific User in a RDS environment&lt;/h2&gt;&#xA;&lt;p&gt;In the following script you just have to define the username + the RDS ConnectionBroker.&#xA;It will automatically find the Remote Desktop Server where the user is logged in an run the gpresult there:&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

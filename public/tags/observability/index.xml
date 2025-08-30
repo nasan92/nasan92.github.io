@@ -1,17 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Observability - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/observability/</link>
-        <description>Observability - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 14 May 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/observability/" rel="self" type="application/rss+xml" /><item>
-    <title>OpenTelemetry - mind map - concepts</title>
-    <link>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</link>
-    <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</guid>
-    <description><![CDATA[In the following mind map, I attempted to visualize some core concepts of OpenTelemetry The purpose of OpenTelemetry is to collect, process and export signals. The signals (telemetry data) which OpenTelemetry currently supports can be found on the right side of the mind map:
-Signals: Traces Metrics Logs The mind map illustrates the components that make up these signals and how they are interconnected.
-To learn more about OpenTelemetry:
-Official docs: What is OpenTelemetry?]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Observability on NASAN</title>
+    <link>http://localhost:1313/tags/observability/</link>
+    <description>Recent content in Observability on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 May 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/observability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenTelemetry - mind map - concepts</title>
+      <link>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</link>
+      <pubDate>Wed, 14 May 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</guid>
+      <description>&lt;p&gt;In the following mind map, I attempted to visualize some core concepts of OpenTelemetry&#xA;The purpose of OpenTelemetry is to collect, process and export signals. The signals (telemetry data) which OpenTelemetry currently supports can be found on the right side of the mind map:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Signals:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Traces&lt;/li&gt;&#xA;&lt;li&gt;Metrics&lt;/li&gt;&#xA;&lt;li&gt;Logs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The mind map illustrates the components that make up these signals and how they are interconnected.&lt;/p&gt;&#xA;&lt;p&gt;To learn more about OpenTelemetry:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Official docs: &lt;a href=&#34;https://opentelemetry.io/docs/what-is-opentelemetry/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;What is OpenTelemetry?&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;A very helpful resource to getting started with OpenTelemetry is the following course from the Linux Foundation: &lt;a href=&#34;https://training.linuxfoundation.org/training/getting-started-with-opentelemetry-lfs148/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Getting Started with OpenTelemetry&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;opentelemetry-concepts-mind-map&#34;&gt;OpenTelemetry Concepts mind map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/OpenTelemetry-mindmap-concepts.svg&#34; title=&#34;OpenTelemetry Concepts Mind Map&#34; data-thumbnail=&#34;/images/OpenTelemetry-mindmap-concepts.svg&#34; data-sub-html=&#34;&lt;h2&gt;OpenTelemetry Mind Map illustrates basic concepts&lt;/h2&gt;&lt;p&gt;OpenTelemetry Concepts Mind Map&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

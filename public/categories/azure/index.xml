@@ -1,93 +1,103 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Azure - Category - NASAN</title>
-        <link>http://localhost:1313/categories/azure/</link>
-        <description>Azure - Category - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/azure/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure Kubernetes - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
-    <description><![CDATA[As part of my recent studies about Azure Kubernetes, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.
-Azure Kubernetes Mind Map Azure Kubernetes Mind Map showcasing core concepts Figure 1: Azure Kubernetes Mind Map visualizing key concepts
-Download the mind map in multiple formats:]]></description>
-</item><item>
-    <title>Azure API Management - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
-    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
-    <description><![CDATA[As part of my recent deep dive into Azure API Management, I’ve created a mindmap that outlines and connects some of its core concepts. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.
-Azure API Management Mind Map Azure API Management Mind Map showcasing key concepts Figure 1: Azure API Management Mind Map visualizing key concepts]]></description>
-</item><item>
-    <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</title>
-    <link>http://localhost:1313/posts/2023-09-27-terraform-locally/</link>
-    <pubDate>Tue, 26 Sep 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-27-terraform-locally/</guid>
-    <description><![CDATA[In the latest blog post (1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series) we learned how to setup Azure DevOps using Workload Identiy Federation
-Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.
-But what about using a service principal for local activities whose secret will expire after a few hours instead of months?]]></description>
-</item><item>
-    <title>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</title>
-    <link>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</link>
-    <pubDate>Sat, 23 Sep 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</guid>
-    <description><![CDATA[I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with workload identity federation instead of relying on a service principal with secrets. In this blog post, I will demonstrate how I set up this configuration.
-To learn more about workload identity federation read the docs:
-Workload identity federation - Microsoft Entra | Microsoft Learn
-Prerequisites Azure DevOps Org &ldquo;Customer Azure Tenant&rdquo; with Subscription &ldquo;Backend Azure Tenant&rdquo; with Subscription (can be in the same tenant - in our example we use different tenants) Azure Powershell Module Overview - Setup Steps Create a storage account that will store the Terraform state file Create a managed identity which has contributor permissions on this storage account If not already the case, install the Terraform extension for your Azure DevOps Org Create a new Azure DevOps Project Create a service connection to the &ldquo;backend tenant&rdquo; using workload identity federation with your previously created managed identity Create a managed identity in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription Create a service connection to the customer tenant using workload identity federation with your previously created managed identity Create a repository with basic Terraform files Create an Azure DevOps Pipeline Preview Prepare &ldquo;Backend Tenant&rdquo; to store Terraform State File As outlined in this example, I intend to store the Terraform state file in a different Azure Tenant than where the actual Azure Deployment will occur.]]></description>
-</item><item>
-    <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</link>
-    <pubDate>Thu, 14 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</guid>
-    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: SC-300 Preview ]]></description>
-</item><item>
-    <title>AZ-500 - Azure Security Engineer - MindMap</title>
-    <link>http://localhost:1313/posts/2023-09-08-az500-mindmap/</link>
-    <pubDate>Fri, 08 Sep 2023 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-09-08-az500-mindmap/</guid>
-    <description><![CDATA[Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: SC-100 MindMap Collection
-This MindMap is based on the MS Learning path: AZ-500 Preview ]]></description>
-</item><item>
-    <title>Securing Resources in Azure VMs with Microsoft Entra Private Access in a Hub-and-Spoke Architecture</title>
-    <link>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</link>
-    <pubDate>Thu, 31 Aug 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</guid>
-    <description><![CDATA[I did a little Microsoft Entra Private Access Test setup.
-My goal was to test access to some private Resources hosted on Azure Virtual Machines with Microsoft Entra Private Access instead of VPN.
-Overview The test setup is illustrated below: Preview I have one Virtual Machine (VM) with a Windows File Share that I wish to access from my endpoint and I also want to be able to access this VM via RDP.]]></description>
-</item><item>
-    <title>AzureAD App Registrations explained</title>
-    <link>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</link>
-    <pubDate>Mon, 01 May 2023 05:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</guid>
-    <description><![CDATA[Azure AD App registration Recently I had some talks with developers which made me to realize that I didn&rsquo;t fully understand how App Registrations are working. I was aware that we are registering an app and allowing the app certain permissions but in detail I didn&rsquo;t understand it.
-Why Azure AD App registration? Basically for every app where you want to use the Microsoft Identity Platform, you need to register your app.]]></description>
-</item><item>
-    <title>SC-100 - Microsoft Certified Cybersecurity Architect Expert - MindMap Collection</title>
-    <link>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</link>
-    <pubDate>Thu, 12 Jan 2023 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</guid>
-    <description><![CDATA[Studying SC-100 In my recent self-study, I have been working through the Microsoft SC-100 learning path. One of the ways that I have been organizing and consolidating my learning is by creating mind maps of the key concepts and topics covered in the course.
-You can find some of those mind maps below:
-Design a Zero Trust strategy and architecture Build an overall security strategy and architecture: Preview Design a security operations strategy: Preview Design an identity security strategy: Preview Evaluate Governance Risk Compliance (GRC) technical strategies and security operations strategies Evaluate a regulatory compliance strategy Preview Evaluate Security Posture - Manage Risk Preview Design security for infrastructure Preview Design strategy for data and applications Preview Recommend security best practices Security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks Preview ]]></description>
-</item><item>
-    <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
-    <link>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
-    <pubDate>Thu, 27 Oct 2022 10:51:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
-    <description><![CDATA[link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
-I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on NASAN</title>
+    <link>http://localhost:1313/categories/azure/</link>
+    <description>Recent content in Azure on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Jan 2025 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Kubernetes - mind map - key concepts</title>
+      <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
+      <pubDate>Sat, 11 Jan 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
+      <description>&lt;p&gt;As part of my recent studies about &lt;strong&gt;Azure Kubernetes&lt;/strong&gt;, I’ve created a  &lt;strong&gt;mindmap&lt;/strong&gt; that outlines and connects some of its &lt;strong&gt;core concepts&lt;/strong&gt;. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-kubernetes-mind-map&#34;&gt;Azure Kubernetes Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg&#34; title=&#34;Azure Kubernetes MindMap&#34; data-thumbnail=&#34;/images/azure-kubernetes-mindmap-core-concepts.svg&#34; data-sub-html=&#34;&lt;h2&gt;Azure Kubernetes Mind Map showcasing core concepts&lt;/h2&gt;&lt;p&gt;Azure Kubernetes MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg, http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg 1.5x, http://localhost:1313/images/azure-kubernetes-mindmap-core-concepts.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/azure-kubernetes-mindmap-core-concepts.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Azure Kubernetes Mind Map showcasing core concepts&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;br&gt;&#xA;&lt;em&gt;Figure 1: Azure Kubernetes Mind Map visualizing key concepts&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure API Management - mind map - key concepts</title>
+      <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
+      <pubDate>Thu, 19 Dec 2024 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
+      <description>&lt;p&gt;As part of my recent deep dive into &lt;strong&gt;Azure API Management&lt;/strong&gt;, I’ve created a  &lt;strong&gt;mindmap&lt;/strong&gt; that outlines and connects some of its &lt;strong&gt;core concepts&lt;/strong&gt;. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.&lt;/p&gt;&#xA;&lt;h2 id=&#34;azure-api-management-mind-map&#34;&gt;Azure API Management Mind Map&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Azure-API-Management-Mind-Map.svg&#34; title=&#34;Azure API Management MindMap&#34; data-thumbnail=&#34;/images/Azure-API-Management-Mind-Map.svg&#34; data-sub-html=&#34;&lt;h2&gt;Azure API Management Mind Map showcasing key concepts&lt;/h2&gt;&lt;p&gt;Azure API Management MindMap&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(2/2) How to use Terraform from local Machine additionally to Azure DevOps Pipeline (2 Part Series)</title>
+      <link>http://localhost:1313/posts/2023-09-27-terraform-locally/</link>
+      <pubDate>Tue, 26 Sep 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-27-terraform-locally/</guid>
+      <description>&lt;p&gt;In the latest blog post &lt;a href=&#34;https://nasan.ch/posts/2023-09-23-azuredevopsterraform/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)&lt;/a&gt; we learned how to setup Azure DevOps using Workload Identiy Federation&lt;/p&gt;&#xA;&lt;p&gt;Because we are using a managed identity and not a service principal with a secret that has a certain lifetime, we are not directly able to run terraform from locally.&lt;/p&gt;&#xA;&lt;p&gt;But what about using a service principal for local activities whose secret will expire after a few hours instead of months?&lt;br&gt;&#xA;This wasn&amp;rsquo;t practical when using a service principal in the service connection. Typically, the secret had a longer lifetime, so it didn&amp;rsquo;t need to be renewed every time within the service connection.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(1/2) Setting up Azure workload identity federation with Terraform in Azure DevOps pipelines (2 Part Series)</title>
+      <link>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</link>
+      <pubDate>Sat, 23 Sep 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-23-azuredevopsterraform/</guid>
+      <description>&lt;p&gt;I was curious about how to set up Azure DevOps to utilize Terraform for deploying Azure resources with &lt;strong&gt;workload identity federation&lt;/strong&gt; instead of relying on a &lt;strong&gt;service principal&lt;/strong&gt; with secrets. In this blog post, I will demonstrate how I set up this configuration.&lt;/p&gt;&#xA;&lt;p&gt;To learn more about workload identity federation read the docs:&lt;br&gt;&#xA;&lt;a href=&#34;https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identity-federation&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Workload identity federation - Microsoft Entra | Microsoft Learn&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Azure DevOps Org&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;Customer Azure Tenant&amp;rdquo;&lt;/strong&gt; with Subscription&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;Backend Azure Tenant&amp;rdquo;&lt;/strong&gt; with Subscription (can be in the same tenant - in our example we use different tenants)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/azure/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure Powershell Module&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview---setup-steps&#34;&gt;Overview - Setup Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;storage account&lt;/strong&gt; that will store the Terraform state file&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;managed identity&lt;/strong&gt; which has contributor permissions on this storage account&lt;/li&gt;&#xA;&lt;li&gt;If not already the case, install the &lt;strong&gt;Terraform extension&lt;/strong&gt; for your Azure DevOps Org&lt;/li&gt;&#xA;&lt;li&gt;Create a new &lt;strong&gt;Azure DevOps Project&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;service connection&lt;/strong&gt; to the &amp;ldquo;backend tenant&amp;rdquo; using workload identity federation with your previously created managed identity&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;managed identity&lt;/strong&gt; in the customer tenant where you finally want to deploy Azure Resources using Terraform, with Contributor permission on the Subscription&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;service connection&lt;/strong&gt; to the customer tenant using workload identity federation with your previously created managed identity&lt;/li&gt;&#xA;&lt;li&gt;Create a &lt;strong&gt;repository&lt;/strong&gt; with basic Terraform files&lt;/li&gt;&#xA;&lt;li&gt;Create an &lt;strong&gt;Azure DevOps Pipeline&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/terraform-overview-Demo1.png&#34; title=&#34;image&#34; data-thumbnail=&#34;/images/terraform-overview-Demo1.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;image&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SC-300 - Microsoft Identity and Access Administrator - MindMap</title>
+      <link>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</link>
+      <pubDate>Thu, 14 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-14-sc300-mindmap/</guid>
+      <description>&lt;p&gt;Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: &lt;a href=&#34;https://nasan.ch/posts/2023-01-13-microsoftcybersecurityarchitect/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-100 MindMap Collection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This MindMap is based on the MS Learning path: &lt;a href=&#34;https://learn.microsoft.com/en-us/certifications/exams/sc-300/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-300 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; title=&#34;SC-300 - Mindmap:&#34; data-thumbnail=&#34;/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;SC-300 - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg, http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg 1.5x, http://localhost:1313/images/SC-300IdentityandAccessAdministratorAssociate.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/SC-300IdentityandAccessAdministratorAssociate.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AZ-500 - Azure Security Engineer - MindMap</title>
+      <link>http://localhost:1313/posts/2023-09-08-az500-mindmap/</link>
+      <pubDate>Fri, 08 Sep 2023 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-09-08-az500-mindmap/</guid>
+      <description>&lt;p&gt;Note: My Microsoft Cybersecurity Architect MindMap covers already a lot of topics mentioned here: &lt;a href=&#34;https://nasan.ch/posts/2023-01-13-microsoftcybersecurityarchitect/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;SC-100 MindMap Collection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This MindMap is based on the MS Learning path: &lt;a href=&#34;https://learn.microsoft.com/en-us/certifications/exams/az-500/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;AZ-500 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg&#34; title=&#34;AZ500 - Mindmap:&#34; data-thumbnail=&#34;/images/AZ500-AzureSecurityEngineer.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;AZ500 - Mindmap:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg, http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg 1.5x, http://localhost:1313/images/AZ500-AzureSecurityEngineer.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/AZ500-AzureSecurityEngineer.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Securing Resources in Azure VMs with Microsoft Entra Private Access in a Hub-and-Spoke Architecture</title>
+      <link>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</link>
+      <pubDate>Thu, 31 Aug 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</guid>
+      <description>&lt;p&gt;I did a little &lt;strong&gt;Microsoft Entra Private Access&lt;/strong&gt; Test setup.&lt;br&gt;&#xA;My goal was to test access to some &lt;strong&gt;private Resources&lt;/strong&gt; hosted on &lt;strong&gt;Azure Virtual Machines&lt;/strong&gt; with &lt;strong&gt;Microsoft Entra Private Access&lt;/strong&gt; instead of VPN.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The test setup is illustrated below:&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; title=&#34;Overview Test Setup:&#34; data-thumbnail=&#34;/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Overview Test Setup:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png, http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png 1.5x, http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;I have one Virtual Machine (VM) with a &lt;strong&gt;Windows File Share&lt;/strong&gt; that I wish to access from my endpoint and I also want to be able to access this VM via &lt;strong&gt;RDP.&lt;/strong&gt;&lt;br&gt;&#xA;Additionaly in another Spoke VNET I have a simple &lt;strong&gt;Web Server&lt;/strong&gt; which I also would like to access via &lt;strong&gt;Private Access&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AzureAD App Registrations explained</title>
+      <link>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</link>
+      <pubDate>Mon, 01 May 2023 05:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-05-01-azureappregistrations-explained/</guid>
+      <description>&lt;h1 id=&#34;azure-ad-app-registration&#34;&gt;Azure AD App registration&lt;/h1&gt;&#xA;&lt;p&gt;Recently I had some talks with developers which made me to realize that I didn&amp;rsquo;t fully understand how &lt;strong&gt;App Registrations&lt;/strong&gt; are working.&#xA;I was aware that we are registering an app and allowing the app certain permissions but in detail I didn&amp;rsquo;t understand it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-azure-ad-app-registration&#34;&gt;Why Azure AD App registration?&lt;/h2&gt;&#xA;&lt;p&gt;Basically for every app where you want to use the Microsoft Identity Platform, you need to register your app.&#xA;So you want to login into a certain webapp with your Microsoft Account? This app needs to be registered in Azure AD. After you logged in into your application, this app maybe also need some data of your Microsoft Account and you maybe need to grant perrmissions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SC-100 - Microsoft Certified Cybersecurity Architect Expert - MindMap Collection</title>
+      <link>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</link>
+      <pubDate>Thu, 12 Jan 2023 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-13-microsoftcybersecurityarchitect/</guid>
+      <description>&lt;h1 id=&#34;studying-sc-100&#34;&gt;Studying SC-100&lt;/h1&gt;&#xA;&lt;p&gt;In my recent self-study, I have been working through the Microsoft SC-100 learning path. One of the ways that I have been organizing and consolidating my learning is by creating mind maps of the key concepts and topics covered in the course.&lt;/p&gt;&#xA;&lt;p&gt;You can find some of those mind maps below:&lt;/p&gt;&#xA;&lt;h2 id=&#34;design-a-zero-trust-strategy-and-architecture&#34;&gt;Design a Zero Trust strategy and architecture&lt;/h2&gt;&#xA;&lt;h3 id=&#34;build-an-overall-security-strategy-and-architecture&#34;&gt;Build an overall security strategy and architecture:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/BuildAnOverallSecurityStrategyAndArchitecture.svg&#34; title=&#34;Build an overall security strategy and architecture:&#34; data-thumbnail=&#34;/images/BuildAnOverallSecurityStrategyAndArchitecture.svg&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Build an overall security strategy and architecture:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</title>
+      <link>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</link>
+      <pubDate>Thu, 27 Oct 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/</guid>
+      <description>&lt;p&gt;link: &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &amp;ldquo;old SQL Server&amp;rdquo; offline and I got a lot of Azure Backup Alerts.&#xA;Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform</title>
+      <link>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</link>
+      <pubDate>Thu, 08 Sep 2022 10:51:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-09-08-createcustomroleterraform/</guid>
+      <description>&lt;p&gt;Yes&amp;hellip; its annoying there is &lt;strong&gt;no built in role&lt;/strong&gt; to only allow restarting of Azure Virtual Machines&amp;hellip;&#xA;The &lt;strong&gt;Virtual Machine Contributor Role&lt;/strong&gt; allows to much. With this role you are able to destory and create VMs..&lt;/p&gt;&#xA;&lt;p&gt;So what I want to do in this case is creating a &lt;strong&gt;custom role which only allows to start / stop / restart Virtual Machines.&lt;/strong&gt;&#xA;And I want to do that with &lt;strong&gt;terraform&lt;/strong&gt; because I&amp;rsquo;m doing the whole Azure Resource Deployment with terraform anyway.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MLOps explained - MindMap</title>
+      <link>http://localhost:1313/posts/2022-04-22-mlops-explained/</link>
+      <pubDate>Fri, 22 Apr 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-04-22-mlops-explained/</guid>
+      <description>&lt;p&gt;This MindMap was created using the following Microsoft Youtube Video: &lt;a href=&#34;https://www.youtube.com/watch?v=ZVWg18AXXuE&amp;amp;ab_channel=MicrosoftAzure&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;MLOps explained | Machine Learning Essentials&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MLOpsExplained.png&#34; title=&#34;MLOps Explained MindMap&#34; data-thumbnail=&#34;/images/MLOpsExplained.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;MLOps Explained MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MLOpsExplained.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MLOpsExplained.png, http://localhost:1313/images/MLOpsExplained.png 1.5x, http://localhost:1313/images/MLOpsExplained.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MLOpsExplained.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Monitor MindMap</title>
+      <link>http://localhost:1313/posts/2022-02-21-azuremonitor/</link>
+      <pubDate>Mon, 21 Feb 2022 13:39:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2022-02-21-azuremonitor/</guid>
+      <description>&lt;p&gt;I created this Azure Monitor MindMap last year to get a better Overview over Azure Monitor. I&amp;rsquo;ve created it based on the Azure Monitor Documentation.&#xA;Somethings may be outdated today -&amp;gt; you can find the Microsoft Docs to that topic here: &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-monitor/overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure Monitor&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/AzureMonitorMindMap.png&#34; title=&#34;Azur Monitor MindMap&#34; data-thumbnail=&#34;/images/AzureMonitorMindMap.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Azur Monitor MindMap&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/AzureMonitorMindMap.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/AzureMonitorMindMap.png, http://localhost:1313/images/AzureMonitorMindMap.png 1.5x, http://localhost:1313/images/AzureMonitorMindMap.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/AzureMonitorMindMap.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

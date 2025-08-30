@@ -1,16 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Entra - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/entra/</link>
-        <description>Entra - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 31 Aug 2023 06:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/entra/" rel="self" type="application/rss+xml" /><item>
-    <title>Securing Resources in Azure VMs with Microsoft Entra Private Access in a Hub-and-Spoke Architecture</title>
-    <link>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</link>
-    <pubDate>Thu, 31 Aug 2023 06:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</guid>
-    <description><![CDATA[I did a little Microsoft Entra Private Access Test setup.
-My goal was to test access to some private Resources hosted on Azure Virtual Machines with Microsoft Entra Private Access instead of VPN.
-Overview The test setup is illustrated below: Preview I have one Virtual Machine (VM) with a Windows File Share that I wish to access from my endpoint and I also want to be able to access this VM via RDP.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Entra on NASAN</title>
+    <link>http://localhost:1313/tags/entra/</link>
+    <description>Recent content in Entra on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 31 Aug 2023 06:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/entra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Securing Resources in Azure VMs with Microsoft Entra Private Access in a Hub-and-Spoke Architecture</title>
+      <link>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</link>
+      <pubDate>Thu, 31 Aug 2023 06:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2023-08-31-entraprivateaccess/</guid>
+      <description>&lt;p&gt;I did a little &lt;strong&gt;Microsoft Entra Private Access&lt;/strong&gt; Test setup.&lt;br&gt;&#xA;My goal was to test access to some &lt;strong&gt;private Resources&lt;/strong&gt; hosted on &lt;strong&gt;Azure Virtual Machines&lt;/strong&gt; with &lt;strong&gt;Microsoft Entra Private Access&lt;/strong&gt; instead of VPN.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The test setup is illustrated below:&#xA;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; title=&#34;Overview Test Setup:&#34; data-thumbnail=&#34;/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Overview Test Setup:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png, http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png 1.5x, http://localhost:1313/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;I have one Virtual Machine (VM) with a &lt;strong&gt;Windows File Share&lt;/strong&gt; that I wish to access from my endpoint and I also want to be able to access this VM via &lt;strong&gt;RDP.&lt;/strong&gt;&lt;br&gt;&#xA;Additionaly in another Spoke VNET I have a simple &lt;strong&gt;Web Server&lt;/strong&gt; which I also would like to access via &lt;strong&gt;Private Access&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

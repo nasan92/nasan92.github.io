@@ -1,17 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>DSC - Tag - NASAN</title>
-        <link>http://localhost:1313/tags/dsc/</link>
-        <description>DSC - Tag - NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 23 Aug 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/dsc/" rel="self" type="application/rss+xml" /><item>
-    <title>Windows Sandbox Customization with DSC </title>
-    <link>http://localhost:1313/posts/2021-08-23-windows-sandbox-customization-dsc/</link>
-    <pubDate>Mon, 23 Aug 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2021-08-23-windows-sandbox-customization-dsc/</guid>
-    <description><![CDATA[Demo Windows Sandbox Customization with Powershell DSC
-In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.
-Enable Windows Sandbox First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:
-Enable-WindowsOptionalFeature -FeatureName &#34;Containers-DisposableClientVM&#34; -Online Customization Files You can create a XML Config file like the following example and save it anywhere as .]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DSC on NASAN</title>
+    <link>http://localhost:1313/tags/dsc/</link>
+    <description>Recent content in DSC on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dsc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Sandbox Customization with DSC </title>
+      <link>http://localhost:1313/posts/2021-08-23-windows-sandbox-customization-dsc/</link>
+      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-08-23-windows-sandbox-customization-dsc/</guid>
+      <description>&lt;p&gt;Demo Windows Sandbox Customization with Powershell DSC&lt;/p&gt;&#xA;&lt;p&gt;In this Demo I&amp;rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.&lt;/p&gt;&#xA;&lt;h2 id=&#34;enable-windows-sandbox&#34;&gt;Enable Windows Sandbox&lt;/h2&gt;&#xA;&lt;p&gt;First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Enable-WindowsOptionalFeature&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-FeatureName&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Containers-DisposableClientVM&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Online&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;customization-files&#34;&gt;Customization Files&lt;/h2&gt;&#xA;&lt;p&gt;You can create a XML Config file like the following example and save it anywhere as &lt;strong&gt;.wsb -&lt;/strong&gt;&amp;gt; which will link automatically to Windows Sandbox :&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

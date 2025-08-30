@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.149.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>NASAN</title><meta name="Description" content=""><meta property="og:title" content="NASAN" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+        <title>NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="NASAN">
+  <meta property="og:title" content="NASAN">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="NASAN"/>
-<meta name="twitter:description" content=""/>
-<meta name="twitter:site" content="@nasantschi"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NASAN">
+      <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -98,38 +99,79 @@
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/">Stop Azure Backup for multiple SQL on Azure VM Databases with Powershell</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-27">2022-10-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw"></i>Azure</a></span></div><div class="content">link: https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection
-I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts. Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-27">2022-10-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw"></i>Azure</a></span></div><div class="content"><p>link: <a href="https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection" target="_blank" rel="noopener noreffer">https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-automation#stop-protection</a></p>
+<p>I had a case where I did need to migrate a lot of databases from one SQL Server on a Azure VM to another VM. After the successful migration there were a lot of old databases on the &ldquo;old SQL Server&rdquo; offline and I got a lot of Azure Backup Alerts.
+Because I was to lazy to disable the backup for each database by hand, I created the following small script which will do that job.</p></div><div class="post-footer">
         <a href="/posts/2022-10-28-stopbackupformultipleazuresqlonvmdatabases/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/azurebackup/">AzureBackup</a>,&nbsp;<a href="/tags/sqlonazurevm/">SQLonAzureVM</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022-09-08-createcustomroleterraform/">Azure - Create a Custom RBAC Role to allow Stop - Start of all Azure Virtual Machines in a Subscription with Terraform</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-08">2022-09-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw"></i>Azure</a></span></div><div class="content">Yes&hellip; its annoying there is no built in role to only allow restarting of Azure Virtual Machines&hellip; The Virtual Machine Contributor Role allows to much. With this role you are able to destory and create VMs..
-So what I want to do in this case is creating a custom role which only allows to start / stop / restart Virtual Machines. And I want to do that with terraform because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-08">2022-09-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw"></i>Azure</a></span></div><div class="content"><p>Yes&hellip; its annoying there is <strong>no built in role</strong> to only allow restarting of Azure Virtual Machines&hellip;
+The <strong>Virtual Machine Contributor Role</strong> allows to much. With this role you are able to destory and create VMs..</p>
+<p>So what I want to do in this case is creating a <strong>custom role which only allows to start / stop / restart Virtual Machines.</strong>
+And I want to do that with <strong>terraform</strong> because I&rsquo;m doing the whole Azure Resource Deployment with terraform anyway.</p></div><div class="post-footer">
         <a href="/posts/2022-09-08-createcustomroleterraform/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/terraform/">Terraform</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/rbac/">RBAC</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022-07-04-buildingasecondbrain/">Building a Second Brain - MindMap</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-04">2022-07-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">This MindMap tries to give an Overview over the book Building a Second Brain - by Tiago Forte
-Preview </div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-04">2022-07-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content"><p>This MindMap tries to give an Overview over the book  <a href="https://www.amazon.com/Building-Second-Brain-Organize-Potential/dp/1982167386" target="_blank" rel="noopener noreffer">Building a Second Brain</a> - by Tiago Forte</p>
+<p><figure><a class="lightgallery" href="/images/buildingasecondbrain.png" title="Building a Second Brain - Mindmap:" data-thumbnail="/images/buildingasecondbrain.png" data-sub-html="<h2>Preview</h2><p>Building a Second Brain - Mindmap:</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/buildingasecondbrain.png"
+            data-srcset="/images/buildingasecondbrain.png, /images/buildingasecondbrain.png 1.5x, /images/buildingasecondbrain.png 2x"
+            data-sizes="auto"
+            alt="/images/buildingasecondbrain.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p></div><div class="post-footer">
         <a href="/posts/2022-07-04-buildingasecondbrain/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/book/">Book</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022-06-13-thinkagain/">ThinkAgain Buch Umdenktipps - MindMap</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-13">2022-06-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">Folgendes MindMap bietet eine Übersicht über die Umdenktipps vom Buch ThinkAgain von Adam Grant.
-Preview Link zum Buch: ThinkAgain</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-13">2022-06-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content"><p>Folgendes MindMap bietet eine Übersicht über die Umdenktipps vom Buch <strong>ThinkAgain</strong> von Adam Grant.</p>
+<p><figure><a class="lightgallery" href="/images/thinkagain.png" title="ThinkAgain Mindmap:" data-thumbnail="/images/thinkagain.png" data-sub-html="<h2>Preview</h2><p>ThinkAgain Mindmap:</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/thinkagain.png"
+            data-srcset="/images/thinkagain.png, /images/thinkagain.png 1.5x, /images/thinkagain.png 2x"
+            data-sizes="auto"
+            alt="/images/thinkagain.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>Link zum Buch: <a href="https://www.amazon.de/Think-Again-flexiblen-umschmei%C3%9Fen-Times-Bestseller/dp/349207135X/ref=asc_df_349207135X/?tag=googshopde-21&amp;linkCode=df0&amp;hvadid=546377563338&amp;hvpos=&amp;hvnetw=g&amp;hvrand=7032104991320317398&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1002930&amp;hvtargid=pla-1439813935915&amp;psc=1&amp;th=1&amp;psc=1" target="_blank" rel="noopener noreffer">ThinkAgain</a></p></div><div class="post-footer">
         <a href="/posts/2022-06-13-thinkagain/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/book/">Book</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022-06-13-mindfuck/">MINDFUCK Buch Zusammenfassung - MindMap</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-13">2022-06-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">In folgendem MindMap habe ich Teile des Buches MINDFUCK von Petra Bock zusammengefasst:
-Preview Link zum Buch: https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-13">2022-06-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content"><p>In folgendem MindMap habe ich Teile des Buches MINDFUCK von Petra Bock zusammengefasst:</p>
+<p><figure><a class="lightgallery" href="/images/mindfuck.png" title="Mindfuck Mindmap:" data-thumbnail="/images/mindfuck.png" data-sub-html="<h2>Preview</h2><p>Mindfuck Mindmap:</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/mindfuck.png"
+            data-srcset="/images/mindfuck.png, /images/mindfuck.png 1.5x, /images/mindfuck.png 2x"
+            data-sizes="auto"
+            alt="/images/mindfuck.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>Link zum Buch: <a href="https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071" target="_blank" rel="noopener noreffer">https://www.amazon.de/Mindfuck-selbst-sabotieren-dagegen-k%C3%B6nnen/dp/3426655071</a></p></div><div class="post-footer">
         <a href="/posts/2022-06-13-mindfuck/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/book/">Book</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022-04-24-dockeroverview/">Docker Architecture Overview - MindMap</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-22">2022-04-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/docker/"><i class="far fa-folder fa-fw"></i>Docker</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content">Docker Architecture Overview:
-Preview </div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-22">2022-04-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/docker/"><i class="far fa-folder fa-fw"></i>Docker</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content"><p>Docker Architecture Overview:</p>
+<p><figure><a class="lightgallery" href="/images/DockerArchitecture.png" title="Docker Architecture Overview:" data-thumbnail="/images/DockerArchitecture.png" data-sub-html="<h2>Preview</h2><p>Docker Architecture Overview:</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/DockerArchitecture.png"
+            data-srcset="/images/DockerArchitecture.png, /images/DockerArchitecture.png 1.5x, /images/DockerArchitecture.png 2x"
+            data-sizes="auto"
+            alt="/images/DockerArchitecture.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p></div><div class="post-footer">
         <a href="/posts/2022-04-24-dockeroverview/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/docker/">Docker</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
@@ -166,7 +208,7 @@ Preview </div><div class="post-footer">
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.7">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.149.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
