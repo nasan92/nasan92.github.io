@@ -3,9 +3,23 @@
         <title>NASAN</title>
         <link>http://localhost:1313/</link>
         <description>NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 30 Aug 2025 05:10:21 &#43;0100</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Was ist Philosophie?</title>
+    <link>http://localhost:1313/posts/2025-08-30-was-ist-philosophie/</link>
+    <pubDate>Sat, 30 Aug 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-08-30-was-ist-philosophie/</guid>
+    <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, einen kurzen und groben Überblick über das Thema <strong>„Was ist Philosophie?“</strong> sowie deren Disziplinen zu vermitteln:</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/cJfLDlRojfY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="disziplinen-der-philosophie">Disziplinen der Philosophie</h2>
+<p>In diesem Diagramm sind einige der wichtigsten philosophischen Disziplinen grob dargestellt.</p>
+<p><figure><a class="lightgallery" href="/images/Philosophie-Disziplinen.png" title="Disziplinen der Philosophie Übersicht" data-thumbnail="/images/Philosophie-Disziplinen.png" data-sub-html="<h2>Disziplinen der Philosophie Übersicht</h2><p>Disziplinen der Philosophie Übersicht</p>]]></description>
+</item><item>
     <title>Software Architecture - mind maps</title>
     <link>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</link>
     <pubDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</pubDate>
@@ -138,20 +152,6 @@ The purpose of OpenTelemetry is to collect, process and export signals. The sign
 <p><a href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" title="Preview" rel="">MindMap PNG</a><br>
 <a href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.svg" title="Preview" rel="">MindMap SVG</a><br>
 <figure><a class="lightgallery" href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" title="5 Elements of Effective Thinking" data-thumbnail="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" data-sub-html="<h2>Preview</h2><p>5 Elements of Effective Thinking</p>">
-        
-    </a><figcaption class="image-caption">Preview</figcaption>
-    </figure></p>]]></description>
-</item><item>
-    <title>14 Habits of Highly Productive Developers - mind map</title>
-    <link>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</link>
-    <pubDate>Sat, 14 Sep 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-09-14-14-habits-of-higly-productive-developers-mind-map/</guid>
-    <description><![CDATA[<p>The following mind map provides a concise summary of the key takeaways from the book  <a href="https://amzn.eu/d/6NrlATH" target="_blank" rel="noopener noreffer">14 Habits of Highly Productive Developers</a></p>
-<h2 id="14-habits-of-highly-productive-developers-mind-map">14 Habits of Highly Productive Developers Mind Map</h2>
-<p><a href="/images/RAG-the-vanilla-RAG-framework-mindmap.png" title="Preview" rel="">MindMap PNG</a><br>
-<a href="/images/14-habits-of-higly-productive-developers-mind-map.svg" title="Preview" rel="">MindMap SVG - (Links working)</a><br>
-<figure><a class="lightgallery" href="/images/14-habits-of-higly-productive-developers-mind-map.png" title="14 Habits of Highly Productive Developers" data-thumbnail="/images/14-habits-of-higly-productive-developers-mind-map.png" data-sub-html="<h2>Preview</h2><p>14 Habits of Highly Productive Developers</p>">
         
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>]]></description>
