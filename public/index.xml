@@ -3,9 +3,27 @@
         <title>NASAN</title>
         <link>http://localhost:1313/</link>
         <description>NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 30 Aug 2025 05:10:21 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 27 Sep 2025 05:10:21 &#43;0100</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>OAuth 2.0</title>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</link>
+    <pubDate>Sat, 27 Sep 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</guid>
+    <description><![CDATA[<p>Here some public notes from my side on OAuth 2.0. Some good resources:</p>
+<ul>
+<li><a href="https://www.udemy.com/course/oauth-2-simplified/" target="_blank" rel="noopener noreffer">OAuth 2.0 Udemy course</a></li>
+<li><a href="https://learn.microsoft.com/en-us/entra/identity-platform/authentication-flows-app-scenarios#scenarios-and-supported-authentication-flows" target="_blank" rel="noopener noreffer">Nice Overview which scenarios support which Authentication Flow</a></li>
+<li></li>
+</ul>
+<h2 id="mindmap-oauth">MindMap OAuth</h2>
+<p><figure><a class="lightgallery" href="/images/OAuth2.svg" title="AUTH 2.0  Mind Map" data-thumbnail="/images/OAuth2.svg" data-sub-html="<h2>OAUTH 2.0 Mind Map illustrates basic concepts</h2><p>AUTH 2.0  Mind Map</p>">
+        
+    </a><figcaption class="image-caption">OAUTH 2.0 Mind Map illustrates basic concepts</figcaption>
+    </figure><br>
+<em>Figure 1: OAUTH 2.0  Mind Map visualizing basic concepts</em></p>]]></description>
+</item><item>
     <title>Was ist Philosophie?</title>
     <link>http://localhost:1313/posts/2025-08-30-was-ist-philosophie/</link>
     <pubDate>Sat, 30 Aug 2025 05:10:21 &#43;0100</pubDate>
@@ -141,19 +159,5 @@ The purpose of OpenTelemetry is to collect, process and export signals. The sign
 </ul>
 <h2 id="azure-databricks-mind-map">Azure Databricks Mind Map</h2>
 <p><figure><a class="lightgallery" href="/images/Azure-Databricks-MindMap.svg" title="Azure Databricks MindMap" data-thumbnail="/images/Azure-Databricks-MindMap.svg" data-sub-html="<h2>Azure Databricks Mind Map showcasing key concepts</h2><p>Azure Databricks MindMap</p>]]></description>
-</item><item>
-    <title>5 Elements of Effective Thinking - mind map</title>
-    <link>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</link>
-    <pubDate>Tue, 08 Oct 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-10-08-5-elements-of-effective-thinking-book-summary-mind-map/</guid>
-    <description><![CDATA[<p>The following mind map provides a summary of the key takeaways from the book  <a href="https://amzn.eu/d/2qDJFLr" target="_blank" rel="noopener noreffer">5 Elements of Effective Thinking</a></p>
-<h2 id="5-elements-of-effective-thinking-mind-map">5 Elements of Effective Thinking Mind Map</h2>
-<p><a href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" title="Preview" rel="">MindMap PNG</a><br>
-<a href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.svg" title="Preview" rel="">MindMap SVG</a><br>
-<figure><a class="lightgallery" href="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" title="5 Elements of Effective Thinking" data-thumbnail="/images/5-Elements-of-Effective-Thinking-book-summary-mindmap.png" data-sub-html="<h2>Preview</h2><p>5 Elements of Effective Thinking</p>">
-        
-    </a><figcaption class="image-caption">Preview</figcaption>
-    </figure></p>]]></description>
 </item></channel>
 </rss>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>OAuth 2.0 - Localhost Server Side App Auth Code Flow - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-27-oauth2-1/">
+  <meta property="og:site_name" content="NASAN">
+  <meta property="og:title" content="OAuth 2.0 - Localhost Server Side App Auth Code Flow">
+  <meta property="og:description" content="Here some public notes from my side on OAuth 2.0. Some good resources:
+Server Side App - Authorization Code Flow In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.
+Here a showcase where the “server side app” (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id &#43; access a Microsoft Graph API.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-27T05:10:21+01:00">
+    <meta property="article:modified_time" content="2025-09-27T05:10:21+01:00">
+    <meta property="article:tag" content="OAuth">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OAuth 2.0 - Localhost Server Side App Auth Code Flow">
+  <meta name="twitter:description" content="Here some public notes from my side on OAuth 2.0. Some good resources:
+Server Side App - Authorization Code Flow In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.
+Here a showcase where the “server side app” (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id &#43; access a Microsoft Graph API.">
+      <meta name="twitter:site" content="@nasantschi">
+<meta name="application-name" content="NASAN">
+<meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2025-09-27-oauth2-1/" /><link rel="prev" href="http://localhost:1313/posts/2025-08-30-was-ist-philosophie/" /><link rel="next" href="http://localhost:1313/posts/2025-09-27-oauth2-0/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "OAuth 2.0 - Localhost Server Side App Auth Code Flow",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth2-1\/"
+        },"genre": "posts","keywords": "OAuth","wordcount":  579 ,
+        "url": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth2-1\/","datePublished": "2025-09-27T05:10:21+01:00","dateModified": "2025-09-27T05:10:21+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Nathanael Santschi"},"author": {
+                "@type": "Person",
+                "name": "Nathanael Santschi"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NASAN">NASAN</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" rel="noopener noreffer" target="_blank"> Youtube </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NASAN">NASAN</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" title="" rel="noopener noreffer" target="_blank">Youtube</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Localhost Server Side App Auth Code Flow</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oauth/"><i class="far fa-folder fa-fw"></i>OAuth</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-27">2025-09-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;579 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#server-side-app---authorization-code-flow">Server Side App - Authorization Code Flow</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#python-flask-app">Python Flask App</a></li>
+    <li><a href="#create-new-app-registration">Create new App Registration</a></li>
+    <li><a href="#login">Login</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Here some public notes from my side on OAuth 2.0. Some good resources:</p>
+<h2 id="server-side-app---authorization-code-flow">Server Side App - Authorization Code Flow</h2>
+<p>In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.</p>
+<p>Here a showcase where the &ldquo;server side app&rdquo; (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id + access a Microsoft Graph API.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Microsoft Azure Tenant</li>
+<li>UV installed: <a href="https://docs.astral.sh/uv/getting-started/installation/" target="_blank" rel="noopener noreffer">UV Installation</a></li>
+</ul>
+<h2 id="python-flask-app">Python Flask App</h2>
+<p>You can find tutorials for this scenario using the MSAL library here: <a href="https://learn.microsoft.com/en-us/entra/identity-platform/tutorial-web-app-python-flask-sign-in-out?tabs=workforce-tenant" target="_blank" rel="noopener noreffer">Microsoft: Python Flask MSAL Tutorial</a></p>
+<p>Open a console window, and change to the directory to your Flask web app folder using the command</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> Flask_App
+</span></span></code></pre></div><p>create a new uv project and install necessary dependencies:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uv init
+</span></span><span class="line"><span class="cl">uv add flask msal python-dotenv
+</span></span><span class="line"><span class="cl"><span class="c1"># activate the virtual environment with those dependencies installed:</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> .venv/bin/activate
+</span></span></code></pre></div><p>then add the following code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url_for</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">msal</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">uuid</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">secret_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>  <span class="c1"># Needed for session</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Specify the path to the .env file</span>
+</span></span><span class="line"><span class="cl"><span class="n">dotenv_path</span> <span class="o">=</span> <span class="s2">&#34;.env&#34;</span>  <span class="c1"># Update this with the actual path</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the .env file</span>
+</span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">(</span><span class="n">dotenv_path</span><span class="o">=</span><span class="n">dotenv_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Config</span>
+</span></span><span class="line"><span class="cl"><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_id&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_ID&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;authority&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;https://login.microsoftonline.com/</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;TENANT_ID&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;scope&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;User.Read&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;redirect_uri&#34;</span><span class="p">:</span> <span class="s2">&#34;http://localhost:5001/callback&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_secret&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_SECRET&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">build_msal_app</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">msal</span><span class="o">.</span><span class="n">ConfidentialClientApplication</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">client_id</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;client_id&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">authority</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;authority&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">client_credential</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;client_secret&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;user&#34;</span> <span class="ow">in</span> <span class="n">session</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">user</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="s2">&#34;user&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &lt;h2&gt;Welcome </span><span class="si">{</span><span class="n">user</span><span class="p">[</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/h2&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &lt;p&gt;Email: </span><span class="si">{</span><span class="n">user</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;mail&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">user</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;userPrincipalName&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &lt;a href=&#34;/logout&#34;&gt;Logout&lt;/a&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&lt;a href=&#34;/login&#34;&gt;Login with Microsoft&lt;/a&gt;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/login&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msal_app</span> <span class="o">=</span> <span class="n">build_msal_app</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flow</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">initiate_auth_code_flow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scopes</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;scope&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">redirect_uri</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;redirect_uri&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">state</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">session</span><span class="p">[</span><span class="s2">&#34;auth_flow&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flow</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">flow</span><span class="p">[</span><span class="s2">&#34;auth_uri&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/callback&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">callback</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msal_app</span> <span class="o">=</span> <span class="n">build_msal_app</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">acquire_token_by_auth_code_flow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;auth_flow&#34;</span><span class="p">,</span> <span class="p">{}),</span> <span class="n">request</span><span class="o">.</span><span class="n">args</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;Authentication failed&#34;</span><span class="p">,</span> <span class="mi">400</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;access_token&#34;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">session</span><span class="p">[</span><span class="s2">&#34;access_token&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&#34;access_token&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Call Microsoft Graph to get user info</span>
+</span></span><span class="line"><span class="cl">        <span class="n">graph_resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;https://graph.microsoft.com/v1.0/me&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;Bearer </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;access_token&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">graph_resp</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">session</span><span class="p">[</span><span class="s2">&#34;user&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graph_resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&#34;index&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;Graph API error: </span><span class="si">{</span><span class="n">graph_resp</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="mi">500</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;Error: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;error_description&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="mi">400</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/logout&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">logout</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">session</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&#34;index&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&#34;0.0.0.0&#34;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5001</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><p>start the app (login link won&rsquo;t work for now):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flask --app main.py run --host<span class="o">=</span>0.0.0.0 --port<span class="o">=</span><span class="m">5001</span>
+</span></span></code></pre></div><p>Okay we basically need now to create a registration for our App to make our Login and access of an API working:</p>
+<h2 id="create-new-app-registration">Create new App Registration</h2>
+<p>Go to Entra ID and create a new App Registration:</p>
+<ul>
+<li><strong>Name:</strong> choose a name which enables you to identify your app</li>
+<li><strong>Redirect URI:</strong> authentication response will be redirected to this URI</li>
+</ul>
+<p><figure><a class="lightgallery" href="/images/register-applicaion-myconfidentialserversideapp.png" title="register application" data-thumbnail="/images/register-applicaion-myconfidentialserversideapp.png" data-sub-html="<h2>Preview</h2><p>register application</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/register-applicaion-myconfidentialserversideapp.png"
+            data-srcset="/images/register-applicaion-myconfidentialserversideapp.png, /images/register-applicaion-myconfidentialserversideapp.png 1.5x, /images/register-applicaion-myconfidentialserversideapp.png 2x"
+            data-sizes="auto"
+            alt="/images/register-applicaion-myconfidentialserversideapp.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>after creating the application we need at least do two other things:</p>
+<ul>
+<li>Create a <strong>Client Secret</strong> (We can use one for server side apps)</li>
+<li>Add Micrsoft Graph API User.Read permissions (if not already there)</li>
+</ul>
+<p>Copy the secret immediately and save it to a secure location:</p>
+<p><figure><a class="lightgallery" href="/images/CreateClientSecret.png" title="create client secret" data-thumbnail="/images/CreateClientSecret.png" data-sub-html="<h2>Preview</h2><p>create client secret</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/CreateClientSecret.png"
+            data-srcset="/images/CreateClientSecret.png, /images/CreateClientSecret.png 1.5x, /images/CreateClientSecret.png 2x"
+            data-sizes="auto"
+            alt="/images/CreateClientSecret.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>Verify that our app has User.Read permissions of the Microsoft Graph API:</p>
+<p><figure><a class="lightgallery" href="/images/app-registration-api-permission-confidentialserver.png" title="graph api user read" data-thumbnail="/images/app-registration-api-permission-confidentialserver.png" data-sub-html="<h2>Preview</h2><p>graph api user read</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/app-registration-api-permission-confidentialserver.png"
+            data-srcset="/images/app-registration-api-permission-confidentialserver.png, /images/app-registration-api-permission-confidentialserver.png 1.5x, /images/app-registration-api-permission-confidentialserver.png 2x"
+            data-sizes="auto"
+            alt="/images/app-registration-api-permission-confidentialserver.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>Create a .env file and add in there your client id and your created client secret:</p>
+<pre tabindex="0"><code>TENANT_ID=******************************************
+CLIENT_ID=be4099ac-8a21-****************************
+CLIENT_SECRET=LFp8Q~********************************
+</code></pre><h2 id="login">Login</h2>
+<p>Okay now restart your flask app and try to click on the login button this time.
+It should redirect you to a link which is built out of the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">https://login.microsoftonline.com/YOUR-TENANT-ID/oauth2/v2.0/authorize?
+</span></span><span class="line"><span class="cl">  <span class="nv">client_id</span><span class="o">=</span>YOUR-CLIENT-ID<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">response_type</span><span class="o">=</span>code<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">redirect_uri</span><span class="o">=</span>http%3A%2F%2Flocalhost%3A5001%2Fcallback<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">scope</span><span class="o">=</span>User.Read+offline_access+openid+profile<span class="p">&amp;</span><span class="nv">state</span><span class="o">=</span>ab75d9bc-3e73-435d-8f6e-12bec5dce5c3<span class="p">&amp;</span><span class="nv">code_challenge</span><span class="o">=</span>2D2aoAkngNH37eJPvjndhjyvJYhlPdcBUXzfPpQXAuQ<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">code_challenge_method</span><span class="o">=</span>S256<span class="p">&amp;</span><span class="nv">nonce</span><span class="o">=</span>40c7a26b0d3c1baac6473580566a7b390459646ccaa8b8be249aa160eee32aaa<span class="p">&amp;</span><span class="nv">client_info</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><p>and there you need to consent the permissions requested:</p>
+<p><figure><a class="lightgallery" href="/images/confidential-client-permission-requested.png" title="permission-requested" data-thumbnail="/images/confidential-client-permission-requested.png" data-sub-html="<h2>Preview</h2><p>permission-requested</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/confidential-client-permission-requested.png"
+            data-srcset="/images/confidential-client-permission-requested.png, /images/confidential-client-permission-requested.png 1.5x, /images/confidential-client-permission-requested.png 2x"
+            data-sizes="auto"
+            alt="/images/confidential-client-permission-requested.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>After consent you come back to our flask app and you can see the welcome page which informations about you. This information was called using the Graph API:</p>
+<p><figure><a class="lightgallery" href="/images/welcome-callback-page.png" title="welcome-callback" data-thumbnail="/images/welcome-callback-page.png" data-sub-html="<h2>Preview</h2><p>welcome-callback</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/welcome-callback-page.png"
+            data-srcset="/images/welcome-callback-page.png, /images/welcome-callback-page.png 1.5x, /images/welcome-callback-page.png 2x"
+            data-sizes="auto"
+            alt="/images/welcome-callback-page.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-09-27</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/oauth/">OAuth</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2025-08-30-was-ist-philosophie/" class="prev" rel="prev" title="Was ist Philosophie?"><i class="fas fa-angle-left fa-fw"></i>Was ist Philosophie?</a>
+            <a href="/posts/2025-09-27-oauth2-0/" class="next" rel="next" title="OAuth 2.0">OAuth 2.0<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.149.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

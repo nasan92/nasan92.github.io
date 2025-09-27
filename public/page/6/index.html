@@ -98,6 +98,26 @@
         alt="/images/nasan-avatar.jpeg"
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2023-08-31-entraprivateaccess/">Securing Resources in Azure VMs with Microsoft Entra Private Access in a Hub-and-Spoke Architecture</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-08-31">2023-08-31</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw"></i>Azure</a>&nbsp;<a href="/categories/microsoftentraprivateaccess/"><i class="far fa-folder fa-fw"></i>MicrosoftEntraPrivateAccess</a></span></div><div class="content"><p>I did a little <strong>Microsoft Entra Private Access</strong> Test setup.<br>
+My goal was to test access to some <strong>private Resources</strong> hosted on <strong>Azure Virtual Machines</strong> with <strong>Microsoft Entra Private Access</strong> instead of VPN.</p>
+<h2 id="overview">Overview</h2>
+<p>The test setup is illustrated below:
+<figure><a class="lightgallery" href="/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png" title="Overview Test Setup:" data-thumbnail="/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png" data-sub-html="<h2>Preview</h2><p>Overview Test Setup:</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png"
+            data-srcset="/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png, /images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png 1.5x, /images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png 2x"
+            data-sizes="auto"
+            alt="/images/MicrosoftEntraPrivateAccess-AzurVM.drawio.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>I have one Virtual Machine (VM) with a <strong>Windows File Share</strong> that I wish to access from my endpoint and I also want to be able to access this VM via <strong>RDP.</strong><br>
+Additionaly in another Spoke VNET I have a simple <strong>Web Server</strong> which I also would like to access via <strong>Private Access</strong>.</p></div><div class="post-footer">
+        <a href="/posts/2023-08-31-entraprivateaccess/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/globalaccess/">GlobalAccess</a>,&nbsp;<a href="/tags/privateaccess/">PrivateAccess</a>,&nbsp;<a href="/tags/microsoft/">Microsoft</a>,&nbsp;<a href="/tags/entra/">Entra</a>,&nbsp;<a href="/tags/microsoftentra/">MicrosoftEntra</a>,&nbsp;<a href="/tags/vpnalternative/">VPNAlternative</a>,&nbsp;<a href="/tags/hubspoke/">HubSpoke</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2023-05-18-markslistofcybersecurityresources/">Mark&#39;s Simos List of Cybersecurity Resources - MindMap</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-05-18">2023-05-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content"><p>Based on <a href="https://www.linkedin.com/pulse/marks-list-mark-simos/" target="_blank" rel="noopener noreffer">Mark&rsquo;s List of cybersecurity Resources</a>, I created the following Mind Map:</p>
 <p><figure><a class="lightgallery" href="/images/marks-list-of-cybersecurity-resources.svg" title="Cybersecurity Resources - Mindmap:" data-thumbnail="/images/marks-list-of-cybersecurity-resources.svg" data-sub-html="<h2>Preview</h2><p>Cybersecurity Resources - Mindmap:</p>">
@@ -163,24 +183,6 @@ So you want to login into a certain webapp with your Microsoft Account? This app
 <p><figure><a class="lightgallery" href="/images/BuildAnOverallSecurityStrategyAndArchitecture.svg" title="Build an overall security strategy and architecture:" data-thumbnail="/images/BuildAnOverallSecurityStrategyAndArchitecture.svg" data-sub-html="<h2>Preview</h2><p>Build an overall security strategy and architecture:</p></div><div class="post-footer">
         <a href="/posts/2023-01-13-microsoftcybersecurityarchitect/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/microsoft/">Microsoft</a>,&nbsp;<a href="/tags/security/">Security</a>,&nbsp;<a href="/tags/sc-100/">SC-100</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2023-01-01-psychologiedesgeldes/">Psychologie des Geldes - MindMap</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-01">2023-01-01</time></span>&nbsp;<span class="post-category">included in <a href="/categories/books/"><i class="far fa-folder fa-fw"></i>Books</a>&nbsp;<a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content"><p>Ein MindMap als Buchzusammenfassung für das Buch <a href="https://www.amazon.de/%C3%9Cber-die-Psychologie-Geldes-Lektionen/dp/3959724438" target="_blank" rel="noopener noreffer">Pychologie des Geldes</a> - von Morgan Housel</p>
-<p>Links:<br>
-<a href="/images/Psychologie-des-Geldes-MindMap.svg" title="Preview" rel="">Psychologie-des-Geldes-MindMap.svg</a><br>
-<a href="/images/Psychologie-des-Geldes-MindMap.png" title="Preview" rel="">Psychologie-des-Geldes-MindMap.png</a></p>
-<p><figure><a class="lightgallery" href="/images/Psychologie-des-Geldes-MindMap.png" title="Psychologie des Geldes - Mindmap:" data-thumbnail="/images/Psychologie-des-Geldes-MindMap.png" data-sub-html="<h2>Preview</h2><p>Psychologie des Geldes - Mindmap:</p>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/images/Psychologie-des-Geldes-MindMap.png"
-            data-srcset="/images/Psychologie-des-Geldes-MindMap.png, /images/Psychologie-des-Geldes-MindMap.png 1.5x, /images/Psychologie-des-Geldes-MindMap.png 2x"
-            data-sizes="auto"
-            alt="/images/Psychologie-des-Geldes-MindMap.png" />
-    </a><figcaption class="image-caption">Preview</figcaption>
-    </figure></p></div><div class="post-footer">
-        <a href="/posts/2023-01-01-psychologiedesgeldes/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mindmap/">MindMap</a>,&nbsp;<a href="/tags/book/">Book</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
