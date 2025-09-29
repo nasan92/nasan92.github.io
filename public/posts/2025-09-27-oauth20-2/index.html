@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-27-oauth20-2/">
+  <meta property="og:site_name" content="NASAN">
+  <meta property="og:title" content="OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID">
+  <meta property="og:description" content="In addition to the first showcase where we simply used a localhost Web App as a “server side app” as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real “server side app” where no user could have access to secrets.
+The following steps are necessary:
+create azure container registry create dockerfile and publish to registry create azure web app with this container add environment variables (tenant, client id, client secret) add new redirect uri to app registration change redirect uri in app code itself! Prerequisites Microsoft Azure Tenant with active Subscription Docker installed Azure CLI installed UV installed: UV Installation Create Azure Container Registry Create an Azure container registry where you can store your docker images:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-29T05:10:21+01:00">
+    <meta property="article:modified_time" content="2025-09-29T05:10:21+01:00">
+    <meta property="article:tag" content="OAuth">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID">
+  <meta name="twitter:description" content="In addition to the first showcase where we simply used a localhost Web App as a “server side app” as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real “server side app” where no user could have access to secrets.
+The following steps are necessary:
+create azure container registry create dockerfile and publish to registry create azure web app with this container add environment variables (tenant, client id, client secret) add new redirect uri to app registration change redirect uri in app code itself! Prerequisites Microsoft Azure Tenant with active Subscription Docker installed Azure CLI installed UV installed: UV Installation Create Azure Container Registry Create an Azure container registry where you can store your docker images:">
+      <meta name="twitter:site" content="@nasantschi">
+<meta name="application-name" content="NASAN">
+<meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2025-09-27-oauth20-2/" /><link rel="prev" href="http://localhost:1313/posts/2025-09-27-oauth20-1/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-2\/"
+        },"genre": "posts","keywords": "OAuth","wordcount":  744 ,
+        "url": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-2\/","datePublished": "2025-09-29T05:10:21+01:00","dateModified": "2025-09-29T05:10:21+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Nathanael Santschi"},"author": {
+                "@type": "Person",
+                "name": "Nathanael Santschi"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NASAN">NASAN</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" rel="noopener noreffer" target="_blank"> Youtube </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NASAN">NASAN</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" title="" rel="noopener noreffer" target="_blank">Youtube</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oauth/"><i class="far fa-folder fa-fw"></i>OAuth</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-29">2025-09-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;744 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#create-azure-container-registry">Create Azure Container Registry</a></li>
+    <li><a href="#create-a-docker-image-and-publish-it-to-the-registry">Create a Docker Image and publish it to the registry</a>
+      <ul>
+        <li><a href="#requirementstxt">requirements.txt</a></li>
+        <li><a href="#dockerfile">Dockerfile</a></li>
+        <li><a href="#python-source-code">Python Source Code</a></li>
+        <li><a href="#build-docker-image">Build Docker Image</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-an-azure-web-app">Create an Azure Web App</a></li>
+    <li><a href="#configure-environment-variables">Configure Environment Variables</a></li>
+    <li><a href="#new-redirect-uri-for-your-app-registration">New Redirect URI for your App Registration</a></li>
+    <li><a href="#test-the-oauth-flow">Test the OAuth flow</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>In addition to the first showcase where we simply used a localhost Web App as a &ldquo;server side app&rdquo; as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real &ldquo;server side app&rdquo; where no user could have access to secrets.</p>
+<p>The following steps are necessary:</p>
+<ul>
+<li>create azure container registry</li>
+<li>create dockerfile and publish to registry</li>
+<li>create azure web app with this container</li>
+<li>add environment variables (tenant, client id, client secret)</li>
+<li>add new redirect uri to app registration</li>
+<li>change redirect uri in app code itself!</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Microsoft Azure Tenant with active Subscription</li>
+<li>Docker installed</li>
+<li>Azure CLI installed</li>
+<li>UV installed: <a href="https://docs.astral.sh/uv/getting-started/installation/" target="_blank" rel="noopener noreffer">UV Installation</a></li>
+</ul>
+<h2 id="create-azure-container-registry">Create Azure Container Registry</h2>
+<p><a href="https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli" target="_blank" rel="noopener noreffer">Create an Azure container registry</a> where you can store your docker images:</p>
+<p><figure><a class="lightgallery" href="/images/Azure-create-container-registry.png" title="Create-azure-container-registry" data-thumbnail="/images/Azure-create-container-registry.png" data-sub-html="<h2>Preview</h2><p>Create-azure-container-registry</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/Azure-create-container-registry.png"
+            data-srcset="/images/Azure-create-container-registry.png, /images/Azure-create-container-registry.png 1.5x, /images/Azure-create-container-registry.png 2x"
+            data-sizes="auto"
+            alt="/images/Azure-create-container-registry.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<h2 id="create-a-docker-image-and-publish-it-to-the-registry">Create a Docker Image and publish it to the registry</h2>
+<h3 id="requirementstxt">requirements.txt</h3>
+<p>Within your app folder e.g. flask_app create first a requirements.txt which contains all requirements which will be used from the app within the docker image:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-requirements.txt" data-lang="requirements.txt"><span class="line"><span class="cl">flask==3.1.2
+</span></span><span class="line"><span class="cl">msal==1.34.0
+</span></span><span class="line"><span class="cl">python-dotenv==1.1.1
+</span></span></code></pre></div><h3 id="dockerfile">Dockerfile</h3>
+<p>Then create a new Dockerfile with the following content:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Dockerfile" data-lang="Dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.11</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/code</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">COPY</span> requirements.txt .<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> pip3 install -r requirements.txt <span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c"># copy your actual python code</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">COPY</span> main.py .<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c"># Add some debugging</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> <span class="nb">echo</span> <span class="s2">&#34;Files in /code:&#34;</span> <span class="o">&amp;&amp;</span> ls -la /code<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c"># Expose the port that the app will run on</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">EXPOSE</span><span class="w"> </span><span class="s">5001</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">CMD</span> <span class="p">[</span><span class="s2">&#34;flask&#34;</span><span class="p">,</span> <span class="s2">&#34;--app&#34;</span><span class="p">,</span> <span class="s2">&#34;main.py&#34;</span><span class="p">,</span> <span class="s2">&#34;run&#34;</span><span class="p">,</span> <span class="s2">&#34;--host&#34;</span><span class="p">,</span> <span class="s2">&#34;0.0.0.0&#34;</span><span class="p">,</span> <span class="s2">&#34;--port&#34;</span><span class="p">,</span> <span class="s2">&#34;5001&#34;</span><span class="p">]</span><span class="err">
+</span></span></span></code></pre></div><h3 id="python-source-code">Python Source Code</h3>
+<p>The actual code for the Python Flask sample Web App is largely the same like in the last tutorial:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url_for</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">msal</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">uuid</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">secret_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>  <span class="c1"># Needed for session</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Specify the path to the .env file</span>
+</span></span><span class="line"><span class="cl"><span class="n">dotenv_path</span> <span class="o">=</span> <span class="s2">&#34;.env&#34;</span>  <span class="c1"># Update this with the actual path</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the .env file -&gt; is not used in &#34;prod&#34; web app only on local development</span>
+</span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">(</span><span class="n">dotenv_path</span><span class="o">=</span><span class="n">dotenv_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Config</span>
+</span></span><span class="line"><span class="cl"><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_id&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_ID&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;authority&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;https://login.microsoftonline.com/</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;TENANT_ID&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;scope&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;User.Read&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;redirect_uri&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;REDIRECT_URI&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_secret&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_SECRET&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">build_msal_app</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">msal</span><span class="o">.</span><span class="n">ConfidentialClientApplication</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">client_id</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;client_id&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">authority</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;authority&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">client_credential</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;client_secret&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;user&#34;</span> <span class="ow">in</span> <span class="n">session</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">user</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="s2">&#34;user&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &lt;h2&gt;Welcome </span><span class="si">{</span><span class="n">user</span><span class="p">[</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/h2&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &lt;p&gt;Email: </span><span class="si">{</span><span class="n">user</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;mail&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">user</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;userPrincipalName&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &lt;a href=&#34;/logout&#34;&gt;Logout&lt;/a&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&lt;a href=&#34;/login&#34;&gt;Login with Microsoft&lt;/a&gt;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/login&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msal_app</span> <span class="o">=</span> <span class="n">build_msal_app</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flow</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">initiate_auth_code_flow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scopes</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;scope&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">redirect_uri</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;redirect_uri&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">state</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">session</span><span class="p">[</span><span class="s2">&#34;auth_flow&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flow</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">flow</span><span class="p">[</span><span class="s2">&#34;auth_uri&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/callback&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">callback</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msal_app</span> <span class="o">=</span> <span class="n">build_msal_app</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">acquire_token_by_auth_code_flow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;auth_flow&#34;</span><span class="p">,</span> <span class="p">{}),</span> <span class="n">request</span><span class="o">.</span><span class="n">args</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;Authentication failed&#34;</span><span class="p">,</span> <span class="mi">400</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;access_token&#34;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">session</span><span class="p">[</span><span class="s2">&#34;access_token&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&#34;access_token&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Call Microsoft Graph to get user info</span>
+</span></span><span class="line"><span class="cl">        <span class="n">graph_resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;https://graph.microsoft.com/v1.0/me&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;Bearer </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;access_token&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">graph_resp</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">session</span><span class="p">[</span><span class="s2">&#34;user&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graph_resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&#34;index&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;Graph API error: </span><span class="si">{</span><span class="n">graph_resp</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="mi">500</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;Error: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;error_description&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="mi">400</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/logout&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">logout</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">session</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&#34;index&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&#34;0.0.0.0&#34;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5001</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="build-docker-image">Build Docker Image</h3>
+<p>NOTE: on MacOs its necessary to build the docker image explicitely for &ldquo;linux/amd64&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">IMG_NAME</span><span class="o">=</span>flask-app
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> flask_app <span class="o">&amp;&amp;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>docker buildx build --platform linux/amd64 -t <span class="si">${</span><span class="nv">IMG_NAME</span><span class="si">}</span> .
+</span></span></code></pre></div><p>Login to your Azure Container Registry</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">ACR_NAME</span><span class="o">=</span>nasatestreg
+</span></span><span class="line"><span class="cl">az login <span class="c1"># First Login with the Azure CLI</span>
+</span></span><span class="line"><span class="cl">az acr login --name <span class="k">$(</span>ACR_NAME<span class="k">)</span> <span class="c1"># Login to you specific Azure Container Registry</span>
+</span></span></code></pre></div><p>Okay and now tag and push your image to your Azure Container Registry:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker tag <span class="si">${</span><span class="nv">IMG_NAME</span><span class="si">}</span> <span class="k">$(</span>ACR_NAME<span class="k">)</span>.azurecr.io/<span class="si">${</span><span class="nv">IMG_NAME</span><span class="si">}</span>:v5
+</span></span><span class="line"><span class="cl">docker push <span class="k">$(</span>ACR_NAME<span class="k">)</span>.azurecr.io/<span class="si">${</span><span class="nv">IMG_NAME</span><span class="si">}</span>:v5
+</span></span></code></pre></div><h2 id="create-an-azure-web-app">Create an Azure Web App</h2>
+<p>Okay and now we need to create an Azure Web App where this image can be used:</p>
+<p><figure><a class="lightgallery" href="/images/Azure-create-web-app.png" title="Create-azure-web-app" data-thumbnail="/images/Azure-create-web-app.png" data-sub-html="<h2>Preview</h2><p>Create-azure-web-app</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/Azure-create-web-app.png"
+            data-srcset="/images/Azure-create-web-app.png, /images/Azure-create-web-app.png 1.5x, /images/Azure-create-web-app.png 2x"
+            data-sizes="auto"
+            alt="/images/Azure-create-web-app.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>And use the Image which we created before:</p>
+<p><figure><a class="lightgallery" href="/images/Azure-Create-Web-App-container.png" title="Create-azure-web-app-container" data-thumbnail="/images/Azure-Create-Web-App-container.png" data-sub-html="<h2>Preview</h2><p>Create-azure-web-app-container</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/Azure-Create-Web-App-container.png"
+            data-srcset="/images/Azure-Create-Web-App-container.png, /images/Azure-Create-Web-App-container.png 1.5x, /images/Azure-Create-Web-App-container.png 2x"
+            data-sizes="auto"
+            alt="/images/Azure-Create-Web-App-container.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<h2 id="configure-environment-variables">Configure Environment Variables</h2>
+<p>We use environment variables to get client infos like client id and secret.
+Add them with the correct names to your app:</p>
+<p><figure><a class="lightgallery" href="/images/Azure-web-app-environment-variables.png" title="Create-azure-web-app-env" data-thumbnail="/images/Azure-web-app-environment-variables.png" data-sub-html="<h2>Preview</h2><p>Create-azure-web-app-env</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/Azure-web-app-environment-variables.png"
+            data-srcset="/images/Azure-web-app-environment-variables.png, /images/Azure-web-app-environment-variables.png 1.5x, /images/Azure-web-app-environment-variables.png 2x"
+            data-sizes="auto"
+            alt="/images/Azure-web-app-environment-variables.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<h2 id="new-redirect-uri-for-your-app-registration">New Redirect URI for your App Registration</h2>
+<p>Until now your App Registration had only a Redirect URI to your localhost address. Because our app now runs on an Azure Web App Service we need to change that:</p>
+<p>find your new URL on your Azure Web App in the Overview Section: Default Domain (For the case of simplicity we use the default domain).
+Copy this domain and switch to your App Registration which we created in the last tutorial.
+In there add replace localhost with your new URI and also add the /callback to it (Used in the Python code)</p>
+<p><figure><a class="lightgallery" href="/images/Azure-App-Redirect-URI.png" title="Create-azure-redirect-uri" data-thumbnail="/images/Azure-App-Redirect-URI.png" data-sub-html="<h2>Preview</h2><p>Create-azure-redirect-uri</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/Azure-App-Redirect-URI.png"
+            data-srcset="/images/Azure-App-Redirect-URI.png, /images/Azure-App-Redirect-URI.png 1.5x, /images/Azure-App-Redirect-URI.png 2x"
+            data-sizes="auto"
+            alt="/images/Azure-App-Redirect-URI.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<h2 id="test-the-oauth-flow">Test the OAuth flow</h2>
+<p><figure><a class="lightgallery" href="/images/azure-web-app-loginscreen.png" title="login" data-thumbnail="/images/azure-web-app-loginscreen.png" data-sub-html="<h2>Preview</h2><p>login</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/azure-web-app-loginscreen.png"
+            data-srcset="/images/azure-web-app-loginscreen.png, /images/azure-web-app-loginscreen.png 1.5x, /images/azure-web-app-loginscreen.png 2x"
+            data-sizes="auto"
+            alt="/images/azure-web-app-loginscreen.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>Link it redirects you:</p>
+<pre tabindex="0"><code>https://login.microsoftonline.com/YOUR-TENANT-ID/oauth2/v2.0/authorize?
+    client_id=be4099ac-8a21-4cb1-941e-dbd62563b379&amp;
+    response_type=code&amp;
+    scope=User.Read+offline_access+openid+profile&amp;
+    state=92ec2536-8bb8-4c68-9c52-81fc7718c26b&amp;
+    code_challenge=QW-jO9BfBjCilaVtntzgptICnjrXnY4fnThJEfWEcMo&amp;
+    code_challenge_method=S256&amp;
+    nonce=e2671ebbd5e72c8c36ee98b842db7ee39dd1bbb2321b2797b80a2504872e9a09&amp;
+    client_info=1&amp;
+    sso_reload=true
+</code></pre><p><figure><a class="lightgallery" href="/images/oauth-example-login-screen.png" title="ms login" data-thumbnail="/images/oauth-example-login-screen.png" data-sub-html="<h2>Preview</h2><p>ms login</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/oauth-example-login-screen.png"
+            data-srcset="/images/oauth-example-login-screen.png, /images/oauth-example-login-screen.png 1.5x, /images/oauth-example-login-screen.png 2x"
+            data-sizes="auto"
+            alt="/images/oauth-example-login-screen.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<p>This time it doesn&rsquo;t aks for consent again, because we did already consent for the same app in the last tutorial.</p>
+<p><figure><a class="lightgallery" href="/images/welcome-callback-page.png" title="welcome-callback" data-thumbnail="/images/welcome-callback-page.png" data-sub-html="<h2>Preview</h2><p>welcome-callback</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/welcome-callback-page.png"
+            data-srcset="/images/welcome-callback-page.png, /images/welcome-callback-page.png 1.5x, /images/welcome-callback-page.png 2x"
+            data-sizes="auto"
+            alt="/images/welcome-callback-page.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-09-29</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/oauth/">OAuth</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2025-09-27-oauth20-1/" class="prev" rel="prev" title="OAuth 2.0 - Localhost App Auth Code Flow with Entra ID"><i class="fas fa-angle-left fa-fw"></i>OAuth 2.0 - Localhost App Auth Code Flow with Entra ID</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.149.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

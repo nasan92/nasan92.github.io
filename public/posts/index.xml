@@ -3,12 +3,47 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 27 Sep 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 29 Sep 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID</title>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-2/</link>
+    <pubDate>Mon, 29 Sep 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-2/</guid>
+    <description><![CDATA[<p>In addition to the first showcase where we simply used a localhost Web App as a &ldquo;server side app&rdquo; as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real &ldquo;server side app&rdquo; where no user could have access to secrets.</p>
+<p>The following steps are necessary:</p>
+<ul>
+<li>create azure container registry</li>
+<li>create dockerfile and publish to registry</li>
+<li>create azure web app with this container</li>
+<li>add environment variables (tenant, client id, client secret)</li>
+<li>add new redirect uri to app registration</li>
+<li>change redirect uri in app code itself!</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Microsoft Azure Tenant with active Subscription</li>
+<li>Docker installed</li>
+<li>Azure CLI installed</li>
+<li>UV installed: <a href="https://docs.astral.sh/uv/getting-started/installation/" target="_blank" rel="noopener noreffer">UV Installation</a></li>
+</ul>
+<h2 id="create-azure-container-registry">Create Azure Container Registry</h2>
+<p><a href="https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli" target="_blank" rel="noopener noreffer">Create an Azure container registry</a> where you can store your docker images:</p>]]></description>
+</item><item>
+    <title>OAuth 2.0 - Localhost App Auth Code Flow with Entra ID</title>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-1/</link>
+    <pubDate>Sun, 28 Sep 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-1/</guid>
+    <description><![CDATA[<p>In here a showcase how to create a python Web App which allows to authenticate using Microsoft Entra ID and to authorize access to Microsoft Graph API using the Authorization Code Flow as &ldquo;confidential client&rdquo; using a client secret.</p>
+<h2 id="server-side-app---authorization-code-flow">Server Side App - Authorization Code Flow</h2>
+<p>In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.</p>
+<p>Here a showcase where the &ldquo;server side app&rdquo; (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id + access a Microsoft Graph API.</p>]]></description>
+</item><item>
     <title>OAuth 2.0</title>
-    <link>http://localhost:1313/posts/2025-09-27-oauth2/</link>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</link>
     <pubDate>Sat, 27 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-09-27-oauth2/</guid>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</guid>
     <description><![CDATA[<p>Here some public notes from my side on OAuth 2.0. Some good resources:</p>
 <ul>
 <li><a href="https://www.udemy.com/course/oauth-2-simplified/" target="_blank" rel="noopener noreffer">OAuth 2.0 Udemy course</a></li>
@@ -130,32 +165,5 @@ The purpose of OpenTelemetry is to collect, process and export signals. The sign
     </a><figcaption class="image-caption">Azure Kubernetes Mind Map showcasing core concepts</figcaption>
     </figure><br>
 <em>Figure 1: Azure Kubernetes Mind Map visualizing key concepts</em></p>]]></description>
-</item><item>
-    <title>Azure API Management - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</link>
-    <pubDate>Thu, 19 Dec 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-12-19-azure-api-management-mind-map/</guid>
-    <description><![CDATA[<p>As part of my recent deep dive into <strong>Azure API Management</strong>, I’ve created a  <strong>mindmap</strong> that outlines and connects some of its <strong>core concepts</strong>. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure API Management and understand how its key components interrelate.</p>
-<h2 id="azure-api-management-mind-map">Azure API Management Mind Map</h2>
-<p><figure><a class="lightgallery" href="/images/Azure-API-Management-Mind-Map.svg" title="Azure API Management MindMap" data-thumbnail="/images/Azure-API-Management-Mind-Map.svg" data-sub-html="<h2>Azure API Management Mind Map showcasing key concepts</h2><p>Azure API Management MindMap</p>]]></description>
-</item><item>
-    <title>Azure Databricks - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</link>
-    <pubDate>Tue, 22 Oct 2024 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-10-22-azure-databricks-mindmap/</guid>
-    <description><![CDATA[<p>As part of my recent deep dive into <strong>Azure Databricks</strong>, I’ve created a  <strong>mindmap</strong> that outlines and connects some of its <strong>core concepts</strong>. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Databricks and understand how its key components interrelate.</p>
-<p>Explore essential areas like:</p>
-<ul>
-<li><strong>📊 Data Management 🗄️</strong>: Centralized governance, cataloging, and access control.</li>
-<li><strong>🛠️ Data Engineering 📊</strong>: Tools for building data pipelines, notebooks, and version control.</li>
-<li><strong>🏢 Data Warehousing 📊</strong>: Efficient data storage, querying, and visualization for business insights.</li>
-<li><strong>⚙️ Computation Management 🖥️</strong>: Managing clusters, workflows, and computation resources.</li>
-<li><strong>🤖 AI and Machine Learning 🧠</strong>: Machine learning runtimes, experiments, and model deployment.</li>
-<li><strong>🔌 Interfaces</strong>: Accessing Databricks through UI, APIs, and CLI.</li>
-</ul>
-<h2 id="azure-databricks-mind-map">Azure Databricks Mind Map</h2>
-<p><figure><a class="lightgallery" href="/images/Azure-Databricks-MindMap.svg" title="Azure Databricks MindMap" data-thumbnail="/images/Azure-Databricks-MindMap.svg" data-sub-html="<h2>Azure Databricks Mind Map showcasing key concepts</h2><p>Azure Databricks MindMap</p>]]></description>
 </item></channel>
 </rss>

@@ -6,13 +6,27 @@
     <description>Recent content in OAuth on NASAN</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Sep 2025 05:10:21 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 29 Sep 2025 05:10:21 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/oauth/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID</title>
+      <link>http://localhost:1313/posts/2025-09-27-oauth20-2/</link>
+      <pubDate>Mon, 29 Sep 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-09-27-oauth20-2/</guid>
+      <description>&lt;p&gt;In addition to the first showcase where we simply used a localhost Web App as a &amp;ldquo;server side app&amp;rdquo; as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real &amp;ldquo;server side app&amp;rdquo; where no user could have access to secrets.&lt;/p&gt;&#xA;&lt;p&gt;The following steps are necessary:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;create azure container registry&lt;/li&gt;&#xA;&lt;li&gt;create dockerfile and publish to registry&lt;/li&gt;&#xA;&lt;li&gt;create azure web app with this container&lt;/li&gt;&#xA;&lt;li&gt;add environment variables (tenant, client id, client secret)&lt;/li&gt;&#xA;&lt;li&gt;add new redirect uri to app registration&lt;/li&gt;&#xA;&lt;li&gt;change redirect uri in app code itself!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Microsoft Azure Tenant with active Subscription&lt;/li&gt;&#xA;&lt;li&gt;Docker installed&lt;/li&gt;&#xA;&lt;li&gt;Azure CLI installed&lt;/li&gt;&#xA;&lt;li&gt;UV installed: &lt;a href=&#34;https://docs.astral.sh/uv/getting-started/installation/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;UV Installation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;create-azure-container-registry&#34;&gt;Create Azure Container Registry&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Create an Azure container registry&lt;/a&gt; where you can store your docker images:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OAuth 2.0 - Localhost App Auth Code Flow with Entra ID</title>
+      <link>http://localhost:1313/posts/2025-09-27-oauth20-1/</link>
+      <pubDate>Sun, 28 Sep 2025 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2025-09-27-oauth20-1/</guid>
+      <description>&lt;p&gt;In here a showcase how to create a python Web App which allows to authenticate using Microsoft Entra ID and to authorize access to Microsoft Graph API using the Authorization Code Flow as &amp;ldquo;confidential client&amp;rdquo; using a client secret.&lt;/p&gt;&#xA;&lt;h2 id=&#34;server-side-app---authorization-code-flow&#34;&gt;Server Side App - Authorization Code Flow&lt;/h2&gt;&#xA;&lt;p&gt;In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.&lt;/p&gt;&#xA;&lt;p&gt;Here a showcase where the &amp;ldquo;server side app&amp;rdquo; (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id + access a Microsoft Graph API.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>OAuth 2.0</title>
-      <link>http://localhost:1313/posts/2025-09-27-oauth2/</link>
+      <link>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</link>
       <pubDate>Sat, 27 Sep 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2025-09-27-oauth2/</guid>
+      <guid>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</guid>
       <description>&lt;p&gt;Here some public notes from my side on OAuth 2.0. Some good resources:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.udemy.com/course/oauth-2-simplified/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;OAuth 2.0 Udemy course&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity-platform/authentication-flows-app-scenarios#scenarios-and-supported-authentication-flows&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Nice Overview which scenarios support which Authentication Flow&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;mindmap-oauth&#34;&gt;MindMap OAuth&lt;/h2&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/OAuth2.svg&#34; title=&#34;AUTH 2.0  Mind Map&#34; data-thumbnail=&#34;/images/OAuth2.svg&#34; data-sub-html=&#34;&lt;h2&gt;OAUTH 2.0 Mind Map illustrates basic concepts&lt;/h2&gt;&lt;p&gt;AUTH 2.0  Mind Map&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/OAuth2.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/OAuth2.svg, http://localhost:1313/images/OAuth2.svg 1.5x, http://localhost:1313/images/OAuth2.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/OAuth2.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;OAUTH 2.0 Mind Map illustrates basic concepts&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;br&gt;&#xA;&lt;em&gt;Figure 1: OAUTH 2.0  Mind Map visualizing basic concepts&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
