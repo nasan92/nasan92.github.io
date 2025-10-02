@@ -98,6 +98,57 @@
         alt="/images/nasan-avatar.jpeg"
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2021-08-17-useful-chocolatey-commands/">useful chocolatey commands </a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-17">2021-08-17</time></span></div><div class="content"><p>Useful Chocolatey commands</p>
+<h1 id="useful-chocolatey-commands">Useful Chocolatey commands</h1>
+<p>search a package:
+<code>choco search appname</code></p>
+<p>Install a package
+<code>choco install appname</code></p>
+<p>list all installed packages
+<code>choco list -localonly</code></p>
+<p>list specific package
+<code>choco list appname </code></p>
+<p>upgrade specific package:
+<code>choco upgrade appname</code></p>
+<p>upgrade all packages
+<code>choco upgrade all</code></p></div><div class="post-footer">
+        <a href="/posts/2021-08-17-useful-chocolatey-commands/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/chocolatey/">Chocolatey</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2021-05-25-exchangeonline-mailadressen/">ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-25">2021-05-25</time></span></div><div class="content"><p>ExchangeOnline Mailadressen anzeigen, hinzufügen, entfernen'</p>
+<h1 id="exchange-online-mailadressen-anzeigen-hinzufügen-entfernen">Exchange Online: Mailadressen anzeigen, hinzufügen, entfernen</h1>
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+<p>Das ExchangeOnlineManagment Module muss installiert, importiert sein und man muss sich mit der entsprechenden Exchange Online Umgebung verbinden:</p>
+<p>ExchangeOnlineManagement Module in Powershell installieren:
+<code>Install-Module -Name ExchangeOnlineManagement</code></p>
+<p>Das Module importieren:
+<code>Import-Module ExchangeOnlineManagement</code></p>
+<p>Mit der Exchange Online Environment verbinden (run this command as admin, then login)
+<code>Connect-ExchangeOnline -UserPrincipalName admin@customerdomain.onmicrosoft.com</code></p>
+<p>Für die Befehle im lokalen AD, muss das ActiveDirectory Powershell Modul geladen sein: <a href="https://theitbros.com/install-and-import-powershell-active-directory-module/" target="_blank" rel="noopener noreffer">https://theitbros.com/install-and-import-powershell-active-directory-module/</a></p></div><div class="post-footer">
+        <a href="/posts/2021-05-25-exchangeonline-mailadressen/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/exchangeonline/">ExchangeOnline</a>,&nbsp;<a href="/tags/mailadressen/">Mailadressen</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2021-05-12-show-last-bootup-time/">How to show last bootuptime of Computers with Powershell</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-12">2021-05-12</time></span></div><div class="content"><h2 id="use-get-ciminstance-with-the-classname-win32_operatingsystem">Use Get-CimInstance with the ClassName win32_operatingsystem</h2>
+<p>You can query the ClassName win32_operatingsystem and select from there the computername <strong>csname</strong> and the last bootup time <strong>lastbootuptime</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Get-CimInstance</span> <span class="n">-ComputerName</span> <span class="s1">&#39;DC01&#39;</span> <span class="n">-ClassName</span> <span class="n">win32_operatingsystem</span> <span class="p">|</span> <span class="nb">select </span><span class="n">csname</span><span class="p">,</span> <span class="n">lastbootuptime</span>
+</span></span></code></pre></div><h2 id="show-last-bootuptime-for-multiple-computers">Show last bootuptime for multiple computers</h2>
+<p>If you want to do that for multiple computers you can for example do it wit a foreach loop:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># First query the computer from which you want to have this information:</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$computer</span> <span class="p">=</span> <span class="nb">Get-ADComputer</span> <span class="n">-Filter</span> <span class="p">*</span> <span class="p">|</span> <span class="nb">where </span><span class="n">Name</span> <span class="o">-Match</span> <span class="n">dc</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Now get the lastbootuptime for every computer in the computer array:</span>
+</span></span><span class="line"><span class="cl"><span class="k">foreach</span><span class="p">(</span><span class="nv">$c</span> <span class="k">in</span> <span class="nv">$computer</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$computername</span> <span class="p">=</span> <span class="nv">$c</span><span class="p">.</span><span class="py">DNSHostname</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Get-CimInstance</span> <span class="n">-ComputerName</span> <span class="nv">$computername</span> <span class="n">-ClassName</span> <span class="n">win32_operatingsystem</span> <span class="p">|</span> <span class="nb">select </span><span class="n">csname</span><span class="p">,</span> <span class="n">lastbootuptime</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="which-other-information-can-you-get-from-this-class">Which other information can you get from this class?</h2>
+<p>If you&rsquo;re curious what other information you can get from this class you can simply run a Get-Member which will list you all properties and methods:</p></div><div class="post-footer">
+        <a href="/posts/2021-05-12-show-last-bootup-time/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-05-07-search-gpo/">Search a specific entry over all GPO</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-07">2021-05-07</time></span></div><div class="content"><p>A way to search a specific setting over all GPOs</p>
 <h1 id="generate-a-gpo-report-over-your-domain">Generate a GPO Report over your Domain</h1>

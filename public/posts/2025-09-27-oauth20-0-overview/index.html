@@ -9,7 +9,7 @@
   <meta property="og:site_name" content="NASAN">
   <meta property="og:title" content="OAuth 2.0">
   <meta property="og:description" content="Here some public notes from my side on OAuth 2.0. Some good resources:
-OAuth 2.0 Udemy course Nice Overview which scenarios support which Authentication Flow MindMap OAuth OAUTH 2.0 Mind Map illustrates basic concepts Figure 1: OAUTH 2.0 Mind Map visualizing basic concepts">
+OAuth 2.0 Udemy course https://oauth.net/2/ https://oauth.com https://oauth.net https://oauth2simplified.com OAuth 2.0 Framework - RFC 6749 Nice Overview which scenarios support which Authentication Flow MindMap OAuth OAUTH 2.0 Mind Map illustrates basic concepts Figure 1: OAUTH 2.0 Mind Map visualizing basic concepts">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -20,12 +20,12 @@ OAuth 2.0 Udemy course Nice Overview which scenarios support which Authenticatio
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="OAuth 2.0">
   <meta name="twitter:description" content="Here some public notes from my side on OAuth 2.0. Some good resources:
-OAuth 2.0 Udemy course Nice Overview which scenarios support which Authentication Flow MindMap OAuth OAUTH 2.0 Mind Map illustrates basic concepts Figure 1: OAUTH 2.0 Mind Map visualizing basic concepts">
+OAuth 2.0 Udemy course https://oauth.net/2/ https://oauth.com https://oauth.net https://oauth2simplified.com OAuth 2.0 Framework - RFC 6749 Nice Overview which scenarios support which Authentication Flow MindMap OAuth OAUTH 2.0 Mind Map illustrates basic concepts Figure 1: OAUTH 2.0 Mind Map visualizing basic concepts">
       <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2025-09-27-oauth20-0-overview/" /><link rel="prev" href="http://localhost:1313/posts/2025-08-30-was-ist-philosophie/" /><link rel="next" href="http://localhost:1313/posts/2025-09-27-oauth20-1/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2025-09-27-oauth20-0-overview/" /><link rel="prev" href="http://localhost:1313/posts/2025-08-30-was-ist-philosophie/" /><link rel="next" href="http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -34,7 +34,7 @@ OAuth 2.0 Udemy course Nice Overview which scenarios support which Authenticatio
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-0-overview\/"
-        },"genre": "posts","keywords": "OAuth","wordcount":  54 ,
+        },"genre": "posts","keywords": "OAuth","wordcount":  107 ,
         "url": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-0-overview\/","datePublished": "2025-09-27T05:10:21+01:00","dateModified": "2025-09-27T05:10:21+01:00","publisher": {
             "@type": "Organization",
             "name": "Nathanael Santschi"},"author": {
@@ -111,7 +111,7 @@ OAuth 2.0 Udemy course Nice Overview which scenarios support which Authenticatio
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oauth/"><i class="far fa-folder fa-fw"></i>OAuth</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-27">2025-09-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;54 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-27">2025-09-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;107 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -121,13 +121,18 @@ OAuth 2.0 Udemy course Nice Overview which scenarios support which Authenticatio
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#mindmap-oauth">MindMap OAuth</a></li>
+    <li><a href="#tutorials">Tutorials</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>Here some public notes from my side on OAuth 2.0. Some good resources:</p>
 <ul>
 <li><a href="https://www.udemy.com/course/oauth-2-simplified/" target="_blank" rel="noopener noreffer">OAuth 2.0 Udemy course</a></li>
+<li><a href="https://oauth.net/2/" target="_blank" rel="noopener noreffer">https://oauth.net/2/</a></li>
+<li><a href="https://oauth.com" target="_blank" rel="noopener noreffer">https://oauth.com</a></li>
+<li><a href="https://oauth.net" target="_blank" rel="noopener noreffer">https://oauth.net</a></li>
+<li><a href="https://oauth2simplified.com" target="_blank" rel="noopener noreffer">https://oauth2simplified.com</a></li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc6749" target="_blank" rel="noopener noreffer">OAuth 2.0 Framework - RFC 6749</a></li>
 <li><a href="https://learn.microsoft.com/en-us/entra/identity-platform/authentication-flows-app-scenarios#scenarios-and-supported-authentication-flows" target="_blank" rel="noopener noreffer">Nice Overview which scenarios support which Authentication Flow</a></li>
-<li></li>
 </ul>
 <h2 id="mindmap-oauth">MindMap OAuth</h2>
 <p><figure><a class="lightgallery" href="/images/OAuth2.svg" title="AUTH 2.0  Mind Map" data-thumbnail="/images/OAuth2.svg" data-sub-html="<h2>OAUTH 2.0 Mind Map illustrates basic concepts</h2><p>AUTH 2.0  Mind Map</p>">
@@ -144,6 +149,12 @@ OAuth 2.0 Udemy course Nice Overview which scenarios support which Authenticatio
 <p>Download the mind map in multiple formats:<br>
 <a href="/images/OAuth2.png" title="Preview" rel="">MindMap PNG</a><br>
 <a href="/images/OAuth2.svg" title="Preview" rel="">MindMap SVG</a></p>
+<h2 id="tutorials">Tutorials</h2>
+<p>See detailed, step-by-step OAuth 2.0 examples in these follow-up posts:</p>
+<ul>
+<li><a href="/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</a></li>
+<li><a href="/posts/2025-09-27-OAuth20-2-AzureServerSidePythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</a></li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -168,7 +179,7 @@ OAuth 2.0 Udemy course Nice Overview which scenarios support which Authenticatio
     </div>
 
     <div class="post-nav"><a href="/posts/2025-08-30-was-ist-philosophie/" class="prev" rel="prev" title="Was ist Philosophie?"><i class="fas fa-angle-left fa-fw"></i>Was ist Philosophie?</a>
-            <a href="/posts/2025-09-27-oauth20-1/" class="next" rel="next" title="OAuth 2.0 - Localhost App Auth Code Flow with Entra ID">OAuth 2.0 - Localhost App Auth Code Flow with Entra ID<i class="fas fa-angle-right fa-fw"></i></a></div>
+            <a href="/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/" class="next" rel="next" title="OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID">OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">

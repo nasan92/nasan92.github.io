@@ -5,12 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>OAuth 2.0 - Localhost App Auth Code Flow with Entra ID - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-27-oauth20-1/">
+        <title>OAuth 2.0 - Localhost Python WebApp Auth Code Flow with Entra ID - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-27-oauth20-1/">
   <meta property="og:site_name" content="NASAN">
-  <meta property="og:title" content="OAuth 2.0 - Localhost App Auth Code Flow with Entra ID">
-  <meta property="og:description" content="In here a showcase how to create a python Web App which allows to authenticate using Microsoft Entra ID and to authorize access to Microsoft Graph API using the Authorization Code Flow as “confidential client” using a client secret.
-Server Side App - Authorization Code Flow In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.
-Here a showcase where the “server side app” (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id &#43; access a Microsoft Graph API.">
+  <meta property="og:title" content="OAuth 2.0 - Localhost Python WebApp Auth Code Flow with Entra ID">
+  <meta property="og:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development, in second part we will deploy it to Azure) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
+The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -19,24 +18,23 @@ Here a showcase where the “server side app” (Python Flask App) runs locally 
     <meta property="article:tag" content="OAuth">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="OAuth 2.0 - Localhost App Auth Code Flow with Entra ID">
-  <meta name="twitter:description" content="In here a showcase how to create a python Web App which allows to authenticate using Microsoft Entra ID and to authorize access to Microsoft Graph API using the Authorization Code Flow as “confidential client” using a client secret.
-Server Side App - Authorization Code Flow In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.
-Here a showcase where the “server side app” (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id &#43; access a Microsoft Graph API.">
+  <meta name="twitter:title" content="OAuth 2.0 - Localhost Python WebApp Auth Code Flow with Entra ID">
+  <meta name="twitter:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development, in second part we will deploy it to Azure) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
+The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.">
       <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2025-09-27-oauth20-1/" /><link rel="prev" href="http://localhost:1313/posts/2025-09-27-oauth20-0-overview/" /><link rel="next" href="http://localhost:1313/posts/2025-09-27-oauth20-2/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2025-09-27-oauth20-1/" /><link rel="prev" href="http://localhost:1313/posts/2025-09-27-oauth20-0-overview/" /><link rel="next" href="http://localhost:1313/posts/2025-09-30-oauth20-3/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "OAuth 2.0 - Localhost App Auth Code Flow with Entra ID",
+        "headline": "OAuth 2.0 - Localhost Python WebApp Auth Code Flow with Entra ID",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-1\/"
-        },"genre": "posts","keywords": "OAuth","wordcount":  668 ,
+        },"genre": "posts","keywords": "OAuth","wordcount":  769 ,
         "url": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-1\/","datePublished": "2025-09-28T05:10:21+01:00","dateModified": "2025-09-28T05:10:21+01:00","publisher": {
             "@type": "Organization",
             "name": "Nathanael Santschi"},"author": {
@@ -111,9 +109,9 @@ Here a showcase where the “server side app” (Python Flask App) runs locally 
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Localhost App Auth Code Flow with Entra ID</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Localhost Python WebApp Auth Code Flow with Entra ID</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oauth/"><i class="far fa-folder fa-fw"></i>OAuth</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-28">2025-09-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;668 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-28">2025-09-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;769 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -122,17 +120,43 @@ Here a showcase where the “server side app” (Python Flask App) runs locally 
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#server-side-app---authorization-code-flow">Server Side App - Authorization Code Flow</a></li>
+    <li><a href="#introduction---server-side-app---auth-code-flow">Introduction - &ldquo;Server Side App&rdquo; - Auth Code Flow</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#python-flask-app">Python Flask App</a></li>
     <li><a href="#create-new-app-registration">Create new App Registration</a></li>
     <li><a href="#login">Login</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>In here a showcase how to create a python Web App which allows to authenticate using Microsoft Entra ID and to authorize access to Microsoft Graph API using the Authorization Code Flow as &ldquo;confidential client&rdquo; using a client secret.</p>
-<h2 id="server-side-app---authorization-code-flow">Server Side App - Authorization Code Flow</h2>
-<p>In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.</p>
-<p>Here a showcase where the &ldquo;server side app&rdquo; (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id + access a Microsoft Graph API.</p>
+            </div><div class="content" id="content"><h2 id="introduction---server-side-app---auth-code-flow">Introduction - &ldquo;Server Side App&rdquo; - Auth Code Flow</h2>
+<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development, in second part we will deploy it to Azure) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
+<p>The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.</p>
+<p>The following image illustrates the Authorization Code Flow with the corresponding OAuth Roles based on <a href="https://datatracker.ietf.org/doc/html/rfc6749#section-4.1" target="_blank" rel="noopener noreffer">section 4.1 of the OAuth 2.0 specification: RFC6749</a>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/oauth-auth-code-grant-entraid.png"
+        data-srcset="/images/oauth-auth-code-grant-entraid.png, /images/oauth-auth-code-grant-entraid.png 1.5x, /images/oauth-auth-code-grant-entraid.png 2x"
+        data-sizes="auto"
+        alt="/images/oauth-auth-code-grant-entraid.png"
+        title="Authorization Code Flow" /></p>
+<blockquote>
+<p><strong>Note:</strong> The lines illustrating steps (A), (B), and (C) are broken into
+two parts as they pass through the user-agent.</p></blockquote>
+<p>Here is another high-level view of the authentication flow:</p>
+<ul>
+<li>Although this image shows a native app, in this guide we are only using a Python web app not a native Desktop app.</li>
+<li>The authorization and token endpoints are provided by Microsoft Entra ID</li>
+<li>The web API being accessed is Microsoft Graph API</li>
+</ul>
+<p><a href="https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg" target="_blank" rel="noopener noreffer">source: Microsoft Learn</a>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg"
+        data-srcset="https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg, https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg 1.5x, https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg 2x"
+        data-sizes="auto"
+        alt="https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg"
+        title="OAuth2 Flow" /></p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>Microsoft Azure Tenant</li>
@@ -140,14 +164,14 @@ Here a showcase where the “server side app” (Python Flask App) runs locally 
 </ul>
 <h2 id="python-flask-app">Python Flask App</h2>
 <p>You can find tutorials for this scenario using the MSAL library here: <a href="https://learn.microsoft.com/en-us/entra/identity-platform/tutorial-web-app-python-flask-sign-in-out?tabs=workforce-tenant" target="_blank" rel="noopener noreffer">Microsoft: Python Flask MSAL Tutorial</a></p>
-<p>Open a console window, and change to the directory to your Flask web app folder using the command</p>
+<p>Open a console window, createn and avigate to your Flask web app folder:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> Flask_App
-</span></span></code></pre></div><p>create a new uv project and install necessary dependencies:</p>
+</span></span></code></pre></div><p>Create a new UV project and install the necessary dependencies:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uv init
 </span></span><span class="line"><span class="cl">uv add flask msal python-dotenv
 </span></span><span class="line"><span class="cl"><span class="c1"># activate the virtual environment with those dependencies installed:</span>
 </span></span><span class="line"><span class="cl"><span class="nb">source</span> .venv/bin/activate
-</span></span></code></pre></div><p>then add the following code:</p>
+</span></span></code></pre></div><p>Then, add the following code into <strong>main.py</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
@@ -173,7 +197,7 @@ Here a showcase where the “server side app” (Python Flask App) runs locally 
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_id&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_ID&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;authority&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;https://login.microsoftonline.com/</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;TENANT_ID&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;scope&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;User.Read&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;redirect_uri&#34;</span><span class="p">:</span> <span class="s2">&#34;http://localhost:5001/callback&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;redirect_uri&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;REDIRECT_URI&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_secret&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_SECRET&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
@@ -245,31 +269,31 @@ Here a showcase where the “server side app” (Python Flask App) runs locally 
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&#34;0.0.0.0&#34;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5001</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span></code></pre></div><p>start the app (login link won&rsquo;t work for now):</p>
+</span></span></code></pre></div><p>Start the app (the login link will not work yet):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flask --app main.py run --host<span class="o">=</span>0.0.0.0 --port<span class="o">=</span><span class="m">5001</span>
-</span></span></code></pre></div><p>Okay we basically need now to create a registration for our App to make our Login and access of an API working:</p>
+</span></span></code></pre></div><p>Now, we need to register our app in Entra ID to enable login and API access.</p>
 <h2 id="create-new-app-registration">Create new App Registration</h2>
 <p>Go to Entra ID and create a new App Registration:</p>
 <ul>
-<li><strong>Name:</strong> choose a name which enables you to identify your app</li>
-<li><strong>Redirect URI:</strong> authentication response will be redirected to this URI</li>
+<li><strong>Name:</strong> Choose a name that helps you identify your app.</li>
+<li><strong>Redirect URI:</strong> The authentication response will be redirected to this URI.</li>
 </ul>
-<p><figure><a class="lightgallery" href="/images/register-applicaion-myconfidentialserversideapp.png" title="register application" data-thumbnail="/images/register-applicaion-myconfidentialserversideapp.png" data-sub-html="<h2>Preview</h2><p>register application</p>">
+<p><figure><a class="lightgallery" href="/images/register-confidential-serversideapp.png" title="register application" data-thumbnail="/images/register-confidential-serversideapp.png" data-sub-html="<h2>Preview</h2><p>register application</p>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
-            data-src="/images/register-applicaion-myconfidentialserversideapp.png"
-            data-srcset="/images/register-applicaion-myconfidentialserversideapp.png, /images/register-applicaion-myconfidentialserversideapp.png 1.5x, /images/register-applicaion-myconfidentialserversideapp.png 2x"
+            data-src="/images/register-confidential-serversideapp.png"
+            data-srcset="/images/register-confidential-serversideapp.png, /images/register-confidential-serversideapp.png 1.5x, /images/register-confidential-serversideapp.png 2x"
             data-sizes="auto"
-            alt="/images/register-applicaion-myconfidentialserversideapp.png" />
+            alt="/images/register-confidential-serversideapp.png" />
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
-<p>after creating the application we need at least do two other things:</p>
+<p>After creating the application, complete the following steps:</p>
 <ul>
 <li>Create a <strong>Client Secret</strong> (We can use one for server side apps)</li>
-<li>Add Micrsoft Graph API User.Read permissions (if not already there)</li>
+<li>Add Micrsoft Graph API <strong>User.Read</strong> permissions (if not already present).</li>
 </ul>
-<p>Copy the secret immediately and save it to a secure location:</p>
+<p>Copy the secret immediately and store it securely.</p>
 <p><figure><a class="lightgallery" href="/images/CreateClientSecret.png" title="create client secret" data-thumbnail="/images/CreateClientSecret.png" data-sub-html="<h2>Preview</h2><p>create client secret</p>">
         <img
             class="lazyload"
@@ -280,7 +304,7 @@ Here a showcase where the “server side app” (Python Flask App) runs locally 
             alt="/images/CreateClientSecret.png" />
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
-<p>Verify that our app has User.Read permissions of the Microsoft Graph API:</p>
+<p>Verify that your app has the User.Read permission for the Microsoft Graph API:</p>
 <p><figure><a class="lightgallery" href="/images/app-registration-api-permission-confidentialserver.png" title="graph api user read" data-thumbnail="/images/app-registration-api-permission-confidentialserver.png" data-sub-html="<h2>Preview</h2><p>graph api user read</p>">
         <img
             class="lazyload"
@@ -291,13 +315,14 @@ Here a showcase where the “server side app” (Python Flask App) runs locally 
             alt="/images/app-registration-api-permission-confidentialserver.png" />
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
-<p>Create a .env file and add in there your client id and your created client secret:</p>
+<p>Create a <strong>.env</strong> file and add in there your Azure tenant id, client id, your created client secret and the redirect uri:</p>
 <pre tabindex="0"><code>TENANT_ID=******************************************
 CLIENT_ID=be4099ac-8a21-****************************
 CLIENT_SECRET=LFp8Q~********************************
+REDIRECT_URI=http://localhost:5001/callback
 </code></pre><h2 id="login">Login</h2>
-<p>Okay now restart your flask app and try to click on the login button this time.
-It should redirect you to a link which is built out of the following:</p>
+<p>Restart your Flask app and try clicking the login button.
+You should be redirected to a URL similar to the following:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">https://login.microsoftonline.com/YOUR-TENANT-ID/oauth2/v2.0/authorize?
 </span></span><span class="line"><span class="cl">  <span class="nv">client_id</span><span class="o">=</span>YOUR-CLIENT-ID<span class="p">&amp;</span>
 </span></span><span class="line"><span class="cl">  <span class="nv">response_type</span><span class="o">=</span>code<span class="p">&amp;</span>
@@ -308,9 +333,10 @@ It should redirect you to a link which is built out of the following:</p>
 </span></span><span class="line"><span class="cl">  <span class="nv">code_challenge_method</span><span class="o">=</span>S256<span class="p">&amp;</span>
 </span></span><span class="line"><span class="cl">  <span class="nv">nonce</span><span class="o">=</span>40c7a26b0d3c1baac6473580566a7b390459646ccaa8b8be249aa160eee32aaa<span class="p">&amp;</span>
 </span></span><span class="line"><span class="cl">  <span class="nv">client_info</span><span class="o">=</span><span class="m">1</span>
-</span></span></code></pre></div><p>As you see in this created login link, we have a code challenge here also, which means the PKCE extension is used here as well.
-Main purpose for PKCE extension was mobile or native apps where you can&rsquo;t store a secret and still need to make sure somehow that you are the application which you are telling to be.</p>
-<p>and there you need to consent the permissions requested:</p>
+</span></span></code></pre></div><p>As you can see, the login link includes a code challenge, indicating that the PKCE extension is also being used. The main purpose of the PKCE extension is for mobile or native apps where you cannot store a secret but still need to prove the identity of your application.</p>
+<blockquote>
+<p><strong>Note:</strong> With OAuth 2.1, it is recommended to use PKCE (Proof Key for Code Exchange) for all Authorization Code flows, including confidential clients. PKCE enhances security by mitigating authorization code interception attacks, even when a client secret is used.</p></blockquote>
+<p>You will need to consent to the requested permissions:</p>
 <p><figure><a class="lightgallery" href="/images/confidential-client-permission-requested.png" title="permission-requested" data-thumbnail="/images/confidential-client-permission-requested.png" data-sub-html="<h2>Preview</h2><p>permission-requested</p>">
         <img
             class="lazyload"
@@ -321,7 +347,7 @@ Main purpose for PKCE extension was mobile or native apps where you can&rsquo;t 
             alt="/images/confidential-client-permission-requested.png" />
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
-<p>After consent you come back to our flask app and you can see the welcome page which informations about you. This information was called using the Graph API:</p>
+<p>After consenting, you will be redirected back to the Flask app, where you will see a welcome page with your Users Name and email. This information is retrieved using the Graph API:</p>
 <p><figure><a class="lightgallery" href="/images/welcome-callback-page.png" title="welcome-callback" data-thumbnail="/images/welcome-callback-page.png" data-sub-html="<h2>Preview</h2><p>welcome-callback</p>">
         <img
             class="lazyload"
@@ -356,7 +382,7 @@ Main purpose for PKCE extension was mobile or native apps where you can&rsquo;t 
     </div>
 
     <div class="post-nav"><a href="/posts/2025-09-27-oauth20-0-overview/" class="prev" rel="prev" title="OAuth 2.0"><i class="fas fa-angle-left fa-fw"></i>OAuth 2.0</a>
-            <a href="/posts/2025-09-27-oauth20-2/" class="next" rel="next" title="OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID">OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID<i class="fas fa-angle-right fa-fw"></i></a></div>
+            <a href="/posts/2025-09-30-oauth20-3/" class="next" rel="next" title="OAuth 2.0 - Expose and Access a Web API - Auth Code Flow - Entra ID">OAuth 2.0 - Expose and Access a Web API - Auth Code Flow - Entra ID<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">

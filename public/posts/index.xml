@@ -3,21 +3,36 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 29 Sep 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID</title>
-    <link>http://localhost:1313/posts/2025-09-27-oauth20-2/</link>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>OAuth 2.0 - Expose and Access a Web API - Auth Code Flow - Entra ID</title>
+    <link>http://localhost:1313/posts/2025-09-30-oauth20-3/</link>
+    <pubDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-09-30-oauth20-3/</guid>
+    <description><![CDATA[<p>In the previous tutorials:</p>
+<ul>
+<li><a href="/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</a></li>
+<li><a href="/posts/2025-09-27-OAuth20-2-AzureServerSidePythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</a><br>
+We learned how to deploy a Python Web App to Azure, register the app to Entra ID and using the Auhtorization Code Flow to access the Microsoft Graph API.
+In this tutorial we want to take a look on how to build our own Web API which then can be accessed from our previously created Python Web App.</li>
+</ul>
+<p>What we need:</p>]]></description>
+</item><item>
+    <title>OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</title>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-2-azureserversidepythonwebapp-authcodeflow/</link>
     <pubDate>Mon, 29 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-09-27-oauth20-2/</guid>
-    <description><![CDATA[<p>In addition to the first showcase where we simply used a localhost Web App as a &ldquo;server side app&rdquo; as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real &ldquo;server side app&rdquo; where no user could have access to secrets.</p>
-<p>The following steps are necessary:</p>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-2-azureserversidepythonwebapp-authcodeflow/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>In the previous tutorial <a href="/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow" rel="">Localhost Python WebApp Auth Code Flow with Entra ID</a>  , we demonstrated using a localhost web app as a &ldquo;server-side app&rdquo; (confidential client) with the Authorization Code Flow. In this tutorial, we will deploy the app to Azure, making it a true &ldquo;server-side app&rdquo; where users cannot access secrets.</p>
+<p>The following steps are required to deploy the app to Azure:</p>
 <ul>
-<li>create azure container registry</li>
-<li>create dockerfile and publish to registry</li>
-<li>create azure web app with this container</li>
-<li>add environment variables (tenant, client id, client secret)</li>
-<li>add new redirect uri to app registration</li>
-<li>change redirect uri in app code itself!</li>
+<li>Create an Azure Container Registry</li>
+<li>Create a Dockerfile and publish the image to the registry</li>
+<li>Create an Azure Web App using this container</li>
+<li>Add environment variables (tenant, client ID, client secret)</li>
+<li>Add a new redirect URI to the app registration</li>
+<li>Update the redirect URI in the app code</li>
 </ul>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
@@ -29,15 +44,14 @@
 <h2 id="create-azure-container-registry">Create Azure Container Registry</h2>
 <p><a href="https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli" target="_blank" rel="noopener noreffer">Create an Azure container registry</a> where you can store your docker images:</p>]]></description>
 </item><item>
-    <title>OAuth 2.0 - Localhost App Auth Code Flow with Entra ID</title>
-    <link>http://localhost:1313/posts/2025-09-27-oauth20-1/</link>
+    <title>OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</title>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</link>
     <pubDate>Sun, 28 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-09-27-oauth20-1/</guid>
-    <description><![CDATA[<p>In here a showcase how to create a python Web App which allows to authenticate using Microsoft Entra ID and to authorize access to Microsoft Graph API using the Authorization Code Flow as &ldquo;confidential client&rdquo; using a client secret.</p>
-<h2 id="server-side-app---authorization-code-flow">Server Side App - Authorization Code Flow</h2>
-<p>In this scenario the client is confidential because the app runs only on the server. User has no access to the client secret.</p>
-<p>Here a showcase where the &ldquo;server side app&rdquo; (Python Flask App) runs locally and is able to log me in using Microsoft Entra Id + access a Microsoft Graph API.</p>]]></description>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</guid>
+    <description><![CDATA[<h2 id="introduction---server-side-app---auth-code-flow">Introduction - &ldquo;Server Side App&rdquo; - Auth Code Flow</h2>
+<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development, in second part we will deploy it to Azure) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
+<p>The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.</p>]]></description>
 </item><item>
     <title>OAuth 2.0</title>
     <link>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</link>
@@ -47,8 +61,12 @@
     <description><![CDATA[<p>Here some public notes from my side on OAuth 2.0. Some good resources:</p>
 <ul>
 <li><a href="https://www.udemy.com/course/oauth-2-simplified/" target="_blank" rel="noopener noreffer">OAuth 2.0 Udemy course</a></li>
+<li><a href="https://oauth.net/2/" target="_blank" rel="noopener noreffer">https://oauth.net/2/</a></li>
+<li><a href="https://oauth.com" target="_blank" rel="noopener noreffer">https://oauth.com</a></li>
+<li><a href="https://oauth.net" target="_blank" rel="noopener noreffer">https://oauth.net</a></li>
+<li><a href="https://oauth2simplified.com" target="_blank" rel="noopener noreffer">https://oauth2simplified.com</a></li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc6749" target="_blank" rel="noopener noreffer">OAuth 2.0 Framework - RFC 6749</a></li>
 <li><a href="https://learn.microsoft.com/en-us/entra/identity-platform/authentication-flows-app-scenarios#scenarios-and-supported-authentication-flows" target="_blank" rel="noopener noreffer">Nice Overview which scenarios support which Authentication Flow</a></li>
-<li></li>
 </ul>
 <h2 id="mindmap-oauth">MindMap OAuth</h2>
 <p><figure><a class="lightgallery" href="/images/OAuth2.svg" title="AUTH 2.0  Mind Map" data-thumbnail="/images/OAuth2.svg" data-sub-html="<h2>OAUTH 2.0 Mind Map illustrates basic concepts</h2><p>AUTH 2.0  Mind Map</p>">
@@ -152,18 +170,5 @@ The purpose of OpenTelemetry is to collect, process and export signals. The sign
 <a href="/images/mlflow-core-components-mind-map.png" title="Preview" rel="">MindMap PNG</a><br>
 <a href="/images/mlflow-core-components-mind-map.jpg" title="Preview" rel="">MindMap JPG</a><br>
 <a href="/images/mlflow-core-components-mind-map.svg" title="Preview" rel="">MindMap SVG</a></p>]]></description>
-</item><item>
-    <title>Azure Kubernetes - mind map - key concepts</title>
-    <link>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</link>
-    <pubDate>Sat, 11 Jan 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-01-11-azure-kubernetes-mind-map/</guid>
-    <description><![CDATA[<p>As part of my recent studies about <strong>Azure Kubernetes</strong>, I’ve created a  <strong>mindmap</strong> that outlines and connects some of its <strong>core concepts</strong>. This mindmap serves as a visual guide to help you navigate the powerful capabilities of Azure Kubernetes and understand how its key components interrelate.</p>
-<h2 id="azure-kubernetes-mind-map">Azure Kubernetes Mind Map</h2>
-<p><figure><a class="lightgallery" href="/images/azure-kubernetes-mindmap-core-concepts.svg" title="Azure Kubernetes MindMap" data-thumbnail="/images/azure-kubernetes-mindmap-core-concepts.svg" data-sub-html="<h2>Azure Kubernetes Mind Map showcasing core concepts</h2><p>Azure Kubernetes MindMap</p>">
-        
-    </a><figcaption class="image-caption">Azure Kubernetes Mind Map showcasing core concepts</figcaption>
-    </figure><br>
-<em>Figure 1: Azure Kubernetes Mind Map visualizing key concepts</em></p>]]></description>
 </item></channel>
 </rss>

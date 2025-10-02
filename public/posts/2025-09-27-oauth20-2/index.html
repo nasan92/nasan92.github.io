@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-27-oauth20-2/">
+        <title>OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-27-oauth20-2/">
   <meta property="og:site_name" content="NASAN">
-  <meta property="og:title" content="OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID">
-  <meta property="og:description" content="In addition to the first showcase where we simply used a localhost Web App as a “server side app” as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real “server side app” where no user could have access to secrets.
-The following steps are necessary:
-create azure container registry create dockerfile and publish to registry create azure web app with this container add environment variables (tenant, client id, client secret) add new redirect uri to app registration change redirect uri in app code itself! Prerequisites Microsoft Azure Tenant with active Subscription Docker installed Azure CLI installed UV installed: UV Installation Create Azure Container Registry Create an Azure container registry where you can store your docker images:">
+  <meta property="og:title" content="OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID">
+  <meta property="og:description" content="Introduction In the previous tutorial Localhost Python WebApp Auth Code Flow with Entra ID , we demonstrated using a localhost web app as a “server-side app” (confidential client) with the Authorization Code Flow. In this tutorial, we will deploy the app to Azure, making it a true “server-side app” where users cannot access secrets.
+The following steps are required to deploy the app to Azure:
+Create an Azure Container Registry Create a Dockerfile and publish the image to the registry Create an Azure Web App using this container Add environment variables (tenant, client ID, client secret) Add a new redirect URI to the app registration Update the redirect URI in the app code Prerequisites Microsoft Azure Tenant with active Subscription Docker installed Azure CLI installed UV installed: UV Installation Create Azure Container Registry Create an Azure container registry where you can store your docker images:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -19,24 +19,24 @@ create azure container registry create dockerfile and publish to registry create
     <meta property="article:tag" content="OAuth">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID">
-  <meta name="twitter:description" content="In addition to the first showcase where we simply used a localhost Web App as a “server side app” as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real “server side app” where no user could have access to secrets.
-The following steps are necessary:
-create azure container registry create dockerfile and publish to registry create azure web app with this container add environment variables (tenant, client id, client secret) add new redirect uri to app registration change redirect uri in app code itself! Prerequisites Microsoft Azure Tenant with active Subscription Docker installed Azure CLI installed UV installed: UV Installation Create Azure Container Registry Create an Azure container registry where you can store your docker images:">
+  <meta name="twitter:title" content="OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID">
+  <meta name="twitter:description" content="Introduction In the previous tutorial Localhost Python WebApp Auth Code Flow with Entra ID , we demonstrated using a localhost web app as a “server-side app” (confidential client) with the Authorization Code Flow. In this tutorial, we will deploy the app to Azure, making it a true “server-side app” where users cannot access secrets.
+The following steps are required to deploy the app to Azure:
+Create an Azure Container Registry Create a Dockerfile and publish the image to the registry Create an Azure Web App using this container Add environment variables (tenant, client ID, client secret) Add a new redirect URI to the app registration Update the redirect URI in the app code Prerequisites Microsoft Azure Tenant with active Subscription Docker installed Azure CLI installed UV installed: UV Installation Create Azure Container Registry Create an Azure container registry where you can store your docker images:">
       <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2025-09-27-oauth20-2/" /><link rel="prev" href="http://localhost:1313/posts/2025-09-27-oauth20-1/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2025-09-27-oauth20-2/" /><link rel="prev" href="http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/" /><link rel="next" href="http://localhost:1313/posts/2025-09-30-oauth20-3/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID",
+        "headline": "OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-2\/"
-        },"genre": "posts","keywords": "OAuth","wordcount":  744 ,
+        },"genre": "posts","keywords": "OAuth","wordcount":  755 ,
         "url": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-2\/","datePublished": "2025-09-29T05:10:21+01:00","dateModified": "2025-09-29T05:10:21+01:00","publisher": {
             "@type": "Organization",
             "name": "Nathanael Santschi"},"author": {
@@ -111,9 +111,9 @@ create azure container registry create dockerfile and publish to registry create
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Azure Server Side App Auth Code Flow - Entra ID</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oauth/"><i class="far fa-folder fa-fw"></i>OAuth</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-29">2025-09-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;744 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-29">2025-09-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;755 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -122,6 +122,7 @@ create azure container registry create dockerfile and publish to registry create
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
+    <li><a href="#introduction">Introduction</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#create-azure-container-registry">Create Azure Container Registry</a></li>
     <li><a href="#create-a-docker-image-and-publish-it-to-the-registry">Create a Docker Image and publish it to the registry</a>
@@ -138,15 +139,16 @@ create azure container registry create dockerfile and publish to registry create
     <li><a href="#test-the-oauth-flow">Test the OAuth flow</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>In addition to the first showcase where we simply used a localhost Web App as a &ldquo;server side app&rdquo; as confidential client using the Authorization Code Flow, we publish in this tutorial the app to Azure to make it a real &ldquo;server side app&rdquo; where no user could have access to secrets.</p>
-<p>The following steps are necessary:</p>
+            </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>In the previous tutorial <a href="/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow" rel="">Localhost Python WebApp Auth Code Flow with Entra ID</a>  , we demonstrated using a localhost web app as a &ldquo;server-side app&rdquo; (confidential client) with the Authorization Code Flow. In this tutorial, we will deploy the app to Azure, making it a true &ldquo;server-side app&rdquo; where users cannot access secrets.</p>
+<p>The following steps are required to deploy the app to Azure:</p>
 <ul>
-<li>create azure container registry</li>
-<li>create dockerfile and publish to registry</li>
-<li>create azure web app with this container</li>
-<li>add environment variables (tenant, client id, client secret)</li>
-<li>add new redirect uri to app registration</li>
-<li>change redirect uri in app code itself!</li>
+<li>Create an Azure Container Registry</li>
+<li>Create a Dockerfile and publish the image to the registry</li>
+<li>Create an Azure Web App using this container</li>
+<li>Add environment variables (tenant, client ID, client secret)</li>
+<li>Add a new redirect URI to the app registration</li>
+<li>Update the redirect URI in the app code</li>
 </ul>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
@@ -169,12 +171,12 @@ create azure container registry create dockerfile and publish to registry create
     </figure></p>
 <h2 id="create-a-docker-image-and-publish-it-to-the-registry">Create a Docker Image and publish it to the registry</h2>
 <h3 id="requirementstxt">requirements.txt</h3>
-<p>Within your app folder e.g. flask_app create first a requirements.txt which contains all requirements which will be used from the app within the docker image:</p>
+<p>First, in your app folder (e.g., <code>flask_app</code>), create a <code>requirements.txt</code> file listing all the dependencies your app will use in the Docker image:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-requirements.txt" data-lang="requirements.txt"><span class="line"><span class="cl">flask==3.1.2
 </span></span><span class="line"><span class="cl">msal==1.34.0
 </span></span><span class="line"><span class="cl">python-dotenv==1.1.1
 </span></span></code></pre></div><h3 id="dockerfile">Dockerfile</h3>
-<p>Then create a new Dockerfile with the following content:</p>
+<p>Next, create a new <code>Dockerfile</code> with the following content:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Dockerfile" data-lang="Dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.11</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/code</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
@@ -192,7 +194,7 @@ create azure container registry create dockerfile and publish to registry create
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">CMD</span> <span class="p">[</span><span class="s2">&#34;flask&#34;</span><span class="p">,</span> <span class="s2">&#34;--app&#34;</span><span class="p">,</span> <span class="s2">&#34;main.py&#34;</span><span class="p">,</span> <span class="s2">&#34;run&#34;</span><span class="p">,</span> <span class="s2">&#34;--host&#34;</span><span class="p">,</span> <span class="s2">&#34;0.0.0.0&#34;</span><span class="p">,</span> <span class="s2">&#34;--port&#34;</span><span class="p">,</span> <span class="s2">&#34;5001&#34;</span><span class="p">]</span><span class="err">
 </span></span></span></code></pre></div><h3 id="python-source-code">Python Source Code</h3>
-<p>The actual code for the Python Flask sample Web App is largely the same like in the last tutorial:</p>
+<p>The actual code for the Python Flask sample web app is largely the same as in the previous tutorial:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
@@ -291,19 +293,19 @@ create azure container registry create dockerfile and publish to registry create
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&#34;0.0.0.0&#34;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5001</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span></span></code></pre></div><h3 id="build-docker-image">Build Docker Image</h3>
-<p>NOTE: on MacOs its necessary to build the docker image explicitely for &ldquo;linux/amd64&rdquo;:</p>
+<p><strong>Note:</strong> On macOS, it is necessary to build the Docker image explicitly for <code>linux/amd64</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">IMG_NAME</span><span class="o">=</span>flask-app
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> flask_app <span class="o">&amp;&amp;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>docker buildx build --platform linux/amd64 -t <span class="si">${</span><span class="nv">IMG_NAME</span><span class="si">}</span> .
-</span></span></code></pre></div><p>Login to your Azure Container Registry</p>
+</span></span></code></pre></div><p>Log in to your Azure Container Registry:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">ACR_NAME</span><span class="o">=</span>nasatestreg
 </span></span><span class="line"><span class="cl">az login <span class="c1"># First Login with the Azure CLI</span>
 </span></span><span class="line"><span class="cl">az acr login --name <span class="k">$(</span>ACR_NAME<span class="k">)</span> <span class="c1"># Login to you specific Azure Container Registry</span>
-</span></span></code></pre></div><p>Okay and now tag and push your image to your Azure Container Registry:</p>
+</span></span></code></pre></div><p>Now, tag and push your image to your Azure Container Registry:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker tag <span class="si">${</span><span class="nv">IMG_NAME</span><span class="si">}</span> <span class="k">$(</span>ACR_NAME<span class="k">)</span>.azurecr.io/<span class="si">${</span><span class="nv">IMG_NAME</span><span class="si">}</span>:v5
 </span></span><span class="line"><span class="cl">docker push <span class="k">$(</span>ACR_NAME<span class="k">)</span>.azurecr.io/<span class="si">${</span><span class="nv">IMG_NAME</span><span class="si">}</span>:v5
 </span></span></code></pre></div><h2 id="create-an-azure-web-app">Create an Azure Web App</h2>
-<p>Okay and now we need to create an Azure Web App where this image can be used:</p>
+<p>Next, create an Azure Web App:</p>
 <p><figure><a class="lightgallery" href="/images/Azure-create-web-app.png" title="Create-azure-web-app" data-thumbnail="/images/Azure-create-web-app.png" data-sub-html="<h2>Preview</h2><p>Create-azure-web-app</p>">
         <img
             class="lazyload"
@@ -314,7 +316,7 @@ create azure container registry create dockerfile and publish to registry create
             alt="/images/Azure-create-web-app.png" />
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
-<p>And use the Image which we created before:</p>
+<p>Use the container image you created earlier:</p>
 <p><figure><a class="lightgallery" href="/images/Azure-Create-Web-App-container.png" title="Create-azure-web-app-container" data-thumbnail="/images/Azure-Create-Web-App-container.png" data-sub-html="<h2>Preview</h2><p>Create-azure-web-app-container</p>">
         <img
             class="lazyload"
@@ -326,8 +328,7 @@ create azure container registry create dockerfile and publish to registry create
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
 <h2 id="configure-environment-variables">Configure Environment Variables</h2>
-<p>We use environment variables to get client infos like client id and secret.
-Add them with the correct names to your app:</p>
+<p>We use environment variables to provide client information such as client ID, secret, tenant id and redirect URI. Add them with the correct names to your app:</p>
 <p><figure><a class="lightgallery" href="/images/Azure-web-app-environment-variables.png" title="Create-azure-web-app-env" data-thumbnail="/images/Azure-web-app-environment-variables.png" data-sub-html="<h2>Preview</h2><p>Create-azure-web-app-env</p>">
         <img
             class="lazyload"
@@ -339,10 +340,8 @@ Add them with the correct names to your app:</p>
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
 <h2 id="new-redirect-uri-for-your-app-registration">New Redirect URI for your App Registration</h2>
-<p>Until now your App Registration had only a Redirect URI to your localhost address. Because our app now runs on an Azure Web App Service we need to change that:</p>
-<p>find your new URL on your Azure Web App in the Overview Section: Default Domain (For the case of simplicity we use the default domain).
-Copy this domain and switch to your App Registration which we created in the last tutorial.
-In there add replace localhost with your new URI and also add the /callback to it (Used in the Python code)</p>
+<p>Your app registration (created in part 1: <a href="/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow" rel="">Localhost Python WebApp Auth Code Flow with Entra ID</a> ) only had a redirect URI pointing to your localhost address. Since the app now runs on an Azure Web App Service, you need to update this:</p>
+<p>Find your new URL in the Azure Web App&rsquo;s Overview section under Default Domain (for simplicity, we use the default domain). Copy this domain and go to the app registration you created in the previous tutorial. Replace <code>localhost</code> with your new URI and add <code>/callback</code> (as used in the Python code).</p>
 <p><figure><a class="lightgallery" href="/images/Azure-App-Redirect-URI.png" title="Create-azure-redirect-uri" data-thumbnail="/images/Azure-App-Redirect-URI.png" data-sub-html="<h2>Preview</h2><p>Create-azure-redirect-uri</p>">
         <img
             class="lazyload"
@@ -385,7 +384,7 @@ In there add replace localhost with your new URI and also add the /callback to i
             alt="/images/oauth-example-login-screen.png" />
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
-<p>This time it doesn&rsquo;t aks for consent again, because we did already consent for the same app in the last tutorial.</p>
+<p>This time, it does not ask for consent again because you already granted consent for the same app in the previous tutorial.</p>
 <p><figure><a class="lightgallery" href="/images/welcome-callback-page.png" title="welcome-callback" data-thumbnail="/images/welcome-callback-page.png" data-sub-html="<h2>Preview</h2><p>welcome-callback</p>">
         <img
             class="lazyload"
@@ -419,7 +418,8 @@ In there add replace localhost with your new URI and also add the /callback to i
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/2025-09-27-oauth20-1/" class="prev" rel="prev" title="OAuth 2.0 - Localhost App Auth Code Flow with Entra ID"><i class="fas fa-angle-left fa-fw"></i>OAuth 2.0 - Localhost App Auth Code Flow with Entra ID</a></div>
+    <div class="post-nav"><a href="/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/" class="prev" rel="prev" title="OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID"><i class="fas fa-angle-left fa-fw"></i>OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</a>
+            <a href="/posts/2025-09-30-oauth20-3/" class="next" rel="next" title="OAuth 2.0 - Expose and Access a Web API - Auth Code Flow - Entra ID">OAuth 2.0 - Expose and Access a Web API - Auth Code Flow - Entra ID<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
