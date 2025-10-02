@@ -2,7 +2,7 @@
 title: "OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID"
 author: Nathanael Santschi
 date: 2025-09-28T05:10:21+01:00
-draft: true
+draft: false
 tags:
   - OAuth
 categories:

@@ -2,7 +2,7 @@
 title: "OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID"
 author: Nathanael Santschi
 date: 2025-09-29T05:10:21+01:00
-draft: true
+draft: false
 tags:
   - OAuth
 categories:
