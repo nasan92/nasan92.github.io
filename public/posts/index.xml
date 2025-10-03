@@ -4,7 +4,7 @@
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>OAuth 2.0 - Expose and Access a Web API - Auth Code Flow - Entra ID</title>
+    <title>OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Auth Code Flow - Entra ID</title>
     <link>http://localhost:1313/posts/2025-09-30-oauth20-3/</link>
     <pubDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>

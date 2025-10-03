@@ -32,6 +32,6 @@ Download the mind map in multiple formats:
 ## Tutorials
 
 See detailed, step-by-step OAuth 2.0 examples in these follow-up posts:
-- [OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID](/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow)  
-- [OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID](/posts/2025-09-27-OAuth20-2-AzureServerSidePythonWebApp-AuthCodeFlow)  
+- [OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID]({{< relref "2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow.md" >}})
+- [OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID]({{< relref "posts/2025-09-27-OAuth20-2-AzureServerSidePythonWebApp-AuthCodeFlow.md" >}})
 
