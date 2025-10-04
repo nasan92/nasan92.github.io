@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title> - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/z_temp/">
+  <meta property="og:site_name" content="NASAN">
+  <meta property="og:title" content="NASAN">
+  <meta property="og:description" content="Initializing with Entra authority: https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0 https://login.microsoftonline.com:443 “GET /44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0/.well-known/openid-configuration HTTP/1.1” 200 1805
+okay it basically get the OpenID config from here: https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0/.well-known/openid-configuration this config: OpenID Configuration (formatted):
+{ &#34;token_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/token&#34;, &#34;token_endpoint_auth_methods_supported&#34;: [ &#34;client_secret_post&#34;, &#34;private_key_jwt&#34;, &#34;client_secret_basic&#34; ], &#34;jwks_uri&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/discovery/v2.0/keys&#34;, &#34;response_modes_supported&#34;: [ &#34;query&#34;, &#34;fragment&#34;, &#34;form_post&#34; ], &#34;subject_types_supported&#34;: [ &#34;pairwise&#34; ], &#34;id_token_signing_alg_values_supported&#34;: [ &#34;RS256&#34; ], &#34;code_challenge_methods_supported&#34;: [ &#34;plain&#34;, &#34;S256&#34; ], &#34;response_types_supported&#34;: [ &#34;code&#34;, &#34;id_token&#34;, &#34;code id_token&#34;, &#34;id_token token&#34; ], &#34;scopes_supported&#34;: [ &#34;openid&#34;, &#34;profile&#34;, &#34;email&#34;, &#34;offline_access&#34; ], &#34;issuer&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0&#34;, &#34;request_uri_parameter_supported&#34;: false, &#34;userinfo_endpoint&#34;: &#34;https://graph.microsoft.com/oidc/userinfo&#34;, &#34;authorization_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/authorize&#34;, &#34;device_authorization_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/devicecode&#34;, &#34;http_logout_supported&#34;: true, &#34;frontchannel_logout_supported&#34;: true, &#34;end_session_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/logout&#34;, &#34;claims_supported&#34;: [ &#34;sub&#34;, &#34;iss&#34;, &#34;cloud_instance_name&#34;, &#34;cloud_instance_host_name&#34;, &#34;cloud_graph_host_name&#34;, &#34;msgraph_host&#34;, &#34;aud&#34;, &#34;exp&#34;, &#34;iat&#34;, &#34;auth_time&#34;, &#34;acr&#34;, &#34;nonce&#34;, &#34;preferred_username&#34;, &#34;name&#34;, &#34;tid&#34;, &#34;ver&#34;, &#34;at_hash&#34;, &#34;c_hash&#34;, &#34;email&#34; ], &#34;kerberos_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/kerberos&#34;, &#34;tenant_region_scope&#34;: &#34;EU&#34;, &#34;cloud_instance_name&#34;: &#34;microsoftonline.com&#34;, &#34;cloud_graph_host_name&#34;: &#34;graph.windows.net&#34;, &#34;msgraph_host&#34;: &#34;graph.microsoft.com&#34;, &#34;rbac_url&#34;: &#34;https://pas.windows.net&#34; } anschliessend der authorize link https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/authorize?client_id=86cf2f4d-d1f3-4af4-9be2-fb4c089cffd5&amp;response_type=code&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5001%2Fcallback&amp;scope=User.Read&#43;offline_access&#43;openid&#43;profile&amp;state=8f9a6415-6c46-48e1-bdb1-800232615e1c&amp;code_challenge=BRlCLPwUybzs-0zo0fVJsXDpe_DuncvadxcocS7mKA0&amp;code_challenge_method=S256&amp;nonce=3d179adcb2c3756ffec18375f8a4df7bb0608d14432a5c8760d0684450bf3631&amp;client_info=1&amp;sso_reload=true">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NASAN">
+  <meta name="twitter:description" content="Initializing with Entra authority: https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0 https://login.microsoftonline.com:443 “GET /44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0/.well-known/openid-configuration HTTP/1.1” 200 1805
+okay it basically get the OpenID config from here: https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0/.well-known/openid-configuration this config: OpenID Configuration (formatted):
+{ &#34;token_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/token&#34;, &#34;token_endpoint_auth_methods_supported&#34;: [ &#34;client_secret_post&#34;, &#34;private_key_jwt&#34;, &#34;client_secret_basic&#34; ], &#34;jwks_uri&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/discovery/v2.0/keys&#34;, &#34;response_modes_supported&#34;: [ &#34;query&#34;, &#34;fragment&#34;, &#34;form_post&#34; ], &#34;subject_types_supported&#34;: [ &#34;pairwise&#34; ], &#34;id_token_signing_alg_values_supported&#34;: [ &#34;RS256&#34; ], &#34;code_challenge_methods_supported&#34;: [ &#34;plain&#34;, &#34;S256&#34; ], &#34;response_types_supported&#34;: [ &#34;code&#34;, &#34;id_token&#34;, &#34;code id_token&#34;, &#34;id_token token&#34; ], &#34;scopes_supported&#34;: [ &#34;openid&#34;, &#34;profile&#34;, &#34;email&#34;, &#34;offline_access&#34; ], &#34;issuer&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0&#34;, &#34;request_uri_parameter_supported&#34;: false, &#34;userinfo_endpoint&#34;: &#34;https://graph.microsoft.com/oidc/userinfo&#34;, &#34;authorization_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/authorize&#34;, &#34;device_authorization_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/devicecode&#34;, &#34;http_logout_supported&#34;: true, &#34;frontchannel_logout_supported&#34;: true, &#34;end_session_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/logout&#34;, &#34;claims_supported&#34;: [ &#34;sub&#34;, &#34;iss&#34;, &#34;cloud_instance_name&#34;, &#34;cloud_instance_host_name&#34;, &#34;cloud_graph_host_name&#34;, &#34;msgraph_host&#34;, &#34;aud&#34;, &#34;exp&#34;, &#34;iat&#34;, &#34;auth_time&#34;, &#34;acr&#34;, &#34;nonce&#34;, &#34;preferred_username&#34;, &#34;name&#34;, &#34;tid&#34;, &#34;ver&#34;, &#34;at_hash&#34;, &#34;c_hash&#34;, &#34;email&#34; ], &#34;kerberos_endpoint&#34;: &#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/kerberos&#34;, &#34;tenant_region_scope&#34;: &#34;EU&#34;, &#34;cloud_instance_name&#34;: &#34;microsoftonline.com&#34;, &#34;cloud_graph_host_name&#34;: &#34;graph.windows.net&#34;, &#34;msgraph_host&#34;: &#34;graph.microsoft.com&#34;, &#34;rbac_url&#34;: &#34;https://pas.windows.net&#34; } anschliessend der authorize link https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/authorize?client_id=86cf2f4d-d1f3-4af4-9be2-fb4c089cffd5&amp;response_type=code&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5001%2Fcallback&amp;scope=User.Read&#43;offline_access&#43;openid&#43;profile&amp;state=8f9a6415-6c46-48e1-bdb1-800232615e1c&amp;code_challenge=BRlCLPwUybzs-0zo0fVJsXDpe_DuncvadxcocS7mKA0&amp;code_challenge_method=S256&amp;nonce=3d179adcb2c3756ffec18375f8a4df7bb0608d14432a5c8760d0684450bf3631&amp;client_info=1&amp;sso_reload=true">
+      <meta name="twitter:site" content="@nasantschi">
+<meta name="application-name" content="NASAN">
+<meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/z_temp/" /><link rel="next" href="http://localhost:1313/posts/2018-12-01-logik/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/z_temp\/"
+        },"genre": "posts","wordcount":  229 ,
+        "url": "http:\/\/localhost:1313\/posts\/z_temp\/","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NASAN">NASAN</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" rel="noopener noreffer" target="_blank"> Youtube </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NASAN">NASAN</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCD152s9TkCpwTFTTXzdjvCw" title="" rel="noopener noreffer" target="_blank">Youtube</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX"></h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;229 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>Initializing with Entra authority: <a href="https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0" target="_blank" rel="noopener noreffer">https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0</a>
+<a href="https://login.microsoftonline.com:443" target="_blank" rel="noopener noreffer">https://login.microsoftonline.com:443</a> &ldquo;GET /44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0/.well-known/openid-configuration HTTP/1.1&rdquo; 200 1805</p>
+<p>okay it basically get the OpenID config from here: <a href="https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0/.well-known/openid-configuration" target="_blank" rel="noopener noreffer">https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0/.well-known/openid-configuration</a>
+this config:
+OpenID Configuration (formatted):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;token_endpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/token&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;token_endpoint_auth_methods_supported&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;client_secret_post&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;private_key_jwt&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;client_secret_basic&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;jwks_uri&#34;</span><span class="p">:</span> <span class="s2">&#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/discovery/v2.0/keys&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;response_modes_supported&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;query&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;fragment&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;form_post&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;subject_types_supported&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;pairwise&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;id_token_signing_alg_values_supported&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;RS256&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;code_challenge_methods_supported&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;plain&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;S256&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;response_types_supported&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;code&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;id_token&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;code id_token&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;id_token token&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;scopes_supported&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;openid&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;profile&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;email&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;offline_access&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;issuer&#34;</span><span class="p">:</span> <span class="s2">&#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/v2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;request_uri_parameter_supported&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;userinfo_endpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;https://graph.microsoft.com/oidc/userinfo&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;authorization_endpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/authorize&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;device_authorization_endpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/devicecode&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;http_logout_supported&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;frontchannel_logout_supported&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;end_session_endpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/logout&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;claims_supported&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;sub&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;iss&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;cloud_instance_name&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;cloud_instance_host_name&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;cloud_graph_host_name&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;msgraph_host&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;aud&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;exp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;iat&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;auth_time&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;acr&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;nonce&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;preferred_username&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;name&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;tid&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;ver&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;at_hash&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;c_hash&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;email&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;kerberos_endpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/kerberos&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;tenant_region_scope&#34;</span><span class="p">:</span> <span class="s2">&#34;EU&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;cloud_instance_name&#34;</span><span class="p">:</span> <span class="s2">&#34;microsoftonline.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;cloud_graph_host_name&#34;</span><span class="p">:</span> <span class="s2">&#34;graph.windows.net&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msgraph_host&#34;</span><span class="p">:</span> <span class="s2">&#34;graph.microsoft.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;rbac_url&#34;</span><span class="p">:</span> <span class="s2">&#34;https://pas.windows.net&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>anschliessend der authorize link
+<a href="https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/authorize?client_id=86cf2f4d-d1f3-4af4-9be2-fb4c089cffd5&amp;response_type=code&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5001%2Fcallback&amp;scope=User.Read&#43;offline_access&#43;openid&#43;profile&amp;state=8f9a6415-6c46-48e1-bdb1-800232615e1c&amp;code_challenge=BRlCLPwUybzs-0zo0fVJsXDpe_DuncvadxcocS7mKA0&amp;code_challenge_method=S256&amp;nonce=3d179adcb2c3756ffec18375f8a4df7bb0608d14432a5c8760d0684450bf3631&amp;client_info=1&amp;sso_reload=true" target="_blank" rel="noopener noreffer">https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/authorize?client_id=86cf2f4d-d1f3-4af4-9be2-fb4c089cffd5&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5001%2Fcallback&scope=User.Read+offline_access+openid+profile&state=8f9a6415-6c46-48e1-bdb1-800232615e1c&code_challenge=BRlCLPwUybzs-0zo0fVJsXDpe_DuncvadxcocS7mKA0&code_challenge_method=S256&nonce=3d179adcb2c3756ffec18375f8a4df7bb0608d14432a5c8760d0684450bf3631&client_info=1&sso_reload=true</a></p>
+<p>dananch aufruf des token endpoints:
+DEBUG:urllib3.connectionpool:https://login.microsoftonline.com:443 &ldquo;POST /44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/token HTTP/1.1&rdquo; 200 6780
+DEBUG:msal.token_cache:event={
+&ldquo;client_id&rdquo;: &ldquo;86cf2f4d-d1f3-4af4-9be2-fb4c089cffd5&rdquo;,
+&ldquo;data&rdquo;: {
+&ldquo;claims&rdquo;: null,
+&ldquo;client_id&rdquo;: &ldquo;86cf2f4d-d1f3-4af4-9be2-fb4c089cffd5&rdquo;,
+&ldquo;code&rdquo;: &ldquo;1.AS8AwYrbRFMisEyLtQJSoQpk8E0vz4bz0fRKm-L7TAic_9WwAAAvAA.AgABBAIAAABlMNzVhAPUTrARzfQjWPtKAwDs_wUA9P_&ndash;Pf26h-xPui6Lv77FPga0DnpDjIun34YFZkbSwgtgZiWNFHPtY7Admy57HNTWeo4OAE1w3RWN_zBA8bo0f71ium3GZ-hMFbwkJL2nA-LvicaoO8qA523Nv9pHXESVooC94hfBSxiqBaONjR0moL8GIvxfaAkgUsNDm-NAvliCvx3x3ksDHUgCGoA0rl0AP_9zDGZJypSDNZ42IcWgcgAuFamn92p5BwbiZ2M9JcNClynAsc0cS_rQn6w_TTtH1QZ2GRjoVN2n241qY1vuQhA2V3v7_lAggsvI50I3NU7rzK3zOLg1FG_czeWT7blaD_z-MpMI6-5eykH508ZVCzZ_JaYJHSLyi4mvQYWrBJ277oJEu6s8aDd1BC_pvCelOFDkH5u9-Tny5vmK506vhZkrSGE7qbwfXdNP3flus4JIXVVQu0MfubHQymVtOA1w3wPAxHVs3quGNDZ5JRMMQ6UlAndpy2mJtblEiwHoqUJS-t5xM4gCO49BoSf2FucrjMdeTTqOuFc2CtBpwOHx0KLJj_wuWv3UAItHcc_usi03QwPjqyg-Jf-0QcjjfWxwlYJ4x8xZHNTye7e2egNl1X2_I1O0hAkakp9IhVviL8Jc1VXRD9ibU-6VFRfSWvNVvocQF4CugGGqhvVzPzIS0QfKXMyinywS00B4SRQrfe3jJkF1GkP46di3L4pGAjxEv02Jnen1PHmY9oIi42VN_IfPPfjVutWpg1WNUTdV66hX8_wPH2bhLGeAUkywdFePskJFhijXzYprFF87j0LeRXcm6s4_wB86mdp3rDdJdXTDNrZWYM8n5GYiEzHRScYaQD3R-qyXXdNHBCH2IQQAChdbE_ocrDYl6mrBDmF-70-3IlbAZSXYK7JSK6PGCHm_a3XnNG4ZjMfebbNOQjxgvQx3FkdOQ6f76tNdeC398mFK04qyOzFauE72h7C632561t5HSf2q3jblH5eS61-s24edXB1y79v9FV7sKWvaEngoYBBzQlt0dQh7wyeLDxGXY_r7OCmiCJA8LUkbGYj9ZSBPG8kn20eks9gDhG1_utqhUo3wvQdWMRL5MZkvgC4XTkYe05Zb-ZWCwOPZ-BKygDD40wcZJMvGWdl3ZbVrNj_FlF_r1lP5Yew3xubIerFgjQQOmg_GexEWcOTmaLUH0Uxl-O2SVTNBCG2RkNcDRL74KV6EKN6iROqxD2soV7l85x43VXdl9yRUDl7MBu97oV98-1jsdfyWdN1DsRSaweOKic7Ss9aLH-EwffGUIipR-MING4bLavKsALy49lkdjj-8gdvn12HluZ7We8C2Awa_XlSjD03_FWVOwBxOmCypUmG526o8OeMseGCPe6cNQRy8GhOC7t2cDpYzHjxsJGZMEmdWKUPrPGJBFd9PMYUeugmVcRgW0kqdR9qz0KeFblHslz-rXbkeqHlHOHkvAqa-_8x_nqpx_f1CrgiieJzc0Y8PcJVDG792A8XL93x775U1sAhxZ0eP5YuPJncv_cClu-kg0qFVfdC5SD8OVHj6w&rdquo;,
+&ldquo;code_verifier&rdquo;: &ldquo;269il5sYz.DPVoLpdhyvRQuMmZnbgOFASqKf40Ca1rE&rdquo;,
+&ldquo;redirect_uri&rdquo;: &ldquo;http://localhost:5001/callback&rdquo;,
+&ldquo;scope&rdquo;: [
+&ldquo;User.Read&rdquo;,
+&ldquo;openid&rdquo;,
+&ldquo;profile&rdquo;,
+&ldquo;offline_access&rdquo;
+]
+},
+&ldquo;environment&rdquo;: &ldquo;login.microsoftonline.com&rdquo;,
+&ldquo;grant_type&rdquo;: &ldquo;authorization_code&rdquo;,
+&ldquo;params&rdquo;: null,
+&ldquo;response&rdquo;: {
+&ldquo;access_token&rdquo;: &ldquo;<strong><strong><strong><strong>&rdquo;,
+&ldquo;client_info&rdquo;: &ldquo;eyJ1aWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtOWM1Yi1lNTk1ZDFkMjllOTkiLCJ1dGlkIjoiOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkIn0&rdquo;,
+&ldquo;expires_in&rdquo;: 4968,
+&ldquo;ext_expires_in&rdquo;: 4968,
+&ldquo;id_token&rdquo;: &ldquo;</strong></strong></strong></strong>&rdquo;,
+&ldquo;refresh_token&rdquo;: &ldquo;********&rdquo;,
+&ldquo;scope&rdquo;: &ldquo;User.Read profile openid email&rdquo;,
+&ldquo;token_type&rdquo;: &ldquo;Bearer&rdquo;
+},
+&ldquo;scope&rdquo;: [
+&ldquo;User.Read&rdquo;,
+&ldquo;profile&rdquo;,
+&ldquo;openid&rdquo;,
+&ldquo;email&rdquo;
+],
+&ldquo;token_endpoint&rdquo;: &ldquo;<a href="https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/token%22" target="_blank" rel="noopener noreffer">https://login.microsoftonline.com/44db8ac1-2253-4cb0-8bb5-0252a10a64f0/oauth2/v2.0/token"</a>
+}</p>
+<p>anschliessend noch:
+graph.microsoft.com:443
+DEBUG:urllib3.connectionpool:https://graph.microsoft.com:443 &ldquo;GET /v1.0/me HTTP/1.1&rdquo; 200 None
+INFO:werkzeug:127.0.0.1 - - [03/Oct/2025 14:55:26] &ldquo;GET /callback?code=1.AS8AwYrbRFMisEyLtQJSoQpk8E0vz4bz0fRKm-L7TAic_9WwAAAvAA.AgABBAIAAABlMNzVhAPUTrARzfQjWPtKAwDs_wUA9P_&ndash;Pf26h-xPui6Lv77FPga0DnpDjIun34YFZkbSwgtgZiWNFHPtY7Admy57HNTWeo4OAE1w3RWN_zBA8bo0f71ium3GZ-hMFbwkJL2nA-LvicaoO8qA523Nv9pHXESVooC94hfBSxiqBaONjR0moL8GIvxfaAkgUsNDm-NAvliCvx3x3ksDHUgCGoA0rl0AP_9zDGZJypSDNZ42IcWgcgAuFamn92p5BwbiZ2M9JcNClynAsc0cS_rQn6w_TTtH1QZ2GRjoVN2n241qY1vuQhA2V3v7_lAggsvI50I3NU7rzK3zOLg1FG_czeWT7blaD_z-MpMI6-5eykH508ZVCzZ_JaYJHSLyi4mvQYWrBJ277oJEu6s8aDd1BC_pvCelOFDkH5u9-Tny5vmK506vhZkrSGE7qbwfXdNP3flus4JIXVVQu0MfubHQymVtOA1w3wPAxHVs3quGNDZ5JRMMQ6UlAndpy2mJtblEiwHoqUJS-t5xM4gCO49BoSf2FucrjMdeTTqOuFc2CtBpwOHx0KLJj_wuWv3UAItHcc_usi03QwPjqyg-Jf-0QcjjfWxwlYJ4x8xZHNTye7e2egNl1X2_I1O0hAkakp9IhVviL8Jc1VXRD9ibU-6VFRfSWvNVvocQF4CugGGqhvVzPzIS0QfKXMyinywS00B4SRQrfe3jJkF1GkP46di3L4pGAjxEv02Jnen1PHmY9oIi42VN_IfPPfjVutWpg1WNUTdV66hX8_wPH2bhLGeAUkywdFePskJFhijXzYprFF87j0LeRXcm6s4_wB86mdp3rDdJdXTDNrZWYM8n5GYiEzHRScYaQD3R-qyXXdNHBCH2IQQAChdbE_ocrDYl6mrBDmF-70-3IlbAZSXYK7JSK6PGCHm_a3XnNG4ZjMfebbNOQjxgvQx3FkdOQ6f76tNdeC398mFK04qyOzFauE72h7C632561t5HSf2q3jblH5eS61-s24edXB1y79v9FV7sKWvaEngoYBBzQlt0dQh7wyeLDxGXY_r7OCmiCJA8LUkbGYj9ZSBPG8kn20eks9gDhG1_utqhUo3wvQdWMRL5MZkvgC4XTkYe05Zb-ZWCwOPZ-BKygDD40wcZJMvGWdl3ZbVrNj_FlF_r1lP5Yew3xubIerFgjQQOmg_GexEWcOTmaLUH0Uxl-O2SVTNBCG2RkNcDRL74KV6EKN6iROqxD2soV7l85x43VXdl9yRUDl7MBu97oV98-1jsdfyWdN1DsRSaweOKic7Ss9aLH-EwffGUIipR-MING4bLavKsALy49lkdjj-8gdvn12HluZ7We8C2Awa_XlSjD03_FWVOwBxOmCypUmG526o8OeMseGCPe6cNQRy8GhOC7t2cDpYzHjxsJGZMEmdWKUPrPGJBFd9PMYUeugmVcRgW0kqdR9qz0KeFblHslz-rXbkeqHlHOHkvAqa-_8x_nqpx_f1CrgiieJzc0Y8PcJVDG792A8XL93x775U1sAhxZ0eP5YuPJncv_cClu-kg0qFVfdC5SD8OVHj6w&amp;client_info=eyJ1aWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtOWM1Yi1lNTk1ZDFkMjllOTkiLCJ1dGlkIjoiOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkIn0&amp;state=8f9a6415-6c46-48e1-bdb1-800232615e1c&amp;session_state=00991399-c6a8-283c-2bb9-19ee780b2546 HTTP/1.1&rdquo; 302 -
+INFO:werkzeug:127.0.0.1 - - [03/Oct/2025 14:55:33] &ldquo;GET / HTTP/1.1&rdquo; 200 -</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 0001-01-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/posts/2018-12-01-logik/" class="next" rel="next" title="Infografik Logik">Infografik Logik<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.149.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

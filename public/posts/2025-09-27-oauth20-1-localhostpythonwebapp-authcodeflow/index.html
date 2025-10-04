@@ -8,7 +8,7 @@
         <title>OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/">
   <meta property="og:site_name" content="NASAN">
   <meta property="og:title" content="OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID">
-  <meta property="og:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development, in second part we will deploy it to Azure) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
+  <meta property="og:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development, in second tutorial we will deploy it to Azure) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
 The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -19,7 +19,7 @@ The client is considered confidential because the app runs solely on the server,
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID">
-  <meta name="twitter:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development, in second part we will deploy it to Azure) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
+  <meta name="twitter:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development, in second tutorial we will deploy it to Azure) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
 The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.">
       <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
@@ -34,7 +34,7 @@ The client is considered confidential because the app runs solely on the server,
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow\/"
-        },"genre": "posts","keywords": "OAuth","wordcount":  769 ,
+        },"genre": "posts","keywords": "OAuth","wordcount":  983 ,
         "url": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow\/","datePublished": "2025-09-28T05:10:21+01:00","dateModified": "2025-09-28T05:10:21+01:00","publisher": {
             "@type": "Organization",
             "name": "Nathanael Santschi"},"author": {
@@ -111,8 +111,8 @@ The client is considered confidential because the app runs solely on the server,
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oauth/"><i class="far fa-folder fa-fw"></i>OAuth</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-28">2025-09-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;769 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-28">2025-09-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;983 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -124,11 +124,11 @@ The client is considered confidential because the app runs solely on the server,
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#python-flask-app">Python Flask App</a></li>
     <li><a href="#create-new-app-registration">Create new App Registration</a></li>
-    <li><a href="#login">Login</a></li>
+    <li><a href="#login--build-authorization-url">Login + Build Authorization URL</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="introduction---server-side-app---auth-code-flow">Introduction - &ldquo;Server Side App&rdquo; - Auth Code Flow</h2>
-<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development, in second part we will deploy it to Azure) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
+<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development, in second tutorial we will deploy it to Azure) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
 <p>The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.</p>
 <p>The following image illustrates the Authorization Code Flow with the corresponding OAuth Roles based on <a href="https://datatracker.ietf.org/doc/html/rfc6749#section-4.1" target="_blank" rel="noopener noreffer">section 4.1 of the OAuth 2.0 specification: RFC6749</a>
 <img
@@ -148,8 +148,8 @@ two parts as they pass through the user-agent.</p></blockquote>
 <li>The authorization and token endpoints are provided by Microsoft Entra ID</li>
 <li>The web API being accessed is Microsoft Graph API</li>
 </ul>
-<p><a href="https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg" target="_blank" rel="noopener noreffer">source: Microsoft Learn</a>
-<img
+<p><a href="https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg" target="_blank" rel="noopener noreffer">source: Microsoft Learn</a></p>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://learn.microsoft.com/en-us/entra/identity-platform/media/v2-oauth2-auth-code-flow/convergence-scenarios-native.svg"
@@ -193,12 +193,13 @@ two parts as they pass through the user-agent.</p></blockquote>
 </span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">(</span><span class="n">dotenv_path</span><span class="o">=</span><span class="n">dotenv_path</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Config</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_id&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_ID&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;authority&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;https://login.microsoftonline.com/</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;TENANT_ID&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;scope&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;User.Read&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;redirect_uri&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;REDIRECT_URI&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_id&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_ID&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_secret&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_SECRET&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;redirect_uri&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;REDIRECT_URI&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;scope&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;User.Read&#34;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -320,20 +321,47 @@ two parts as they pass through the user-agent.</p></blockquote>
 CLIENT_ID=be4099ac-8a21-****************************
 CLIENT_SECRET=LFp8Q~********************************
 REDIRECT_URI=http://localhost:5001/callback
-</code></pre><h2 id="login">Login</h2>
+</code></pre><h2 id="login--build-authorization-url">Login + Build Authorization URL</h2>
 <p>Restart your Flask app and try clicking the login button.
-You should be redirected to a URL similar to the following:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">https://login.microsoftonline.com/YOUR-TENANT-ID/oauth2/v2.0/authorize?
-</span></span><span class="line"><span class="cl">  <span class="nv">client_id</span><span class="o">=</span>YOUR-CLIENT-ID<span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">response_type</span><span class="o">=</span>code<span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">redirect_uri</span><span class="o">=</span>http%3A%2F%2Flocalhost%3A5001%2Fcallback<span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">scope</span><span class="o">=</span>User.Read+offline_access+openid+profile<span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">state</span><span class="o">=</span>ab75d9bc-3e73-435d-8f6e-12bec5dce5c3<span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">code_challenge</span><span class="o">=</span>2D2aoAkngNH37eJPvjndhjyvJYhlPdcBUXzfPpQXAuQ<span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">code_challenge_method</span><span class="o">=</span>S256<span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">nonce</span><span class="o">=</span>40c7a26b0d3c1baac6473580566a7b390459646ccaa8b8be249aa160eee32aaa<span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">client_info</span><span class="o">=</span><span class="m">1</span>
-</span></span></code></pre></div><p>As you can see, the login link includes a code challenge, indicating that the PKCE extension is also being used. The main purpose of the PKCE extension is for mobile or native apps where you cannot store a secret but still need to prove the identity of your application.</p>
+When you click the <strong>Login with OAuth</strong> button the following part of the code will run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/login&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msal_app</span> <span class="o">=</span> <span class="n">build_msal_app</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flow</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">initiate_auth_code_flow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scopes</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;scope&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">redirect_uri</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;redirect_uri&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">state</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">session</span><span class="p">[</span><span class="s2">&#34;auth_flow&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flow</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">flow</span><span class="p">[</span><span class="s2">&#34;auth_uri&#34;</span><span class="p">])</span>
+</span></span></code></pre></div><p>This creates the Authorization URL which will look like the following, where you will be redirected to:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>1<span class="o">)</span> https://login.microsoftonline.com/b7e2c1a3-9f4d-4e2a-8c1b-3a7d2e5f6b8c/oauth2/v2.0/authorize?
+</span></span><span class="line"><span class="cl"><span class="o">(</span>2<span class="o">)</span>   <span class="nv">client_id</span><span class="o">=</span>c4e7a2b1-5d8f-4c3a-9e2b-6f7d8e9b0c1a<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>3<span class="o">)</span>   <span class="nv">response_type</span><span class="o">=</span>code<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>4<span class="o">)</span>   <span class="nv">redirect_uri</span><span class="o">=</span>http%3A%2F%2Flocalhost%3A5001%2Fcallback<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>5<span class="o">)</span>   <span class="nv">scope</span><span class="o">=</span>User.Read+offline_access+openid+profile<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>6<span class="o">)</span>   <span class="nv">state</span><span class="o">=</span>d9228690-f434-4458-9c55-b41a6271ef4c<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>7<span class="o">)</span>   <span class="nv">code_challenge</span><span class="o">=</span>O-6_i86En7fRDUMwAuxohwhSccQNAZXhMUkB0g59V1A<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>8<span class="o">)</span>   <span class="nv">code_challenge_method</span><span class="o">=</span>S256<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>9<span class="o">)</span>   <span class="nv">nonce</span><span class="o">=</span>1414c2a88bbc97a5294a242052512c95f25096ccc08d8f0cb825d1d4c4c1d1b2<span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>10<span class="o">)</span>  <span class="nv">client_info</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><ol>
+<li>The <strong>authorization server url</strong> is from our config
+<ul>
+<li>the msal library finds the exact path (/oauth2/v2.0/authorize?)</li>
+</ul>
+</li>
+<li><strong>Client_ID</strong> of our Entra ID App Registration from config</li>
+<li>The <strong>response_type</strong> &ldquo;code&rdquo; is required for the authorization code flow</li>
+<li><strong>redirect_uri</strong> of your app (from config), where authentication responses can be sent and received by your app</li>
+<li>A space-separated list of <strong>scopes</strong> that you want the user to consent to.</li>
+<li><strong>State</strong> is a randomly generated unique value is typically used for preventing cross-site request forgery attacks</li>
+<li><strong>Code_challenge</strong> is used to secure authorization code grants by using Proof Key for Code Exchange (PKCE). Generated from msal via code verifier (random string 43-128 characters) with BASE64-URL-encoded</li>
+<li>The <strong>code_challenge_method</strong> used to encode the code_verifier for the code_challenge parameter.</li>
+<li><strong>nonce</strong> is generated by msal and sent in its request for an ID token.</li>
+<li><strong>client_info</strong> to include extra user and tenant identifiers</li>
+</ol>
+<p>As you can see, the login link includes a code challenge, indicating that the PKCE extension is also being used. The main purpose of the PKCE extension is for mobile or native apps where you cannot store a secret but still need to prove the identity of your application.</p>
 <blockquote>
 <p><strong>Note:</strong> With OAuth 2.1, it is recommended to use PKCE (Proof Key for Code Exchange) for all Authorization Code flows, including confidential clients. PKCE enhances security by mitigating authorization code interception attacks, even when a client secret is used.</p></blockquote>
 <p>You will need to consent to the requested permissions:</p>
@@ -358,6 +386,12 @@ You should be redirected to a URL similar to the following:</p>
             alt="/images/welcome-callback-page.png" />
     </a><figcaption class="image-caption">Preview</figcaption>
     </figure></p>
+<p>STUCK: steps to describe better:</p>
+<ul>
+<li>callback with state + code</li>
+<li>request for token</li>
+<li>call web api with token</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
