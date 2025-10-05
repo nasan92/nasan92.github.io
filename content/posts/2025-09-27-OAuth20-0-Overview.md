@@ -1,10 +1,11 @@
 ---
-title: "OAuth 2.0"
+title: "OAuth 2.0 - mind map"
 author: Nathanael Santschi
 date: 2025-09-27T05:10:21+01:00
 draft: false
 tags:
   - OAuth
+  - MindMap
 categories:
   - OAuth
 
