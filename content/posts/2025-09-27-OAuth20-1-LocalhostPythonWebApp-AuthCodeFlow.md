@@ -8,12 +8,14 @@ tags:
 categories:
   - OAuth
 
-  
 ---
 
 ## Introduction - "Server Side App" - Auth Code Flow
 
-This guide demonstrates how to create a "server-side" **Python web application** running locally (for development; in the second tutorial, we will deploy it to Azure) that authenticates users with **Microsoft Entra ID** and authorizes access to the **Microsoft Graph API** using the **Authorization Code Flow** as a **"confidential client"** with a client secret.
+This guide demonstrates how to create a "server-side" **Python web application** running locally (for development) that authenticates users with **Microsoft Entra ID** and authorizes access to the **Microsoft Graph API** using the **Authorization Code Flow** as a **"confidential client"** with a client secret.
+
+> **Info:**
+> In the second tutorial, we will deploy this app to Azure
 
 The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.
 

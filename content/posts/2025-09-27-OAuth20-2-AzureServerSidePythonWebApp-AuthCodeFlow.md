@@ -246,4 +246,4 @@ https://login.microsoftonline.com/YOUR-TENANT-ID/oauth2/v2.0/authorize?
 
 This time, it does not ask for consent again because you already granted consent for the same app in the previous tutorial.
 
-![welcome-callback](/images/welcome-callback-page.png "Preview")
+![welcome-callback](/images/welcome-callback-azure.png "Preview")

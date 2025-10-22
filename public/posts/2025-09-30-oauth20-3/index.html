@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Auth Code Flow - Entra ID - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-30-oauth20-3/">
+        <title>OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-30-oauth20-3/">
   <meta property="og:site_name" content="NASAN">
-  <meta property="og:title" content="OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Auth Code Flow - Entra ID">
-  <meta property="og:description" content="In the previous tutorials:
-OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID
-We learned how to deploy a Python Web App to Azure, register the app to Entra ID and using the Auhtorization Code Flow to access the Microsoft Graph API. In this tutorial we want to take a look on how to build our own Web API which then can be accessed from our previously created Python Web App. What we need:">
+  <meta property="og:title" content="OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server">
+  <meta property="og:description" content="Previous tutorials In the previous tutorials:
+OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID we learned:
+how to deploy a Python Web App to Azure register the app with Entra ID and use the Authorization Code Flow to access the Microsoft Graph API. Overview In this tutorial:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -19,10 +19,10 @@ We learned how to deploy a Python Web App to Azure, register the app to Entra ID
     <meta property="article:tag" content="OAuth">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Auth Code Flow - Entra ID">
-  <meta name="twitter:description" content="In the previous tutorials:
-OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID
-We learned how to deploy a Python Web App to Azure, register the app to Entra ID and using the Auhtorization Code Flow to access the Microsoft Graph API. In this tutorial we want to take a look on how to build our own Web API which then can be accessed from our previously created Python Web App. What we need:">
+  <meta name="twitter:title" content="OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server">
+  <meta name="twitter:description" content="Previous tutorials In the previous tutorials:
+OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID we learned:
+how to deploy a Python Web App to Azure register the app with Entra ID and use the Authorization Code Flow to access the Microsoft Graph API. Overview In this tutorial:">
       <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
 <meta name="apple-mobile-web-app-title" content="NASAN"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -31,12 +31,12 @@ We learned how to deploy a Python Web App to Azure, register the app to Entra ID
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Auth Code Flow - Entra ID",
+        "headline": "OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/posts\/2025-09-30-oauth20-3\/"
-        },"genre": "posts","keywords": "OAuth","wordcount":  121 ,
+        },"genre": "posts","keywords": "OAuth","wordcount":  1648 ,
         "url": "http:\/\/localhost:1313\/posts\/2025-09-30-oauth20-3\/","datePublished": "2025-09-30T05:10:21+01:00","dateModified": "2025-09-30T05:10:21+01:00","publisher": {
             "@type": "Organization",
             "name": "Nathanael Santschi"},"author": {
@@ -111,29 +111,526 @@ We learned how to deploy a Python Web App to Azure, register the app to Entra ID
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Auth Code Flow - Entra ID</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oauth/"><i class="far fa-folder fa-fw"></i>OAuth</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-30">2025-09-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;121 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-30">2025-09-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1648 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>In the previous tutorials:</p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#previous-tutorials">Previous tutorials</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#register-an-application-for-your-web-api">Register an application for your Web API</a></li>
+    <li><a href="#prepare-fastapi-backend-code">Prepare FastAPI Backend Code</a></li>
+    <li><a href="#expose-the-api">Expose the API</a>
+      <ul>
+        <li><a href="#add-a-scope-to-your-api">Add a Scope to Your API</a></li>
+      </ul>
+    </li>
+    <li><a href="#update-web-app-flask-code">update web app flask code</a></li>
+    <li><a href="#add-permissions-to-web-app">Add permissions to Web App</a></li>
+    <li><a href="#start-fastapi-and-flask-app-locally">Start FastAPI and Flask App locally</a></li>
+    <li><a href="#notes">notes</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="previous-tutorials">Previous tutorials</h2>
+<p>In the previous tutorials:</p>
 <ul>
 <li><a href="/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</a></li>
-<li><a href="/posts/2025-09-27-OAuth20-2-AzureServerSidePythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</a><br>
-We learned how to deploy a Python Web App to Azure, register the app to Entra ID and using the Auhtorization Code Flow to access the Microsoft Graph API.
-In this tutorial we want to take a look on how to build our own Web API which then can be accessed from our previously created Python Web App.</li>
+<li><a href="/posts/2025-09-27-OAuth20-2-AzureServerSidePythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</a></li>
 </ul>
+<p>we learned:</p>
+<ul>
+<li>how to deploy a Python Web App to Azure</li>
+<li>register the app with Entra ID</li>
+<li>and use the Authorization Code Flow to access the Microsoft Graph API.</li>
+</ul>
+<h2 id="overview">Overview</h2>
+<p>In this tutorial:</p>
+<ul>
+<li>we will look at how to build our own Web API (<a href="https://www.oauth.com/oauth2-servers/the-resource-server/" target="_blank" rel="noopener noreffer">Resource Server</a>)</li>
+<li>which can then be accessed from our previously created Python Web App.</li>
+<li>The Web API (Resource Server) will have two different scopes (<code>data.read</code> and <code>data.write</code>) and will validate the token it receives.</li>
+<li>We will run both apps (the Flask WebApp as the client and the FastAPI Web API as the resource server) locally.</li>
+</ul>
+<p>Within the OAuth flow, we focus on the Web API part:
+<figure><a class="lightgallery" href="/images/authflow-webapi-validates-token.png" title="Auth Flow - Web API Validates Token" data-thumbnail="/images/authflow-webapi-validates-token.png" data-sub-html="<h2>Auth Flow - Web API Validates Token</h2><p>Auth Flow - Web API Validates Token</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/authflow-webapi-validates-token.png"
+            data-srcset="/images/authflow-webapi-validates-token.png, /images/authflow-webapi-validates-token.png 1.5x, /images/authflow-webapi-validates-token.png 2x"
+            data-sizes="auto"
+            alt="/images/authflow-webapi-validates-token.png" />
+    </a><figcaption class="image-caption">Auth Flow - Web API Validates Token</figcaption>
+    </figure></p>
+<p>The following image illustrates the Authorization Code Flow with the corresponding OAuth roles, based on <a href="https://datatracker.ietf.org/doc/html/rfc6749#section-4.1" target="_blank" rel="noopener noreffer">section 4.1 of the OAuth 2.0 specification: RFC6749</a>, and here with an additional Resource Server (our FastAPI backend API):
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/oauth-auth-code-grant-entraid-fastapi.png"
+        data-srcset="/images/oauth-auth-code-grant-entraid-fastapi.png, /images/oauth-auth-code-grant-entraid-fastapi.png 1.5x, /images/oauth-auth-code-grant-entraid-fastapi.png 2x"
+        data-sizes="auto"
+        alt="/images/oauth-auth-code-grant-entraid-fastapi.png"
+        title="Authorization Code Flow" /></p>
+<blockquote>
+<p><strong>Note:</strong> The lines illustrating steps (A), (B), and (C) are broken into
+two parts as they pass through the user-agent.</p></blockquote>
 <p>What we need:</p>
 <ul>
-<li>Python Fast API - Backend API Code</li>
-<li>Additional App Registration for this app which will expose api</li>
-<li>Additional Azure App to deploy the code</li>
-<li></li>
+<li>Additional App Registration for this Web API (Resource Server) app, which will expose the API</li>
+<li>Python FastAPI code for our Web API (run locally)</li>
+<li>Adjusted Flask Web App (with links to our Web API)</li>
+<li>Permissions for the Flask app to access the Web API</li>
+<li>Optional: Additional Azure App to deploy the code, or simply run on localhost</li>
+</ul>
+<p>The following <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-api-dotnet-protect-app?tabs=aspnet" target="_blank" rel="noopener noreffer">quickstart guide</a> from the Microsoft Docs can also be used as reference.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Tutorial 1 and optional 2 finished</li>
+<li>Microsoft Azure Tenant</li>
+<li>UV installed: <a href="https://docs.astral.sh/uv/getting-started/installation/" target="_blank" rel="noopener noreffer">UV Installation</a></li>
+</ul>
+<h2 id="register-an-application-for-your-web-api">Register an application for your Web API</h2>
+<p>This time, let&rsquo;s start by registering your app in Entra ID:
+<figure><a class="lightgallery" href="/images/register-fastapi-webapi.png" title="register-fastapi-webapi" data-thumbnail="/images/register-fastapi-webapi.png" data-sub-html="<h2>Preview</h2><p>register-fastapi-webapi</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/register-fastapi-webapi.png"
+            data-srcset="/images/register-fastapi-webapi.png, /images/register-fastapi-webapi.png 1.5x, /images/register-fastapi-webapi.png 2x"
+            data-sizes="auto"
+            alt="/images/register-fastapi-webapi.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<h2 id="prepare-fastapi-backend-code">Prepare FastAPI Backend Code</h2>
+<p>Now we create a simple Web API with two endpoints and two scopes: one for &ldquo;reading data&rdquo; and one for &ldquo;writing data&rdquo;.</p>
+<p>Open a console window, create and navigate to your FastAPI app folder:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> fastapi_app
+</span></span></code></pre></div><p>Create a new UV project and install the necessary dependencies:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uv init
+</span></span><span class="line"><span class="cl">uv add fastapi uvicorn<span class="o">[</span>standard<span class="o">]</span> pydantic pwdlib<span class="o">[</span>argon2<span class="o">]</span> python-multipart python-jose
+</span></span><span class="line"><span class="cl"><span class="c1"># Activate the virtual environment with those dependencies installed:</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> .venv/bin/activate
+</span></span></code></pre></div><p>Then, add the following code into <strong>main.py</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Type hints and annotation support</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Annotated</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># FastAPI and related imports</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span><span class="p">,</span> <span class="n">Security</span><span class="p">,</span> <span class="n">status</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">fastapi.security</span> <span class="kn">import</span> <span class="n">OAuth2AuthorizationCodeBearer</span><span class="p">,</span> <span class="n">SecurityScopes</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># JWT decoding</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">jose</span> <span class="kn">import</span> <span class="n">jwt</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Data validation</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Entra ID config</span>
+</span></span><span class="line"><span class="cl"><span class="n">TENANT_ID</span> <span class="o">=</span> <span class="s2">&#34;&lt;ADD-YOUR-ENTRA-ID-TENANT-ID&gt;&#34;</span> <span class="c1">#TODO</span>
+</span></span><span class="line"><span class="cl"><span class="n">OPENID_CONFIG_URL</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;https://login.microsoftonline.com/</span><span class="si">{</span><span class="n">TENANT_ID</span><span class="si">}</span><span class="s2">/v2.0/.well-known/openid-configuration&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">API_AUDIENCE</span> <span class="o">=</span> <span class="s2">&#34;&lt;ADD-YOUR-API-AUDIENCE&gt;&#34;</span> <span class="c1"># First Expose Web API to get your API Audience #TODO</span>
+</span></span><span class="line"><span class="cl"><span class="n">ALGORITHM</span> <span class="o">=</span> <span class="s2">&#34;RS256&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fetch JWKS URL from OpenID configuration at startup</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This gets the public keys used to verify JWTs</span>
+</span></span><span class="line"><span class="cl"><span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">OPENID_CONFIG_URL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">resp</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">JWKS_URL</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&#34;jwks_uri&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Get the JSON Web Key Set (JWKS) from Entra ID</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_jwks</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">JWKS_URL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">resp</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&#34;keys&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Find the public key in JWKS that matches the JWT&#39;s key ID (kid)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_public_key</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">jwks</span> <span class="o">=</span> <span class="n">get_jwks</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">unverified_header</span> <span class="o">=</span> <span class="n">jwt</span><span class="o">.</span><span class="n">get_unverified_header</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">jwks</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="s2">&#34;kid&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="n">unverified_header</span><span class="p">[</span><span class="s2">&#34;kid&#34;</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">key</span>
+</span></span><span class="line"><span class="cl">    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&#34;Public key not found.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Pydantic model for token data</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">TokenData</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">username</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># Username from token (not used currently)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">scopes</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># List of scopes from token</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># OAuth2 scheme for FastAPI security</span>
+</span></span><span class="line"><span class="cl"><span class="n">oauth2_scheme</span> <span class="o">=</span> <span class="n">OAuth2AuthorizationCodeBearer</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">authorizationUrl</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;https://login.microsoftonline.com/</span><span class="si">{</span><span class="n">TENANT_ID</span><span class="si">}</span><span class="s2">/oauth2/v2.0/authorize&#34;</span><span class="p">,</span>  <span class="c1"># Entra ID auth URL</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tokenUrl</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;https://login.microsoftonline.com/</span><span class="si">{</span><span class="n">TENANT_ID</span><span class="si">}</span><span class="s2">/oauth2/v2.0/token&#34;</span><span class="p">,</span>  <span class="c1"># Entra ID token URL</span>
+</span></span><span class="line"><span class="cl">    <span class="n">scopes</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;data.read&#34;</span><span class="p">:</span> <span class="s2">&#34;Read protected data.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;data.write&#34;</span><span class="p">:</span> <span class="s2">&#34;Write protected data.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create FastAPI app</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Dependency to get the current user from the JWT token</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Checks for required scopes and validates the token</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">get_current_user</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">security_scopes</span><span class="p">:</span> <span class="n">SecurityScopes</span><span class="p">,</span> <span class="n">token</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Depends</span><span class="p">(</span><span class="n">oauth2_scheme</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Build the authenticate header value for WWW-Authenticate</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">security_scopes</span><span class="o">.</span><span class="n">scopes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">authenticate_value</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Bearer scope=&#34;</span><span class="si">{</span><span class="n">security_scopes</span><span class="o">.</span><span class="n">scope_str</span><span class="si">}</span><span class="s1">&#34;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">authenticate_value</span> <span class="o">=</span> <span class="s2">&#34;Bearer&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Exception to raise if authentication fails (invalid, missing, or expired token)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># This is required for proper OAuth2 error signaling, regardless of grant type.</span>
+</span></span><span class="line"><span class="cl">    <span class="n">credentials_exception</span> <span class="o">=</span> <span class="n">HTTPException</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_401_UNAUTHORIZED</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">detail</span><span class="o">=</span><span class="s2">&#34;Could not validate credentials&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;WWW-Authenticate&#34;</span><span class="p">:</span> <span class="n">authenticate_value</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Get public key and decode JWT</span>
+</span></span><span class="line"><span class="cl">        <span class="n">public_key</span> <span class="o">=</span> <span class="n">get_public_key</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">payload</span> <span class="o">=</span> <span class="n">jwt</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">token</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">public_key</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">algorithms</span><span class="o">=</span><span class="p">[</span><span class="n">ALGORITHM</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">audience</span><span class="o">=</span><span class="n">API_AUDIENCE</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;verify_exp&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&#34;verify_aud&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Extract scopes from token payload</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;scp&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;scope&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">token_scopes</span> <span class="o">=</span> <span class="n">scope</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">token_data</span> <span class="o">=</span> <span class="n">TokenData</span><span class="p">(</span><span class="n">scopes</span><span class="o">=</span><span class="n">token_scopes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Token is invalid or cannot be decoded</span>
+</span></span><span class="line"><span class="cl">        <span class="k">raise</span> <span class="n">credentials_exception</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Check if all required scopes are present in the token</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">scope</span> <span class="ow">in</span> <span class="n">security_scopes</span><span class="o">.</span><span class="n">scopes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">scope</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">token_data</span><span class="o">.</span><span class="n">scopes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_401_UNAUTHORIZED</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">detail</span><span class="o">=</span><span class="s2">&#34;Not enough permissions&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;WWW-Authenticate&#34;</span><span class="p">:</span> <span class="n">authenticate_value</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">token_data</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Protected endpoint: requires &#39;data.read&#39; scope</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@app.get</span><span class="p">(</span><span class="s2">&#34;/data/read&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">read_data</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">current_user</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="n">TokenData</span><span class="p">,</span> <span class="n">Security</span><span class="p">(</span><span class="n">get_current_user</span><span class="p">,</span> <span class="n">scopes</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;data.read&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Return protected data if user has &#39;data.read&#39; scope.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;data&#34;</span><span class="p">:</span> <span class="s2">&#34;This is protected data you can read.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;scopes&#34;</span><span class="p">:</span> <span class="n">current_user</span><span class="o">.</span><span class="n">scopes</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Protected endpoint: requires &#39;data.write&#39; scope</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@app.post</span><span class="p">(</span><span class="s2">&#34;/data/write&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">write_data</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">current_user</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="n">TokenData</span><span class="p">,</span> <span class="n">Security</span><span class="p">(</span><span class="n">get_current_user</span><span class="p">,</span> <span class="n">scopes</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;data.write&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Allow writing protected data if user has &#39;data.write&#39; scope.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">{</span><span class="s2">&#34;result&#34;</span><span class="p">:</span> <span class="s2">&#34;You wrote protected data!&#34;</span><span class="p">,</span> <span class="s2">&#34;scopes&#34;</span><span class="p">:</span> <span class="n">current_user</span><span class="o">.</span><span class="n">scopes</span><span class="p">}</span>
+</span></span></code></pre></div><p>The OAuth implementation is based on the following FastAPI Documentation <a href="https://fastapi.tiangolo.com/advanced/security/oauth2-scopes/?h=scopes" target="_blank" rel="noopener noreffer">https://fastapi.tiangolo.com/advanced/security/oauth2-scopes/?h=scopes</a></p>
+<p>BUT instead of using OAuth2PasswordBearer for a simple username password flow we use OAuth2AuthorizationCodeBearer to be able to use the <strong>Authorization Code Flow</strong>.</p>
+<p>You need at least to replace your custom Values at the #TODO comments</p>
+<h2 id="expose-the-api">Expose the API</h2>
+<h3 id="add-a-scope-to-your-api">Add a Scope to Your API</h3>
+<p>To expose your API, you need to define a scope in your app registration.</p>
+<p><figure><a class="lightgallery" href="/images/myfastapi-webapi-add-scope1.png" title="Add Scope Step 1" data-thumbnail="/images/myfastapi-webapi-add-scope1.png" data-sub-html="<h2>Add Scope - Step 1</h2><p>Add Scope Step 1</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/myfastapi-webapi-add-scope1.png"
+            data-srcset="/images/myfastapi-webapi-add-scope1.png, /images/myfastapi-webapi-add-scope1.png 1.5x, /images/myfastapi-webapi-add-scope1.png 2x"
+            data-sizes="auto"
+            alt="/images/myfastapi-webapi-add-scope1.png" />
+    </a><figcaption class="image-caption">Add Scope - Step 1</figcaption>
+    </figure>
+Let&rsquo;s create two scopes data.read and data.write:
+<figure><a class="lightgallery" href="/images/MyFastAPI-WebAPI-add-scope2.png" title="Add Scope Step 2" data-thumbnail="/images/MyFastAPI-WebAPI-add-scope2.png" data-sub-html="<h2>Add Scope - Step 2</h2><p>Add Scope Step 2</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/MyFastAPI-WebAPI-add-scope2.png"
+            data-srcset="/images/MyFastAPI-WebAPI-add-scope2.png, /images/MyFastAPI-WebAPI-add-scope2.png 1.5x, /images/MyFastAPI-WebAPI-add-scope2.png 2x"
+            data-sizes="auto"
+            alt="/images/MyFastAPI-WebAPI-add-scope2.png" />
+    </a><figcaption class="image-caption">Add Scope - Step 2</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/images/myfastapi-webapi-add-scope3.png" title="Add Scope Step 3" data-thumbnail="/images/myfastapi-webapi-add-scope3.png" data-sub-html="<h2>Add Scope - Step 3</h2><p>Add Scope Step 3</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/myfastapi-webapi-add-scope3.png"
+            data-srcset="/images/myfastapi-webapi-add-scope3.png, /images/myfastapi-webapi-add-scope3.png 1.5x, /images/myfastapi-webapi-add-scope3.png 2x"
+            data-sizes="auto"
+            alt="/images/myfastapi-webapi-add-scope3.png" />
+    </a><figcaption class="image-caption">Add Scope - Step 3</figcaption>
+    </figure></p>
+<p>Now we have the backend FastAPI code ready, the Web API registered as an app, and the Web API exposed.
+Next, let&rsquo;s update the Flask Web App code to add links that will call the backend API and use the new scopes.</p>
+<h2 id="update-web-app-flask-code">update web app flask code</h2>
+<p>Update the Flask Web App code from the previous tutorials. (Additionally, install Flask-Session to store session data in server-side storage.)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">url_for</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">flask_session</span> <span class="kn">import</span> <span class="n">Session</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">msal</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">uuid</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">secret_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>  <span class="c1"># Needed for session</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Configure Flask-Session to use filesystem (server-side session)</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;SESSION_TYPE&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;filesystem&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;SESSION_PERMANENT&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;SESSION_USE_SIGNER&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="n">Session</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Specify the path to the .env file</span>
+</span></span><span class="line"><span class="cl"><span class="n">dotenv_path</span> <span class="o">=</span> <span class="s2">&#34;.env&#34;</span>  <span class="c1"># Update this with the actual path</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the .env file</span>
+</span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">(</span><span class="n">dotenv_path</span><span class="o">=</span><span class="n">dotenv_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Config</span>
+</span></span><span class="line"><span class="cl"><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_id&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_ID&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;authority&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;https://login.microsoftonline.com/</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;TENANT_ID&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Add FastAPI API scopes for read and write</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;scope&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;User.Read&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;api://c750c37c-6c67-4211-a9e2-6f035a897cfa/data.read&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;api://c750c37c-6c67-4211-a9e2-6f035a897cfa/data.write&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;redirect_uri&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;REDIRECT_URI&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;client_secret&#34;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;CLIENT_SECRET&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">build_msal_app</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">msal</span><span class="o">.</span><span class="n">ConfidentialClientApplication</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">client_id</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;client_id&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">authority</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;authority&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">client_credential</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;client_secret&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># In the Index Page, add simple links to our backend FastAPI</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;user&#34;</span> <span class="ow">in</span> <span class="n">session</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">user</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="s2">&#34;user&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &lt;h2&gt;Welcome </span><span class="si">{</span><span class="n">user</span><span class="p">[</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/h2&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &lt;p&gt;Email: </span><span class="si">{</span><span class="n">user</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;mail&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">user</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;userPrincipalName&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &lt;a href=&#34;/logout&#34;&gt;Logout&lt;/a&gt;&lt;br&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &lt;a href=&#34;/api/read&#34;&gt;Read Protected Data (FastAPI)&lt;/a&gt;&lt;br&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &lt;a href=&#34;/api/write&#34;&gt;Write Protected Data (FastAPI)&lt;/a&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&lt;a href=&#34;/login&#34;&gt;Login with Microsoft&lt;/a&gt;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/api/read&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">api_read</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">api_access_token</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;api_access_token&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">api_access_token</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&#34;login&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Call FastAPI backend read endpoint</span>
+</span></span><span class="line"><span class="cl">    <span class="n">api_url</span> <span class="o">=</span> <span class="s2">&#34;http://localhost:8000/data/read&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;Bearer </span><span class="si">{</span><span class="n">api_access_token</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;&lt;pre&gt;</span><span class="si">{</span><span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&lt;a href=&#39;/&#39;&gt;Back&lt;/a&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;Error calling API: </span><span class="si">{</span><span class="n">resp</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">resp</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2"> &lt;a href=&#39;/&#39;&gt;Back&lt;/a&gt;&#34;</span><span class="p">,</span> <span class="mi">500</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/api/write&#34;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;GET&#34;</span><span class="p">,</span> <span class="s2">&#34;POST&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">api_write</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">api_access_token</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;api_access_token&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">api_access_token</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&#34;login&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Call FastAPI backend write endpoint</span>
+</span></span><span class="line"><span class="cl">    <span class="n">api_url</span> <span class="o">=</span> <span class="s2">&#34;http://localhost:8000/data/write&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;Bearer </span><span class="si">{</span><span class="n">api_access_token</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;&lt;pre&gt;</span><span class="si">{</span><span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&lt;a href=&#39;/&#39;&gt;Back&lt;/a&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;Error calling API: </span><span class="si">{</span><span class="n">resp</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">resp</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2"> &lt;a href=&#39;/&#39;&gt;Back&lt;/a&gt;&#34;</span><span class="p">,</span> <span class="mi">500</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/login&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msal_app</span> <span class="o">=</span> <span class="n">build_msal_app</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flow</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">initiate_auth_code_flow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scopes</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;scope&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">redirect_uri</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;redirect_uri&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="n">state</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">session</span><span class="p">[</span><span class="s2">&#34;auth_flow&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flow</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">flow</span><span class="p">[</span><span class="s2">&#34;auth_uri&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/callback&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">callback</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msal_app</span> <span class="o">=</span> <span class="n">build_msal_app</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">acquire_token_by_auth_code_flow</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;auth_flow&#34;</span><span class="p">,</span> <span class="p">{}),</span> <span class="n">request</span><span class="o">.</span><span class="n">args</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;Authentication failed&#34;</span><span class="p">,</span> <span class="mi">400</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;access_token&#34;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">session</span><span class="p">[</span><span class="s2">&#34;access_token&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&#34;access_token&#34;</span><span class="p">]</span>  <span class="c1"># This is likely a Graph token</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Call Microsoft Graph to get user info</span>
+</span></span><span class="line"><span class="cl">        <span class="n">graph_resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;https://graph.microsoft.com/v1.0/me&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;Bearer </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;access_token&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">graph_resp</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">session</span><span class="p">[</span><span class="s2">&#34;user&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graph_resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;Graph API error: </span><span class="si">{</span><span class="n">graph_resp</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="mi">500</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Now acquire a token for the FastAPI API (audience = API)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">account</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">get_accounts</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">get_accounts</span><span class="p">()</span> <span class="k">else</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">        <span class="n">api_scopes</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;api://c750c37c-6c67-4211-a9e2-6f035a897cfa/data.read&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;api://c750c37c-6c67-4211-a9e2-6f035a897cfa/data.write&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">api_token_result</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">acquire_token_silent</span><span class="p">(</span><span class="n">api_scopes</span><span class="p">,</span> <span class="n">account</span><span class="o">=</span><span class="n">account</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="n">api_token_result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># If silent fails, use refresh token if available</span>
+</span></span><span class="line"><span class="cl">            <span class="n">api_token_result</span> <span class="o">=</span> <span class="n">msal_app</span><span class="o">.</span><span class="n">acquire_token_by_authorization_code</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">request</span><span class="o">.</span><span class="n">args</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;code&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="n">scopes</span><span class="o">=</span><span class="n">api_scopes</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">redirect_uri</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">&#34;redirect_uri&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s2">&#34;access_token&#34;</span> <span class="ow">in</span> <span class="n">api_token_result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">session</span><span class="p">[</span><span class="s2">&#34;api_access_token&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">api_token_result</span><span class="p">[</span><span class="s2">&#34;access_token&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;API token error: </span><span class="si">{</span><span class="n">api_token_result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;error_description&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="mi">400</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&#34;index&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;Error: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;error_description&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span> <span class="mi">400</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/logout&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">logout</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">session</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&#34;index&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&#34;0.0.0.0&#34;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5001</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="add-permissions-to-web-app">Add permissions to Web App</h2>
+<p>In Entra ID, ensure your Flask app registration has permissions to request those scopes (as &ldquo;delegated permissions&rdquo; to your API).</p>
+<p><figure><a class="lightgallery" href="/images/request-api-permissions-fastapibackend-from-app.png" title="Request API Permissions for FastAPI Backend from App" data-thumbnail="/images/request-api-permissions-fastapibackend-from-app.png" data-sub-html="<h2>Request API Permissions for FastAPI Backend from App</h2><p>Request API Permissions for FastAPI Backend from App</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/request-api-permissions-fastapibackend-from-app.png"
+            data-srcset="/images/request-api-permissions-fastapibackend-from-app.png, /images/request-api-permissions-fastapibackend-from-app.png 1.5x, /images/request-api-permissions-fastapibackend-from-app.png 2x"
+            data-sizes="auto"
+            alt="/images/request-api-permissions-fastapibackend-from-app.png" />
+    </a><figcaption class="image-caption">Request API Permissions for FastAPI Backend from App</figcaption>
+    </figure></p>
+<p><figure><a class="lightgallery" href="/images/request-api-permissions-delegated-datasample.png" title="Request API Permissions - Delegated Data Sample" data-thumbnail="/images/request-api-permissions-delegated-datasample.png" data-sub-html="<h2>Request API Permissions - Delegated Data Sample</h2><p>Request API Permissions - Delegated Data Sample</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/request-api-permissions-delegated-datasample.png"
+            data-srcset="/images/request-api-permissions-delegated-datasample.png, /images/request-api-permissions-delegated-datasample.png 1.5x, /images/request-api-permissions-delegated-datasample.png 2x"
+            data-sizes="auto"
+            alt="/images/request-api-permissions-delegated-datasample.png" />
+    </a><figcaption class="image-caption">Request API Permissions - Delegated Data Sample</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/images/myconfidentalserverapp-api-permissions.png" title="My Confidential Server App - API Permissions" data-thumbnail="/images/myconfidentalserverapp-api-permissions.png" data-sub-html="<h2>My Confidential Server App - API Permissions</h2><p>My Confidential Server App - API Permissions</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/myconfidentalserverapp-api-permissions.png"
+            data-srcset="/images/myconfidentalserverapp-api-permissions.png, /images/myconfidentalserverapp-api-permissions.png 1.5x, /images/myconfidentalserverapp-api-permissions.png 2x"
+            data-sizes="auto"
+            alt="/images/myconfidentalserverapp-api-permissions.png" />
+    </a><figcaption class="image-caption">My Confidential Server App - API Permissions</figcaption>
+    </figure></p>
+<h2 id="start-fastapi-and-flask-app-locally">Start FastAPI and Flask App locally</h2>
+<p>Start your FastAPI Web API app locally:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uvicorn main:app --host<span class="o">=</span>0.0.0.0 --port<span class="o">=</span><span class="m">8000</span>
+</span></span></code></pre></div><p>Then start your Flask App locally:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flask --app main.py run --host<span class="o">=</span>0.0.0.0 --port<span class="o">=</span><span class="m">5001</span>
+</span></span></code></pre></div><p>Then log in:
+<figure><a class="lightgallery" href="/images/login-localhost.png" title="Login Localhost" data-thumbnail="/images/login-localhost.png" data-sub-html="<h2>Login Localhost</h2><p>Login Localhost</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/login-localhost.png"
+            data-srcset="/images/login-localhost.png, /images/login-localhost.png 1.5x, /images/login-localhost.png 2x"
+            data-sizes="auto"
+            alt="/images/login-localhost.png" />
+    </a><figcaption class="image-caption">Login Localhost</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/images/consent-permissions-requested.png" title="Consent - Permissions Requested" data-thumbnail="/images/consent-permissions-requested.png" data-sub-html="<h2>Consent - Permissions Requested</h2><p>Consent - Permissions Requested</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/consent-permissions-requested.png"
+            data-srcset="/images/consent-permissions-requested.png, /images/consent-permissions-requested.png 1.5x, /images/consent-permissions-requested.png 2x"
+            data-sizes="auto"
+            alt="/images/consent-permissions-requested.png" />
+    </a><figcaption class="image-caption">Consent - Permissions Requested</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/images/consent-premissions-requested-2.png" title="Consent - Permissions Requested 2" data-thumbnail="/images/consent-premissions-requested-2.png" data-sub-html="<h2>Consent - Permissions Requested 2</h2><p>Consent - Permissions Requested 2</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/consent-premissions-requested-2.png"
+            data-srcset="/images/consent-premissions-requested-2.png, /images/consent-premissions-requested-2.png 1.5x, /images/consent-premissions-requested-2.png 2x"
+            data-sizes="auto"
+            alt="/images/consent-premissions-requested-2.png" />
+    </a><figcaption class="image-caption">Consent - Permissions Requested 2</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/images/sample-page-with-read-write-api-urls.png" title="Sample Page with Read/Write API URLs" data-thumbnail="/images/sample-page-with-read-write-api-urls.png" data-sub-html="<h2>Sample Page with Read/Write API URLs</h2><p>Sample Page with Read/Write API URLs</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/sample-page-with-read-write-api-urls.png"
+            data-srcset="/images/sample-page-with-read-write-api-urls.png, /images/sample-page-with-read-write-api-urls.png 1.5x, /images/sample-page-with-read-write-api-urls.png 2x"
+            data-sizes="auto"
+            alt="/images/sample-page-with-read-write-api-urls.png" />
+    </a><figcaption class="image-caption">Sample Page with Read/Write API URLs</figcaption>
+    </figure></p>
+<h2 id="notes">notes</h2>
+<p>Now my web app needs to have permissions to my backend api</p>
+<ul>
+<li>add permissions to app</li>
+<li>check how it exactly works in my web app</li>
+</ul>
+<p>issue with scope missing
+ah audience was wrong, to requests necessary!
+argh now issue with session length
+The &lsquo;session&rsquo; cookie is too large: the value was 4835 bytes but the header required 26 extra bytes. The final size was 4861 bytes but the limit is 4093 bytes. Browsers may silently ignore cookies larger than this.
+dump_cookie(</p>
+<p>okay installed flask-sessoin so that it can store the session on the disk or so.
+now it seems to work</p>
+<p>#TODO</p>
+<ul>
+<li>image which explains components involved (app registrations, permissions, exposed scopes and so on?)</li>
+<li>issue what to show, where its running, how permissions argh just to much..</li>
 </ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">

@@ -27,10 +27,10 @@
       <link>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</link>
       <pubDate>Sun, 28 Sep 2025 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</guid>
-      <description>&lt;h2 id=&#34;introduction---server-side-app---auth-code-flow&#34;&gt;Introduction - &amp;ldquo;Server Side App&amp;rdquo; - Auth Code Flow&lt;/h2&gt;&#xA;&lt;p&gt;This guide demonstrates how to create a &amp;ldquo;server-side&amp;rdquo; &lt;strong&gt;Python web application&lt;/strong&gt; running locally (for development, in second tutorial we will deploy it to Azure) that authenticates users with &lt;strong&gt;Microsoft Entra ID&lt;/strong&gt; and authorizes access to the &lt;strong&gt;Microsoft Graph API&lt;/strong&gt; using the &lt;strong&gt;Authorization Code Flow&lt;/strong&gt; as a &lt;strong&gt;&amp;ldquo;confidential client&amp;rdquo;&lt;/strong&gt; with a client secret.&lt;/p&gt;&#xA;&lt;p&gt;The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction---server-side-app---auth-code-flow&#34;&gt;Introduction - &amp;ldquo;Server Side App&amp;rdquo; - Auth Code Flow&lt;/h2&gt;&#xA;&lt;p&gt;This guide demonstrates how to create a &amp;ldquo;server-side&amp;rdquo; &lt;strong&gt;Python web application&lt;/strong&gt; running locally (for development; in the second tutorial, we will deploy it to Azure) that authenticates users with &lt;strong&gt;Microsoft Entra ID&lt;/strong&gt; and authorizes access to the &lt;strong&gt;Microsoft Graph API&lt;/strong&gt; using the &lt;strong&gt;Authorization Code Flow&lt;/strong&gt; as a &lt;strong&gt;&amp;ldquo;confidential client&amp;rdquo;&lt;/strong&gt; with a client secret.&lt;/p&gt;&#xA;&lt;p&gt;The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>OAuth 2.0</title>
+      <title>OAuth 2.0 - mind map</title>
       <link>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</link>
       <pubDate>Sat, 27 Sep 2025 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</guid>

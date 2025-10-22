@@ -8,7 +8,8 @@
         <title>OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID - NASAN</title><meta name="Description" content=""><meta property="og:url" content="http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/">
   <meta property="og:site_name" content="NASAN">
   <meta property="og:title" content="OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID">
-  <meta property="og:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development; in the second tutorial, we will deploy it to Azure) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
+  <meta property="og:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
+Info: In the second tutorial, we will deploy this app to Azure
 The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -19,7 +20,8 @@ The client is considered confidential because the app runs solely on the server,
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID">
-  <meta name="twitter:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development; in the second tutorial, we will deploy it to Azure) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
+  <meta name="twitter:description" content="Introduction - “Server Side App” - Auth Code Flow This guide demonstrates how to create a “server-side” Python web application running locally (for development) that authenticates users with Microsoft Entra ID and authorizes access to the Microsoft Graph API using the Authorization Code Flow as a “confidential client” with a client secret.
+Info: In the second tutorial, we will deploy this app to Azure
 The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.">
       <meta name="twitter:site" content="@nasantschi">
 <meta name="application-name" content="NASAN">
@@ -34,7 +36,7 @@ The client is considered confidential because the app runs solely on the server,
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow\/"
-        },"genre": "posts","keywords": "OAuth","wordcount":  1420 ,
+        },"genre": "posts","keywords": "OAuth","wordcount":  1422 ,
         "url": "http:\/\/localhost:1313\/posts\/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow\/","datePublished": "2025-09-28T05:10:21+01:00","dateModified": "2025-09-28T05:10:21+01:00","publisher": {
             "@type": "Organization",
             "name": "Nathanael Santschi"},"author": {
@@ -111,7 +113,7 @@ The client is considered confidential because the app runs solely on the server,
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-category">included in <a href="/categories/oauth/"><i class="far fa-folder fa-fw"></i>OAuth</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-28">2025-09-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1420 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-09-28">2025-09-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1422 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -134,7 +136,10 @@ The client is considered confidential because the app runs solely on the server,
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="introduction---server-side-app---auth-code-flow">Introduction - &ldquo;Server Side App&rdquo; - Auth Code Flow</h2>
-<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development; in the second tutorial, we will deploy it to Azure) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
+<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
+<blockquote>
+<p><strong>Info:</strong>
+In the second tutorial, we will deploy this app to Azure</p></blockquote>
 <p>The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.</p>
 <p>You may first want to check out my previous article on OAuth, which offers a MindMap to give a broad overview of some important OAuth concepts: <a href="/posts/2025-09-27-oauth20-0-overview/" rel="">OAuth 2.0 - MindMap</a></p>
 <p>The following image illustrates the Authorization Code Flow with the corresponding OAuth roles, based on <a href="https://datatracker.ietf.org/doc/html/rfc6749#section-4.1" target="_blank" rel="noopener noreffer">section 4.1 of the OAuth 2.0 specification: RFC6749</a>:

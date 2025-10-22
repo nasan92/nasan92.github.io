@@ -6,19 +6,25 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Auth Code Flow - Entra ID</title>
+    <title>OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server</title>
     <link>http://localhost:1313/posts/2025-09-30-oauth20-3/</link>
     <pubDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-09-30-oauth20-3/</guid>
-    <description><![CDATA[<p>In the previous tutorials:</p>
+    <description><![CDATA[<h2 id="previous-tutorials">Previous tutorials</h2>
+<p>In the previous tutorials:</p>
 <ul>
 <li><a href="/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</a></li>
-<li><a href="/posts/2025-09-27-OAuth20-2-AzureServerSidePythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</a><br>
-We learned how to deploy a Python Web App to Azure, register the app to Entra ID and using the Auhtorization Code Flow to access the Microsoft Graph API.
-In this tutorial we want to take a look on how to build our own Web API which then can be accessed from our previously created Python Web App.</li>
+<li><a href="/posts/2025-09-27-OAuth20-2-AzureServerSidePythonWebApp-AuthCodeFlow" rel="">OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</a></li>
 </ul>
-<p>What we need:</p>]]></description>
+<p>we learned:</p>
+<ul>
+<li>how to deploy a Python Web App to Azure</li>
+<li>register the app with Entra ID</li>
+<li>and use the Authorization Code Flow to access the Microsoft Graph API.</li>
+</ul>
+<h2 id="overview">Overview</h2>
+<p>In this tutorial:</p>]]></description>
 </item><item>
     <title>OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</title>
     <link>http://localhost:1313/posts/2025-09-27-oauth20-2-azureserversidepythonwebapp-authcodeflow/</link>
@@ -52,7 +58,10 @@ In this tutorial we want to take a look on how to build our own Web API which th
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</guid>
     <description><![CDATA[<h2 id="introduction---server-side-app---auth-code-flow">Introduction - &ldquo;Server Side App&rdquo; - Auth Code Flow</h2>
-<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development; in the second tutorial, we will deploy it to Azure) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
+<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
+<blockquote>
+<p><strong>Info:</strong>
+In the second tutorial, we will deploy this app to Azure</p></blockquote>
 <p>The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.</p>]]></description>
 </item><item>
     <title>OAuth 2.0 - mind map</title>
