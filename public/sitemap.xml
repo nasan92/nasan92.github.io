@@ -2,19 +2,21 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/diagramm/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/metaphysik/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/philosophie/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/oauth/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/oauth/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-09-30-oauth20-3/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-09-27-oauth20-2-azureserversidepythonwebapp-authcodeflow/</loc><lastmod>2025-09-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</loc><lastmod>2025-09-28T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2025-09-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</loc><lastmod>2025-09-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/diagramm/</loc><lastmod>2025-08-30T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/philosophie/</loc><lastmod>2025-08-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-08-30-was-ist-philosophie/</loc><lastmod>2025-08-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/architecture/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2025-06-23T05:10:21&#43;01:00</lastmod></url><url>

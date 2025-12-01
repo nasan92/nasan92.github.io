@@ -98,6 +98,17 @@
         alt="/images/nasan-avatar.jpeg"
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2021-08-23-windows-sandbox-customization-dsc/">Windows Sandbox Customization with DSC </a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-23">2021-08-23</time></span></div><div class="content"><p>Demo Windows Sandbox Customization with Powershell DSC</p>
+<p>In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.</p>
+<h2 id="enable-windows-sandbox">Enable Windows Sandbox</h2>
+<p>First you need to enable the Windows Sandbox. You can do that by enabling the windows feature using the GUI or enable it with Powershell:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Enable-WindowsOptionalFeature</span> <span class="n">-FeatureName</span> <span class="s2">&#34;Containers-DisposableClientVM&#34;</span> <span class="n">-Online</span>
+</span></span></code></pre></div><h2 id="customization-files">Customization Files</h2>
+<p>You can create a XML Config file like the following example and save it anywhere as <strong>.wsb -</strong>&gt; which will link automatically to Windows Sandbox :</p></div><div class="post-footer">
+        <a href="/posts/2021-08-23-windows-sandbox-customization-dsc/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/windowssandbox/">WindowsSandbox</a>,&nbsp;<a href="/tags/dsc/">DSC</a>,&nbsp;<a href="/tags/powershell/">Powershell</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-08-17-useful-chocolatey-commands/">useful chocolatey commands </a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-17">2021-08-17</time></span></div><div class="content"><p>Useful Chocolatey commands</p>
 <h1 id="useful-chocolatey-commands">Useful Chocolatey commands</h1>
@@ -185,29 +196,6 @@
 It will automatically find the Remote Desktop Server where the user is logged in an run the gpresult there:</p></div><div class="post-footer">
         <a href="/posts/2021-05-07-gpresult-remote/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2018-12-01-logik/">Infografik Logik</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-12-01">2018-12-01</time></span></div><div class="content"><p>Die folgende Infografik gibt einen groben Überblick zu den Themen:</p>
-<ul>
-<li>Was ist Logik?</li>
-<li>Was ist ein Argument?</li>
-<li>Was macht ein Argument schlüssig?</li>
-<li>Beispiele für Logische Fehlschlüsse</li>
-</ul>
-<p>Zum Thema habe ich auch ein kurzes Video erstellt:
-<a href="https://youtu.be/Tp9WzwUMjDs" target="_blank" rel="noopener noreffer">https://youtu.be/Tp9WzwUMjDs</a></p>
-<p><figure><a class="lightgallery" href="/images/Logik-Infografik.drawio.svg" title="Logik Infografik" data-thumbnail="/images/Logik-Infografik.drawio.svg" data-sub-html="<h2>Preview</h2><p>Logik Infografik</p>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/images/Logik-Infografik.drawio.svg"
-            data-srcset="/images/Logik-Infografik.drawio.svg, /images/Logik-Infografik.drawio.svg 1.5x, /images/Logik-Infografik.drawio.svg 2x"
-            data-sizes="auto"
-            alt="/images/Logik-Infografik.drawio.svg" />
-    </a><figcaption class="image-caption">Preview</figcaption>
-    </figure></p></div><div class="post-footer">
-        <a href="/posts/2018-12-01-logik/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/infografik/">Infografik</a>,&nbsp;<a href="/tags/logik/">Logik</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

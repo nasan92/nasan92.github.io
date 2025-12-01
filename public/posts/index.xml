@@ -3,7 +3,22 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 29 Nov 2025 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Was ist Metaphysik?</title>
+    <link>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</link>
+    <pubDate>Sat, 29 Nov 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</guid>
+    <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 30min einen groben Überblick zu der philosophischen Disziplin <strong>Metaphysik</strong> zu vermitteln.
+Die MindMaps dazu können weiter unten in voller Auflösung betrachtet werden.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8Bz56U6cXGI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="metaphysik-übersicht">Metaphysik Übersicht</h2>
+<p>In diesem Diagramm sind einige der wichtigsten philosophischen Disziplinen grob dargestellt.</p>
+<p><figure><a class="lightgallery" href="/images/Metaphysik-uebersicht-01.png" title="Metaphysik Übersicht" data-thumbnail="/images/Metaphysik-uebersicht-01.png" data-sub-html="<h2>Metaphysik Übersicht</h2><p>Metaphysik Übersicht</p>]]></description>
+</item><item>
     <title>OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server</title>
     <link>http://localhost:1313/posts/2025-09-30-oauth20-3/</link>
     <pubDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</pubDate>
@@ -71,18 +86,9 @@ In the second tutorial, we will deploy this app to Azure</p></blockquote>
     <pubDate>Sat, 27 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</guid>
-    <description><![CDATA[<p>Here some public notes from my side on OAuth 2.0. Some good resources:</p>
-<ul>
-<li><a href="https://www.udemy.com/course/oauth-2-simplified/" target="_blank" rel="noopener noreffer">OAuth 2.0 Udemy course</a></li>
-<li><a href="https://oauth.net/2/" target="_blank" rel="noopener noreffer">https://oauth.net/2/</a></li>
-<li><a href="https://oauth.com" target="_blank" rel="noopener noreffer">https://oauth.com</a></li>
-<li><a href="https://oauth.net" target="_blank" rel="noopener noreffer">https://oauth.net</a></li>
-<li><a href="https://oauth2simplified.com" target="_blank" rel="noopener noreffer">https://oauth2simplified.com</a></li>
-<li><a href="https://datatracker.ietf.org/doc/html/rfc6749" target="_blank" rel="noopener noreffer">OAuth 2.0 Framework - RFC 6749</a></li>
-<li><a href="https://learn.microsoft.com/en-us/entra/identity-platform/authentication-flows-app-scenarios#scenarios-and-supported-authentication-flows" target="_blank" rel="noopener noreffer">Nice Overview which scenarios support which Authentication Flow</a></li>
-</ul>
+    <description><![CDATA[<p>To better understand OAuth 2.0, I have created the following mind map and a series of follow-up tutorials that provide a basic overview of how OAuth works.</p>
 <h2 id="mindmap-oauth">MindMap OAuth</h2>
-<p><figure><a class="lightgallery" href="/images/OAuth2.svg" title="AUTH 2.0  Mind Map" data-thumbnail="/images/OAuth2.svg" data-sub-html="<h2>OAUTH 2.0 Mind Map illustrates basic concepts</h2><p>AUTH 2.0  Mind Map</p>">
+<p><figure><a class="lightgallery" href="/images/OAuth2-0.svg" title="AUTH 2.0  Mind Map" data-thumbnail="/images/OAuth2-0.svg" data-sub-html="<h2>OAUTH 2.0 Mind Map illustrates basic concepts</h2><p>AUTH 2.0  Mind Map</p>">
         
     </a><figcaption class="image-caption">OAUTH 2.0 Mind Map illustrates basic concepts</figcaption>
     </figure><br>
@@ -166,22 +172,5 @@ The purpose of OpenTelemetry is to collect, process and export signals. The sign
     </a><figcaption class="image-caption">Azure Databricks Mind Map showcasing GenAI capabilities</figcaption>
     </figure><br>
 <em>Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities</em></p>]]></description>
-</item><item>
-    <title>MLflow - mind map - core components</title>
-    <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
-    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
-    <description><![CDATA[<p>This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.</p>
-<h2 id="mlflow-mind-map">MLflow Mind Map</h2>
-<p><figure><a class="lightgallery" href="/images/mlflow-core-components-mind-map.svg" title="MLflow MindMap" data-thumbnail="/images/mlflow-core-components-mind-map.svg" data-sub-html="<h2>MLflow Mind Map showcasing core components</h2><p>MLflow MindMap</p>">
-        
-    </a><figcaption class="image-caption">MLflow Mind Map showcasing core components</figcaption>
-    </figure><br>
-<em>Figure 1: MLflow Mind Map visualizing core components</em></p>
-<p>Download the mind map in multiple formats:<br>
-<a href="/images/mlflow-core-components-mind-map.png" title="Preview" rel="">MindMap PNG</a><br>
-<a href="/images/mlflow-core-components-mind-map.jpg" title="Preview" rel="">MindMap JPG</a><br>
-<a href="/images/mlflow-core-components-mind-map.svg" title="Preview" rel="">MindMap SVG</a></p>]]></description>
 </item></channel>
 </rss>

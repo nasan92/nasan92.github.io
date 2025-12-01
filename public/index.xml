@@ -3,9 +3,24 @@
         <title>NASAN</title>
         <link>http://localhost:1313/</link>
         <description>NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 29 Nov 2025 05:10:21 &#43;0100</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Was ist Metaphysik?</title>
+    <link>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</link>
+    <pubDate>Sat, 29 Nov 2025 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</guid>
+    <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 30min einen groben Überblick zu der philosophischen Disziplin <strong>Metaphysik</strong> zu vermitteln.<br>
+Die MindMaps dazu können weiter unten in voller Auflösung betrachtet werden.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8Bz56U6cXGI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="metaphysik-übersicht">Metaphysik Übersicht</h2>
+<p>In diesem Diagramm sind einige der wichtigsten philosophischen Disziplinen grob dargestellt.</p>
+<p><figure><a class="lightgallery" href="/images/Metaphysik-uebersicht-01.png" title="Metaphysik Übersicht" data-thumbnail="/images/Metaphysik-uebersicht-01.png" data-sub-html="<h2>Metaphysik Übersicht</h2><p>Metaphysik Übersicht</p>]]></description>
+</item><item>
     <title>OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server</title>
     <link>http://localhost:1313/posts/2025-09-30-oauth20-3/</link>
     <pubDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</pubDate>
@@ -159,22 +174,5 @@ The purpose of OpenTelemetry is to collect, process and export signals. The sign
     </a><figcaption class="image-caption">Azure Databricks Mind Map showcasing GenAI capabilities</figcaption>
     </figure><br>
 <em>Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities</em></p>]]></description>
-</item><item>
-    <title>MLflow - mind map - core components</title>
-    <link>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</link>
-    <pubDate>Fri, 21 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-02-21-mlflow-mind-map/</guid>
-    <description><![CDATA[<p>This mind map offers a comprehensive overview of the core components of MLflow. An interesting fact about MLflow is that it was originally developed by Databricks, with which it maintains strong integration.</p>
-<h2 id="mlflow-mind-map">MLflow Mind Map</h2>
-<p><figure><a class="lightgallery" href="/images/mlflow-core-components-mind-map.svg" title="MLflow MindMap" data-thumbnail="/images/mlflow-core-components-mind-map.svg" data-sub-html="<h2>MLflow Mind Map showcasing core components</h2><p>MLflow MindMap</p>">
-        
-    </a><figcaption class="image-caption">MLflow Mind Map showcasing core components</figcaption>
-    </figure><br>
-<em>Figure 1: MLflow Mind Map visualizing core components</em></p>
-<p>Download the mind map in multiple formats:<br>
-<a href="/images/mlflow-core-components-mind-map.png" title="Preview" rel="">MindMap PNG</a><br>
-<a href="/images/mlflow-core-components-mind-map.jpg" title="Preview" rel="">MindMap JPG</a><br>
-<a href="/images/mlflow-core-components-mind-map.svg" title="Preview" rel="">MindMap SVG</a></p>]]></description>
 </item></channel>
 </rss>
