@@ -14,12 +14,16 @@ categories:
 ---
 
 Im folgenden YouTube-Video versuche ich, innerhalb von 30min einen groben Überblick zu der philosophischen Disziplin **Metaphysik** zu vermitteln.   
+
 Die MindMaps dazu können weiter unten in voller Auflösung betrachtet werden.
 
 {{< youtube 8Bz56U6cXGI >}}
 
 ## Metaphysik Übersicht
-In diesem Diagramm sind einige der wichtigsten philosophischen Disziplinen grob dargestellt.
+In dem folgenden MindMap ist eine grobe Übersicht zur Metaphysik zu finden. 
+
+- Der Bereich **"Traditionell"** **Ontologie** wird im nächsten MindMap tiefer behandelt und gehört grundsätzlich zur "allgemeinen" Metaphysik
+- Auch der Bereich **"Modern"** wird im letzten MindMap noch vertieft angeschaut, welcher Themen aus der allgemeinen und speziellen Metaphysik beinhaltet
 
 ![Metaphysik Übersicht](/images/Metaphysik-uebersicht-01.png "Metaphysik Übersicht")  
 [MindMap SVG](/images/Metaphysik-uebersicht-01.svg "Preview")  
