@@ -22,8 +22,8 @@ Die MindMaps dazu können weiter unten in voller Auflösung betrachtet werden.
 ## Metaphysik Übersicht
 In dem folgenden MindMap ist eine grobe Übersicht zur Metaphysik zu finden. 
 
-- Der Bereich **"Traditionell"** **Ontologie** wird im nächsten MindMap tiefer behandelt und gehört grundsätzlich zur "allgemeinen" Metaphysik
-- Auch der Bereich **"Modern"** wird im letzten MindMap noch vertieft angeschaut, welcher Themen aus der allgemeinen und speziellen Metaphysik beinhaltet
+- Der Bereich **"Traditionell"** **Ontologie** wird im nächsten MindMap tiefer behandelt und gehört grundsätzlich zur "allgemeinen" Metaphysik.
+- Auch der Bereich **"Modern"** wird im letzten MindMap noch vertieft angeschaut. Er beinhaltet Themen aus der allgemeinen und speziellen Metaphysik.
 
 ![Metaphysik Übersicht](/images/Metaphysik-uebersicht-01.png "Metaphysik Übersicht")  
 [MindMap SVG](/images/Metaphysik-uebersicht-01.svg "Preview")  
