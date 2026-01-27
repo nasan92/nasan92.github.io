@@ -3,9 +3,25 @@
         <title>NASAN</title>
         <link>http://localhost:1313/</link>
         <description>NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 29 Nov 2025 05:10:21 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Jan 2026 05:10:21 &#43;0100</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Apache Kafka - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</link>
+    <pubDate>Tue, 27 Jan 2026 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</guid>
+    <description><![CDATA[<p>The following mindmap illustrates some key Apache Kafka concepts:</p>
+<h2 id="apache-kafka-mind-map">Apache Kafka Mind Map</h2>
+<p><figure><a class="lightgallery" href="/images/ApacheKafka-mindmap-concepts.svg" title="Apache Kafka MindMap" data-thumbnail="/images/ApacheKafka-mindmap-concepts.svg" data-sub-html="<h2>Apache Kafka Mind Map showcasing core concepts</h2><p>Apache Kafka MindMap</p>">
+        
+    </a><figcaption class="image-caption">Apache Kafka Mind Map showcasing core concepts</figcaption>
+    </figure><br>
+<em>Figure 1: Apache Kafka Mind Map visualizing key concepts</em></p>
+<p>Download the mind map in multiple formats:<br>
+<a href="/images/ApacheKafka-mindmap-concepts.png" title="Preview" rel="">MindMap PNG</a><br>
+<a href="/images/ApacheKafka-mindmap-concepts.svg" title="Preview" rel="">MindMap SVG</a></p>]]></description>
+</item><item>
     <title>Was ist Metaphysik?</title>
     <link>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</link>
     <pubDate>Sat, 29 Nov 2025 05:10:21 &#43;0100</pubDate>
@@ -20,8 +36,8 @@
 <h2 id="metaphysik-übersicht">Metaphysik Übersicht</h2>
 <p>In dem folgenden MindMap ist eine grobe Übersicht zur Metaphysik zu finden.</p>
 <ul>
-<li>Der Bereich <strong>&ldquo;Traditionell&rdquo;</strong> <strong>Ontologie</strong> wird im nächsten MindMap tiefer behandelt und gehört grundsätzlich zur &ldquo;allgemeinen&rdquo; Metaphysik</li>
-<li>Auch der Bereich <strong>&ldquo;Modern&rdquo;</strong> wird im letzten MindMap noch vertieft angeschaut, welcher Themen aus der allgemeinen und speziellen Metaphysik beinhaltet</li>
+<li>Der Bereich <strong>&ldquo;Traditionell&rdquo;</strong> <strong>Ontologie</strong> wird im nächsten MindMap tiefer behandelt und gehört grundsätzlich zur &ldquo;allgemeinen&rdquo; Metaphysik.</li>
+<li>Auch der Bereich <strong>&ldquo;Modern&rdquo;</strong> wird im letzten MindMap noch vertieft angeschaut. Er beinhaltet Themen aus der allgemeinen und speziellen Metaphysik.</li>
 </ul>
 <p><figure><a class="lightgallery" href="/images/Metaphysik-uebersicht-01.png" title="Metaphysik Übersicht" data-thumbnail="/images/Metaphysik-uebersicht-01.png" data-sub-html="<h2>Metaphysik Übersicht</h2><p>Metaphysik Übersicht</p>]]></description>
 </item><item>
@@ -164,19 +180,5 @@ The purpose of OpenTelemetry is to collect, process and export signals. The sign
 </ul>
 <h2 id="opentelemetry-concepts-mind-map">OpenTelemetry Concepts mind map</h2>
 <p><figure><a class="lightgallery" href="/images/OpenTelemetry-mindmap-concepts.svg" title="OpenTelemetry Concepts Mind Map" data-thumbnail="/images/OpenTelemetry-mindmap-concepts.svg" data-sub-html="<h2>OpenTelemetry Mind Map illustrates basic concepts</h2><p>OpenTelemetry Concepts Mind Map</p>]]></description>
-</item><item>
-    <title>GenAI Azure Databricks - mind map - capabilities</title>
-    <link>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</link>
-    <pubDate>Wed, 26 Feb 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-02-26-genai-capabilities-azure-databricks-mind-map/</guid>
-    <description><![CDATA[<p>This mind map provides a detailed overview of the GenAI capabilities available in Azure Databricks.</p>
-<p>Also, check out the <a href="/posts/2024-10-22-azure-databricks-mindmap/" rel="">Azure Databricks Key Concepts mind map</a></p>
-<h2 id="genai-capabilities-azure-databricks-mind-map">GenAI capabilities Azure Databricks mind map</h2>
-<p><figure><a class="lightgallery" href="/images/GenAI-capabilites-Azure-Databricks-mind-map.svg" title="GenAI capabilities Azure Databricks Mind Map" data-thumbnail="/images/GenAI-capabilites-Azure-Databricks-mind-map.svg" data-sub-html="<h2>Azure Databricks Mind Map showcasing GenAI capabilities</h2><p>GenAI capabilities Azure Databricks Mind Map</p>">
-        
-    </a><figcaption class="image-caption">Azure Databricks Mind Map showcasing GenAI capabilities</figcaption>
-    </figure><br>
-<em>Figure 1: GenAI Capabilities on Azure Databricks Mind Map visualizing key capabilities</em></p>]]></description>
 </item></channel>
 </rss>

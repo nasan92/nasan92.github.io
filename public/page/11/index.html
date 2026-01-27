@@ -98,6 +98,28 @@
         alt="/images/nasan-avatar.jpeg"
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2021-12-06-powershellclasses/">MindMap PowerShell Classes</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-12-06">2021-12-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/mindmap/"><i class="far fa-folder fa-fw"></i>MindMap</a></span></div><div class="content"><p>A MindMap about PowerShell Classes</p>
+<h2 id="powershell-classes-mindmap">PowerShell Classes MindMap</h2>
+<p>I&rsquo;m learning PowerShell and tought it could be helpful to create a MindMap about Classes.
+It should help to get a better overview over the topic.</p>
+<p><figure><a class="lightgallery" href="/images/PowerShellClasses.png" title="Powershell Classes" data-thumbnail="/images/PowerShellClasses.png" data-sub-html="<h2>Preview</h2><p>Powershell Classes</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/PowerShellClasses.png"
+            data-srcset="/images/PowerShellClasses.png, /images/PowerShellClasses.png 1.5x, /images/PowerShellClasses.png 2x"
+            data-sizes="auto"
+            alt="/images/PowerShellClasses.png" />
+    </a><figcaption class="image-caption">Preview</figcaption>
+    </figure></p>
+<h2 id="further-links">Further Links</h2>
+<p>To learn more about classes follow those links:</p>
+<p><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_classes?view=powershell-7.2#inheritance-in-powershell-classes" target="_blank" rel="noopener noreffer">About_Classes</a> <!-- raw HTML omitted -->
+<a href="https://adamtheautomator.com/powershell-classes/" target="_blank" rel="noopener noreffer">PowerShell Classes - Getting Started</a></p></div><div class="post-footer">
+        <a href="/posts/2021-12-06-powershellclasses/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/classes/">Classes</a>,&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/mindmap/">MindMap</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2021-08-23-windows-sandbox-customization-dsc/">Windows Sandbox Customization with DSC </a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-08-23">2021-08-23</time></span></div><div class="content"><p>Demo Windows Sandbox Customization with Powershell DSC</p>
 <p>In this Demo I&rsquo;m going to show you how you can use the Windows Sandbox and do some customization with Powershell DSC.</p>
@@ -171,31 +193,6 @@
 </span></span></code></pre></div><p>All GPO settings will be included in this Report file. So you can search through that file and find your settings.</p></div><div class="post-footer">
         <a href="/posts/2021-05-07-search-gpo/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2021-05-07-gpresult-remote/">Run a gpresult on a remote computer</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-06">2021-05-06</time></span></div><div class="content"><p>How to run a gpresult on a remote computer</p>
-<h1 id="use-the-invoke-command">Use the Invoke-Command</h1>
-<p>You can simply use the Invoke Command to run the gpresult command on a remote computer:</p>
-<ul>
-<li>Define the ComputerName after the Invoke-Command</li>
-<li>In the ScriptBlock you can simply run your command</li>
-</ul>
-<p>here comes the new highlight:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">199
-</span><span class="lnt">200
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Powershell" data-lang="Powershell"><span class="line"><span class="cl"><span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="s1">&#39;ComputerName&#39;</span> <span class="n">-ScriptBlock</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">gpresult</span> <span class="p">/</span><span class="nb">r </span><span class="p">/</span><span class="n">USER</span> <span class="s1">&#39;username&#39;</span></span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h2 id="run-gpresult-for-a-specific-user-in-a-rds-environment">Run gpresult for a specific User in a RDS environment</h2>
-<p>In the following script you just have to define the username + the RDS ConnectionBroker.
-It will automatically find the Remote Desktop Server where the user is logged in an run the gpresult there:</p></div><div class="post-footer">
-        <a href="/posts/2021-05-07-gpresult-remote/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -221,7 +218,7 @@ It will automatically find the Remote Desktop Server where the user is logged in
                 </li></ul></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.149.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

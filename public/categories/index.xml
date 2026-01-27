@@ -6,8 +6,22 @@
     <description>Recent content in Categories on NASAN</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Nov 2025 05:10:21 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jan 2026 05:10:21 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ApacheKafka</title>
+      <link>http://localhost:1313/categories/apachekafka/</link>
+      <pubDate>Tue, 27 Jan 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/apachekafka/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MindMap</title>
+      <link>http://localhost:1313/categories/mindmap/</link>
+      <pubDate>Tue, 27 Jan 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/mindmap/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Metaphysik</title>
       <link>http://localhost:1313/categories/metaphysik/</link>
@@ -27,13 +41,6 @@
       <link>http://localhost:1313/categories/oauth/</link>
       <pubDate>Tue, 30 Sep 2025 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/categories/oauth/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MindMap</title>
-      <link>http://localhost:1313/categories/mindmap/</link>
-      <pubDate>Mon, 23 Jun 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/mindmap/</guid>
       <description></description>
     </item>
     <item>

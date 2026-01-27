@@ -98,6 +98,31 @@
         alt="/images/nasan-avatar.jpeg"
         title="/images/nasan-avatar.jpeg" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/nasan92" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@nasantschi" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2021-05-07-gpresult-remote/">Run a gpresult on a remote computer</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-06">2021-05-06</time></span></div><div class="content"><p>How to run a gpresult on a remote computer</p>
+<h1 id="use-the-invoke-command">Use the Invoke-Command</h1>
+<p>You can simply use the Invoke Command to run the gpresult command on a remote computer:</p>
+<ul>
+<li>Define the ComputerName after the Invoke-Command</li>
+<li>In the ScriptBlock you can simply run your command</li>
+</ul>
+<p>here comes the new highlight:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">199
+</span><span class="lnt">200
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Powershell" data-lang="Powershell"><span class="line"><span class="cl"><span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="s1">&#39;ComputerName&#39;</span> <span class="n">-ScriptBlock</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">gpresult</span> <span class="p">/</span><span class="nb">r </span><span class="p">/</span><span class="n">USER</span> <span class="s1">&#39;username&#39;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="run-gpresult-for-a-specific-user-in-a-rds-environment">Run gpresult for a specific User in a RDS environment</h2>
+<p>In the following script you just have to define the username + the RDS ConnectionBroker.
+It will automatically find the Remote Desktop Server where the user is logged in an run the gpresult there:</p></div><div class="post-footer">
+        <a href="/posts/2021-05-07-gpresult-remote/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/gpo/">GPO</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2018-12-01-logik/">Infografik Logik</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nathanael Santschi</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-12-01">2018-12-01</time></span></div><div class="content"><p>Die folgende Infografik gibt einen groben Überblick zu den Themen:</p>
 <ul>
@@ -222,7 +247,7 @@ OpenID Configuration (formatted):</p>
                 </li></ul></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Nathanael Santschi Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.149.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
