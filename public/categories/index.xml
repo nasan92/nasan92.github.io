@@ -6,8 +6,22 @@
     <description>Recent content in Categories on NASAN</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Jan 2026 05:10:21 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 05:10:21 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Erkenntnistheorie</title>
+      <link>http://localhost:1313/categories/erkenntnistheorie/</link>
+      <pubDate>Fri, 27 Feb 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/erkenntnistheorie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophie</title>
+      <link>http://localhost:1313/categories/philosophie/</link>
+      <pubDate>Fri, 27 Feb 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/philosophie/</guid>
+      <description></description>
+    </item>
     <item>
       <title>ApacheKafka</title>
       <link>http://localhost:1313/categories/apachekafka/</link>
@@ -27,13 +41,6 @@
       <link>http://localhost:1313/categories/metaphysik/</link>
       <pubDate>Sat, 29 Nov 2025 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/categories/metaphysik/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Philosophie</title>
-      <link>http://localhost:1313/categories/philosophie/</link>
-      <pubDate>Sat, 29 Nov 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/philosophie/</guid>
       <description></description>
     </item>
     <item>

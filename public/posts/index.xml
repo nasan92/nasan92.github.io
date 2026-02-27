@@ -3,13 +3,30 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Jan 2026 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 Feb 2026 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Was ist Erkenntnistheorie?</title>
+    <link>http://localhost:1313/posts/2026-02-27-was-ist-erkenntnistheorie/</link>
+    <pubDate>Fri, 27 Feb 2026 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2026-02-27-was-ist-erkenntnistheorie/</guid>
+    <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überblick zu zentralen Konzepten der philosophischen Disziplin <strong>Erkenntnistheorie</strong> zu vermitteln.</p>
+<p>Das MindMap dazu können weiter unten in voller Auflösung betrachtet werden.</p>
+<p>YOUTUBE LINK FOLGT</p>
+<h2 id="erkenntnistheorie-übersicht">Erkenntnistheorie Übersicht</h2>
+<p>In dem folgenden MindMap ist eine grobe Übersicht zentralern Konzepten der Erkenntnistheorie zu finden.</p>
+<ul>
+<li>Der Bereich <strong>&ldquo;Traditionell&rdquo;</strong> <strong>Ontologie</strong> wird im nächsten MindMap tiefer behandelt und gehört grundsätzlich zur &ldquo;allgemeinen&rdquo; Metaphysik.</li>
+<li>Auch der Bereich <strong>&ldquo;Modern&rdquo;</strong> wird im letzten MindMap noch vertieft angeschaut. Er beinhaltet Themen aus der allgemeinen und speziellen Metaphysik.</li>
+</ul>
+<p><figure><a class="lightgallery" href="/images/erkenntnistheorie-mind-map-konzepte.svg" title="Erkenntnistheorie Übersicht" data-thumbnail="/images/erkenntnistheorie-mind-map-konzepte.svg" data-sub-html="<h2>Erkenntnistheorie Übersicht mind map</h2><p>Erkenntnistheorie Übersicht</p>]]></description>
+</item><item>
     <title>Apache Kafka - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</link>
     <pubDate>Tue, 27 Jan 2026 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</guid>
     <description><![CDATA[<p>The following mindmap illustrates some key Apache Kafka concepts:</p>
+<h2 id="apache-kafka-mind-map">Apache Kafka Mind Map</h2>
 <p><figure><a class="lightgallery" href="/images/ApacheKafka-mindmap-concepts.svg" title="Apache Kafka MindMap" data-thumbnail="/images/ApacheKafka-mindmap-concepts.svg" data-sub-html="<h2>Apache Kafka Mind Map showcasing core concepts</h2><p>Apache Kafka MindMap</p>">
         
     </a><figcaption class="image-caption">Apache Kafka Mind Map showcasing core concepts</figcaption>
@@ -152,30 +169,5 @@ In the second tutorial, we will deploy this app to Azure</p></blockquote>
     </a><figcaption class="image-caption">MCP - Model Context Protocol Mind Map illustrates basic concepts</figcaption>
     </figure><br>
 <em>Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts</em></p>]]></description>
-</item><item>
-    <title>OpenTelemetry - mind map - concepts</title>
-    <link>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</link>
-    <pubDate>Wed, 14 May 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-05-14-opentelemetry-concepts-mind-map/</guid>
-    <description><![CDATA[<p>In the following mind map, I attempted to visualize some core concepts of OpenTelemetry
-The purpose of OpenTelemetry is to collect, process and export signals. The signals (telemetry data) which OpenTelemetry currently supports can be found on the right side of the mind map:</p>
-<ul>
-<li>Signals:
-<ul>
-<li>Traces</li>
-<li>Metrics</li>
-<li>Logs</li>
-</ul>
-</li>
-</ul>
-<p>The mind map illustrates the components that make up these signals and how they are interconnected.</p>
-<p>To learn more about OpenTelemetry:</p>
-<ul>
-<li>Official docs: <a href="https://opentelemetry.io/docs/what-is-opentelemetry/" target="_blank" rel="noopener noreffer">What is OpenTelemetry?</a></li>
-<li>A very helpful resource to getting started with OpenTelemetry is the following course from the Linux Foundation: <a href="https://training.linuxfoundation.org/training/getting-started-with-opentelemetry-lfs148/" target="_blank" rel="noopener noreffer">Getting Started with OpenTelemetry</a></li>
-</ul>
-<h2 id="opentelemetry-concepts-mind-map">OpenTelemetry Concepts mind map</h2>
-<p><figure><a class="lightgallery" href="/images/OpenTelemetry-mindmap-concepts.svg" title="OpenTelemetry Concepts Mind Map" data-thumbnail="/images/OpenTelemetry-mindmap-concepts.svg" data-sub-html="<h2>OpenTelemetry Mind Map illustrates basic concepts</h2><p>OpenTelemetry Concepts Mind Map</p>]]></description>
 </item></channel>
 </rss>

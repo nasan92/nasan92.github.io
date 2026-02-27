@@ -1,5 +1,5 @@
 ---
-title: "Was ist Philosophie?"
+title: "Philosophie: Was ist Philosophie?"
 author: Nathanael Santschi
 date: 2025-08-30T05:10:21+01:00
 draft: false

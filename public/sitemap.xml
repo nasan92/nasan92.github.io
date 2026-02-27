@@ -2,19 +2,21 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://localhost:1313/categories/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/diagramm/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/erkenntnistheorie/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/philosophie/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2026-02-27-was-ist-erkenntnistheorie/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/apachekafka/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/apachekafka/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/kafka/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/diagramm/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/metaphysik/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/philosophie/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/oauth/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/oauth/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>

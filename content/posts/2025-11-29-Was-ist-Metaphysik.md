@@ -1,5 +1,5 @@
 ---
-title: "Was ist Metaphysik?"
+title: "Philosophie: Was ist Metaphysik?"
 author: Nathanael Santschi
 date: 2025-11-29T05:10:21+01:00
 draft: false
