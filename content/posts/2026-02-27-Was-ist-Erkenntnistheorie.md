@@ -29,7 +29,7 @@ Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überb
 
 Das Mindmap dazu kann weiter unten in voller Auflösung betrachtet werden.
 
-YOUTUBE LINK FOLGT
+{{< youtube qIdmJIYzhVE >}}
 
 ## Kurzdefinition: Worum geht es in der Erkenntnistheorie?
 Die Erkenntnistheorie (auch Epistemologie) untersucht, wie wir zu Wissen gelangen, was Überzeugungen rechtfertigt und wie sicher wir uns unseres Wissens sein können. Sie beschäftigt sich mit den Grundlagen, Quellen und Grenzen von menschlicher Erkenntnis.
