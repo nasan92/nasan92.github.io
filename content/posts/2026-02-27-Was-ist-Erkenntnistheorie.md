@@ -43,8 +43,8 @@ In dem folgenden Mindmap ist eine grobe Übersicht zu zentralen Konzepten der Er
 [MindMap SVG](/images/erkenntnistheorie-mind-map-konzepte.svg "Preview")  
 
 Für den Kontext:
-- [Was ist Philosophie?](/posts/2025-08-30-Was-ist-Philosophie/)
-- [Was ist Metaphysik?](/posts/2025-11-29-Was-ist-Metaphysik/)
+- [Was ist Philosophie?](/posts/2025-08-30-was-ist-philosophie/)
+- [Was ist Metaphysik?](/posts/22025-11-29-was-ist-metaphysik/)
 
 ## Weiterführende Literatur und Quellen: 
 - [Epistemology - Wikipedia](https://en.wikipedia.org/wiki/Epistemology)
