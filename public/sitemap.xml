@@ -2,20 +2,50 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/diagramm/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/erkenntnistheorie/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/philosophie/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/diagramm/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/empirismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/epistemology/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/erkenntnistheorie/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/erkenntnistheorie/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/externalismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/fallibilismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/foundherentismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/fundamentalismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/infinitismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/internalismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/koh%C3%A4renztheorie/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/mindmap/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/philosophie/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2026-04-10-erkenntnistheorie-wichtigste-denkrichtungen/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/rationalismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/reliabilismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/skeptizismus/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2026-04-10T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/devops/</loc><lastmod>2026-03-03T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/linux/</loc><lastmod>2026-03-03T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2026-03-03T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/nix/</loc><lastmod>2026-03-03T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/nixos/</loc><lastmod>2026-03-03T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/nixos/</loc><lastmod>2026-03-03T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/2026-03-03-nixos-mind-map/</loc><lastmod>2026-03-03T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/packagemanagement/</loc><lastmod>2026-03-03T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/erkenntnisnormen/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/evidenz/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2026-02-27-was-ist-erkenntnistheorie/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/rationalit%C3%A4t/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/rechtfertigung/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/%C3%BCberzeugung/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/verstehen/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/wahrheit/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/weisheit/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/wissen/</loc><lastmod>2026-02-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/apachekafka/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/apachekafka/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/kafka/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/mindmap/</loc><lastmod>2026-01-27T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/metaphysik/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</loc><lastmod>2025-11-29T05:10:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/oauth/</loc><lastmod>2025-09-30T05:10:21&#43;01:00</lastmod></url><url>
@@ -161,7 +191,6 @@
             <loc>http://localhost:1313/tags/azuremonitor/</loc><lastmod>2022-02-21T13:39:21&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/lizenzierung/</loc><lastmod>2022-02-19T15:35:13&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2022-02-19-microsoftlizenzierung/</loc><lastmod>2022-02-19T15:35:13&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/devops/</loc><lastmod>2022-02-19T08:08:41&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2022-02-19-devopsthreeways/</loc><lastmod>2022-02-19T08:08:41&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/2022-02-19-powershellmodules/</loc><lastmod>2022-02-19T08:05:41&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/powershellmodules/</loc><lastmod>2022-02-19T08:05:41&#43;01:00</lastmod></url><url>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PackageManagement on NASAN</title>
+    <link>http://localhost:1313/tags/packagemanagement/</link>
+    <description>Recent content in PackageManagement on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Mar 2026 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/packagemanagement/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NixOS - mind map - key concepts</title>
+      <link>http://localhost:1313/posts/2026-03-03-nixos-mind-map/</link>
+      <pubDate>Tue, 03 Mar 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2026-03-03-nixos-mind-map/</guid>
+      <description>&lt;p&gt;I recently discovered Nix and was immediately impressed by it. The ability to configure your entire OS in a single configuration file, with reproducibility and declarative principles built in—it&amp;rsquo;s quite remarkable.&lt;/p&gt;&#xA;&lt;p&gt;However, Nix is much more than just another Linux distribution, which can make the terminology confusing for newcomers. The learning curve is steep, and the documentation can be fragmented and difficult to navigate for beginners. The &lt;a href=&#34;https://zero-to-nix.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Zero to Nix&lt;/a&gt; guide provides one of the most accessible starting points.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

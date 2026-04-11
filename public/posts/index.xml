@@ -3,22 +3,42 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 Feb 2026 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Was ist Erkenntnistheorie?</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Apr 2026 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Philosophie: Wichtigste Denkrichtungen der Erkenntnistheorie</title>
+    <link>http://localhost:1313/posts/2026-04-10-erkenntnistheorie-wichtigste-denkrichtungen/</link>
+    <pubDate>Fri, 10 Apr 2026 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2026-04-10-erkenntnistheorie-wichtigste-denkrichtungen/</guid>
+    <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überblick zu 12 zentralen Denkrichtungen (Theorien) der Erkenntnistheorie zu geben.</p>
+<p>Das Mindmap dazu kann weiter unten in voller Auflösung betrachtet werden.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MtcuPD1nHbI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="erkenntnistheorie-übersicht-wichtigster-denkrichtungen-mindmap">Erkenntnistheorie Übersicht wichtigster Denkrichtungen MindMap</h2>
+<p>In dem folgenden Mindmap ist eine grobe Übersicht zu 12 zentralen Denkrichtungen (Theorien) der Erkenntnistheorie zu finden.</p>]]></description>
+</item><item>
+    <title>NixOS - mind map - key concepts</title>
+    <link>http://localhost:1313/posts/2026-03-03-nixos-mind-map/</link>
+    <pubDate>Tue, 03 Mar 2026 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2026-03-03-nixos-mind-map/</guid>
+    <description><![CDATA[<p>I recently discovered Nix and was immediately impressed by it. The ability to configure your entire OS in a single configuration file, with reproducibility and declarative principles built in—it&rsquo;s quite remarkable.</p>
+<p>However, Nix is much more than just another Linux distribution, which can make the terminology confusing for newcomers. The learning curve is steep, and the documentation can be fragmented and difficult to navigate for beginners. The <a href="https://zero-to-nix.com/" target="_blank" rel="noopener noreffer">Zero to Nix</a> guide provides one of the most accessible starting points.</p>]]></description>
+</item><item>
+    <title>Philosophie: Was ist Erkenntnistheorie?</title>
     <link>http://localhost:1313/posts/2026-02-27-was-ist-erkenntnistheorie/</link>
     <pubDate>Fri, 27 Feb 2026 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2026-02-27-was-ist-erkenntnistheorie/</guid>
-    <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überblick zu zentralen Konzepten der philosophischen Disziplin <strong>Erkenntnistheorie</strong> zu vermitteln.</p>
-<p>Das MindMap dazu können weiter unten in voller Auflösung betrachtet werden.</p>
-<p>YOUTUBE LINK FOLGT</p>
-<h2 id="erkenntnistheorie-übersicht">Erkenntnistheorie Übersicht</h2>
-<p>In dem folgenden MindMap ist eine grobe Übersicht zentralern Konzepten der Erkenntnistheorie zu finden.</p>
-<ul>
-<li>Der Bereich <strong>&ldquo;Traditionell&rdquo;</strong> <strong>Ontologie</strong> wird im nächsten MindMap tiefer behandelt und gehört grundsätzlich zur &ldquo;allgemeinen&rdquo; Metaphysik.</li>
-<li>Auch der Bereich <strong>&ldquo;Modern&rdquo;</strong> wird im letzten MindMap noch vertieft angeschaut. Er beinhaltet Themen aus der allgemeinen und speziellen Metaphysik.</li>
-</ul>
-<p><figure><a class="lightgallery" href="/images/erkenntnistheorie-mind-map-konzepte.svg" title="Erkenntnistheorie Übersicht" data-thumbnail="/images/erkenntnistheorie-mind-map-konzepte.svg" data-sub-html="<h2>Erkenntnistheorie Übersicht mind map</h2><p>Erkenntnistheorie Übersicht</p>]]></description>
+    <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überblick zu der philosophischen Disziplin <strong>Erkenntnistheorie</strong> zu vermitteln.</p>
+<p>Das Mindmap dazu kann weiter unten in voller Auflösung betrachtet werden.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qIdmJIYzhVE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="kurzdefinition-worum-geht-es-in-der-erkenntnistheorie">Kurzdefinition: Worum geht es in der Erkenntnistheorie?</h2>
+<p>Die Erkenntnistheorie (auch Epistemologie) untersucht, wie wir zu Wissen gelangen, was Überzeugungen rechtfertigt und wie sicher wir uns unseres Wissens sein können. Sie beschäftigt sich mit den Grundlagen, Quellen und Grenzen von menschlicher Erkenntnis.</p>]]></description>
 </item><item>
     <title>Apache Kafka - mind map - key concepts</title>
     <link>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</link>
@@ -36,7 +56,7 @@
 <a href="/images/ApacheKafka-mindmap-concepts.png" title="Preview" rel="">MindMap PNG</a><br>
 <a href="/images/ApacheKafka-mindmap-concepts.svg" title="Preview" rel="">MindMap SVG</a></p>]]></description>
 </item><item>
-    <title>Was ist Metaphysik?</title>
+    <title>Philosophie: Was ist Metaphysik?</title>
     <link>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</link>
     <pubDate>Sat, 29 Nov 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
@@ -130,7 +150,7 @@ In the second tutorial, we will deploy this app to Azure</p></blockquote>
     </figure><br>
 <em>Figure 1: OAUTH 2.0  Mind Map visualizing basic concepts</em></p>]]></description>
 </item><item>
-    <title>Was ist Philosophie?</title>
+    <title>Philosophie: Was ist Philosophie?</title>
     <link>http://localhost:1313/posts/2025-08-30-was-ist-philosophie/</link>
     <pubDate>Sat, 30 Aug 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
@@ -143,31 +163,5 @@ In the second tutorial, we will deploy this app to Azure</p></blockquote>
 <h2 id="disziplinen-der-philosophie">Disziplinen der Philosophie</h2>
 <p>In diesem Diagramm sind einige der wichtigsten philosophischen Disziplinen grob dargestellt.</p>
 <p><figure><a class="lightgallery" href="/images/Philosophie-Disziplinen.png" title="Disziplinen der Philosophie Übersicht" data-thumbnail="/images/Philosophie-Disziplinen.png" data-sub-html="<h2>Disziplinen der Philosophie Übersicht</h2><p>Disziplinen der Philosophie Übersicht</p>]]></description>
-</item><item>
-    <title>Software Architecture - mind maps</title>
-    <link>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</link>
-    <pubDate>Mon, 23 Jun 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-06-23-software-architecture-mind-maps/</guid>
-    <description><![CDATA[<p>I have started creating minimal mind maps about Software Architecture. I plan to extend them further in the future.</p>
-<h2 id="software-architecture-roadmap">Software Architecture Roadmap</h2>
-<p>You start with architectural characteristics. Then you&rsquo;ll need to get the logical components, pick a style and finally document your decision.</p>
-<p><figure><a class="lightgallery" href="/images/SOFTWAREARCHITECTURE-Overview.jpg" title="Software Architecture Roadmap Overview Mind Map" data-thumbnail="/images/SOFTWAREARCHITECTURE-Overview.jpg" data-sub-html="<h2>Software Architecture Mind Map</h2><p>Software Architecture Roadmap Overview Mind Map</p>">
-        
-    </a><figcaption class="image-caption">Software Architecture Mind Map</figcaption>
-    </figure></p>]]></description>
-</item><item>
-    <title>MCP - Model Context Protocol - mind map</title>
-    <link>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</link>
-    <pubDate>Thu, 29 May 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-05-29-mcp-model-context-protocol-mind-map/</guid>
-    <description><![CDATA[<p>In the following mind map, I attempted to visualize some core concepts of MCP - Model Context Protocol</p>
-<h2 id="mcp---model-context-protocol-mind-map">MCP - Model Context Protocol mind map</h2>
-<p><figure><a class="lightgallery" href="/images/MCP-Model-Context-Protocol-mind-map.svg" title="MCP - Model Context Protocol Mind Map" data-thumbnail="/images/MCP-Model-Context-Protocol-mind-map.svg" data-sub-html="<h2>MCP - Model Context Protocol Mind Map illustrates basic concepts</h2><p>MCP - Model Context Protocol Mind Map</p>">
-        
-    </a><figcaption class="image-caption">MCP - Model Context Protocol Mind Map illustrates basic concepts</figcaption>
-    </figure><br>
-<em>Figure 1: MCP - Model Context Protocol Mind Map visualizing basic concepts</em></p>]]></description>
 </item></channel>
 </rss>

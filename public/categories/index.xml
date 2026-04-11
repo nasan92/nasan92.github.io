@@ -6,20 +6,34 @@
     <description>Recent content in Categories on NASAN</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Feb 2026 05:10:21 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 05:10:21 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Erkenntnistheorie</title>
       <link>http://localhost:1313/categories/erkenntnistheorie/</link>
-      <pubDate>Fri, 27 Feb 2026 05:10:21 +0100</pubDate>
+      <pubDate>Fri, 10 Apr 2026 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/categories/erkenntnistheorie/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophie</title>
       <link>http://localhost:1313/categories/philosophie/</link>
-      <pubDate>Fri, 27 Feb 2026 05:10:21 +0100</pubDate>
+      <pubDate>Fri, 10 Apr 2026 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/categories/philosophie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MindMap</title>
+      <link>http://localhost:1313/categories/mindmap/</link>
+      <pubDate>Tue, 03 Mar 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/mindmap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NixOS</title>
+      <link>http://localhost:1313/categories/nixos/</link>
+      <pubDate>Tue, 03 Mar 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/categories/nixos/</guid>
       <description></description>
     </item>
     <item>
@@ -27,13 +41,6 @@
       <link>http://localhost:1313/categories/apachekafka/</link>
       <pubDate>Tue, 27 Jan 2026 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/categories/apachekafka/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MindMap</title>
-      <link>http://localhost:1313/categories/mindmap/</link>
-      <pubDate>Tue, 27 Jan 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/mindmap/</guid>
       <description></description>
     </item>
     <item>
