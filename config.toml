@@ -8,6 +8,11 @@ title = "NASAN"
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
 
+# Output formats
+[outputs]
+  home = ["HTML", "JSON"]
+  page = ["HTML"]
+
 [params]
   # LoveIt theme version
   version = "0.2.X"

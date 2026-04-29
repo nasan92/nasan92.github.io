@@ -2,178 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on NASAN</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://nasan92.github.io/categories/</link>
     <description>Recent content in Categories on NASAN</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Apr 2026 05:10:21 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nasan92.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Erkenntnistheorie</title>
-      <link>http://localhost:1313/categories/erkenntnistheorie/</link>
+      <link>https://nasan92.github.io/categories/erkenntnistheorie/</link>
       <pubDate>Fri, 10 Apr 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/erkenntnistheorie/</guid>
+      <guid>https://nasan92.github.io/categories/erkenntnistheorie/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophie</title>
-      <link>http://localhost:1313/categories/philosophie/</link>
+      <link>https://nasan92.github.io/categories/philosophie/</link>
       <pubDate>Fri, 10 Apr 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/philosophie/</guid>
+      <guid>https://nasan92.github.io/categories/philosophie/</guid>
       <description></description>
     </item>
     <item>
       <title>MindMap</title>
-      <link>http://localhost:1313/categories/mindmap/</link>
+      <link>https://nasan92.github.io/categories/mindmap/</link>
       <pubDate>Tue, 03 Mar 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/mindmap/</guid>
+      <guid>https://nasan92.github.io/categories/mindmap/</guid>
       <description></description>
     </item>
     <item>
       <title>NixOS</title>
-      <link>http://localhost:1313/categories/nixos/</link>
+      <link>https://nasan92.github.io/categories/nixos/</link>
       <pubDate>Tue, 03 Mar 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/nixos/</guid>
+      <guid>https://nasan92.github.io/categories/nixos/</guid>
       <description></description>
     </item>
     <item>
       <title>ApacheKafka</title>
-      <link>http://localhost:1313/categories/apachekafka/</link>
+      <link>https://nasan92.github.io/categories/apachekafka/</link>
       <pubDate>Tue, 27 Jan 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/apachekafka/</guid>
+      <guid>https://nasan92.github.io/categories/apachekafka/</guid>
       <description></description>
     </item>
     <item>
       <title>Metaphysik</title>
-      <link>http://localhost:1313/categories/metaphysik/</link>
+      <link>https://nasan92.github.io/categories/metaphysik/</link>
       <pubDate>Sat, 29 Nov 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/metaphysik/</guid>
+      <guid>https://nasan92.github.io/categories/metaphysik/</guid>
       <description></description>
     </item>
     <item>
       <title>OAuth</title>
-      <link>http://localhost:1313/categories/oauth/</link>
+      <link>https://nasan92.github.io/categories/oauth/</link>
       <pubDate>Tue, 30 Sep 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/oauth/</guid>
+      <guid>https://nasan92.github.io/categories/oauth/</guid>
       <description></description>
     </item>
     <item>
       <title>SoftwareArchitecture</title>
-      <link>http://localhost:1313/categories/softwarearchitecture/</link>
+      <link>https://nasan92.github.io/categories/softwarearchitecture/</link>
       <pubDate>Mon, 23 Jun 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/softwarearchitecture/</guid>
+      <guid>https://nasan92.github.io/categories/softwarearchitecture/</guid>
       <description></description>
     </item>
     <item>
       <title>MCP</title>
-      <link>http://localhost:1313/categories/mcp/</link>
+      <link>https://nasan92.github.io/categories/mcp/</link>
       <pubDate>Thu, 29 May 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/mcp/</guid>
+      <guid>https://nasan92.github.io/categories/mcp/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenTelemetry</title>
-      <link>http://localhost:1313/categories/opentelemetry/</link>
+      <link>https://nasan92.github.io/categories/opentelemetry/</link>
       <pubDate>Wed, 14 May 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/opentelemetry/</guid>
+      <guid>https://nasan92.github.io/categories/opentelemetry/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/categories/ai/</link>
+      <link>https://nasan92.github.io/categories/ai/</link>
       <pubDate>Wed, 26 Feb 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/ai/</guid>
+      <guid>https://nasan92.github.io/categories/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>MachineLearning</title>
-      <link>http://localhost:1313/categories/machinelearning/</link>
+      <link>https://nasan92.github.io/categories/machinelearning/</link>
       <pubDate>Fri, 21 Feb 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/machinelearning/</guid>
+      <guid>https://nasan92.github.io/categories/machinelearning/</guid>
       <description></description>
     </item>
     <item>
       <title>MLOps</title>
-      <link>http://localhost:1313/categories/mlops/</link>
+      <link>https://nasan92.github.io/categories/mlops/</link>
       <pubDate>Fri, 21 Feb 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/mlops/</guid>
+      <guid>https://nasan92.github.io/categories/mlops/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure</title>
-      <link>http://localhost:1313/categories/azure/</link>
+      <link>https://nasan92.github.io/categories/azure/</link>
       <pubDate>Sat, 11 Jan 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/azure/</guid>
+      <guid>https://nasan92.github.io/categories/azure/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>http://localhost:1313/categories/kubernetes/</link>
+      <link>https://nasan92.github.io/categories/kubernetes/</link>
       <pubDate>Sat, 11 Jan 2025 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/kubernetes/</guid>
+      <guid>https://nasan92.github.io/categories/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>APIManagement</title>
-      <link>http://localhost:1313/categories/apimanagement/</link>
+      <link>https://nasan92.github.io/categories/apimanagement/</link>
       <pubDate>Thu, 19 Dec 2024 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/apimanagement/</guid>
+      <guid>https://nasan92.github.io/categories/apimanagement/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>http://localhost:1313/categories/books/</link>
+      <link>https://nasan92.github.io/categories/books/</link>
       <pubDate>Tue, 08 Oct 2024 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/books/</guid>
+      <guid>https://nasan92.github.io/categories/books/</guid>
       <description></description>
     </item>
     <item>
       <title>RAG</title>
-      <link>http://localhost:1313/categories/rag/</link>
+      <link>https://nasan92.github.io/categories/rag/</link>
       <pubDate>Sat, 07 Sep 2024 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/rag/</guid>
+      <guid>https://nasan92.github.io/categories/rag/</guid>
       <description></description>
     </item>
     <item>
       <title>Beziehungen</title>
-      <link>http://localhost:1313/categories/beziehungen/</link>
+      <link>https://nasan92.github.io/categories/beziehungen/</link>
       <pubDate>Sat, 11 May 2024 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/beziehungen/</guid>
+      <guid>https://nasan92.github.io/categories/beziehungen/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/categories/security/</link>
+      <link>https://nasan92.github.io/categories/security/</link>
       <pubDate>Thu, 18 Jan 2024 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/security/</guid>
+      <guid>https://nasan92.github.io/categories/security/</guid>
       <description></description>
     </item>
     <item>
       <title>AzureDevOps</title>
-      <link>http://localhost:1313/categories/azuredevops/</link>
+      <link>https://nasan92.github.io/categories/azuredevops/</link>
       <pubDate>Tue, 26 Sep 2023 06:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/azuredevops/</guid>
+      <guid>https://nasan92.github.io/categories/azuredevops/</guid>
       <description></description>
     </item>
     <item>
       <title>Encryption</title>
-      <link>http://localhost:1313/categories/encryption/</link>
+      <link>https://nasan92.github.io/categories/encryption/</link>
       <pubDate>Sat, 09 Sep 2023 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/encryption/</guid>
+      <guid>https://nasan92.github.io/categories/encryption/</guid>
       <description></description>
     </item>
     <item>
       <title>MicrosoftEntraPrivateAccess</title>
-      <link>http://localhost:1313/categories/microsoftentraprivateaccess/</link>
+      <link>https://nasan92.github.io/categories/microsoftentraprivateaccess/</link>
       <pubDate>Thu, 31 Aug 2023 06:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/microsoftentraprivateaccess/</guid>
+      <guid>https://nasan92.github.io/categories/microsoftentraprivateaccess/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/categories/docker/</link>
+      <link>https://nasan92.github.io/categories/docker/</link>
       <pubDate>Fri, 22 Apr 2022 13:39:21 +0100</pubDate>
-      <guid>http://localhost:1313/categories/docker/</guid>
+      <guid>https://nasan92.github.io/categories/docker/</guid>
       <description></description>
     </item>
   </channel>

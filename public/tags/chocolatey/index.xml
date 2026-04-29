@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chocolatey on NASAN</title>
-    <link>http://localhost:1313/tags/chocolatey/</link>
+    <link>https://nasan92.github.io/tags/chocolatey/</link>
     <description>Recent content in Chocolatey on NASAN</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/chocolatey/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nasan92.github.io/tags/chocolatey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>useful chocolatey commands </title>
-      <link>http://localhost:1313/posts/2021-08-17-useful-chocolatey-commands/</link>
+      <link>https://nasan92.github.io/posts/2021-08-17-useful-chocolatey-commands/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2021-08-17-useful-chocolatey-commands/</guid>
+      <guid>https://nasan92.github.io/posts/2021-08-17-useful-chocolatey-commands/</guid>
       <description>&lt;p&gt;Useful Chocolatey commands&lt;/p&gt;&#xA;&lt;h1 id=&#34;useful-chocolatey-commands&#34;&gt;Useful Chocolatey commands&lt;/h1&gt;&#xA;&lt;p&gt;search a package:&#xA;&lt;code&gt;choco search appname&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Install a package&#xA;&lt;code&gt;choco install appname&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;list all installed packages&#xA;&lt;code&gt;choco list -localonly&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;list specific package&#xA;&lt;code&gt;choco list appname &lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;upgrade specific package:&#xA;&lt;code&gt;choco upgrade appname&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;upgrade all packages&#xA;&lt;code&gt;choco upgrade all&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>
