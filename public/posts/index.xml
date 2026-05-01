@@ -1,14 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - NASAN</title>
-        <link>https://nasan92.github.io/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Apr 2026 05:10:21 &#43;0100</lastBuildDate><atom:link href="https://nasan92.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 May 2026 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Main Types of Programming Languages</title>
+    <link>http://localhost:1313/posts/2026-05-01-programming-languages-types/</link>
+    <pubDate>Fri, 01 May 2026 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2026-05-01-programming-languages-types/</guid>
+    <description><![CDATA[<h2 id="mindmap">MindMap</h2>
+<p>![8 main types of programming languages](/images/Main-8-Types-of-Programming-Languages.svg &quot; &ldquo;8 main types of programming languages mind map&rdquo;)<br>
+<a href="/images/Main-8-Types-of-Programming-Languages.png" title="Preview" rel="">MindMap PNG</a><br>
+<a href="/images/Main-8-Types-of-Programming-Languages.svg" title="Preview" rel="">MindMap SVG</a></p>]]></description>
+</item><item>
     <title>Philosophie: Wichtigste Denkrichtungen der Erkenntnistheorie</title>
-    <link>https://nasan92.github.io/posts/2026-04-10-erkenntnistheorie-wichtigste-denkrichtungen/</link>
+    <link>http://localhost:1313/posts/2026-04-10-erkenntnistheorie-wichtigste-denkrichtungen/</link>
     <pubDate>Fri, 10 Apr 2026 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2026-04-10-erkenntnistheorie-wichtigste-denkrichtungen/</guid>
+    <guid>http://localhost:1313/posts/2026-04-10-erkenntnistheorie-wichtigste-denkrichtungen/</guid>
     <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überblick zu 12 zentralen Denkrichtungen (Theorien) der Erkenntnistheorie zu geben:</p>
 <ul>
 <li>❓🧐 <strong>Skeptizismus</strong> – Können wir überhaupt sicher sein?</li>
@@ -25,18 +35,18 @@
 <p>Das Mindmap dazu kann weiter unten in voller Auflösung betrachtet werden.</p>]]></description>
 </item><item>
     <title>NixOS - mind map - key concepts</title>
-    <link>https://nasan92.github.io/posts/2026-03-03-nixos-mind-map/</link>
+    <link>http://localhost:1313/posts/2026-03-03-nixos-mind-map/</link>
     <pubDate>Tue, 03 Mar 2026 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2026-03-03-nixos-mind-map/</guid>
+    <guid>http://localhost:1313/posts/2026-03-03-nixos-mind-map/</guid>
     <description><![CDATA[<p>I recently discovered Nix and was immediately impressed by it. The ability to configure your entire OS in a single configuration file, with reproducibility and declarative principles built in—it&rsquo;s quite remarkable.</p>
 <p>However, Nix is much more than just another Linux distribution, which can make the terminology confusing for newcomers. The learning curve is steep, and the documentation can be fragmented and difficult to navigate for beginners. The <a href="https://zero-to-nix.com/" target="_blank" rel="noopener noreffer">Zero to Nix</a> guide provides one of the most accessible starting points.</p>]]></description>
 </item><item>
     <title>Philosophie: Was ist Erkenntnistheorie?</title>
-    <link>https://nasan92.github.io/posts/2026-02-27-was-ist-erkenntnistheorie/</link>
+    <link>http://localhost:1313/posts/2026-02-27-was-ist-erkenntnistheorie/</link>
     <pubDate>Fri, 27 Feb 2026 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2026-02-27-was-ist-erkenntnistheorie/</guid>
+    <guid>http://localhost:1313/posts/2026-02-27-was-ist-erkenntnistheorie/</guid>
     <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überblick zu der philosophischen Disziplin <strong>Erkenntnistheorie</strong> zu vermitteln.</p>
 <p>Das Mindmap dazu kann weiter unten in voller Auflösung betrachtet werden.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -47,10 +57,10 @@
 <p>Die Erkenntnistheorie (auch Epistemologie) untersucht, wie wir zu Wissen gelangen, was Überzeugungen rechtfertigt und wie sicher wir uns unseres Wissens sein können. Sie beschäftigt sich mit den Grundlagen, Quellen und Grenzen von menschlicher Erkenntnis.</p>]]></description>
 </item><item>
     <title>Apache Kafka - mind map - key concepts</title>
-    <link>https://nasan92.github.io/posts/2026-01-27-apache-kafka-mind-map/</link>
+    <link>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</link>
     <pubDate>Tue, 27 Jan 2026 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2026-01-27-apache-kafka-mind-map/</guid>
+    <guid>http://localhost:1313/posts/2026-01-27-apache-kafka-mind-map/</guid>
     <description><![CDATA[<p>The following mindmap illustrates some key Apache Kafka concepts:</p>
 <h2 id="apache-kafka-mind-map">Apache Kafka Mind Map</h2>
 <p><figure><a class="lightgallery" href="/images/ApacheKafka-mindmap-concepts.svg" title="Apache Kafka MindMap" data-thumbnail="/images/ApacheKafka-mindmap-concepts.svg" data-sub-html="<h2>Apache Kafka Mind Map showcasing core concepts</h2><p>Apache Kafka MindMap</p>">
@@ -63,10 +73,10 @@
 <a href="/images/ApacheKafka-mindmap-concepts.svg" title="Preview" rel="">MindMap SVG</a></p>]]></description>
 </item><item>
     <title>Philosophie: Was ist Metaphysik?</title>
-    <link>https://nasan92.github.io/posts/2025-11-29-was-ist-metaphysik/</link>
+    <link>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</link>
     <pubDate>Sat, 29 Nov 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2025-11-29-was-ist-metaphysik/</guid>
+    <guid>http://localhost:1313/posts/2025-11-29-was-ist-metaphysik/</guid>
     <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, innerhalb von 30min einen groben Überblick zu der philosophischen Disziplin <strong>Metaphysik</strong> zu vermitteln.</p>
 <p>Die MindMaps dazu können weiter unten in voller Auflösung betrachtet werden.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -82,10 +92,10 @@
 <p><figure><a class="lightgallery" href="/images/Metaphysik-uebersicht-01.png" title="Metaphysik Übersicht" data-thumbnail="/images/Metaphysik-uebersicht-01.png" data-sub-html="<h2>Metaphysik Übersicht</h2><p>Metaphysik Übersicht</p>]]></description>
 </item><item>
     <title>OAuth 2.0 - Tutorial 3 - Expose and Access a Web API - Resource Server</title>
-    <link>https://nasan92.github.io/posts/2025-09-30-oauth20-3/</link>
+    <link>http://localhost:1313/posts/2025-09-30-oauth20-3/</link>
     <pubDate>Tue, 30 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2025-09-30-oauth20-3/</guid>
+    <guid>http://localhost:1313/posts/2025-09-30-oauth20-3/</guid>
     <description><![CDATA[<h2 id="previous-tutorials">Previous tutorials</h2>
 <p>In the previous tutorials:</p>
 <ul>
@@ -106,10 +116,10 @@
 <p>In this tutorial:</p>]]></description>
 </item><item>
     <title>OAuth 2.0 - Tutorial 2 - Azure Server Side Python WebApp Auth Code Flow - Entra ID</title>
-    <link>https://nasan92.github.io/posts/2025-09-27-oauth20-2-azureserversidepythonwebapp-authcodeflow/</link>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-2-azureserversidepythonwebapp-authcodeflow/</link>
     <pubDate>Mon, 29 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2025-09-27-oauth20-2-azureserversidepythonwebapp-authcodeflow/</guid>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-2-azureserversidepythonwebapp-authcodeflow/</guid>
     <description><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>In the previous tutorial <a href="/posts/2025-09-27-OAuth20-1-LocalhostPythonWebApp-AuthCodeFlow" rel="">Localhost Python WebApp Auth Code Flow with Entra ID</a>  , we demonstrated using a localhost web app as a &ldquo;server-side app&rdquo; (confidential client) with the Authorization Code Flow. In this tutorial, we will deploy the app to Azure, making it a true &ldquo;server-side app&rdquo; where users cannot access secrets.</p>
 <p>The following steps are required to deploy the app to Azure:</p>
@@ -132,10 +142,10 @@
 <p><a href="https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli" target="_blank" rel="noopener noreffer">Create an Azure container registry</a> where you can store your docker images:</p>]]></description>
 </item><item>
     <title>OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</title>
-    <link>https://nasan92.github.io/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</link>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</link>
     <pubDate>Sun, 28 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</guid>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</guid>
     <description><![CDATA[<h2 id="introduction---server-side-app---auth-code-flow">Introduction - &ldquo;Server Side App&rdquo; - Auth Code Flow</h2>
 <p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
 <blockquote>
@@ -144,10 +154,10 @@ In the second tutorial, we will deploy this app to Azure</p></blockquote>
 <p>The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.</p>]]></description>
 </item><item>
     <title>OAuth 2.0 - mind map</title>
-    <link>https://nasan92.github.io/posts/2025-09-27-oauth20-0-overview/</link>
+    <link>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</link>
     <pubDate>Sat, 27 Sep 2025 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2025-09-27-oauth20-0-overview/</guid>
+    <guid>http://localhost:1313/posts/2025-09-27-oauth20-0-overview/</guid>
     <description><![CDATA[<p>To better understand OAuth 2.0, I have created the following mind map and a series of follow-up tutorials that provide a basic overview of how OAuth works.</p>
 <h2 id="mindmap-oauth">MindMap OAuth</h2>
 <p><figure><a class="lightgallery" href="/images/OAuth2-0.svg" title="AUTH 2.0  Mind Map" data-thumbnail="/images/OAuth2-0.svg" data-sub-html="<h2>OAUTH 2.0 Mind Map illustrates basic concepts</h2><p>AUTH 2.0  Mind Map</p>">
@@ -155,19 +165,5 @@ In the second tutorial, we will deploy this app to Azure</p></blockquote>
     </a><figcaption class="image-caption">OAUTH 2.0 Mind Map illustrates basic concepts</figcaption>
     </figure><br>
 <em>Figure 1: OAUTH 2.0  Mind Map visualizing basic concepts</em></p>]]></description>
-</item><item>
-    <title>Philosophie: Was ist Philosophie?</title>
-    <link>https://nasan92.github.io/posts/2025-08-30-was-ist-philosophie/</link>
-    <pubDate>Sat, 30 Aug 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://nasan92.github.io/posts/2025-08-30-was-ist-philosophie/</guid>
-    <description><![CDATA[<p>Im folgenden YouTube-Video versuche ich, einen kurzen und groben Überblick über das Thema <strong>„Was ist Philosophie?“</strong> sowie deren Disziplinen zu vermitteln:</p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/cJfLDlRojfY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
-<h2 id="disziplinen-der-philosophie">Disziplinen der Philosophie</h2>
-<p>In diesem Diagramm sind einige der wichtigsten philosophischen Disziplinen grob dargestellt.</p>
-<p><figure><a class="lightgallery" href="/images/Philosophie-Disziplinen.png" title="Disziplinen der Philosophie Übersicht" data-thumbnail="/images/Philosophie-Disziplinen.png" data-sub-html="<h2>Disziplinen der Philosophie Übersicht</h2><p>Disziplinen der Philosophie Übersicht</p>]]></description>
 </item></channel>
 </rss>

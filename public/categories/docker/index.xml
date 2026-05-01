@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on NASAN</title>
-    <link>https://nasan92.github.io/categories/docker/</link>
+    <link>http://localhost:1313/categories/docker/</link>
     <description>Recent content in Docker on NASAN</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 22 Apr 2022 13:39:21 +0100</lastBuildDate>
-    <atom:link href="https://nasan92.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Architecture Overview - MindMap</title>
-      <link>https://nasan92.github.io/posts/2022-04-24-dockeroverview/</link>
+      <link>http://localhost:1313/posts/2022-04-24-dockeroverview/</link>
       <pubDate>Fri, 22 Apr 2022 13:39:21 +0100</pubDate>
-      <guid>https://nasan92.github.io/posts/2022-04-24-dockeroverview/</guid>
-      <description>&lt;p&gt;Docker Architecture Overview:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;https://nasan92.github.io/images/DockerArchitecture.png&#34; title=&#34;Docker Architecture Overview:&#34; data-thumbnail=&#34;/images/DockerArchitecture.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Docker Architecture Overview:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;https://nasan92.github.io/svg/loading.min.svg&#34;&#xA;            data-src=&#34;https://nasan92.github.io/images/DockerArchitecture.png&#34;&#xA;            data-srcset=&#34;https://nasan92.github.io/images/DockerArchitecture.png, https://nasan92.github.io/images/DockerArchitecture.png 1.5x, https://nasan92.github.io/images/DockerArchitecture.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/DockerArchitecture.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2022-04-24-dockeroverview/</guid>
+      <description>&lt;p&gt;Docker Architecture Overview:&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/DockerArchitecture.png&#34; title=&#34;Docker Architecture Overview:&#34; data-thumbnail=&#34;/images/DockerArchitecture.png&#34; data-sub-html=&#34;&lt;h2&gt;Preview&lt;/h2&gt;&lt;p&gt;Docker Architecture Overview:&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/DockerArchitecture.png&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/DockerArchitecture.png, http://localhost:1313/images/DockerArchitecture.png 1.5x, http://localhost:1313/images/DockerArchitecture.png 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/DockerArchitecture.png&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Preview&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
