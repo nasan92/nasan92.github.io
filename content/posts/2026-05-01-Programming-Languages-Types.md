@@ -25,9 +25,14 @@ categories:
 ---
 
 
-## MindMap
+## MindMap - 8 main types of programming languages
 
 ![8 main types of programming languages](/images/Main-8-Types-of-Programming-Languages.svg "8 main types of programming languages mind map")  
 [MindMap PNG](/images/Main-8-Types-of-Programming-Languages.png "Preview")  
 [MindMap SVG](/images/Main-8-Types-of-Programming-Languages.svg "Preview")  
 
+## MindMap - Additional classifications
+
+![8 main types of programming languages](/images/programming-languages-additional-classification.svg "8 main types of programming languages mind map")  
+[MindMap PNG](/images/programming-languages-additional-classification.png "Preview")  
+[MindMap SVG](/images/programming-languages-additional-classification.svg "Preview")  
