@@ -29,6 +29,11 @@ categories:
 
   
 ---
+## Erkenntnistheorie Übersicht wichtigster Denkrichtungen MindMap
+
+![Erkenntnistheorie Denkrichtungen Übersicht](/images/erkenntnistheorie-wichtigste-denkrichtungen.svg "Erkenntnistheorie Denkrichtungen Übersicht mind map")  
+[MindMap PNG](/images/erkenntnistheorie-wichtigste-denkrichtungen.png "Preview")  
+[MindMap SVG](/images/erkenntnistheorie-wichtigste-denkrichtungen.svg "Preview")  
 
 
 Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überblick zu 12 zentralen Denkrichtungen (Theorien) der Erkenntnistheorie zu geben:
@@ -48,14 +53,6 @@ Im folgenden YouTube-Video versuche ich, innerhalb von 15min einen groben Überb
 Das Mindmap dazu kann weiter unten in voller Auflösung betrachtet werden.
 
 {{< youtube MtcuPD1nHbI >}}
-
-
-
-## Erkenntnistheorie Übersicht wichtigster Denkrichtungen MindMap
-
-![Erkenntnistheorie Denkrichtungen Übersicht](/images/erkenntnistheorie-wichtigste-denkrichtungen.svg "Erkenntnistheorie Denkrichtungen Übersicht mind map")  
-[MindMap PNG](/images/erkenntnistheorie-wichtigste-denkrichtungen.png "Preview")  
-[MindMap SVG](/images/erkenntnistheorie-wichtigste-denkrichtungen.svg "Preview")  
 
 Für den Kontext:
 - [Was ist Philosophie?](/posts/2025-08-30-was-ist-philosophie/)
