@@ -57,7 +57,7 @@ Das Mindmap dazu kann weiter unten in voller Auflösung betrachtet werden.
 Für den Kontext:
 - [Was ist Philosophie?](/posts/2025-08-30-was-ist-philosophie/)
 - [Was ist Metaphysik?](/posts/2025-11-29-was-ist-metaphysik/)
-- [Was ist Erkenntnistheorie?](/posts/2026-02-27-Was-ist-Erkenntnistheorie/)
+- [Was ist Erkenntnistheorie?](/posts/2026-02-27-was-ist-erkenntnistheorie/)
 
 ## Weiterführende Literatur und Quellen: 
 - [Epistemology - Wikipedia](https://en.wikipedia.org/wiki/Epistemology)
