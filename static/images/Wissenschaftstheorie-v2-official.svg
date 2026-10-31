@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1708.7824003311086 926.1571517450386">
+<rect x="0" y="0" width="1708.7824003311086" height="926.1571517450386" fill="#ffffff"/>
+<g transform="translate(735.0444387906864 428.81769690077806)">
+<path fill="none" stroke="#e63946" stroke-width="10" stroke-linecap="round" d="M 101.0470888169762 -226.81769690077806 C 50.5235444084881 -226.81769690077806, 20.20941776339524 38, 0 38"/>
+<rect x="100.0470888169762" y="-231.81769690077806" width="95" height="10" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="8" stroke-linecap="round" d="M 261.0470888169762 -374.81769690077806 C 228.0470888169762 -374.81769690077806, 208.2470888169762 -226.81769690077806, 195.0470888169762 -226.81769690077806"/>
+<rect x="260.0470888169762" y="-378.81769690077806" width="246" height="8" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="8" stroke-linecap="round" d="M 261.0470888169762 -306.81769690077806 C 228.0470888169762 -306.81769690077806, 208.2470888169762 -226.81769690077806, 195.0470888169762 -226.81769690077806"/>
+<rect x="260.0470888169762" y="-310.81769690077806" width="115" height="8" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="6" stroke-linecap="round" d="M 421.0470888169762 -332.81769690077806 C 398.0470888169762 -332.81769690077806, 384.2470888169762 -306.81769690077806, 375.0470888169762 -306.81769690077806"/>
+<rect x="420.0470888169762" y="-335.81769690077806" width="143" height="6" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="6" stroke-linecap="round" d="M 421.0470888169762 -289.81769690077806 C 398.0470888169762 -289.81769690077806, 384.2470888169762 -306.81769690077806, 375.0470888169762 -306.81769690077806"/>
+<rect x="420.0470888169762" y="-292.81769690077806" width="243" height="6" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="6" stroke-linecap="round" d="M 422.23654459641375 -251.41635042794286 C 398.641816706695 -251.41635042794286, 384.48497997286375 -306.81769690077806, 375.04708881697627 -306.81769690077806"/>
+<rect x="421.2365445964137" y="-254.41635042794286" width="188" height="6" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="8" stroke-linecap="round" d="M 239.95840099076543 -210.49218729926912 C 217.5027449038708 -210.49218729926912, 204.02935125173403 -226.81769690077806, 195.04708881697618 -226.81769690077806"/>
+<rect x="238.95840099076543" y="-214.49218729926912" width="239" height="8" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="6" stroke-linecap="round" d="M 540.34842955783 -217.27589486960133 C 509.1534152742977 -217.27589486960133, 490.4364067041783 -210.49218729926912, 477.95840099076537 -210.49218729926912"/>
+<rect x="539.34842955783" y="-220.27589486960133" width="155" height="6" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="6" stroke-linecap="round" d="M 515.8562774103335 -167.21347670066183 C 496.9073392005495 -167.21347670066183, 485.537976274679 -210.49218729926912, 477.95840099076537 -210.49218729926912"/>
+<rect x="514.8562774103335" y="-170.21347670066183" width="216" height="6" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="8" stroke-linecap="round" d="M 175.92283047362133 -105.6267357222672 C 175.92283047362133 -171.22221631152263, 191.0470888169762 -206.5795046650759, 191.0470888169762 -226.81769690077806"/>
+<rect x="171.92283047362133" y="-109.6267357222672" width="243" height="8" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="6" stroke-linecap="round" d="M 479.92283047362133 -124.6267357222672 C 447.42283047362133 -124.6267357222672, 427.92283047362133 -105.6267357222672, 414.92283047362133 -105.6267357222672"/>
+<rect x="478.92283047362133" y="-127.6267357222672" width="142" height="6" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="4" stroke-linecap="round" d="M 656.4794377078645 -103.96814829563692 C 638.7011340907428 -103.96814829563692, 628.0341519204699 -124.62673572226718, 620.9228304736213 -124.62673572226718"/>
+<rect x="655.4794377078645" y="-105.96814829563692" width="245" height="4" fill="#e63946"/>
+<path fill="none" stroke="#e63946" stroke-width="6" stroke-linecap="round" d="M 479.92283047362133 -72.6267357222672 C 447.42283047362133 -72.6267357222672, 427.92283047362133 -105.6267357222672, 414.92283047362133 -105.6267357222672"/>
+<rect x="478.92283047362133" y="-75.6267357222672" width="86" height="6" fill="#e63946"/>
+<path fill="none" stroke="#ff7f11" stroke-width="10" stroke-linecap="round" d="M 191 16 C 95.5 16, 38.2 38, 0 38"/>
+<rect x="190" y="11" width="123" height="10" fill="#ff7f11"/>
+<path fill="none" stroke="#ff7f11" stroke-width="8" stroke-linecap="round" d="M 351 -12 C 332 -12, 320.6 16, 313 16"/>
+<rect x="350" y="-16" width="154" height="8" fill="#ff7f11"/>
+<path fill="none" stroke="#ff7f11" stroke-width="8" stroke-linecap="round" d="M 351 38 C 332 38, 320.6 16, 313 16"/>
+<rect x="350" y="34" width="273" height="8" fill="#ff7f11"/>
+<path fill="none" stroke="#ffbe0b" stroke-width="10" stroke-linecap="round" d="M 191 116 C 95.5 116, 38.2 38, 0 38"/>
+<rect x="190" y="111" width="116" height="10" fill="#ffbe0b"/>
+<path fill="none" stroke="#ffbe0b" stroke-width="8" stroke-linecap="round" d="M 351 88 C 328.5 88, 315 116, 306 116"/>
+<rect x="350" y="84" width="154" height="8" fill="#ffbe0b"/>
+<path fill="none" stroke="#ffbe0b" stroke-width="8" stroke-linecap="round" d="M 351 138 C 328.5 138, 315 116, 306 116"/>
+<rect x="350" y="134" width="230" height="8" fill="#ffbe0b"/>
+<path fill="none" stroke="#ffbe0b" stroke-width="6" stroke-linecap="round" d="M 657.2643906596202 55.16850495056322 C 618.6321953298101 55.16850495056322, 595.4528781319241 138, 580 138"/>
+<rect x="656.2643906596202" y="52.16850495056322" width="214" height="6" fill="#ffbe0b"/>
+<path fill="none" stroke="#ffbe0b" stroke-width="6" stroke-linecap="round" d="M 649.5592346761091 119.53627333603117 C 614.7796173380545 119.53627333603117, 593.9118469352218 138, 580 138"/>
+<rect x="648.5592346761091" y="116.53627333603117" width="230" height="6" fill="#ffbe0b"/>
+<path fill="none" stroke="#ffbe0b" stroke-width="6" stroke-linecap="round" d="M 639.7379615404222 186.09438164593968 C 609.8689807702111 186.09438164593968, 591.9475923080845 138, 580 138"/>
+<rect x="638.7379615404222" y="183.09438164593968" width="310" height="6" fill="#ffbe0b"/>
+<path fill="none" stroke="#8ac926" stroke-width="10" stroke-linecap="round" d="M 65.0934542150213 321.9951840837738 C 32.54672710751065 321.9951840837738, 13.01869084300426 38, 0 38"/>
+<rect x="64.0934542150213" y="316.9951840837738" width="150" height="10" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="8" stroke-linecap="round" d="M 229.11742900456017 196.83298566345547 C 221.60544160979072 196.83298566345547, 217.09824917292906 321.9951840837738, 214.0934542150213 321.9951840837738"/>
+<rect x="228.11742900456017" y="192.83298566345547" width="234" height="8" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="6" stroke-linecap="round" d="M 502.43263083000636 217.5543058431432 C 482.2750299172833 217.5543058431432, 470.1804693696494 196.83298566345547, 462.11742900456017 196.83298566345547"/>
+<rect x="501.43263083000636" y="214.5543058431432" width="72" height="6" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="8" stroke-linecap="round" d="M 264.5063764377133 254.1797604874219 C 239.29991532636728 254.1797604874219, 224.1760386595597 321.9951840837738, 214.0934542150213 321.9951840837738"/>
+<rect x="263.5063764377133" y="250.1797604874219" width="189" height="8" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="8" stroke-linecap="round" d="M 267.35691071917375 297.1618341725003 C 240.7251824670975 297.1618341725003, 224.7461455158518 321.9951840837738, 214.0934542150213 321.9951840837738"/>
+<rect x="266.35691071917375" y="293.1618341725003" width="72" height="8" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="8" stroke-linecap="round" d="M 260.9836637667381 343.3429790817504 C 237.5385589908797 343.3429790817504, 223.47149612536464 321.9951840837738, 214.09345421502127 321.9951840837738"/>
+<rect x="259.9836637667381" y="339.3429790817504" width="166" height="8" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="8" stroke-linecap="round" d="M 277.6263027812038 424.5769822293963 C 245.85987849811255 424.5769822293963, 226.8000239282578 321.9951840837738, 214.0934542150213 321.9951840837738"/>
+<rect x="276.6263027812038" y="420.5769822293963" width="72" height="8" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="6" stroke-linecap="round" d="M 520.0337464369281 322.6008508267448 C 434.33002460906596 322.6008508267448, 382.90779151234864 424.5769822293963, 348.6263027812038 424.5769822293963"/>
+<rect x="519.0337464369281" y="319.6008508267448" width="296" height="6" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="6" stroke-linecap="round" d="M 492.2877162475161 397.52430947718426 C 420.4570095143599 397.52430947718426, 377.3585854744662 424.5769822293964, 348.6263027812038 424.5769822293964"/>
+<rect x="491.2877162475161" y="394.52430947718426" width="269" height="6" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="6" stroke-linecap="round" d="M 428.44321699157433 464.90350543659594 C 388.53475988638905 464.90350543659594, 364.5896856232779 424.5769822293963, 348.6263027812038 424.5769822293963"/>
+<rect x="427.44321699157433" y="461.90350543659594" width="150" height="6" fill="#8ac926"/>
+<path fill="none" stroke="#8ac926" stroke-width="4" stroke-linecap="round" d="M 616.6780615515961 470.3394548442606 C 597.0606392715852 470.3394548442606, 585.2901859035787 464.90350543659594, 577.4432169915743 464.90350543659594"/>
+<rect x="615.6780615515961" y="468.3394548442606" width="190" height="4" fill="#8ac926"/>
+<path fill="none" stroke="#2ec4b6" stroke-width="10" stroke-linecap="round" d="M -39.22769661740102 381.7817175067194 C -19.11384830870051 381.7817175067194, -7.045539323480206 38, 1 38"/>
+<rect x="-285.227696617401" y="376.7817175067194" width="246" height="10" fill="#2ec4b6"/>
+<path fill="none" stroke="#2ec4b6" stroke-width="8" stroke-linecap="round" d="M -331.86151831359285 370.7280245804971 C -308.04460746549694 370.7280245804971, -293.7544609566394 381.7817175067194, -284.227696617401 381.7817175067194"/>
+<rect x="-452.86151831359285" y="366.7280245804971" width="121" height="8" fill="#2ec4b6"/>
+<path fill="none" stroke="#2ec4b6" stroke-width="6" stroke-linecap="round" d="M -485.92469793337966 343.1396349508048 C -468.8931081234863 343.1396349508048, -458.6741542375502 370.72802458049705, -451.86151831359285 370.72802458049705"/>
+<rect x="-690.9246979333797" y="340.1396349508048" width="205" height="6" fill="#2ec4b6"/>
+<path fill="none" stroke="#2ec4b6" stroke-width="6" stroke-linecap="round" d="M -497.0444387906864 394.7231024720804 C -474.4529785521396 394.7231024720804, -460.8981024090115 370.72802458049705, -451.8615183135928 370.72802458049705"/>
+<rect x="-710.0444387906864" y="391.7231024720804" width="213" height="6" fill="#2ec4b6"/>
+<path fill="none" stroke="#00bbf9" stroke-width="10" stroke-linecap="round" d="M -38.444062290898785 240.8203730313446 C -18.722031145449392 240.8203730313446, -6.888812458179757 38, 1 38"/>
+<rect x="-396.4440622908988" y="235.8203730313446" width="358" height="10" fill="#00bbf9"/>
+<path fill="none" stroke="#00bbf9" stroke-width="8" stroke-linecap="round" d="M -445.4440622908987 201.8203730313446 C -420.4440622908987 201.8203730313446, -405.4440622908987 240.8203730313446, -395.4440622908987 240.8203730313446"/>
+<rect x="-676.4440622908987" y="197.8203730313446" width="231" height="8" fill="#00bbf9"/>
+<path fill="none" stroke="#00bbf9" stroke-width="8" stroke-linecap="round" d="M -449.1762300948144 244.81501507645854 C -422.31014619285656 244.81501507645854, -406.1904958516819 240.8203730313446, -395.4440622908987 240.8203730313446"/>
+<rect x="-524.1762300948144" y="240.81501507645854" width="75" height="8" fill="#00bbf9"/>
+<path fill="none" stroke="#00bbf9" stroke-width="8" stroke-linecap="round" d="M -451.687235906565 296.55732610186186 C -423.5656490987319 296.55732610186186, -406.69269701403203 240.82037303134456, -395.44406229089884 240.82037303134456"/>
+<rect x="-591.687235906565" y="292.55732610186186" width="140" height="8" fill="#00bbf9"/>
+<path fill="none" stroke="#3a86ff" stroke-width="10" stroke-linecap="round" d="M -40.46965031898276 87.650472089619 C -19.73482515949138 87.650472089619, -7.293930063796552 38, 1 38"/>
+<rect x="-302.46965031898276" y="82.650472089619" width="262" height="10" fill="#3a86ff"/>
+<path fill="none" stroke="#3a86ff" stroke-width="8" stroke-linecap="round" d="M -386.46965031898276 41.65047208961901 C -343.96965031898276 41.65047208961901, -318.46965031898276 87.650472089619, -301.46965031898276 87.650472089619"/>
+<rect x="-591.4696503189828" y="37.65047208961901" width="205" height="8" fill="#3a86ff"/>
+<path fill="none" stroke="#3a86ff" stroke-width="8" stroke-linecap="round" d="M -399.540296665617 81.5016531619241 C -350.5049734922999 81.5016531619241, -321.0837795883096 87.650472089619, -301.46965031898276 87.650472089619"/>
+<rect x="-476.540296665617" y="77.5016531619241" width="77" height="8" fill="#3a86ff"/>
+<path fill="none" stroke="#3a86ff" stroke-width="8" stroke-linecap="round" d="M -364.76251713911574 126.59372421243012 C -333.11608372904925 126.59372421243012, -314.1282236830093 87.650472089619, -301.4696503189827 87.650472089619"/>
+<rect x="-579.7625171391157" y="122.59372421243012" width="215" height="8" fill="#3a86ff"/>
+<path fill="none" stroke="#8338ec" stroke-width="10" stroke-linecap="round" d="M -78.72547625749854 -30.048283618957036 C -38.86273812874927 -30.048283618957036, -14.945095251499708 38.00000000000001, 1 38.00000000000001"/>
+<rect x="-382.72547625749854" y="-35.048283618957036" width="304" height="10" fill="#8338ec"/>
+<path fill="none" stroke="#8338ec" stroke-width="8" stroke-linecap="round" d="M -421.7254762574985 -58.04828361895704 C -401.7254762574985 -58.04828361895704, -389.7254762574985 -30.048283618957043, -381.7254762574985 -30.048283618957043"/>
+<rect x="-527.7254762574985" y="-62.04828361895704" width="106" height="8" fill="#8338ec"/>
+<path fill="none" stroke="#8338ec" stroke-width="8" stroke-linecap="round" d="M -438.7254762574985 -15.048283618957036 C -410.2254762574985 -15.048283618957036, -393.12547625749846 -30.048283618957036, -381.7254762574985 -30.048283618957036"/>
+<rect x="-653.7254762574985" y="-19.048283618957036" width="215" height="8" fill="#8338ec"/>
+<path fill="none" stroke="#ff006e" stroke-width="10" stroke-linecap="round" d="M -46.933355355684256 -118.33150364955935 C -22.966677677842128 -118.33150364955935, -8.586671071136848 38, 1 38"/>
+<rect x="-158.93335535568426" y="-123.33150364955935" width="112" height="10" fill="#ff006e"/>
+<path fill="none" stroke="#ff006e" stroke-width="8" stroke-linecap="round" d="M -266.9333553556843 -121.33150364955935 C -212.43335535568428 -121.33150364955935, -179.7333553556843 -118.33150364955935, -157.93335535568428 -118.33150364955935"/>
+<rect x="-471.9333553556843" y="-125.33150364955935" width="205" height="8" fill="#ff006e"/>
+<path fill="none" stroke="#ef476f" stroke-width="10" stroke-linecap="round" d="M 6.845402872587812 -225.87515009934776 C 6.845402872587812 -98.93757504967388, 5 -15.775030019869547, 5 38"/>
+<rect x="-199.1545971274122" y="-230.87515009934776" width="211" height="10" fill="#ef476f"/>
+<path fill="none" stroke="#ef476f" stroke-width="8" stroke-linecap="round" d="M -269.1545971274122 -253.87515009934776 C -233.65459712741222 -253.87515009934776, -212.3545971274122 -225.87515009934776, -198.15459712741222 -225.87515009934776"/>
+<rect x="-506.1545971274122" y="-257.87515009934776" width="237" height="8" fill="#ef476f"/>
+<path fill="none" stroke="#ef476f" stroke-width="8" stroke-linecap="round" d="M -274.1545971274122 -203.87515009934776 C -236.15459712741222 -203.87515009934776, -213.3545971274122 -225.87515009934776, -198.15459712741222 -225.87515009934776"/>
+<rect x="-524.1545971274122" y="-207.87515009934776" width="250" height="8" fill="#ef476f"/>
+<rect x="-118.5" y="16" width="237" height="32" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="0" y="37.6" fill="#000000" font-family="sans-serif" font-size="22" font-style="normal" font-weight="bold" text-anchor="middle">Wissenschaftstheorie</text>
+<rect x="96.0470888169762" y="-262.81769690077806" width="103" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="147.5470888169762" y="-245.21769690077807" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Tatsachen?</text>
+<rect x="256.0470888169762" y="-407.81769690077806" width="254" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="383.0470888169762" y="-391.81769690077806" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Wissenschaft basiert auf Tatsachen?</text>
+<rect x="256.0470888169762" y="-339.81769690077806" width="123" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="317.5470888169762" y="-323.81769690077806" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Natur + Zugang?</text>
+<rect x="416.0470888169762" y="-364.81769690077806" width="151" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="491.5470888169762" y="-348.81769690077806" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Durch Beobachtung?</text>
+<rect x="416.0470888169762" y="-321.81769690077806" width="251" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="541.5470888169762" y="-305.81769690077806" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Visuelle Erfahrung != Bild auf Retina</text>
+<rect x="417.2365445964137" y="-283.41635042794286" width="196" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="515.2365445964138" y="-267.41635042794286" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Begriff Tatsache mehrdeutig</text>
+<rect x="234.95840099076543" y="-243.49218729926912" width="247" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="358.4584009907654" y="-227.49218729926912" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Theorieabhängigkeit von Tatsachen</text>
+<rect x="535.34842955783" y="-249.27589486960133" width="163" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="616.84842955783" y="-233.27589486960133" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">konzeptuellen Rahmen</text>
+<rect x="510.8562774103335" y="-214.21347670066183" width="224" height="40" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="622.8562774103335" y="-198.21347670066183" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">
+<tspan x="622.8562774103335" y="-198.21347670066183">Beobachtungsaussagen setzen </tspan>
+<tspan x="622.8562774103335" y="-183.21347670066183">Hintergrundwissen voraus</tspan>
+</text>
+<rect x="167.92283047362133" y="-138.6267357222672" width="251" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="293.42283047362133" y="-122.6267357222672" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Gesetze + Theorien aus Tatsachen?</text>
+<rect x="474.92283047362133" y="-156.6267357222672" width="150" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="549.9228304736214" y="-140.6267357222672" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Relevante Tatsachen</text>
+<rect x="651.4794377078645" y="-149.96814829563692" width="253" height="40" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="777.9794377078645" y="-133.96814829563692" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">
+<tspan x="777.9794377078645" y="-133.96814829563692">abhängig vom aktuellen </tspan>
+<tspan x="777.9794377078645" y="-118.96814829563692">Entwicklungsstand der Wissenschaft</tspan>
+</text>
+<rect x="474.92283047362133" y="-104.6267357222672" width="94" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="521.9228304736214" y="-88.6267357222672" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Experimente</text>
+<rect x="186" y="-20" width="131" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="251.5" y="-2.3999999999999986" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Deduktivismus</text>
+<rect x="346" y="-45" width="162" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="427" y="-29" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">allgemein -&gt; spezifisch</text>
+<rect x="346" y="5" width="281" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="486.5" y="21" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Wahrheit der Voraussetzungen ungeklärt</text>
+<rect x="186" y="80" width="124" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="248" y="97.6" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Induktivismus</text>
+<rect x="346" y="55" width="162" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="427" y="71" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">spezifisch -&gt; allgemein</text>
+<rect x="346" y="105" width="238" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="465" y="121" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Bedingungen für gutes Argument?</text>
+<rect x="652.2643906596202" y="23.168504950563218" width="222" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="763.2643906596202" y="39.16850495056322" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">grosse Anzahl Beobachtungen?</text>
+<rect x="644.5592346761091" y="72.53627333603117" width="238" height="40" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="763.5592346761091" y="88.53627333603117" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">
+<tspan x="763.5592346761091" y="88.53627333603117">Wiederholung Beobachtung unter</tspan>
+<tspan x="763.5592346761091" y="103.53627333603117">grosser Vielfalt von Bedingungen?</tspan>
+</text>
+<rect x="634.7379615404222" y="139.09438164593968" width="318" height="40" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="793.7379615404222" y="155.09438164593968" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">
+<tspan x="793.7379615404222" y="155.09438164593968">Keine Beobachtungsaussage im Widerspruch </tspan>
+<tspan x="793.7379615404222" y="170.09438164593968">zum entsprechenden allgemeinen Gesetz</tspan>
+</text>
+<rect x="60.093454215021296" y="285.9951840837738" width="158" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="139.0934542150213" y="303.5951840837738" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Falsifikationismus</text>
+<rect x="224.11742900456017" y="163.83298566345547" width="242" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="345.11742900456017" y="179.83298566345547" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Theorien müssen falsifizierbar sein</text>
+<rect x="497.43263083000636" y="185.5543058431432" width="80" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="537.4326308300064" y="201.5543058431432" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Kriterium</text>
+<rect x="259.5063764377133" y="221.1797604874219" width="197" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="358.0063764377133" y="237.1797604874219" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Beobachtung theoriegeleitet</text>
+<rect x="262.35691071917375" y="264.1618341725003" width="80" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="302.35691071917375" y="280.1618341725003" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Präzision</text>
+<rect x="255.98366376673812" y="310.3429790817504" width="174" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="342.9836637667381" y="326.3429790817504" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Nie wahr / nur überlegen</text>
+<rect x="272.6263027812038" y="391.5769822293963" width="80" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="312.6263027812038" y="407.5769822293963" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Grenzen</text>
+<rect x="515.0337464369281" y="290.6008508267448" width="304" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="667.0337464369281" y="306.6008508267448" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Theorie oder Beobachtungsaussage falsch?</text>
+<rect x="487.2877162475161" y="350.52430947718426" width="277" height="40" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="625.7877162475161" y="366.52430947718426" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">
+<tspan x="625.7877162475161" y="366.52430947718426">Einfache, überzeugende Falsifikationen </tspan>
+<tspan x="625.7877162475161" y="381.52430947718426">von Theorien -&gt; nicht erreichbar</tspan>
+</text>
+<rect x="423.44321699157433" y="432.90350543659594" width="158" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="502.44321699157433" y="448.90350543659594" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Duheme-Quine-These</text>
+<rect x="611.6780615515961" y="424.3394548442606" width="198" height="40" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="710.6780615515961" y="440.3394548442606" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">
+<tspan x="710.6780615515961" y="440.3394548442606">Theorie kann nicht eindeutig</tspan>
+<tspan x="710.6780615515961" y="455.3394548442606">falsifiziert werden</tspan>
+</text>
+<rect x="-289.227696617401" y="345.7817175067194" width="254" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-162.22769661740102" y="363.38171750671944" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Raffinierter Falsifikationismus</text>
+<rect x="-456.86151831359285" y="337.7280245804971" width="129" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-392.36151831359285" y="353.7280245804971" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Zusatzbedingung:</text>
+<rect x="-694.9246979333797" y="311.1396349508048" width="213" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-588.4246979333797" y="327.1396349508048" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Wissenschaft weiterentwickeln</text>
+<rect x="-714.0444387906864" y="362.7231024720804" width="221" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-603.5444387906864" y="378.7231024720804" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">neue Hypothese, falsifizierbarer</text>
+<rect x="-400.4440622908988" y="204.8203730313446" width="366" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-217.44406229089878" y="222.42037303134458" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Theorien als Strukturen: Kuhns Paradigmen</text>
+<rect x="-680.4440622908987" y="168.8203730313446" width="239" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-560.9440622908987" y="184.8203730313446" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">theoretische Rahmenbedingungen</text>
+<rect x="-528.1762300948144" y="211.81501507645854" width="83" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-486.6762300948144" y="227.81501507645854" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Paradigma</text>
+<rect x="-595.687235906565" y="263.55732610186186" width="148" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-521.687235906565" y="279.55732610186186" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Krise und Revolution</text>
+<rect x="-306.46965031898276" y="51.65047208961901" width="270" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-171.46965031898276" y="69.25047208961901" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Lakatos Forschungsprogramme</text>
+<rect x="-595.4696503189828" y="8.650472089619008" width="213" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-488.96965031898276" y="24.650472089619008" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Modifikation Falsifikationismus</text>
+<rect x="-480.540296665617" y="48.5016531619241" width="85" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-438.040296665617" y="64.5016531619241" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">harter Kern</text>
+<rect x="-583.7625171391157" y="93.59372421243012" width="223" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-472.26251713911574" y="109.59372421243012" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Zusatzannahmen (Schutzgürtel)</text>
+<rect x="-386.72547625749854" y="-66.04828361895704" width="312" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-230.72547625749854" y="-48.448283618957035" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Anarchistische Wissenschaftstheorie</text>
+<rect x="-531.7254762574985" y="-91.04828361895704" width="114" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-474.7254762574985" y="-75.04828361895704" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">&quot;anything goes&quot;</text>
+<rect x="-657.7254762574985" y="-48.048283618957036" width="223" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-546.2254762574985" y="-32.048283618957036" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">wider jeglichen Methodenzwang</text>
+<rect x="-162.93335535568426" y="-154.33150364955935" width="120" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-102.93335535568426" y="-136.73150364955936" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Bayes Ansatz</text>
+<rect x="-475.9333553556843" y="-154.33150364955935" width="213" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-369.4333553556843" y="-138.33150364955935" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">bedingte Wahrscheinlichkeiten</text>
+<rect x="-203.1545971274122" y="-261.87515009934776" width="219" height="27" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-93.65459712741219" y="-244.27515009934777" fill="#000000" font-family="sans-serif" font-size="17" font-style="normal" font-weight="bold" text-anchor="middle">Neuer Experimentalismus</text>
+<rect x="-510.1545971274122" y="-286.87515009934776" width="245" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-387.6545971274122" y="-270.87515009934776" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Eigenständigkeit von Experimenten</text>
+<rect x="-528.1545971274122" y="-236.87515009934776" width="258" height="25" rx="10" ry="10" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="-399.1545971274122" y="-220.87515009934776" fill="#000000" font-family="sans-serif" font-size="15" font-style="normal" font-weight="normal" text-anchor="middle">Strenges experimentelles Überprüfen</text>
+</g>
+</svg>

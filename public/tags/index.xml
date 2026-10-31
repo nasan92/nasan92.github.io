@@ -6,8 +6,85 @@
     <description>Recent content in Tags on NASAN</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2026 05:10:21 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 05:10:21 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diagramm</title>
+      <link>http://localhost:1313/tags/diagramm/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/diagramm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Epistemology</title>
+      <link>http://localhost:1313/tags/epistemology/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/epistemology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Erkenntnistheorie</title>
+      <link>http://localhost:1313/tags/erkenntnistheorie/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/erkenntnistheorie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Experimentalismus</title>
+      <link>http://localhost:1313/tags/experimentalismus/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/experimentalismus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Falsifikationismus</title>
+      <link>http://localhost:1313/tags/falsifikationismus/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/falsifikationismus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Induktivismus</title>
+      <link>http://localhost:1313/tags/induktivismus/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/induktivismus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MindMap</title>
+      <link>http://localhost:1313/tags/mindmap/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/mindmap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paradigmen</title>
+      <link>http://localhost:1313/tags/paradigmen/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/paradigmen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wissen</title>
+      <link>http://localhost:1313/tags/wissen/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/wissen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wissenschaft</title>
+      <link>http://localhost:1313/tags/wissenschaft/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/wissenschaft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wissenschaftstheorie</title>
+      <link>http://localhost:1313/tags/wissenschaftstheorie/</link>
+      <pubDate>Sat, 31 Oct 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/tags/wissenschaftstheorie/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AssemblyLanguage</title>
       <link>http://localhost:1313/tags/assemblylanguage/</link>
@@ -51,13 +128,6 @@
       <description></description>
     </item>
     <item>
-      <title>MindMap</title>
-      <link>http://localhost:1313/tags/mindmap/</link>
-      <pubDate>Fri, 01 May 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/tags/mindmap/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Object-Oriented</title>
       <link>http://localhost:1313/tags/object-oriented/</link>
       <pubDate>Fri, 01 May 2026 05:10:21 +0100</pubDate>
@@ -86,31 +156,10 @@
       <description></description>
     </item>
     <item>
-      <title>Diagramm</title>
-      <link>http://localhost:1313/tags/diagramm/</link>
-      <pubDate>Fri, 10 Apr 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/tags/diagramm/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Empirismus</title>
       <link>http://localhost:1313/tags/empirismus/</link>
       <pubDate>Fri, 10 Apr 2026 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/tags/empirismus/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Epistemology</title>
-      <link>http://localhost:1313/tags/epistemology/</link>
-      <pubDate>Fri, 10 Apr 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/tags/epistemology/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Erkenntnistheorie</title>
-      <link>http://localhost:1313/tags/erkenntnistheorie/</link>
-      <pubDate>Fri, 10 Apr 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/tags/erkenntnistheorie/</guid>
       <description></description>
     </item>
     <item>
@@ -272,13 +321,6 @@
       <link>http://localhost:1313/tags/weisheit/</link>
       <pubDate>Fri, 27 Feb 2026 05:10:21 +0100</pubDate>
       <guid>http://localhost:1313/tags/weisheit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Wissen</title>
-      <link>http://localhost:1313/tags/wissen/</link>
-      <pubDate>Fri, 27 Feb 2026 05:10:21 +0100</pubDate>
-      <guid>http://localhost:1313/tags/wissen/</guid>
       <description></description>
     </item>
     <item>
