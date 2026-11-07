@@ -3,21 +3,35 @@
         <title>All Posts - NASAN</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | NASAN</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 31 Oct 2026 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 07 Nov 2026 05:10:21 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Fünf Gesetze für wirksames Lernen - MindMap</title>
+    <link>http://localhost:1313/posts/2026-11-07-fuenf-gesetze-fuer-wirksames-lernen/</link>
+    <pubDate>Sat, 07 Nov 2026 05:10:21 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/2026-11-07-fuenf-gesetze-fuer-wirksames-lernen/</guid>
+    <description><![CDATA[<p>Wie lässt sich neues Wissen nachhaltig lernen? Diese MindMap gibt einen Überblick über fünf Lernprinzipien: aktives Abrufen, verteiltes Lernen, verschachteltes Üben, Selbsterklärung und den Aufbau von Wissensblöcken (Chunking).</p>
+<p><figure><a class="lightgallery" href="/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg" title="Fünf Gesetze für wirksames Lernen" data-thumbnail="/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg" data-sub-html="<h2>Fünf Gesetze für wirksames Lernen</h2><p>Fünf Gesetze für wirksames Lernen</p>">
+        
+    </a><figcaption class="image-caption">Fünf Gesetze für wirksames Lernen</figcaption>
+    </figure></p>
+<p><a href="/images/Fuenf-Gesetze-fuer-wirksames-Lernen.png" title="Vorschau" rel="">MindMap PNG</a>
+<a href="/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg" title="Vorschau" rel="">MindMap SVG</a></p>]]></description>
+</item><item>
     <title>Philosophie: Wissenschaftstheorie</title>
     <link>http://localhost:1313/posts/2026-10-31-was-ist-wissenschaftstheorie/</link>
     <pubDate>Sat, 31 Oct 2026 05:10:21 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2026-10-31-was-ist-wissenschaftstheorie/</guid>
     <description><![CDATA[<hr>
-<p>Im folgenden YouTube-Video versuche ich, innerhalb von einen groben Überblick zu der philosophischen Disziplin <strong>Wissenschafstheorie</strong> zu vermitteln.</p>
+<p>Im folgenden YouTube-Video versuche ich, einen groben Überblick zu der philosophischen Disziplin <strong>Wissenschafstheorie</strong> zu vermitteln.</p>
 <p>Das Mindmap dazu kann weiter unten in voller Auflösung betrachtet werden.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9j19EDf4DtU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 <h2 id="wissenschaftstheorie-mindmap">Wissenschaftstheorie Mindmap</h2>
-<p>In dem folgenden Mindmap ist eine grobe Übersicht zu zentralen Konzepten der Wissenschaftstheorie zu finden.</p>]]></description>
+<p>In dem folgenden Mindmap ist eine grobe Übersicht zu zentralen Konzepten der Wissenschaftstheorie zu finden.</p>
+<p><figure><a class="lightgallery" href="/images/Wissenschaftstheorie-v2-official.svg" title="Erkenntnistheorie Übersicht" data-thumbnail="/images/Wissenschaftstheorie-v2-official.svg" data-sub-html="<h2>Erkenntnistheorie Übersicht mind map</h2><p>Erkenntnistheorie Übersicht</p>]]></description>
 </item><item>
     <title>Main Types of Programming Languages</title>
     <link>http://localhost:1313/posts/2026-05-01-programming-languages-types/</link>
@@ -167,17 +181,5 @@
 </ul>
 <h2 id="create-azure-container-registry">Create Azure Container Registry</h2>
 <p><a href="https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli" target="_blank" rel="noopener noreffer">Create an Azure container registry</a> where you can store your docker images:</p>]]></description>
-</item><item>
-    <title>OAuth 2.0 - Tutorial 1 - Localhost Python WebApp Auth Code Flow with Entra ID</title>
-    <link>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</link>
-    <pubDate>Sun, 28 Sep 2025 05:10:21 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2025-09-27-oauth20-1-localhostpythonwebapp-authcodeflow/</guid>
-    <description><![CDATA[<h2 id="introduction---server-side-app---auth-code-flow">Introduction - &ldquo;Server Side App&rdquo; - Auth Code Flow</h2>
-<p>This guide demonstrates how to create a &ldquo;server-side&rdquo; <strong>Python web application</strong> running locally (for development) that authenticates users with <strong>Microsoft Entra ID</strong> and authorizes access to the <strong>Microsoft Graph API</strong> using the <strong>Authorization Code Flow</strong> as a <strong>&ldquo;confidential client&rdquo;</strong> with a client secret.</p>
-<blockquote>
-<p><strong>Info:</strong>
-In the second tutorial, we will deploy this app to Azure</p></blockquote>
-<p>The client is considered confidential because the app runs solely on the server, and users do not have access to the client secret.</p>]]></description>
 </item></channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lernen on NASAN</title>
+    <link>http://localhost:1313/categories/lernen/</link>
+    <description>Recent content in Lernen on NASAN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Nov 2026 05:10:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/lernen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fünf Gesetze für wirksames Lernen - MindMap</title>
+      <link>http://localhost:1313/posts/2026-11-07-fuenf-gesetze-fuer-wirksames-lernen/</link>
+      <pubDate>Sat, 07 Nov 2026 05:10:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2026-11-07-fuenf-gesetze-fuer-wirksames-lernen/</guid>
+      <description>&lt;p&gt;Wie lässt sich neues Wissen nachhaltig lernen? Diese MindMap gibt einen Überblick über fünf Lernprinzipien: aktives Abrufen, verteiltes Lernen, verschachteltes Üben, Selbsterklärung und den Aufbau von Wissensblöcken (Chunking).&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;http://localhost:1313/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg&#34; title=&#34;Fünf Gesetze für wirksames Lernen&#34; data-thumbnail=&#34;/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg&#34; data-sub-html=&#34;&lt;h2&gt;Fünf Gesetze für wirksames Lernen&lt;/h2&gt;&lt;p&gt;Fünf Gesetze für wirksames Lernen&lt;/p&gt;&#34;&gt;&#xA;        &lt;img&#xA;            class=&#34;lazyload&#34;&#xA;            src=&#34;http://localhost:1313/svg/loading.min.svg&#34;&#xA;            data-src=&#34;http://localhost:1313/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg&#34;&#xA;            data-srcset=&#34;http://localhost:1313/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg, http://localhost:1313/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg 1.5x, http://localhost:1313/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg 2x&#34;&#xA;            data-sizes=&#34;auto&#34;&#xA;            alt=&#34;/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg&#34; /&gt;&#xA;    &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Fünf Gesetze für wirksames Lernen&lt;/figcaption&gt;&#xA;    &lt;/figure&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/Fuenf-Gesetze-fuer-wirksames-Lernen.png&#34; title=&#34;Vorschau&#34; rel=&#34;&#34;&gt;MindMap PNG&lt;/a&gt;&#xA;&lt;a href=&#34;http://localhost:1313/images/Fuenf-Gesetze-fuer-wirksames-Lernen.svg&#34; title=&#34;Vorschau&#34; rel=&#34;&#34;&gt;MindMap SVG&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
